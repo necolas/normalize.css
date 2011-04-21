@@ -33,7 +33,7 @@ video {
  * Improves page center consistency regardless of content height in all browsers
  * 3.
  * Remove text size adjust tap color for <html> element
- * Fixes text size and tap color displayed oddly in iOS
+ * Improves text size and tap color displayed oddly in iOS
 */
 
 html {
@@ -69,7 +69,7 @@ img {
 
 /*
  * Add bottom border to <abbr> element
- * Fixes styling not present in IE6/7/8/9 Chrome10 Saf5
+ * Fixes styling not present in IE6/7/8/9 C10 S5
 */
 
 abbr {
@@ -78,7 +78,7 @@ abbr {
 
 /*
  * Add italic font style to <dfn> element
- * Fixes styling not present in Chrome10 Saf5
+ * Fixes styling not present in C10 S5
 */
 
 dfn {
@@ -97,7 +97,7 @@ mark {
 
 /*
  * Redeclare monospace font family to <pre> <code> <kbd> <samp> elements
- * Fixes font family set oddly in Chrome10 Saf5
+ * Fixes font family set oddly in C10 S5
 */
 
 pre,
@@ -123,7 +123,7 @@ pre {
  * 1.
  * Addresses CSS quotes not supported in IE6/7
  * 2.
- * Addresses quote attributes not supported in Saf4
+ * Addresses quote attributes not supported in S4
 */
 
 /* 1 */
@@ -161,7 +161,7 @@ legend {
 
 /*
  * Remove margin from form elements
- * Fixes margin displayed oddly in Chrome10 Saf5
+ * Fixes margin displayed oddly in C10 S5
 */
 
 button,
@@ -174,7 +174,7 @@ textarea {
 /*
  * Define inner-spacing for <button> element
  * 1. Fixes spacing displayed oddly in IE6/7
- * 2. Addresses padding differences between all browsers
+ * 2. Addresses padding differences in all browsers
  * 3. Fixes border and padding displayed oddly in FF3/4
 */
 
