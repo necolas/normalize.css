@@ -27,13 +27,13 @@ video {
 /*
  * 1.
  * Make normal cursor the default for <html> element
- * Improves visual focus of page during mouse movement
+ * Improves visual focus of page during mouse movement in all browsers
  * 2.
- * Add horizontal scrollbar to <html> element
- * Scrollbars keep page center consistent regardless of content overflow
+ * Add vertical scrollbar to <html> element
+ * Improves page center consistency regardless of content height in all browsers
  * 3.
  * Remove text size adjust tap color for <html> element
- * Text size and tap color displayed oddly in iOS
+ * Fixes text size and tap color displayed oddly in iOS
 */
 
 html {
@@ -45,7 +45,7 @@ html {
 
 /*
  * Remove outline on <a> element when active or hovered
- * Improves readability when focused and then also mouse activated
+ * Improves readability when focused and also mouse hovered in all browsers
 */
 
 a:active,
@@ -56,10 +56,10 @@ a:hover {
 /*
  * 1.
  * Disable border for <img> element
- * Improves readability when inside <a> element
+ * Improves readability when inside <a> element in all browsers
  * 2.
  * Allow high quality bicubic image resampling for <img> element
- * Improves readability when scaled
+ * Improves readability when scaled in IE7
 */
 
 img {
@@ -69,7 +69,7 @@ img {
 
 /*
  * Add bottom border to <abbr> element
- * Styling not present in IE6/7/8/9 Chrome10 Saf5
+ * Fixes styling not present in IE6/7/8/9 Chrome10 Saf5
 */
 
 abbr {
@@ -78,7 +78,7 @@ abbr {
 
 /*
  * Add italic font style to <dfn> element
- * Styling not present in Chrome10 Saf5
+ * Fixes styling not present in Chrome10 Saf5
 */
 
 dfn {
@@ -87,7 +87,7 @@ dfn {
 
 /*
  * Add yellow background and black text to <mark> element
- * Styling not present in IE6/7/8/9
+ * Fixes styling not present in IE6/7/8/9
 */
 
 mark {
@@ -97,7 +97,7 @@ mark {
 
 /*
  * Redeclare monospace font family to <pre> <code> <kbd> <samp> elements
- * Font family set oddly in Chrome10 Saf5
+ * Fixes font family set oddly in Chrome10 Saf5
 */
 
 pre,
@@ -109,7 +109,7 @@ samp {
 
 /*
  * Allow line wrapping for <pre> element
- * Improves readability of pre-formatted text
+ * Improves readability of pre-formatted text in all browsers
 */
 
 pre {
@@ -121,9 +121,9 @@ pre {
 /*
  * Remove quotes from <q> element
  * 1.
- * CSS quotes not supported in IE6/7
+ * Addresses CSS quotes not supported in IE6/7
  * 2.
- * Quote attributes not supported in Saf4
+ * Addresses quote attributes not supported in Saf4
 */
 
 /* 1 */
@@ -142,7 +142,7 @@ q:after {
 
 /*
  * Remove line height for <sub> <sup> elements
- * Line height within multi-line text displayed oddly
+ * Fixes line height within multi-line text displayed oddly in all browsers
 */
 
 sub,
@@ -151,8 +151,8 @@ sup {
 }
 
 /*
- * Align <legend> element
- * Alignment displayed oddly in IE6/7
+ * Define alignment for <legend> element
+ * Fixes alignment displayed oddly in IE6/7
 */
 
 legend {
@@ -161,7 +161,7 @@ legend {
 
 /*
  * Remove margin from form elements
- * Margin displayed oddly in Chrome10 Saf5
+ * Fixes margin displayed oddly in Chrome10 Saf5
 */
 
 button,
@@ -172,22 +172,21 @@ textarea {
 }
 
 /*
- * Correct inner spacing for <button> element
- * 1. Spacing displayed oddly in IE6/7
- * 2. Border and padding displayed oddly in FF3/4
+ * Define inner-spacing for <button> element
+ * 1. Fixes spacing displayed oddly in IE6/7
+ * 2. Addresses padding differences between all browsers
+ * 3. Fixes border and padding displayed oddly in FF3/4
 */
-
-/* 1 */
 
 button,
 input[type=button],
 input[type=reset],
 input[type=submit] {
-	*overflow: visible;
-	padding: 0 6px;
+	*overflow: visible; /* 1 */
+	padding: 0 6px; /* 2 */
 }
 
-/* 2 */
+/* 3 */
 
 button::-moz-focus-inner,
 input[type=button]::-moz-focus-inner,
@@ -198,8 +197,8 @@ input[type=submit]::-moz-focus-inner {
 }
 
 /*
- * Disable default horizontal scrollbar for <textarea> element
- * Scrollbar displayed oddly in IE6/7/8/9
+ * Disable default vertical scrollbar for <textarea> element
+ * Fixes scrollbar displayed oddly in IE6/7/8/9
 */
 
 textarea {
