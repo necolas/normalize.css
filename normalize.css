@@ -33,7 +33,7 @@ video {
  * Improves page center consistency regardless of content height in all browsers
  * 3.
  * Remove text size adjust tap color for <html> element
- * Improves text size and tap color displayed oddly in iOS
+ * Fixes text size and tap color displayed oddly in iOS
 */
 
 html {
