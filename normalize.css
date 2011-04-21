@@ -1,0 +1,207 @@
+/*
+ * Add display for HTML5 elements
+ * Styling not present in IE6/7/8/9 FF3
+*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+audio[controls],
+canvas,
+video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+/*
+ * 1.
+ * Make normal cursor the default for <html> element
+ * Improves visual focus of page during mouse movement
+ * 2.
+ * Add horizontal scrollbar to <html> element
+ * Scrollbars keep page center consistent regardless of content overflow
+ * 3.
+ * Remove text size adjust tap color for <html> element
+ * Text size and tap color displayed oddly in iOS
+*/
+
+html {
+	cursor: default; /* 1 */
+	overflow-y: scroll; /* 2 */
+	-webkit-tap-highlight-color: transparent; /* 3 */
+	-webkit-text-size-adjust: none; /* 3 */	
+}
+
+/*
+ * Remove outline on <a> element when active or hovered
+ * Improves readability when focused and then also mouse activated
+*/
+
+a:active,
+a:hover {
+	outline: none;
+}
+
+/*
+ * 1.
+ * Disable border for <img> element
+ * Improves readability when inside <a> element
+ * 2.
+ * Allow high quality bicubic image resampling for <img> element
+ * Improves readability when scaled
+*/
+
+img {
+	border: 0; /* 1 */
+	-ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Add bottom border to <abbr> element
+ * Styling not present in IE6/7/8/9 Chrome10 Saf5
+*/
+
+abbr {
+	border-bottom: 1px dotted;
+}
+
+/*
+ * Add italic font style to <dfn> element
+ * Styling not present in Chrome10 Saf5
+*/
+
+dfn {
+	font-style: italic;
+}
+
+/*
+ * Add yellow background and black text to <mark> element
+ * Styling not present in IE6/7/8/9
+*/
+
+mark {
+	background-color: #FF0;
+	color: #000;
+}
+
+/*
+ * Redeclare monospace font family to <pre> <code> <kbd> <samp> elements
+ * Font family set oddly in Chrome10 Saf5
+*/
+
+pre,
+code,
+kbd,
+samp {
+	font-family: monospace, sans-serif;
+}
+
+/*
+ * Allow line wrapping for <pre> element
+ * Improves readability of pre-formatted text
+*/
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+/*
+ * Remove quotes from <q> element
+ * 1.
+ * CSS quotes not supported in IE6/7
+ * 2.
+ * Quote attributes not supported in Saf4
+*/
+
+/* 1 */
+
+q {
+	quotes: none;
+}
+
+/* 2 */
+
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+/*
+ * Remove line height for <sub> <sup> elements
+ * Line height within multi-line text displayed oddly
+*/
+
+sub,
+sup {
+	line-height: 0;
+}
+
+/*
+ * Align <legend> element
+ * Alignment displayed oddly in IE6/7
+*/
+
+legend {
+	*margin-left: -7px;
+}
+
+/*
+ * Remove margin from form elements
+ * Margin displayed oddly in Chrome10 Saf5
+*/
+
+button,
+input,
+select,
+textarea {
+	margin: 0;
+}
+
+/*
+ * Correct inner spacing for <button> element
+ * 1. Spacing displayed oddly in IE6/7
+ * 2. Border and padding displayed oddly in FF3/4
+*/
+
+/* 1 */
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+	*overflow: visible;
+	padding: 0 6px;
+}
+
+/* 2 */
+
+button::-moz-focus-inner,
+input[type=button]::-moz-focus-inner,
+input[type=reset]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+/*
+ * Disable default horizontal scrollbar for <textarea> element
+ * Scrollbar displayed oddly in IE6/7/8/9
+*/
+
+textarea {
+	overflow: auto;
+}
