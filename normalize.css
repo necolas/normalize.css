@@ -72,8 +72,12 @@ img {
  * Fixes styling not present in IE6/7/8/9 C10 S5
 */
 
-abbr {
+abbr[title] {
 	border-bottom: 1px dotted;
+}
+
+abbr {
+	_border-bottom: expression(this.title ? '1px dotted' : 'none');
 }
 
 /*
@@ -172,26 +176,23 @@ textarea {
 }
 
 /*
- * Define inner-spacing for <button> element
+ * Define inner-spacing for button elements
+ * Targeting all inputs is harmless to non-button elements
  * 1. Fixes spacing displayed oddly in IE6/7
- * 2. Addresses padding differences in all browsers
- * 3. Fixes border and padding displayed oddly in FF3/4
+ * 2. Fixes border and padding displayed oddly in FF3/4
 */
 
+/* 1 */
+
 button,
-input[type=button],
-input[type=reset],
-input[type=submit] {
-	*overflow: visible; /* 1 */
-	padding: 0 6px; /* 2 */
+input {
+	*overflow: visible; 
 }
 
-/* 3 */
+/* 2 */
 
 button::-moz-focus-inner,
-input[type=button]::-moz-focus-inner,
-input[type=reset]::-moz-focus-inner,
-input[type=submit]::-moz-focus-inner {
+input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
