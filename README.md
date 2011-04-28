@@ -14,3 +14,9 @@ Contributing
 ------------
 
 Want to contribute? Great! Let me know with an Issue or a Pull Request.
+
+Links
+------------
+
+[normalize.css on GoogleCode](https://normalize-css.googlecode.com/)
+[normalize.css on GitHub](normalize.css on GitHub)
