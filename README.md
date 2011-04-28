@@ -8,7 +8,7 @@ Installation
 
 Include this code somewhere in the HEAD of your document.
 
-    <link rel="Stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 
 Contributing
 ------------
