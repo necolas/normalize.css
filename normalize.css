@@ -21,6 +21,7 @@ canvas,
 video {
 	display: inline-block;
 	*display: inline;
+	_display: expression(this.controls ? 'inline' : 'none');
 	*zoom: 1;
 }
 
@@ -33,14 +34,13 @@ video {
  * Improves page center consistency regardless of content height in all browsers
  * 3.
  * Remove text size adjust tap color for <html> element
- * Fixes text size and tap color displayed oddly in iOS
+ * Fixes tap color displayed oddly in iOS
 */
 
 html {
 	cursor: default; /* 1 */
 	overflow-y: scroll; /* 2 */
 	-webkit-tap-highlight-color: transparent; /* 3 */
-	-webkit-text-size-adjust: none; /* 3 */	
 }
 
 /*
@@ -101,14 +101,18 @@ mark {
 
 /*
  * Redeclare monospace font family to <pre> <code> <kbd> <samp> elements
+ * 1.
  * Fixes font family set oddly in C10 S5
+ * 2.
+ * Fixes monospace line-height overflow in iOS
 */
 
 pre,
 code,
 kbd,
 samp {
-	font-family: monospace, sans-serif;
+	font-family: monospace, sans-serif; /* 1 */
+	vertical-align: top; /* 2 */
 }
 
 /*
@@ -145,13 +149,25 @@ q:after {
 }
 
 /*
- * Remove line height for <sub> <sup> elements
- * Fixes line height within multi-line text displayed oddly in all browsers
+ * Define alignment for	 <sub> <sup> elements
+ * Fixes alignment within multi-line text displayed oddly in all browsers
 */
 
 sub,
 sup {
+	font-size: 75%;
 	line-height: 0;
+	position: relative;
+}
+
+sup {
+	top: 0.75em;
+	vertical-align: top;
+}
+
+sub {
+	bottom: 0.75em;
+	vertical-align: bottom;
 }
 
 /*
