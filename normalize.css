@@ -44,6 +44,16 @@ html {
 }
 
 /*
+ * Remove margin and hide overflow from <body> element
+ * Margin overflow displayed incorrectly in IE6/7
+*/
+
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+/*
  * Remove outline on <a> element when active or hovered
  * Improves readability when focused and also mouse hovered in all browsers
 */
