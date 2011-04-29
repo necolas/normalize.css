@@ -54,9 +54,21 @@ body {
 }
 
 /*
- * Remove outline on <a> element when active or hovered
+ * 1.
+ * Make outline thin dotted for <a>
+ * Fixes outline displayed oddly in C10
+ * 2.
+ * Remove outline for <a> element when active or hovered
  * Improves readability when focused and also mouse hovered in all browsers
 */
+
+/* 1 */
+
+a:focus {
+	outline: thin dotted;
+}
+
+/* 2 */
 
 a:active,
 a:hover {
@@ -114,6 +126,8 @@ mark {
  * 1.
  * Fixes font family set oddly in C10 S5
  * 2.
+ * Fixes monospace font family set oddly in IE6
+ * 3.
  * Fixes monospace line-height overflow in iOS
 */
 
@@ -122,7 +136,8 @@ code,
 kbd,
 samp {
 	font-family: monospace, sans-serif; /* 1 */
-	vertical-align: top; /* 2 */
+	_font-family: 'Courier New', monospace, sans-serif;/* 2 */
+	vertical-align: top; /* 3 */
 }
 
 /*
@@ -159,9 +174,14 @@ q:after {
 }
 
 /*
- * Define alignment for	 <sub> <sup> elements
+ * Define alignment for	<small> <sub> <sup> elements
  * Fixes alignment within multi-line text displayed oddly in all browsers
 */
+
+small {
+	font-size: 75%;
+	line-height: 1;
+}
 
 sub,
 sup {
