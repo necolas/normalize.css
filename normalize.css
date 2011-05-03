@@ -285,16 +285,16 @@ input[type='checkbox'],
 input[type='radio'],
 input[type='submit'],
 select {
-	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 input[type='text'],
 input[type='password'],
 textarea {
 	-webkit-appearance: textfield;
-	box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
 }
