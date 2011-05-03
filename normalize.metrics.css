@@ -13,8 +13,8 @@ textarea {
 
 @media screen and (max-device-width: 480px) {
 	html {
-		-ms-text-size-adjust:none;
-		-webkit-text-size-adjust:none;
+		-ms-text-size-adjust: none;
+		-webkit-text-size-adjust: none;
 	}
 }
 
