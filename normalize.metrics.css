@@ -1,0 +1,162 @@
+/*
+ * Metrics
+ * Normalized and personalized sizing and spacing
+*/
+
+body,
+button
+input,
+select,
+textarea {
+	font: 12px/18px sans-serif;
+}
+
+/*
+ * Sectioning content
+*/
+
+article,
+aside,
+section {
+	margin: 2em 0;
+}
+
+/*
+ * Flow content
+*/
+
+dl,
+figure,
+menu,
+nav,
+ol,
+p,
+pre,
+ul {
+	margin: 1em 0;
+}
+
+blockquote {
+	margin: 1em 40px;
+}
+
+/* 
+ * Heading content
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup {
+	margin: 1em 0;
+}
+
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+	margin-top: 2em;
+}
+
+hgroup h1,
+hgroup h2,
+hgroup h3,
+hgroup h4,
+hgroup h5,
+hgroup h6 {
+	margin: 0.5em 0;
+}
+
+/*
+ * List content
+*/
+
+details,
+menu,
+ol,
+ul {
+	padding: 0 0 0 40px;
+}
+
+dd {
+	margin: 0 0 0 40px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+/*
+* Table content
+*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption {
+	padding: 0 0 1em;
+}
+
+th,
+td {
+	padding: 1px;
+	text-align: left;
+}
+
+/*
+* Breaks
+*/
+
+hr {
+	background: #CCC;
+	border: 0;
+	height: 1px;
+	margin: -1px 0 1em;
+}
+
+/* Fonts */
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: 0.83em 0;
+}
+
+h3 {
+	font-size: 1.17em;
+	margin: 1em 0;
+}
+
+h4 {
+	font-size: 1em;
+	margin: 1.33em 0;
+}
+
+h5 {
+	font-size: 0.83em;
+	margin: 1.67em 0;
+}
+
+h6 {
+	font-size: 0.67em;
+	margin: 2.33em 0;
+}
+
+/*
+ * Forms
+*/
+
+fieldset {
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
