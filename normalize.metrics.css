@@ -11,6 +11,13 @@ textarea {
 	font: 12px/1.5 sans-serif;
 }
 
+@media screen and (max-device-width: 480px) {
+	html {
+		-ms-text-size-adjust:none;
+		-webkit-text-size-adjust:none;
+	}
+}
+
 /*
  * Sectioning content
 */
