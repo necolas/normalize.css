@@ -16,12 +16,22 @@ section {
   display: block;
 }
 
+/*
+ * Vertical align for display inline block elements
+ * Improves visual appearance in all browsers
+*/
+
 audio[controls],
+button,
 canvas,
+img,
+input,
+select,
+textarea,
 video {
 	display: inline-block;
 	*display: inline;
-	_display: expression(this.controls ? 'inline' : 'none');
+	vertical-align: top;
 	*zoom: 1;
 }
 
@@ -73,6 +83,19 @@ a:focus {
 a:active,
 a:hover {
 	outline: none;
+}
+
+/*
+ * Make display based on controls for <audio> element
+ * Fixes styling not present in IE6/7/8
+*/
+
+audio {
+	display: none;
+}
+
+audio[controls] {
+	_display: expression(this.controls ? 'inline' : 'none');
 }
 
 /*
@@ -250,4 +273,28 @@ input::-moz-focus-inner {
 
 textarea {
 	overflow: auto;
+}
+
+/*
+ * Define box sizing for <input> <select> <textarea> element
+ * Addresses box sizing not supported in IE6/7
+*/
+
+input[type='button'],
+input[type='checkbox'],
+input[type='radio'],
+input[type='submit'],
+select {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+input[type='text'],
+input[type='password'],
+textarea {
+	-webkit-appearance: textfield;
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
 }
