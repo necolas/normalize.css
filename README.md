@@ -19,4 +19,5 @@ Links
 ------------
 
 [normalize.css on GoogleCode](https://normalize-css.googlecode.com/)
+
 [normalize.css on GitHub](https://github.com/jonathantneal/normalize.css)
