@@ -13,7 +13,7 @@ header,
 hgroup,
 nav,
 section {
-  display: block;
+	display: block;
 }
 
 /*
@@ -230,15 +230,21 @@ legend {
 }
 
 /*
+ * 1.
  * Remove margin from form elements
  * Fixes margin displayed oddly in C10 S5
+ * 2.
+ * Define vertical-align for form elements
+ * Fixes alignment in IE and <textarea> alignment in FF3/4
+ * 
 */
 
 button,
 input,
 select,
 textarea {
-	margin: 0;
+	margin: 0; /* 1 */
+    vertical-align: baseline; /* 2 */
 }
 
 /*
