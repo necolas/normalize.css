@@ -211,16 +211,15 @@ sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
+	vertical-align: middle;
 }
 
 sup {
-	top: 0.75em;
-	vertical-align: top;
+	top: -0.5em;
 }
 
 sub {
-	bottom: 0.75em;
-	vertical-align: bottom;
+	bottom: -0.5em;
 }
 
 /*
