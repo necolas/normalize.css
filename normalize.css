@@ -211,7 +211,7 @@ sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
-	vertical-align: middle;
+	vertical-align: baseline;
 }
 
 sup {
@@ -219,7 +219,7 @@ sup {
 }
 
 sub {
-	bottom: -0.5em;
+	bottom: -0.25em;
 }
 
 /*
