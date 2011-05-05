@@ -244,7 +244,7 @@ input,
 select,
 textarea {
 	margin: 0; /* 1 */
-    vertical-align: baseline; /* 2 */
+	vertical-align: baseline; /* 2 */
 }
 
 /*
@@ -270,13 +270,19 @@ input::-moz-focus-inner {
 }
 
 /*
+ * 1.
  * Disable default vertical scrollbar for <textarea> element
  * Fixes scrollbar displayed oddly in IE6/7/8/9
+ * 2.
+ * Align <textarea> with text-top when inline
+ * Improves readability and fixes FF3/4 failure to align with baseline
 */
 
 textarea {
-	overflow: auto;
+	overflow: auto; /* 1 */
+	vertical-align: text-top; /* 2 */
 }
+
 
 /*
  * Define box sizing for <input> <select> <textarea> element
