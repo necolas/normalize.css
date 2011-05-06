@@ -21,7 +21,7 @@ section {
  * Improves visual appearance in all browsers
 */
 
-audio[controls],
+audio,
 button,
 canvas,
 img,
@@ -81,15 +81,6 @@ a:focus {
 a:active,
 a:hover {
 	outline: none;
-}
-
-/*
- * Make display based on controls for <audio> element
- * Fixes styling not present in IE6/7/8
-*/
-
-audio {
-	display: none;
 }
 
 /*
