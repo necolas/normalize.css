@@ -45,13 +45,18 @@ video {
  * 3.
  * Remove text size adjust tap color for <html> element
  * Fixes tap color displayed oddly in iOS
+ * 4. 
+ * Remove iOS text size adjust without disabling user zoom
 */
 
 html {
 	cursor: default; /* 1 */
 	overflow-y: scroll; /* 2 */
 	-webkit-tap-highlight-color: transparent; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 4 */
+    -ms-text-size-adjust: 100%; /* 4 */
 }
+
 
 /*
  * Remove margin and hide overflow from <body> element

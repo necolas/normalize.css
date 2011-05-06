@@ -3,11 +3,6 @@
  * Normalized and personalized sizing and spacing
 */
 
-html {
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-
 body,
 button
 input,
