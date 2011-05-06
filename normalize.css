@@ -92,10 +92,6 @@ audio {
 	display: none;
 }
 
-audio[controls] {
-	_display: expression(this.controls ? 'inline' : 'none');
-}
-
 /*
  * 1.
  * Disable border for <img> element
@@ -117,10 +113,6 @@ img {
 
 abbr[title] {
 	border-bottom: 1px dotted;
-}
-
-abbr {
-	_border-bottom: expression(this.title ? '1px dotted' : 'none');
 }
 
 /*
