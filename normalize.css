@@ -31,7 +31,7 @@ textarea,
 video {
 	display: inline-block;
 	*display: inline;
-	vertical-align: top;
+	vertical-align: baseline;
 	*zoom: 1;
 }
 
@@ -222,12 +222,8 @@ legend {
 }
 
 /*
- * 1.
  * Remove margin from form elements
  * Fixes margin displayed oddly in C10 S5
- * 2.
- * Define vertical-align for form elements
- * Fixes alignment in IE and <textarea> alignment in FF3/4
  * 
 */
 
@@ -235,8 +231,7 @@ button,
 input,
 select,
 textarea {
-	margin: 0; /* 1 */
-	vertical-align: baseline; /* 2 */
+	margin: 0;
 }
 
 /*
@@ -266,13 +261,13 @@ input::-moz-focus-inner {
  * Disable default vertical scrollbar for <textarea> element
  * Fixes scrollbar displayed oddly in IE6/7/8/9
  * 2.
- * Align <textarea> with text-top when inline
- * Improves readability and fixes FF3/4 failure to align with baseline
+ * Align <textarea> with top when inline
+ * Improves readability and fixes FF3/4's different positioning for baseline
 */
 
 textarea {
 	overflow: auto; /* 1 */
-	vertical-align: text-top; /* 2 */
+	vertical-align: top; /* 2 */
 }
 
 
