@@ -1,7 +1,7 @@
 /*
- * Add display for HTML5 elements
- * Fixes styling not present in IE6/7/8/9 FF3
-*/
+ * Add display for block-level HTML5 elements
+ * Display not defined in IE6/7/8/9 & FF3
+ */
 
 article,
 aside,
@@ -17,49 +17,36 @@ section {
 }
 
 /*
- * Vertical align for display inline block elements
- * Improves visual appearance in all browsers
-*/
+ * Add display for embedded HTML5 elements
+ * Display not defined in IE6/7/8/9 & FF3
+ */
 
 audio,
-button,
 canvas,
-img,
-input,
-select,
-textarea,
 video {
 	display: inline-block;
 	*display: inline;
-	vertical-align: baseline;
 	*zoom: 1;
 }
 
 /*
- * 1.
- * Make normal cursor the default for <html> element
- * Improves visual focus of page during mouse movement in all browsers
- * 2.
- * Add vertical scrollbar to <html> element
- * Improves page center consistency regardless of content height in all browsers
- * 3.
- * Remove text size adjust tap color for <html> element
- * Fixes tap color displayed oddly in iOS
- * 4. 
- * Remove iOS text size adjust without disabling user zoom
-*/
+ * 1. Add vertical scrollbar to <html> element
+ *      Improves page center consistency regardless of content height in all browsers
+ * 2. Remove text size adjust tap color for <html> element
+ *      Fixes tap color displayed oddly in iOS
+ * 3. Remove iOS text size adjust without disabling user zoom
+ */
 
 html {
-	cursor: default; /* 1 */
-	overflow-y: scroll; /* 2 */
-	-webkit-tap-highlight-color: transparent; /* 3 */
-    -webkit-text-size-adjust: 100%; /* 4 */
-    -ms-text-size-adjust: 100%; /* 4 */
+	overflow-y: scroll; /* 1 */
+	-webkit-tap-highlight-color: transparent; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+    -ms-text-size-adjust: 100%; /* 3 */
 }
 
 
 /*
- * Remove margin and hide overflow from <body> element
+ * Remove margin from <body> element
 */
 
 body {
@@ -67,13 +54,11 @@ body {
 }
 
 /*
- * 1.
- * Make outline thin dotted for <a>
- * Fixes outline displayed oddly in C10
- * 2.
- * Remove outline for <a> element when active or hovered
- * Improves readability when focused and also mouse hovered in all browsers
-*/
+ * 1. Make outline thin dotted for <a>
+ *      Fixes outline displayed oddly in C10
+ * 2. Remove outline for <a> element when active or hovered
+ *      Improves readability when focused and also mouse hovered in all browsers
+ */
 
 /* 1 */
 
@@ -89,12 +74,11 @@ a:hover {
 }
 
 /*
- * 1.
- * Disable border for <img> element
- * Improves readability when inside <a> element in all browsers
- * 2.
- * Allow high quality bicubic image resampling for <img> element
- * Improves readability when scaled in IE7
+ * 1. Disable border for <img> element
+ *      Improves readability when inside <a> element in all browsers
+ * 2. Allow high quality bicubic image resampling for <img> element
+ *      Improves readability when scaled in IE7
+ *      Read before using : code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
 */
 
 img {
