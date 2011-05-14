@@ -13,7 +13,7 @@ header,
 hgroup,
 nav,
 section {
-	display: block;
+    display: block;
 }
 
 /*
@@ -24,9 +24,9 @@ section {
 audio,
 canvas,
 video {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
 }
 
 /*
@@ -38,8 +38,8 @@ video {
  */
 
 html {
-	overflow-y: scroll; /* 1 */
-	-webkit-tap-highlight-color: transparent; /* 2 */
+    overflow-y: scroll; /* 1 */
+    -webkit-tap-highlight-color: transparent; /* 2 */
     -webkit-text-size-adjust: 100%; /* 3 */
     -ms-text-size-adjust: 100%; /* 3 */
 }
@@ -47,10 +47,10 @@ html {
 
 /*
  * Remove margin from <body> element
-*/
+ */
 
 body {
-	margin: 0;
+    margin: 0;
 }
 
 /*
@@ -63,14 +63,14 @@ body {
 /* 1 */
 
 a:focus {
-	outline: thin dotted;
+    outline: thin dotted;
 }
 
 /* 2 */
 
 a:active,
 a:hover {
-	outline: none;
+    outline: none;
 }
 
 /*
@@ -79,198 +79,207 @@ a:hover {
  * 2. Allow high quality bicubic image resampling for <img> element
  *      Improves readability when scaled in IE7
  *      Read before using : code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
-*/
+ */
 
 img {
-	border: 0; /* 1 */
-	-ms-interpolation-mode: bicubic; /* 2 */
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
 }
 
 /*
  * Add bottom border to <abbr> element
  * Fixes styling not present in IE6/7/8/9 C10 S5
-*/
+ */
 
 abbr[title] {
-	border-bottom: 1px dotted;
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Add bold font weight to <b> and <strong> elements
+ * Fixes style set to 'bolder' in FF3/4 S4/5 C10
+*/
+
+b, 
+strong { 
+    font-weight: bold; 
 }
 
 /*
  * Add italic font style to <dfn> element
  * Fixes styling not present in C10 S5
-*/
+ */
 
 dfn {
-	font-style: italic;
+    font-style: italic;
 }
 
 /*
  * Add yellow background and black text to <mark> element
  * Fixes styling not present in IE6/7/8/9
-*/
+ */
 
 mark {
-	background-color: #FF0;
-	color: #000;
+    background-color: #FF0;
+    color: #000;
 }
 
 /*
  * Redeclare monospace font family to <pre> <code> <kbd> <samp> elements
- * 1.
- * Fixes font family set oddly in C10 S5
- * 2.
- * Fixes monospace font family set oddly in IE6
- * 3.
- * Fixes monospace line-height overflow in iOS
-*/
+ *   en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ * 1. Fixes font family set oddly in C10 S5
+ * 2. Fixes monospace font family set oddly in IE6
+ * 3. Fixes monospace line-height overflow in iOS
+ */
 
 pre,
 code,
 kbd,
 samp {
-	font-family: monospace, sans-serif; /* 1 */
-	_font-family: 'Courier New', monospace, sans-serif;/* 2 */
-	vertical-align: top; /* 3 */
+    font-family: monospace, sans-serif; /* 1 */
+    _font-family: 'Courier New', monospace, sans-serif; /* 2 */
+    font-size: 1em;
+    vertical-align: top; /* 3 */
 }
 
 /*
  * Allow line wrapping for <pre> element
  * Improves readability of pre-formatted text in all browsers
-*/
+ */
 
 pre {
-	white-space: pre;
-	white-space: pre-wrap;
-	word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 /*
  * Remove quotes from <q> element
- * 1.
- * Addresses CSS quotes not supported in IE6/7
- * 2.
- * Addresses quote attributes not supported in S4
-*/
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote attributes not supported in S4
+ */
 
 /* 1 */
 
 q {
-	quotes: none;
+    quotes: none;
 }
 
 /* 2 */
 
 q:before,
 q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 
 /*
- * Define alignment for	<small> <sub> <sup> elements
- * Fixes alignment within multi-line text displayed oddly in all browsers
-*/
+ * Define font-size and alignment for <small> element
+ */
 
 small {
-	font-size: 75%;
-	line-height: 1;
+    font-size: 75%;
+    line-height: 1;
 }
+
+/*
+ * Position subscript and superscript content without affecting line-height
+ * Fixes alignment within multi-line text displayed oddly in all browsers
+ * - http://gist.github.com/413930
+ */
 
 sub,
 sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
 sup {
-	top: -0.5em;
+    top: -0.5em;
 }
 
 sub {
-	bottom: -0.25em;
+    bottom: -0.25em;
 }
 
 /*
  * Define alignment for <legend> element
  * Fixes alignment displayed oddly in IE6/7
-*/
+ */
 
 legend {
-	*margin-left: -7px;
+    *margin-left: -7px;
 }
 
 /*
  * Remove margin from form elements
  * Fixes margin displayed oddly in C10 S5
- * 
-*/
+ */
 
 button,
 input,
 select,
 textarea {
-	margin: 0;
+    margin: 0;
 }
 
 /*
  * Define inner-spacing for button elements
  * Targeting all inputs is harmless to non-button elements
  * 1. Fixes spacing displayed oddly in IE6/7
- * 2. Fixes border and padding displayed oddly in FF3/4
-*/
+ * 2. Fixes inner padding and border displayed in FF3/4
+ *      www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
 
 /* 1 */
 
 button,
 input {
-	*overflow: visible; 
+    *overflow: visible; 
 }
 
 /* 2 */
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
+    border: 0;
+    padding: 0;
 }
 
 /*
- * 1.
- * Disable default vertical scrollbar for <textarea> element
- * Fixes scrollbar displayed oddly in IE6/7/8/9
- * 2.
- * Align <textarea> with top when inline
- * Improves readability and fixes FF3/4's different positioning for baseline
-*/
+ * 1. Disable default vertical scrollbar for <textarea> element
+ *      Fixes scrollbar displayed oddly in IE6/7/8/9
+ * 2. Improves readability and aligment in all browsers
+ */
 
 textarea {
-	overflow: auto; /* 1 */
-	vertical-align: top; /* 2 */
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
 }
 
 
 /*
  * Define box sizing for <input> <select> <textarea> element
  * Addresses box sizing not supported in IE6/7
-*/
+ */
 
 input[type='button'],
 input[type='checkbox'],
 input[type='radio'],
 input[type='submit'],
 select {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 input[type='text'],
 input[type='password'],
 textarea {
-	-webkit-appearance: textfield;
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
-	box-sizing: content-box;
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
 }
