@@ -51,11 +51,28 @@ html {
 }
 
 /*
- * Remove margin from <body> element
+ * 1. Define the base font-size of choice; set in % or em to retain text resizing in IE6/7
+ * 2. Define the base line-height of choice.
+ * 3. Remove margin from <body> element
  */
 
 body {
-    margin: 0;
+    font-size: 100%; /* 1 */
+    line-height: normal; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/* 
+ * Define the base font-family and text color for <body> and form elements
+ * Fixes font-family inconsistency between <textarea> and other set form elements.
+ */
+
+body,
+input,
+button, 
+textarea,
+select {
+    font-family: sans-serif;
 }
 
 /*
@@ -257,8 +274,8 @@ form {
  */
 
 fieldset {
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
 }
 
 /*
@@ -271,17 +288,19 @@ legend {
 }
 
 /*
- * 1. Remove margin from form elements
- *      Fixes margin displayed oddly in C10 S5
- * 2. Define consistent vertical alignment in all browsers
+ * 1. Define font-size as equal to <body> font-size
+ * 2. Remove margin from form elements
+ *      Fixes different margins set in C10 S5 FF3/4
+ * 3. Define consistent vertical alignment in all browsers
  */
 
 button,
 input,
 select,
 textarea {
-    margin: 0;
-    vertical-align: baseline;
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
 }
 
 /*
@@ -354,4 +373,23 @@ textarea {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+}
+
+/* ............................................................................................................. Table elements */
+
+/* 
+ * Remove most spacing between table cells
+ * Consistent vertical and horizontal alignment
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: 0;
+    text-align: left;
+    vertical-align: middle;
 }
