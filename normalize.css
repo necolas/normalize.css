@@ -228,21 +228,21 @@ textarea {
 }
 
 /*
- * Define inner-spacing for button elements
- * Targeting all inputs is harmless to non-button elements
- * 1. Fixes spacing displayed oddly in IE6/7
- * 2. Fixes inner padding and border displayed in FF3/4
- *      www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ * 1. Define consistent line-height as 'normal'
+ *      FF3/4 set it using !important in the UA stylesheet
+ * 2. Fixes spacing displayed oddly in IE6/7
  */
-
-/* 1 */
 
 button,
 input {
-    *overflow: visible; 
+    line-height: normal; /* 1 */
+    *overflow: visible;  /* 2 */
 }
 
-/* 2 */
+/*
+ * Fixes inner padding and border displayed in FF3/4
+ *   www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
