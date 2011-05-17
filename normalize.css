@@ -122,6 +122,10 @@ strong {
     font-weight: bold; 
 }
 
+blockquote {
+    margin: 1em 40px;
+}
+
 /*
  * Add italic font style to <dfn> element
  * Fixes styling not present in C10 S5
@@ -220,6 +224,23 @@ sub {
     bottom: -0.25em;
 }
 
+/* ............................................................................................................. Lists */
+
+ul,
+ol {
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+    list-style: none;
+}
+
 /* ............................................................................................................. Form elements */
 
 /*
@@ -315,19 +336,19 @@ textarea {
  * Addresses box sizing not supported in IE6/7
  */
 
-input[type='button'],
-input[type='checkbox'],
-input[type='radio'],
-input[type='reset'],
-input[type='submit'],
+input[type="checkbox"],
+input[type="button"],
+input[type="radio"],
+input[type="reset"],
+input[type="submit"],
 select {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-input[type='text'],
-input[type='password'],
+input[type="text"],
+input[type="password"],
 textarea {
     -webkit-appearance: textfield;
     -moz-box-sizing: content-box;
