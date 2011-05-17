@@ -1,3 +1,5 @@
+/* ============================================================================================================= HTML5 ELEMENT DISPLAY */
+
 /*
  * Add display for block-level HTML5 elements
  * Display not defined in IE6/7/8/9 & FF3
@@ -29,21 +31,24 @@ video {
     *zoom: 1;
 }
 
+
+/* ============================================================================================================= BASE STYLES & FIXES */
+
 /*
  * 1. Add vertical scrollbar to <html> element
- *      Improves page center consistency regardless of content height in all browsers
- * 2. Remove text size adjust tap color for <html> element
- *      Fixes tap color displayed oddly in iOS
+ *      Keeps page centred in all browsers regardless of content height
+ * 2. Remove iOS tap highlight color to prevent entire container's being highlighted
+ *      www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
  * 3. Remove iOS text size adjust without disabling user zoom
+ *      www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 
 html {
     overflow-y: scroll; /* 1 */
     -webkit-tap-highlight-color: transparent; /* 2 */
     -webkit-text-size-adjust: 100%; /* 3 */
-    -ms-text-size-adjust: 100%; /* 3 */
+    -ms-text-size-adjust: 100%;
 }
-
 
 /*
  * Remove margin from <body> element
@@ -51,26 +56,6 @@ html {
 
 body {
     margin: 0;
-}
-
-/*
- * 1. Make outline thin dotted for <a>
- *      Fixes outline displayed oddly in C10
- * 2. Remove outline for <a> element when active or hovered
- *      Improves readability when focused and also mouse hovered in all browsers
- */
-
-/* 1 */
-
-a:focus {
-    outline: thin dotted;
-}
-
-/* 2 */
-
-a:active,
-a:hover {
-    outline: none;
 }
 
 /*
@@ -85,6 +70,38 @@ img {
     border: 0; /* 1 */
     -ms-interpolation-mode: bicubic; /* 2 */
 }
+
+/* ............................................................................................................. Links */
+
+a {
+    color: #0000EE;
+}
+
+a:visited {
+    color: #551A8B;
+}
+
+/*
+ * Make outline thin dotted for <a>
+ * Fixes outline displayed oddly in C10
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Remove outline for <a> element when active or hovered
+ * Improves readability when focused and also mouse hovered in all browsers
+ *   people.opera.com/patrickl/experiments/keyboard/test
+ */
+
+a:active,
+a:hover {
+    outline: none;
+}
+
+/* ............................................................................................................. General typography */
 
 /*
  * Add bottom border to <abbr> element
@@ -179,13 +196,12 @@ q:after {
 
 small {
     font-size: 75%;
-    line-height: 1;
 }
 
 /*
  * Position subscript and superscript content without affecting line-height
  * Fixes alignment within multi-line text displayed oddly in all browsers
- * - http://gist.github.com/413930
+ *   gist.github.com/413930
  */
 
 sub,
@@ -203,6 +219,8 @@ sup {
 sub {
     bottom: -0.25em;
 }
+
+/* ............................................................................................................. Form elements */
 
 /*
  * Define alignment for <legend> element
@@ -260,7 +278,6 @@ textarea {
     overflow: auto; /* 1 */
     vertical-align: top; /* 2 */
 }
-
 
 /*
  * Define box sizing for <input> <select> <textarea> element
