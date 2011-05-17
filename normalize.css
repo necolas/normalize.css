@@ -223,6 +223,24 @@ sub {
 /* ............................................................................................................. Form elements */
 
 /*
+ * Remove margin from <form> element
+ * Fixes styling in IE6/7
+ */
+
+form {
+    margin: 0;
+}
+
+/*
+ * Define consistent margin and padding for <fieldset> element
+ */
+
+fieldset {
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+/*
  * Define alignment for <legend> element
  * Fixes alignment displayed oddly in IE6/7
  */
@@ -269,6 +287,19 @@ input::-moz-focus-inner {
 }
 
 /*
+ * Display hand cursor for clickable form elements in all browsers except IE6.
+ * Improves usability and fixes inconsistent cursor style between type=image and other types
+ */
+
+input[type="button"], 
+input[type="image"], 
+input[type="reset"], 
+input[type="submit"], 
+button {
+    cursor: pointer;
+}
+
+/*
  * 1. Disable default vertical scrollbar for <textarea> element
  *      Fixes scrollbar displayed oddly in IE6/7/8/9
  * 2. Improves readability and aligment in all browsers
@@ -287,6 +318,7 @@ textarea {
 input[type='button'],
 input[type='checkbox'],
 input[type='radio'],
+input[type='reset'],
 input[type='submit'],
 select {
     -moz-box-sizing: border-box;
