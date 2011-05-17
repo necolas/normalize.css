@@ -214,8 +214,9 @@ legend {
 }
 
 /*
- * Remove margin from form elements
- * Fixes margin displayed oddly in C10 S5
+ * 1. Remove margin from form elements
+ *      Fixes margin displayed oddly in C10 S5
+ * 2. Define consistent vertical alignment in all browsers
  */
 
 button,
@@ -223,6 +224,7 @@ input,
 select,
 textarea {
     margin: 0;
+    vertical-align: baseline;
 }
 
 /*
