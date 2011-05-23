@@ -122,7 +122,7 @@ a:hover {
 
 /*
  * Add bottom border to <abbr> element
- * Fixes styling not present in IE6/7/8/9 C10 S5
+ * Fixes styling not present in IE6/7/8/9 S5 Chrome
  */
 
 abbr[title] {
@@ -131,7 +131,7 @@ abbr[title] {
 
 /*
  * Add bold font weight to <b> and <strong> elements
- * Fixes style set to 'bolder' in FF3/4 S4/5 C10
+ * Fixes style set to 'bolder' in FF3/4 S4/5 Chrome
 */
 
 b, 
@@ -145,7 +145,7 @@ blockquote {
 
 /*
  * Add italic font style to <dfn> element
- * Fixes styling not present in C10 S5
+ * Fixes styling not present in S5 Chrome
  */
 
 dfn {
@@ -165,7 +165,7 @@ mark {
 /*
  * Redeclare monospace font family to <pre> <code> <kbd> <samp> elements
  *   en.wikipedia.org/wiki/User:Davidgothberg/Test59
- * 1. Fixes font family set oddly in C10 S5
+ * 1. Fixes font family set oddly in S5 Chrome
  * 2. Fixes monospace font family set oddly in IE6
  */
 
@@ -288,7 +288,7 @@ legend {
 /*
  * 1. Define font-size as equal to <body> font-size
  * 2. Remove margin from form elements
- *      Fixes different margins set in C10 S5 FF3/4
+ *      Fixes different margins set in FF3/4 S5 Chrome
  * 3. Define consistent vertical alignment in all browsers
  */
 
@@ -349,24 +349,22 @@ textarea {
 }
 
 /*
- * Define box sizing for <input> <select> <textarea> element
- * Addresses box sizing not supported in IE6/7
+ * Define box sizing for checkbox and radio <input> types
+ * Addresses box sizing set to content-box in IE8/9
  */
 
 input[type="checkbox"],
-input[type="button"],
-input[type="radio"],
-input[type="reset"],
-input[type="submit"],
-select {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+input[type="radio"] {
     box-sizing: border-box;
 }
 
-input[type="text"],
-input[type="password"],
-textarea {
+/*
+ * Define box sizing and appearance for search <input> type
+ * Address box sizing set to border-box in S5 Chrome (include -moz to future-proof)
+ * Address appearance set to searchfield in S5 Chrome
+ */
+
+input[type="search"] {
     -webkit-appearance: textfield;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
