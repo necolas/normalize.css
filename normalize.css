@@ -167,7 +167,6 @@ mark {
  *   en.wikipedia.org/wiki/User:Davidgothberg/Test59
  * 1. Fixes font family set oddly in C10 S5
  * 2. Fixes monospace font family set oddly in IE6
- * 3. Fixes monospace line-height overflow in iOS
  */
 
 pre,
@@ -177,7 +176,6 @@ samp {
     font-family: monospace, sans-serif; /* 1 */
     _font-family: 'Courier New', monospace, sans-serif; /* 2 */
     font-size: 1em;
-    vertical-align: top; /* 3 */
 }
 
 /*
