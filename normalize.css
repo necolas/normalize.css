@@ -173,8 +173,8 @@ pre,
 code,
 kbd,
 samp {
-    font-family: monospace, sans-serif; /* 1 */
-    _font-family: 'Courier New', monospace, sans-serif; /* 2 */
+    font-family: monospace, monospace; /* 1 */
+    _font-family: 'Courier New', monospace, monospace; /* 2 */
     font-size: 1em;
 }
 
