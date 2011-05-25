@@ -304,7 +304,7 @@ textarea {
 /*
  * 1. Define consistent line-height as 'normal'
  *      FF3/4 set it using !important in the UA stylesheet
- * 2. Fixes spacing displayed oddly in IE6/7
+ * 2. Fix spacing displayed oddly in IE6/7
  */
 
 button,
@@ -314,7 +314,7 @@ input {
 }
 
 /*
- * Fixes inner padding and border displayed in FF3/4
+ * Fix inner padding and border displayed in FF3/4
  *   www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
 
@@ -325,16 +325,18 @@ input::-moz-focus-inner {
 }
 
 /*
- * Display hand cursor for clickable form elements in all browsers except IE6.
- * Improves usability and fixes inconsistent cursor style between type=image and other types
+ * 1. Display hand cursor for clickable form elements in all browsers except IE6.
+ *      Improves usability and consistency of cursor style between image-type <input> and others
+ * 2. Define consistent appearance for clickable form elements
+ *      Fixes inability to style clickable <input> types in iOS
  */
 
 input[type="button"], 
-input[type="image"], 
 input[type="reset"], 
 input[type="submit"], 
 button {
-    cursor: pointer;
+    cursor: pointer; /* 1 */
+    -webkit-appearance: button; /* 2 */
 }
 
 /*
