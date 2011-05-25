@@ -10,11 +10,11 @@ The `normalize.css` file is not intended to be a mysterious "black box" that is 
 Browser support
 -----------
 
-Google Chrome
-Mozilla Firefox 3+
-Apple Safari 4+
-Opera 10+
-Internet Explorer 6+.
+* Google Chrome
+* Mozilla Firefox 3+
+* Apple Safari 4+
+* Opera 10+
+* Internet Explorer 6+
 
 Links
 ------------
