@@ -1,23 +1,22 @@
 normalize.css
 =============
 
-normalize.css makes browsers render all elements consistently and in line with modern standards.  Our goal is to make modern presentation standards available to all browsers, young and old.  We currently support Mozilla Firefox 3+, Apple Safari 4+, Chrome 10+, Opera 10+, and Internet Explorer 6+.
+normalize.css makes browsers render all elements more consistently and in line with modern standards.
 
-Installation
+CSS normalization is distinct from CSS resets. It tackles common cross-browser inconsistencies and bugs without erasing useful browser defaults; and there is no visual homogenization of elements with distinct semantics.
+
+The `normalize.css` file is not intended to be a mysterious "black box" that is included in a project and then ignored. It is heavily commented to help expose the purpose of specific styles. You are encouraged to edit, customise, add to, and remove rulesets in order to meet the design requirements of a project.
+
+Browser support
 -----------
 
-Include this code somewhere in the HEAD of your document.
-
-    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-
-Contributing
-------------
-
-Want to contribute? Great! Let me know with an Issue or a Pull Request.
+Google Chrome
+Mozilla Firefox 3+
+Apple Safari 4+
+Opera 10+
+Internet Explorer 6+.
 
 Links
 ------------
 
-[normalize.css on GoogleCode](https://normalize-css.googlecode.com/)
-
-[normalize.css on GitHub](https://github.com/jonathantneal/normalize.css)
+[Jonathan Neal's normalize.css](https://github.com/jonathantneal/normalize.css)
