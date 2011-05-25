@@ -6,6 +6,16 @@
         <title>Normalize CSS</title>
         <link rel="stylesheet" href="normalize.css">
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <style>
+            #boxsize button,
+            #boxsize input,
+            #boxsize select,
+            #boxsize textarea {
+                width:200px;
+                padding:5px;
+                border:1px solid #333;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -21,26 +31,26 @@
                 </ul>
             </nav>
         </header>
-
-        <section>
-            <h1>Section Heading 1</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
-            <p>Agnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat ma.</p>
-            <h2>Section Heading 2</h2>
-            <p>Agnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat ma.</p>
-            <h3>Section Heading 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
-        </section>
-
-        <article>
-            <h4>Article Heading 4</h4>
-            <p>Agnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat ma.</p>
-            <h5>Article Heading 5</h5>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
-            <h6>Article Heading 6</h6>
-            <p>Agnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat ma.</p>
-        </article>
         
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        
+        <section>
+            <h1>Section Heading 1</h1>            
+            <article>
+                <h4>Article Heading 2</h4>
+                <address>Address: somewhere, world</address>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+            </article>
+        </section>
+        
+        <h1>Text-level semantics</h1>
+
         <p>
         The <a href="#">a element</a> example<br>
         The <abbr title="Title text">abbr element</abbr> example<br>
@@ -68,32 +78,11 @@
         The <u>u element</u> example
         </p>
         
-        <address>Address: somewhere, World</address>
+        <h1>Grouping content</h1>
         
-        <blockquote>
-            <p>Some sort of famous witty quote marked up with a &lt;blockquote> and a child &lt;p> element.</p>
-        </blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
         
-        <blockquote>Even better philosophical quote marked up with just a &lt;blockquote> element.</blockquote>
-
-        <ol>
-            <li>Sed ut perspiciatis unde</li>
-            <li>omnis iste natus error</li>
-            <li>sit voluptatem accusantium</li>
-        </ol>
-
-        <ul>
-            <li>doloremque laudantium</li>
-            <li>totam rem aperiam eaque</li>
-            <li>ipsa quae ab illo</li>
-        </ul>
-
-        <dl>
-            <dt>Definition list term #1</dt>
-            <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-            <dt>Definition list term #2</dt>
-            <dd>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
-        </dl>
+        <h3>pre</h3>
         
         <pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.</pre>
         <pre><code>&lt;html></code>
@@ -103,7 +92,79 @@
         <code>&lt;div class="main"> &lt;div></code>
     <code>&lt;/body></code>
 <code>&lt;/html></code></pre>
-      
+        
+        <h3>blockquote</h3>
+        
+        <blockquote>
+            <p>Some sort of famous witty quote marked up with a &lt;blockquote> and a child &lt;p> element.</p>
+        </blockquote>
+        
+        <blockquote>Even better philosophical quote marked up with just a &lt;blockquote> element.</blockquote>
+        
+        <h3>ordered list</h3>
+        
+        <ol>
+            <li>list item 1</li>
+            <li>list item 1
+                <ol>
+                    <li>list item 2</li>
+                    <li>list item 2
+                        <ol>
+                            <li>list item 3</li>
+                            <li>list item 3</li>
+                        </ol>
+                    </li>
+                    <li>list item 2</li>
+                    <li>list item 2</li>
+                </ol>
+            </li>
+            <li>list item 1</li>
+            <li>list item 1</li>
+        </ol>
+        
+        <h3>unordered list</h3>
+        
+        <ul>
+            <li>list item 1</li>
+            <li>list item 1
+                <ul>
+                    <li>list item 2</li>
+                    <li>list item 2
+                        <ul>
+                            <li>list item 3</li>
+                            <li>list item 3</li>
+                        </ul>
+                    </li>
+                    <li>list item 2</li>
+                    <li>list item 2</li>
+                </ul>
+            </li>
+            <li>list item 1</li>
+            <li>list item 1</li>
+        </ul>
+        
+        <h3>description list</h3>
+        
+        <dl>
+            <dt>Description name</dt>
+            <dd>Description value</dd>
+            <dt>Description name</dt>
+            <dd>Description value</dd>
+            <dd>Description value</dd>
+            <dt>Description name</dt>
+            <dt>Description name</dt>
+            <dd>Description value</dd>
+        </dl>
+        
+        <h3>figure</h3>
+        
+        <figure>
+            <img src="http://placehold.it/400x200" alt="">
+            <figcaption>Figcaption content</figcaption>
+        </figure>
+
+        <h1>Tabular data</h1>
+        
         <table summary="Jimi Hendrix albums">
             <caption>Jimi Hendrix - albums</caption>
             <thead>
@@ -143,22 +204,34 @@
                 </tr>
             </tbody>
         </table>
-
-        <form action="#">
+        
+        <h1>Forms</h1>
+        
+        <form>
             <fieldset>
                 <legend>Form legend</legend>
-                <div><label for="i1">Optional Text input:</label><input type="text" id="i1" value="input text"></div>
-                <div><label for="i2">Search input:</label><input type="search" id="i2"></div>
-                <div><label for="i3">Email input:</label><input type="email" id="i3"></div>
-                <div><label for="i4">URL input:</label><input type="url" id="i4"></div>
-                <div><label for="i5">Password input:</label><input type="password" id="i5" value="password"></div>
-                <div><label for="i6">Radio input:</label><input type="radio" id="i6"></div>
-                <div><label for="i7">Checkbox input:</label><input type="checkbox" id="i7"></div>
-                <div><input type="radio" id="i8"><label for="i8">Radio input</label></div>
-                <div><input type="checkbox" id="i9"><label for="i9">Checkbox input</label></div>
+                <div><label for="it">Text input</label> <input type="text" id="it" value="input text"></div>
+                <div><label for="ie">Email input</label> <input type="email" id="ie"></div>
+                <div><label for="is">Search input</label> <input type="search" id="is"></div>
+                <div><label for="iu">URL input</label> <input type="url" id="iu"></div>
+                <div><label for="ip">Password input</label> <input type="password" id="ip" value="password"></div>
+
+                <div><label for="ic">Color input</label> <input type="color" id="ic" value="color"></div>
+                <div><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></div>
+                <div><label for="ir">Range input</label> <input type="range" id="ir" value="range"></div>
+                <div><label for="idd">Date input</label> <input type="date" id="idd" value="date"></div>
+                <div><label for="idm">Month input</label> <input type="month" id="idm" value="month"></div>
+                <div><label for="idw">Week input</label> <input type="week" id="idw" value="week"></div>
+                <div><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="datetime"></div>
+                <div><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="datetime-local"></div>
+
+                <div><label for="irb">Radio input</label> <input type="radio" id="irb"></div>
+                <div><label for="icb">Checkbox input</label> <input type="checkbox" id="icb"></div>
+                <div><input type="radio" id="irb2"> <label for="irb2">Radio input</label></div>
+                <div><input type="checkbox" id="icb2"> <label for="icb2">Checkbox input</label></div>
                 
-                <div><label for="i10">Select field:</label><select id="i10"><option>Option 01</option><option>Option 02</option></select></div>
-                <div><label for="i11">Textarea:</label><textarea id="i11" cols="30" rows="5" >Textarea text</textarea></div>
+                <div><label for="s">Select field</label> <select id="s"><option>Option 01</option><option>Option 02</option></select></div>
+                <div><label for="t">Textarea</label> <textarea id="t" cols="30" rows="5" >Textarea text</textarea></div>
                 
                 <div><input type="image" src="http://placehold.it/90x24" alt="Image (input)"></div>
                 <div><input type="reset" value="Reset (input)"></div>
@@ -169,7 +242,40 @@
                 <div><button type="button">Button (button)</button></div>
                 <div><button type="submit">Submit (button)</button></div>
             </fieldset>
-        </form>      
+            
+            <fieldset id="boxsize">
+                <legend>box-sizing tests</legend>
+                <div><input type="text" value="text"></div>
+                <div><input type="email" value="email"></div>
+                <div><input type="search" value="search"></div>
+                <div><input type="url" value="http://"></div>
+                <div><input type="password" value="password"></div>
+
+                <div><input type="color" value="color"></div>
+                <div><input type="number" value="number"></div>
+                <div><input type="range" value="range"></div>
+                <div><input type="date" value="date"></div>
+                <div><input type="month" value="month"></div>
+                <div><input type="week" value="week"></div>
+                <div><input type="datetime" value="datetime"></div>
+                <div><input type="datetime-local" value="datetime-local"></div>
+                
+                <div><input type="radio"></div>
+                <div><input type="checkbox"></div>
+                
+                <div><select><option>Option 01</option><option>Option 02</option></select></div>
+                <div><textarea cols="30" rows="5" >Textarea text</textarea></div>
+                
+                <div><input type="image" src="http://placehold.it/90x24" alt="Image (input)"></div>
+                <div><input type="reset" value="Reset (input)"></div>
+                <div><input type="button" value="Button (input)"></div>
+                <div><input type="submit" value="Submit (input)"></div>
+
+                <div><button type="reset">Reset (button)</button></div>
+                <div><button type="button">Button (button)</button></div>
+                <div><button type="submit">Submit (button)</button></div>
+            </fieldset>
+        </form>
 
     </body>
 </html>
