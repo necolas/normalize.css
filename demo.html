@@ -209,38 +209,54 @@
         
         <form>
             <fieldset>
-                <legend>Form legend</legend>
-                <div><label for="it">Text input</label> <input type="text" id="it" value="input text"></div>
-                <div><label for="ie">Email input</label> <input type="email" id="ie"></div>
-                <div><label for="is">Search input</label> <input type="search" id="is"></div>
-                <div><label for="iu">URL input</label> <input type="url" id="iu"></div>
-                <div><label for="ip">Password input</label> <input type="password" id="ip" value="password"></div>
-
-                <div><label for="ic">Color input</label> <input type="color" id="ic" value="color"></div>
-                <div><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></div>
-                <div><label for="ir">Range input</label> <input type="range" id="ir" value="range"></div>
-                <div><label for="idd">Date input</label> <input type="date" id="idd" value="date"></div>
-                <div><label for="idm">Month input</label> <input type="month" id="idm" value="month"></div>
-                <div><label for="idw">Week input</label> <input type="week" id="idw" value="week"></div>
-                <div><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="datetime"></div>
-                <div><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="datetime-local"></div>
-
-                <div><label for="irb">Radio input</label> <input type="radio" id="irb"></div>
-                <div><label for="icb">Checkbox input</label> <input type="checkbox" id="icb"></div>
-                <div><input type="radio" id="irb2"> <label for="irb2">Radio input</label></div>
-                <div><input type="checkbox" id="icb2"> <label for="icb2">Checkbox input</label></div>
+                <legend>Inputs as descendents of labels (form legend)</legend>
+                <p><label>Text input <input type="text" value="default value"></label></p>
+                <p><label>Email input <input type="email"></label></p>
+                <p><label>Search input <input type="search"></label></p>
+                <p><label>Tel input <input type="tel"></label></p>
+                <p><label>URL input <input type="url" placeholder="http://"></label></p>
+                <p><label>Password input <input type="password" value="password"></label></p>
+                <p><label>File input <input type="file"></label></p>
                 
-                <div><label for="s">Select field</label> <select id="s"><option>Option 01</option><option>Option 02</option></select></div>
-                <div><label for="t">Textarea</label> <textarea id="t" cols="30" rows="5" >Textarea text</textarea></div>
+                <p><label>Radio input <input type="radio" name="rad"></label></p>
+                <p><label>Checkbox input <input type="checkbox"></label></p>
+                <p><label><input type="radio" name="rad"> Radio input</label></p>
+                <p><label><input type="checkbox"> Checkbox input</label></p>
                 
-                <div><input type="image" src="http://placehold.it/90x24" alt="Image (input)"></div>
-                <div><input type="reset" value="Reset (input)"></div>
-                <div><input type="button" value="Button (input)"></div>
-                <div><input type="submit" value="Submit (input)"></div>
+                <p><label>Select field <select><option>Option 01</option><option>Option 02</option></select></label></p>
+                <p><label>Textarea <textarea cols="30" rows="5" >Textarea text</textarea></label></p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Inputs as siblings of labels</legend>
+                <p><label for="ic">Color input</label> <input type="color" id="ic" value="color"></p>
+                <p><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></p>
+                <p><label for="ir">Range input</label> <input type="range" id="ir" value="range"></p>
+                <p><label for="idd">Date input</label> <input type="date" id="idd" value="date"></p>
+                <p><label for="idm">Month input</label> <input type="month" id="idm" value="month"></p>
+                <p><label for="idw">Week input</label> <input type="week" id="idw" value="week"></p>
+                <p><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="datetime"></p>
+                <p><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="datetime-local"></p>
 
-                <div><button type="reset">Reset (button)</button></div>
-                <div><button type="button">Button (button)</button></div>
-                <div><button type="submit">Submit (button)</button></div>
+                <p><label for="irb">Radio input</label> <input type="radio" id="irb" name="rad"></p>
+                <p><label for="icb">Checkbox input</label> <input type="checkbox" id="icb"></p>
+                <p><input type="radio" id="irb2" name="rad"> <label for="irb2">Radio input</label></p>
+                <p><input type="checkbox" id="icb2"> <label for="icb2">Checkbox input</label></p>
+                
+                <p><label for="s">Select field</label> <select id="s"><option>Option 01</option><option>Option 02</option></select></p>
+                <p><label for="t">Textarea</label> <textarea id="t" cols="30" rows="5" >Textarea text</textarea></p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Clickable inputs and buttons</legend>
+                <p><input type="image" src="http://placehold.it/90x24" alt="Image (input)"></p>
+                <p><input type="reset" value="Reset (input)"></p>
+                <p><input type="button" value="Button (input)"></p>
+                <p><input type="submit" value="Submit (input)"></p>
+
+                <p><button type="reset">Reset (button)</button></p>
+                <p><button type="button">Button (button)</button></p>
+                <p><button type="submit">Submit (button)</button></p>
             </fieldset>
             
             <fieldset id="boxsize">
