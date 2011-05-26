@@ -300,7 +300,7 @@ legend {
  * 1. Define font-size as equal to <body> font-size
  * 2. Remove margin from form elements
  *      Fixes different margins set in FF3/4 S5 Chrome
- * 3. Define consistent vertical alignment in all browsers
+ * 3. Define consistent vertical alignment display in all browsers
  */
 
 button,
@@ -310,6 +310,7 @@ textarea {
     font-size: 100%; /* 1 */
     margin: 0; /* 2 */
     vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
 }
 
 /*
@@ -325,40 +326,18 @@ input {
 }
 
 /*
- * Fix inner padding and border displayed in FF3/4
- *   www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
- */
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-/*
  * 1. Display hand cursor for clickable form elements in all browsers except IE6.
  *      Improves usability and consistency of cursor style between image-type <input> and others
  * 2. Define consistent appearance for clickable form elements
  *      Fixes inability to style clickable <input> types in iOS
  */
 
+button,
 input[type="button"], 
 input[type="reset"], 
-input[type="submit"], 
-button {
+input[type="submit"] {
     cursor: pointer; /* 1 */
     -webkit-appearance: button; /* 2 */
-}
-
-/*
- * 1. Disable default vertical scrollbar for <textarea> element
- *      Fixes scrollbar displayed oddly in IE6/7/8/9
- * 2. Improves readability and aligment in all browsers
- */
-
-textarea {
-    overflow: auto; /* 1 */
-    vertical-align: top; /* 2 */
 }
 
 /*
@@ -382,6 +361,28 @@ input[type="search"] {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+}
+
+/*
+ * Fix inner padding and border displayed in FF3/4
+ *   www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Disable default vertical scrollbar for <textarea> element
+ *      Fixes scrollbar displayed oddly in IE6/7/8/9
+ * 2. Improves readability and aligment in all browsers
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
 }
 
 /* ............................................................................................................. Table elements */
