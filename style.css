@@ -47,6 +47,7 @@ strong {
 pre {
     display: block;
     padding: 5px; 
+    margin: 1em 0;
     font-family: consolas, monospace, monospace;
     font-size: 1em;
     color: #fff;
@@ -69,12 +70,15 @@ li {
 h1 { 
     margin: 0.5em 0;
     font-size: 3.5em; 
-    text-align: center; 
 }
 
 h2 { 
-    margin: 1em 0 0.75em;
+    margin: 1.25em 0 0.75em;
     font-size: 1.5em; 
+}
+
+p {
+    margin: 0 0 1em;
 }
 
 /* structure */
@@ -86,8 +90,7 @@ h2 {
 }
 
 .demo {
-    margin:2em 0 4em;
-    text-align: center;
+    margin:1em 0 4em;
 }
 
 .demo p {
@@ -136,7 +139,12 @@ h2 {
     background: #569107;
 }
 
+.twitter-share-button {
+    margin: 20px 0 0;
+}
+
 .footer {
+    padding: 10px 0 0;
     border-top: 1px solid #ccc;
     margin: 3em 0 0;
     font-size: 13px;
