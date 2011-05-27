@@ -113,8 +113,9 @@ a:focus {
  *   people.opera.com/patrickl/experiments/keyboard/test
  */
 
-a:active,
-a:hover {
+a:hover,
+a:active
+ {
     outline: none;
 }
 
