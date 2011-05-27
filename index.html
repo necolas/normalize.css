@@ -1,85 +1,212 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset='utf-8'>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <title>Normalize CSS : necolas/normalize.css @ GitHub</title>
+        <style type="text/css">
+        html {
+            overflow-y: scroll;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
 
-  <title>necolas/normalize.css @ GitHub</title>
+        body {
+            width: 480px;
+            padding: 0 0 40px;
+            margin: 0 auto;
+            font: 16px/1.4 Calibri, sans-serif;
+            color: #222;
+            background: #fff;
+        }
+        
+        img {
+            border: 0;
+        }
+        
+        a { 
+            font-weight:bold; 
+            text-decoration: none; 
+            color: #6EAD1A; 
+        }
+        
+        a:focus {
+            outline: thin dotted;
+        }
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #f19c04;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #0e63fb; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #0e63fb; }
-    h3 { text-align: center; color: #0e63fb; }
-    a { color: #0e63fb; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
+        a:hover,
+        a:active {
+            outline: none;
+        }
 
-<body>
-  <a href="http://github.com/necolas/normalize.css"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+        a:hover, 
+        a:focus, 
+        a:active { 
+            text-decoration: underline; 
+            color: #569107; 
+        }
+        
+        strong {
+            font-weight: bold;
+        }
+        
+        pre {
+            display: block;
+            padding: 5px; 
+            font-family: consolas, monospace, monospace;
+            font-size: 1em;
+            color: #fff;
+            background: #222;
+            white-space: pre;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    
+        ul {
+            list-style: square;
+            padding: 0;
+            margin: 1.4em 0;
+        }
+        
+        li {
+            margin: 0.35em 0;
+        }
 
-  <div id="container">
+        h1 { 
+            margin: 0.5em 0;
+            font-size: 3.5em; 
+            text-align: center; 
+        }
+        
+        h2 { 
+            margin: 1em 0 0.75em;
+            font-size: 1.5em; 
+        }
 
-    <div class="download">
-      <a href="http://github.com/necolas/normalize.css/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/necolas/normalize.css/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
+        /* structure */
+        
+        
+        .fork img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
 
-    <h1><a href="http://github.com/necolas/normalize.css">normalize.css</a>
-      <span class="small">by <a href="http://github.com/necolas">necolas</a></span></h1>
+        .demo {
+            margin:2em 0 4em;
+            text-align: center;
+        }
+        
+        .demo p {
+            margin: 0.5em 0 0;
+            font-style: italic;
+        }
 
-    <div class="description">
-      normalize.css makes browsers render all elements consistently and in line with modern standards.
-    </div>
+        .button {
+            display: inline-block; 
+            padding: 6px 15px; 
+            border: 1px solid #487310;
+            margin: 20px 0 0; 
+            font-size: 22px;
+            line-height: 28px;
+            color: #fff; 
+            background: #6EAD1A; 
+            text-shadow:0 1px 1px rgba(0,0,0,0.4); 
+            -moz-border-radius: 5px; 
+                 border-radius: 5px;
+            -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4), 
+                                inset 0 1px rgba(255,255,255,0.5), 
+                                inset 0 12px rgba(255,255,255,0.2), 
+                                inset 0 10px 20px rgba(255,255,255,0.25), 
+                                inset 0 -12px 25px rgba(0,0,0,0.3);
+               -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4), 
+                                inset 0 1px rgba(255,255,255,0.5), 
+                                inset 0 12px rgba(255,255,255,0.2), 
+                                inset 0 10px 20px rgba(255,255,255,0.25), 
+                                inset 0 -12px 25px rgba(0,0,0,0.3);
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.4), 
+                                inset 0 1px rgba(255,255,255,0.5), 
+                                inset 0 12px rgba(255,255,255,0.2), 
+                                inset 0 10px 10px rgba(255,255,255,0.25), 
+                                inset 0 -12px 25px rgba(0,0,0,0.3);
+            -webkit-transition: all 0.15s;
+               -moz-transition: all 0.15s;
+                 -o-transition: all 0.15s;
+                    transition: all 0.15s;
+        }
 
-    <h2>Authors</h2>
-<p>necolas (nicolasgallagher@gmail.com)<br/>Jonathan (jonathantneal@hotmail.com)</p>
-<h2>Contact</h2>
-<p>Nicolas Gallagher (nicolas@nicolasgallagher.com)<br/>      </p>
+        .button:hover,
+        .button:focus,
+        .button:active {
+            text-decoration: none; 
+            color: #fff; 
+            background: #569107;
+        }
+        
+        .footer {
+            border-top: 1px solid #ccc;
+            margin: 3em 0 0;
+            font-size: 13px;
+        }
+        
+        </style>
+    </head>
 
+    <body>
+    
+        <a class="fork" href="http://github.com/necolas/normalize.css">
+            <img src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+        </a>
 
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/necolas/normalize.css/zipball/master">zip</a> or
-      <a href="http://github.com/necolas/normalize.css/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/necolas/normalize.css</pre>
-    </p>
+        <div id="container">
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/necolas/normalize.css">necolas/normalize.css</a>
-    </div>
+            <h1><a href="http://github.com/necolas/normalize.css">normalize.css</a></h1>
+            
+            <p>Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards.</p>
+                        
+            <h2>What does it do?</h2>
+            <ul>
+                <li><strong>Preserves useful defaults</strong>, unlike many CSS resets.</li>
+                <li><strong>Normalizes styles</strong> for a wide range of elements.</li>
+                <li><strong>Corrects bugs</strong> and common browser inconsistencies.</li>
+                <li><strong>Improves usability</strong> with subtle improvements.</li>
+                <li><strong>Explains what code does</strong> using detailed comments.</li>
+            </ul>
+            
+            <div class="demo">
+                <a class="button" href="demo.html">Check out the demo</a>
+                <p><a href="https://github.com/necolas/normalize.css/raw/master/normalize.css">Get the normalize.css file</a></p>
+            </div>
+            
+            <h2>How to use it</h2>
+            <p>You are encouraged to read, edit, customise, add, and trim rulesets or styles from normalize.css on a per project basis.</p>            
+            <p>The normalize.css file is not intended to be a mysterious "black box" that is included in a project and then ignored. It should be used as a customisable starting point on any project.</p>
 
-  </div>
+            <h2>Browser support</h2>
+            <p>Chrome, Firefox 3+, Safari 4+, Opera 10+, Internet Explorer 6+</p>
 
-  <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-7489188-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-</body>
+            <h2>Source code</h2>
+            <p>Get the source code on GitHub: <a href="http://github.com/necolas/normalize.css">necolas/normalize.css</a>, or download it in either <a href="http://github.com/necolas/normalize.css/zipball/master">zip</a> or <a href="http://github.com/necolas/normalize.css/tarball/master">tar</a> formats.</p>
+            <p>You can also clone the project with <a href="http://git-scm.com">Git</a> by running: <pre>$ git clone git://github.com/necolas/normalize.css</pre></p>
+            
+            <h2>Acknowledgements</h2>
+            <p>Normalize.css is a project by Jonathan Neal and Nicolas Gallagher. Our branches have diverged somewhat and I recommend that you also have a look at <a href="https://github.com/jonathantneal/normalize.css">Jonathan's normalize.css branch</a>.</p>
+
+            <div class="footer">
+                <p>Made by <a href="http://nicolasgallagher.com">Nicolas Gallagher</a> and <a href="http://twitter.com/jon_neal">Jonathan Neal</a>.</p>
+            </div>
+
+        </div>
+
+        <script>
+            var _gaq = [['_setAccount', 'UA-7489188-1'],['_trackPageview'],['_trackPageLoadTime']];
+            (function(d, t) {
+                var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.async = 1;
+                g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g, s);
+            })(document, 'script');
+        </script>
+    </body>
 </html>
