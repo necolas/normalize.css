@@ -1,0 +1,143 @@
+html {
+    overflow-y: scroll;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    width: 480px;
+    padding: 0 0 40px;
+    margin: 0 auto;
+    font: 16px/1.4 Calibri, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+img {
+    border: 0;
+}
+
+a { 
+    font-weight:bold; 
+    text-decoration: none; 
+    color: #6EAD1A; 
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover,
+a:active {
+    outline: none;
+}
+
+a:hover, 
+a:focus, 
+a:active { 
+    text-decoration: underline; 
+    color: #569107; 
+}
+
+strong {
+    font-weight: bold;
+}
+
+pre {
+    display: block;
+    padding: 5px; 
+    font-family: consolas, monospace, monospace;
+    font-size: 1em;
+    color: #fff;
+    background: #222;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+ul {
+    list-style: square;
+    padding: 0;
+    margin: 1.4em 0;
+}
+
+li {
+    margin: 0.35em 0;
+}
+
+h1 { 
+    margin: 0.5em 0;
+    font-size: 3.5em; 
+    text-align: center; 
+}
+
+h2 { 
+    margin: 1em 0 0.75em;
+    font-size: 1.5em; 
+}
+
+/* structure */
+
+.fork img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.demo {
+    margin:2em 0 4em;
+    text-align: center;
+}
+
+.demo p {
+    margin: 0.5em 0 0;
+    font-style: italic;
+}
+
+.button {
+    display: inline-block; 
+    padding: 6px 15px; 
+    border: 1px solid #487310;
+    margin: 20px 0 0; 
+    font-size: 22px;
+    line-height: 28px;
+    color: #fff; 
+    background: #6EAD1A; 
+    text-shadow:0 1px 1px rgba(0,0,0,0.4); 
+    -moz-border-radius: 5px; 
+         border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4), 
+                        inset 0 1px rgba(255,255,255,0.5), 
+                        inset 0 12px rgba(255,255,255,0.2), 
+                        inset 0 10px 20px rgba(255,255,255,0.25), 
+                        inset 0 -12px 25px rgba(0,0,0,0.3);
+       -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4), 
+                        inset 0 1px rgba(255,255,255,0.5), 
+                        inset 0 12px rgba(255,255,255,0.2), 
+                        inset 0 10px 20px rgba(255,255,255,0.25), 
+                        inset 0 -12px 25px rgba(0,0,0,0.3);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.4), 
+                        inset 0 1px rgba(255,255,255,0.5), 
+                        inset 0 12px rgba(255,255,255,0.2), 
+                        inset 0 10px 10px rgba(255,255,255,0.25), 
+                        inset 0 -12px 25px rgba(0,0,0,0.3);
+    -webkit-transition: all 0.15s;
+       -moz-transition: all 0.15s;
+         -o-transition: all 0.15s;
+            transition: all 0.15s;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    text-decoration: none; 
+    color: #fff; 
+    background: #569107;
+}
+
+.footer {
+    border-top: 1px solid #ccc;
+    margin: 3em 0 0;
+    font-size: 13px;
+}
