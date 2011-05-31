@@ -7,6 +7,8 @@ CSS normalization is distinct from CSS resets. It tackles common cross-browser i
 
 The `normalize.css` file is not intended to be a mysterious "black box" that is included in a project and then ignored. It is heavily commented to help expose the purpose of specific styles. You are encouraged to edit, customise, add to, and remove rulesets in order to meet the design requirements of a project.
 
+If you prefer to use a different CSS formatting style, consider using a tool like [Procssor](http://procssor.com/).
+
 Browser support
 -----------
 
