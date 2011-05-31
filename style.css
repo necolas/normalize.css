@@ -6,12 +6,13 @@ html {
 }
 
 body {
-    width: 480px;
+    max-width: 480px;
     padding: 0 0 40px;
     margin: 0 auto;
     font: 16px/1.4 Calibri, sans-serif;
     color: #222;
     background: #fff;
+    _width: 480px;
 }
 
 img {
