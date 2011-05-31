@@ -23,7 +23,7 @@ section {
  * Display not defined in IE6/7/8/9 & FF3
  */
 
-audio,
+audio[controls],
 canvas,
 video {
     display: inline-block;
@@ -163,7 +163,7 @@ mark {
 }
 
 /*
- * Redeclare monospace font family to <pre> <code> <kbd> <samp> elements
+ * Redeclare monospace font family for <pre> <code> <kbd> <samp> elements
  *   en.wikipedia.org/wiki/User:Davidgothberg/Test59
  * 1. Fixes font family set oddly in S5 Chrome
  * 2. Fixes monospace font family set oddly in IE6
@@ -174,7 +174,7 @@ code,
 kbd,
 samp {
     font-family: monospace, monospace; /* 1 */
-    _font-family: 'Courier New', monospace, monospace; /* 2 */
+    _font-family: 'Courier New', monospace; /* 2 */
     font-size: 1em;
 }
 
@@ -367,6 +367,7 @@ input[type="search"] {
  * Remove WebKit search decoration
  * Addresses inner padding displaying oddly in S5 Chrome on OSX
  */
+
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
