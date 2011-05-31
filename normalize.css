@@ -23,7 +23,7 @@ section {
  * Display not defined in IE6/7/8/9 & FF3
  */
 
-audio,
+audio[controls],
 canvas,
 video {
     display: inline-block;
@@ -37,7 +37,7 @@ video {
 /*
  * 1. Add vertical scrollbar to <html> element
  *      Keeps page centred in all browsers regardless of content height
- * 2. Remove iOS tap highlight color to prevent entire container's being highlighted
+ * 2. Remove Android and iOS tap highlight color to prevent entire container being highlighted
  *      www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
  * 3. Remove iOS text size adjust without disabling user zoom
  *      www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
@@ -45,7 +45,7 @@ video {
 
 html {
     overflow-y: scroll; /* 1 */
-    -webkit-tap-highlight-color: transparent; /* 2 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* 2 */
     -webkit-text-size-adjust: 100%; /* 3 */
     -ms-text-size-adjust: 100%;
 }
@@ -115,14 +115,14 @@ a:focus {
 
 a:hover,
 a:active {
-    outline: none;
+    outline: 0;
 }
 
 /* ............................................................................................................. General typography */
 
 /*
  * Add bottom border to <abbr> element
- * Fixes styling not present in IE6/7/8/9 S5 Chrome
+ * Fixes styling not present in IE7/8/9 S5 Chrome
  */
 
 abbr[title] {
@@ -163,7 +163,7 @@ mark {
 }
 
 /*
- * Redeclare monospace font family to <pre> <code> <kbd> <samp> elements
+ * Redeclare monospace font family for <pre> <code> <kbd> <samp> elements
  *   en.wikipedia.org/wiki/User:Davidgothberg/Test59
  * 1. Fixes font family set oddly in S5 Chrome
  * 2. Fixes monospace font family set oddly in IE6
@@ -174,7 +174,7 @@ code,
 kbd,
 samp {
     font-family: monospace, monospace; /* 1 */
-    _font-family: 'Courier New', monospace, monospace; /* 2 */
+    _font-family: 'Courier New', monospace; /* 2 */
     font-size: 1em;
 }
 
@@ -352,8 +352,8 @@ input[type="radio"] {
 
 /*
  * Define box sizing and appearance for search <input> type
- * Address box sizing set to border-box in S5 Chrome (include -moz to future-proof)
- * Address appearance set to searchfield in S5 Chrome
+ * Addresses box sizing set to border-box in S5 Chrome (include -moz to future-proof)
+ * Addresses appearance set to searchfield in S5 Chrome
  */
 
 input[type="search"] {
@@ -361,6 +361,15 @@ input[type="search"] {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+}
+
+/*
+ * Remove WebKit search decoration
+ * Addresses inner padding displaying oddly in S5 Chrome on OSX
+ */
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
 }
 
 /*
