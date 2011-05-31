@@ -297,6 +297,14 @@ legend {
 }
 
 /*
+ * Display hand cursor for label with "for" attribute in all browsers except IE6.
+ */
+
+label[for] {
+    cursor: pointer;
+}
+
+/*
  * 1. Define font-size as equal to <body> font-size
  * 2. Remove margin from form elements
  *      Fixes different margins set in FF3/4 S5 Chrome
