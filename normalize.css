@@ -364,6 +364,14 @@ input[type="search"] {
 }
 
 /*
+ * Remove WebKit search decoration
+ * Addresses inner padding displaying oddly in S5 Chrome on OSX
+ */
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
  * Fix inner padding and border displayed in FF3/4
  *   www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
