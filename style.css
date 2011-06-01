@@ -1,4 +1,5 @@
 html {
+    font-size: 100%;
     overflow-y: scroll;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-text-size-adjust: 100%;
@@ -7,7 +8,7 @@ html {
 
 body {
     max-width: 480px;
-    padding: 0 0 40px;
+    padding: 0 10px;
     margin: 0 auto;
     font: 1em/1.4 Calibri, sans-serif;
     color: #222;
@@ -49,7 +50,7 @@ pre {
     display: block;
     padding: 5px; 
     margin: 1em 0;
-    font-family: consolas, monospace, monospace;
+    font-family: consolas, monospace;
     font-size: 1em;
     color: #fff;
     background: #222;
@@ -69,7 +70,7 @@ li {
 }
 
 h1 { 
-    margin: 0.5em 0;
+    margin: 0.25em 0 0.5em;
     font-size: 3.5em; 
 }
 
@@ -145,7 +146,7 @@ p {
 }
 
 .footer {
-    padding: 10px 0 0;
+    padding: 10px 0;
     border-top: 1px solid #ccc;
     margin: 3em 0 0;
     font-size: 0.8125em;
