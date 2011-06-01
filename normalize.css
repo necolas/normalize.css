@@ -1,8 +1,10 @@
-/* ============================================================================================================= HTML5 ELEMENT DISPLAY */
+/* =============================================================================
+   HTML5 element display
+   ========================================================================== */
 
 /*
  * Add display for block-level HTML5 elements
- * Display not defined in IE6/7/8/9 & FF3
+ * Addresses display not defined in IE6/7/8/9 & FF3
  */
 
 article,
@@ -20,7 +22,7 @@ section {
 
 /*
  * Add display for embedded HTML5 elements
- * Display not defined in IE6/7/8/9 & FF3
+ * Addresses display not defined in IE6/7/8/9 & FF3
  */
 
 audio[controls],
@@ -32,55 +34,58 @@ video {
 }
 
 
-/* ============================================================================================================= BASE STYLES & FIXES */
+/* =============================================================================
+   Base
+   ========================================================================== */
 
 /*
- * 1. Add vertical scrollbar to <html> element
- *      Keeps page centred in all browsers regardless of content height
- * 2. Remove Android and iOS tap highlight color to prevent entire container being highlighted
- *      www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
- * 3. Remove iOS text size adjust without disabling user zoom
- *      www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ * 1. Add font size
+ *    Addresses text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Add vertical scrollbar
+ *    Keeps page centred in all browsers regardless of content height
+ * 3. Remove Android and iOS tap highlight color to prevent entire container being highlighted
+ *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
+ * 4. Remove iOS text size adjust without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 
 html {
-    overflow-y: scroll; /* 1 */
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* 2 */
-    -webkit-text-size-adjust: 100%; /* 3 */
-    -ms-text-size-adjust: 100%;
+    font-size: 100%; /* 1 */
+    overflow-y: scroll; /* 2 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* 3 */
+    -webkit-text-size-adjust: 100%; /* 4 */
+    -ms-text-size-adjust: 100%; /* 4 */
 }
 
 /*
- * 1. Define the base font-size of choice; set in % or em to retain text resizing in IE6/7
- * 2. Define the base line-height of choice.
- * 3. Remove margin from <body> element
+ * Remove margin
+ * Addresses margins handled incorrectly in IE6/7
  */
 
 body {
-    font-size: 100%; /* 1 */
-    line-height: normal; /* 2 */
-    margin: 0; /* 3 */
+    margin: 0;
 }
 
 /* 
- * Define the base font-family and text color for <body> and form elements
- * Fixes font-family inconsistency between <textarea> and other set form elements.
+ * Define base font-family
+ * Addresses font-family inconsistency between <textarea> and other form elements.
  */
 
 body,
+button,
 input,
-button, 
-textarea,
-select {
+select,
+textarea {
     font-family: sans-serif;
 }
 
 /*
- * 1. Disable border for <img> element
- *      Improves readability when inside <a> element in all browsers
- * 2. Allow high quality bicubic image resampling for <img> element
- *      Improves readability when scaled in IE7
- *      Read before using : code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ * 1. Remove border
+ *    Improves readability when inside <a> element in all browsers
+ * 2. Allow high quality bicubic image resampling
+ *    Improves readability when scaled in IE7
+ *    Read before using : code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
 
 img {
@@ -88,19 +93,22 @@ img {
     -ms-interpolation-mode: bicubic; /* 2 */
 }
 
-/* ............................................................................................................. Links */
+
+/* =============================================================================
+   Links
+   ========================================================================== */
 
 a {
-    color: #0000EE;
+    color: #00e;
 }
 
 a:visited {
-    color: #551A8B;
+    color: #551a8b;
 }
 
 /*
- * Make outline thin dotted for <a>
- * Fixes outline displayed oddly in C10
+ * Define outline as thin dotted
+ * Addresses outline displayed oddly in Chrome
  */
 
 a:focus {
@@ -108,9 +116,9 @@ a:focus {
 }
 
 /*
- * Remove outline for <a> element when active or hovered
+ * Remove outline
  * Improves readability when focused and also mouse hovered in all browsers
- *   people.opera.com/patrickl/experiments/keyboard/test
+ * people.opera.com/patrickl/experiments/keyboard/test
  */
 
 a:hover,
@@ -118,10 +126,13 @@ a:active {
     outline: 0;
 }
 
-/* ............................................................................................................. General typography */
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
 
 /*
- * Add bottom border to <abbr> element
+ * Add bottom border
  * Fixes styling not present in IE7/8/9 S5 Chrome
  */
 
@@ -130,7 +141,7 @@ abbr[title] {
 }
 
 /*
- * Add bold font weight to <b> and <strong> elements
+ * Add bold font weight
  * Fixes style set to 'bolder' in FF3/4 S4/5 Chrome
 */
 
@@ -144,7 +155,7 @@ blockquote {
 }
 
 /*
- * Add italic font style to <dfn> element
+ * Add italic font style
  * Fixes styling not present in S5 Chrome
  */
 
@@ -153,18 +164,18 @@ dfn {
 }
 
 /*
- * Add yellow background and black text to <mark> element
+ * Add yellow background and black text
  * Fixes styling not present in IE6/7/8/9
  */
 
 mark {
-    background-color: #FF0;
+    background: #ff0;
     color: #000;
 }
 
 /*
- * Redeclare monospace font family for <pre> <code> <kbd> <samp> elements
- *   en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ * Redeclare monospace font family
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
  * 1. Fixes font family set oddly in S5 Chrome
  * 2. Fixes monospace font family set oddly in IE6
  */
@@ -174,12 +185,12 @@ code,
 kbd,
 samp {
     font-family: monospace, monospace; /* 1 */
-    _font-family: 'Courier New', monospace; /* 2 */
+    _font-family: 'courier new', monospace; /* 2 */
     font-size: 1em;
 }
 
 /*
- * Allow line wrapping for <pre> element
+ * Add line wrapping
  * Improves readability of pre-formatted text in all browsers
  */
 
@@ -190,9 +201,9 @@ pre {
 }
 
 /*
- * Remove quotes from <q> element
+ * Remove quotes
  * 1. Addresses CSS quotes not supported in IE6/7
- * 2. Addresses quote attributes not supported in S4
+ * 2. Addresses quote property not supported in S4
  */
 
 /* 1 */
@@ -210,7 +221,7 @@ q:after {
 }
 
 /*
- * Define font-size and alignment for <small> element
+ * Define font-size
  */
 
 small {
@@ -220,7 +231,7 @@ small {
 /*
  * Position subscript and superscript content without affecting line-height
  * Fixes alignment within multi-line text displayed oddly in all browsers
- *   gist.github.com/413930
+ * gist.github.com/413930
  */
 
 sub,
@@ -239,7 +250,10 @@ sub {
     bottom: -0.25em;
 }
 
-/* ............................................................................................................. Lists */
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
 
 ul,
 ol {
@@ -256,21 +270,27 @@ nav ol {
     list-style: none;
 }
 
-/* ............................................................................................................. Figures */
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
 
 /*
- * Define consistent margin for <figure> element
- * Fixes margin not present in IE6/7/8/9, S5, O11
+ * Remove margin
+ * Addresses margin not present in IE6/7/8/9, S5, O11
  */
 
 figure {
     margin: 0;
 }
 
-/* ............................................................................................................. Form elements */
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
 
 /*
- * Remove margin from <form> element
+ * Remove margin
  * Fixes styling in IE6/7
  */
 
@@ -279,7 +299,7 @@ form {
 }
 
 /*
- * Define consistent margin and padding for <fieldset> element
+ * Define consistent margin and padding
  */
 
 fieldset {
@@ -288,7 +308,7 @@ fieldset {
 }
 
 /*
- * Define alignment for <legend> element
+ * Add negative left margin
  * Fixes alignment displayed oddly in IE6/7
  */
 
@@ -297,9 +317,9 @@ legend {
 }
 
 /*
- * 1. Define font-size as equal to <body> font-size
- * 2. Remove margin from form elements
- *      Fixes different margins set in FF3/4 S5 Chrome
+ * 1. Define font-size as equal to ancestor's
+ * 2. Remove margin
+ *    Fixes different margins set in FF3/4 S5 Chrome
  * 3. Define consistent vertical alignment display in all browsers
  */
 
@@ -314,9 +334,10 @@ textarea {
 }
 
 /*
- * 1. Define consistent line-height as 'normal'
- *      FF3/4 set it using !important in the UA stylesheet
- * 2. Fix spacing displayed oddly in IE6/7
+ * 1. Define line-height as normal
+ *    Addresses FF3/4 setting it using !important in the UA stylesheet
+ * 2. Make overflow visible
+ *    Fixes spacing displayed oddly in IE6/7
  */
 
 button,
@@ -326,10 +347,10 @@ input {
 }
 
 /*
- * 1. Display hand cursor for clickable form elements in all browsers except IE6.
- *      Improves usability and consistency of cursor style between image-type <input> and others
- * 2. Define consistent appearance for clickable form elements
- *      Fixes inability to style clickable <input> types in iOS
+ * 1. Display hand cursor for clickable form elements
+ *    Improves usability and consistency of cursor style between image-type <input> and others
+ * 2. Define appearance for clickable form elements
+ *    Fixes inability to style clickable <input> types in iOS
  */
 
 button,
@@ -341,7 +362,7 @@ input[type="submit"] {
 }
 
 /*
- * Define box sizing for checkbox and radio <input> types
+ * Define box sizing
  * Addresses box sizing set to content-box in IE8/9
  */
 
@@ -351,7 +372,7 @@ input[type="radio"] {
 }
 
 /*
- * Define box sizing and appearance for search <input> type
+ * Define box sizing and appearance
  * Addresses box sizing set to border-box in S5 Chrome (include -moz to future-proof)
  * Addresses appearance set to searchfield in S5 Chrome
  */
@@ -373,8 +394,9 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 /*
- * Fix inner padding and border displayed in FF3/4
- *   www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ * Remove inner padding and border 
+ * Fixes appearance displayed oddly in FF3/4
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
 
 button::-moz-focus-inner,
@@ -384,9 +406,10 @@ input::-moz-focus-inner {
 }
 
 /*
- * 1. Disable default vertical scrollbar for <textarea> element
- *      Fixes scrollbar displayed oddly in IE6/7/8/9
- * 2. Improves readability and aligment in all browsers
+ * 1. Remove default vertical scrollbar
+ *    Fixes scrollbar displayed oddly in IE6/7/8/9
+ * 2. Add top vertical alignment
+ *    Improves readability and aligment in all browsers
  */
 
 textarea {
@@ -394,11 +417,14 @@ textarea {
     vertical-align: top; /* 2 */
 }
 
-/* ............................................................................................................. Table elements */
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
 
 /* 
  * Remove most spacing between table cells
- * Consistent vertical and horizontal alignment
+ * Consistent vertical and horizontal alignment in all browsers
  */
 
 table {
