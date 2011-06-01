@@ -39,31 +39,32 @@ video {
    ========================================================================== */
 
 /*
- * 1. Add vertical scrollbar
+ * 1. Add font size
+ *    Addresses text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Add vertical scrollbar
  *    Keeps page centred in all browsers regardless of content height
- * 2. Remove Android and iOS tap highlight color to prevent entire container being highlighted
+ * 3. Remove Android and iOS tap highlight color to prevent entire container being highlighted
  *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
- * 3. Remove iOS text size adjust without disabling user zoom
+ * 4. Remove iOS text size adjust without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 
 html {
-    overflow-y: scroll; /* 1 */
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* 2 */
-    -webkit-text-size-adjust: 100%; /* 3 */
-    -ms-text-size-adjust: 100%;
+    font-size: 100%; /* 1 */
+    overflow-y: scroll; /* 2 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* 3 */
+    -webkit-text-size-adjust: 100%; /* 4 */
+    -ms-text-size-adjust: 100%; /* 4 */
 }
 
 /*
- * 1. Define the base font-size (using % or em will retain text resizing in IE6/7)
- * 2. Define the base line-height.
- * 3. Remove margin
+ * Remove margin
+ * Addresses margins handled incorrectly in IE6/7
  */
 
 body {
-    font-size: 100%; /* 1 */
-    line-height: normal; /* 2 */
-    margin: 0; /* 3 */
+    margin: 0;
 }
 
 /* 
@@ -72,10 +73,10 @@ body {
  */
 
 body,
+button,
 input,
-button, 
-textarea,
-select {
+select,
+textarea {
     font-family: sans-serif;
 }
 
