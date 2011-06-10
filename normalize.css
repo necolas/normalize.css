@@ -69,7 +69,7 @@ body {
 
 /* 
  * Define base font-family
- * Addresses font-family inconsistency between <textarea> and other form elements.
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
 
 body,
@@ -82,7 +82,7 @@ textarea {
 
 /*
  * 1. Remove border
- *    Improves readability when inside <a> element in all browsers
+ *    Improves readability when inside 'a' element in all browsers
  * 2. Allow high quality bicubic image resampling
  *    Improves readability when scaled in IE7
  *    Read before using : code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
@@ -348,9 +348,9 @@ input {
 
 /*
  * 1. Display hand cursor for clickable form elements
- *    Improves usability and consistency of cursor style between image-type <input> and others
+ *    Improves usability and consistency of cursor style between image-type 'input' and others
  * 2. Define appearance for clickable form elements
- *    Fixes inability to style clickable <input> types in iOS
+ *    Fixes inability to style clickable 'input' types in iOS
  */
 
 button,
