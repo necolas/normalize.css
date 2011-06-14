@@ -20,19 +20,6 @@ section {
     display: block;
 }
 
-/*
- * Add display for embedded HTML5 elements
- * Addresses display not defined in IE6/7/8/9 & FF3
- */
-
-audio[controls],
-canvas,
-video {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-}
-
 
 /* =============================================================================
    Base
