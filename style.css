@@ -32,7 +32,7 @@ a:focus {
 
 a:hover,
 a:active {
-    outline: none;
+    outline: 0;
 }
 
 a:hover, 
