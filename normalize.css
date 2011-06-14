@@ -131,6 +131,27 @@ a:active {
    Typography
    ========================================================================== */
 
+
+/*
+ * Defaults for headings and paragraphs
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-weight: normal; }
+
+h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h2 { font-size: 2em; margin-bottom: 0.75em; }
+h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+h6 { font-size: 1em; font-weight: bold; }
+
+p { margin: 0 0 1.5em; }
+
 /*
  * Add bottom border
  * Fixes styling not present in IE7/8/9 S5 Chrome
@@ -143,7 +164,7 @@ abbr[title] {
 /*
  * Add bold font weight
  * Fixes style set to 'bolder' in FF3/4 S4/5 Chrome
-*/
+ */
 
 b, 
 strong { 
@@ -185,7 +206,7 @@ code,
 kbd,
 samp {
     font-family: monospace, monospace; /* 1 */
-    _font-family: 'courier new', monospace; /* 2 */
+    _font-family: "Courier New", Courier, monospace; /* 2 */
     font-size: 1em;
 }
 
@@ -359,6 +380,10 @@ input[type="reset"],
 input[type="submit"] {
     cursor: pointer; /* 1 */
     -webkit-appearance: button; /* 2 */
+}
+
+label[for] {
+    cursor: pointer; /* 1 */
 }
 
 /*
