@@ -24,6 +24,19 @@ section {
     display: block;
 }
 
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ * Known limitation: IE6 will not apply style for 'audio[controls]'
+ */
+
+audio[controls],
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
 
 /* =============================================================================
    Base
