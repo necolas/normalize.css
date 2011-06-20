@@ -386,10 +386,3 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-th,
-td {
-    padding: 0;
-    text-align: left;
-    vertical-align: middle;
-}
