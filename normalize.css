@@ -276,15 +276,17 @@ fieldset {
 }
 
 /*
- * Corrects alignment displayed oddly in IE6/7
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects alignment displayed oddly in IE6/7
  */
 
 legend {
-    *margin-left: -7px;
+    border: 0; /* 1 */
+    *margin-left: -7px; /* 2 */
 }
 
 /*
- * 1. Corrects font size not being inherited from ancestor
+ * 1. Corrects font size not being inherited in all browsers
  * 2. Addresses margins set differently in IE6/7, F3/4, S5, Chrome
  * 3. Improves appearance and consistency in all browsers
  */
