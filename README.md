@@ -18,7 +18,13 @@ Browser support
 * Opera 10+
 * Internet Explorer 6+
 
+License
+-----------
+
+Public domain
+
 Links
 ------------
 
+[Demo](http://necolas.github.com/normalize.css/demo.html)
 [Jonathan Neal's normalize.css](https://github.com/jonathantneal/normalize.css)
