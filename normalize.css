@@ -1,4 +1,4 @@
-/*! normalize.css 2011-06-21T02:22 http://github.com/necolas/normalize.css */
+/*! normalize.css 2011-06-21T18:23 UTC · http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 element display
@@ -75,17 +75,6 @@ input,
 select,
 textarea {
     font-family: sans-serif;
-}
-
-/*
- * 1. Removes border when inside 'a' element in IE6/7/8/9
- * 2. Improves image quality when scaled in IE7
- *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
- */
-
-img {
-    border: 0; /* 1 */
-    -ms-interpolation-mode: bicubic; /* 2 */
 }
 
 
@@ -248,6 +237,30 @@ dd {
 nav ul,
 nav ol {
     list-style: none;
+}
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9 
+ */
+
+svg:not(:root) {
+    overflow: hidden;
 }
 
 
