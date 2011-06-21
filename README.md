@@ -1,11 +1,23 @@
 normalize.css
 =============
 
-normalize.css makes browsers render all elements more consistently and in line with modern standards.
+Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards. We researched the differences between default browser styles in order to precisely target only the styles that need normalizing.
 
-CSS normalization is distinct from CSS resets. It tackles common cross-browser inconsistencies and bugs without erasing useful browser defaults; and there is no visual homogenization of elements with distinct semantics.
+[Check out the demo](http://necolas.github.com/normalize.css/demo.html)
 
-The `normalize.css` file is not intended to be a mysterious "black box" that is included in a project and then ignored. It is heavily commented to help expose the purpose of specific styles. You are encouraged to edit, customise, add to, and remove rulesets in order to meet the design requirements of a project.
+What does it do?
+-----------
+
+* Preserves useful defaults, unlike many CSS resets.
+* Normalizes styles for a wide range of elements.
+* Corrects bugs and common browser inconsistencies.
+* Improves usability with subtle improvements.
+* Explains what code does using detailed comments.
+
+How to use it
+-----------
+
+It is suggested that you read through the `normalize.css` file and customise it to meet the design requirements of a project, rather blindly including it as a "black box".
 
 If you prefer to use a different CSS formatting style, consider using a tool like [Procssor](http://procssor.com/).
 
@@ -23,8 +35,7 @@ License
 
 Public domain
 
-Links
+Acknowledgements
 ------------
 
-[Demo](http://necolas.github.com/normalize.css/demo.html)
-[Jonathan Neal's normalize.css](https://github.com/jonathantneal/normalize.css)
+Normalize.css is a project by [Nicolas Gallagher](http://github.com/necolas) and [Jonathan Neal](http://github.com/jonathantneal).
