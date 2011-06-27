@@ -1,4 +1,4 @@
-/*! normalize.css 2011-06-21T18:23 UTC · http://github.com/necolas/normalize.css */
+/*! normalize.css 2011-06-27T20:08 UTC · http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 element display
@@ -31,7 +31,7 @@ canvas,
 video {
     display: inline-block;
     *display: inline;
-    zoom: 1;
+    *zoom: 1;
 }
 
 
@@ -390,7 +390,7 @@ input::-moz-focus-inner {
 
 /*
  * 1. Removes default vertical scrollbar in IE6/7/8/9
- * 2. Improves readability and aligment in all browsers
+ * 2. Improves readability and alignment in all browsers
  */
 
 textarea {
