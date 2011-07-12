@@ -1,4 +1,4 @@
-/*! normalize.css 2011-07-12T10:28 UTC · http://github.com/necolas/normalize.css */
+/*! normalize.css 2011-07-12T10:51 UTC · http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 element display
@@ -333,6 +333,16 @@ button,
 input {
     line-height: normal; /* 1 */
     *overflow: visible;  /* 2 */
+}
+
+/*
+ * Corrects overlap and whitespace issue for buttons and inputs in IE6/7
+ * Known issue: reintroduces inner spacing
+ */
+
+table button,
+table input {
+    *overflow: auto;
 }
 
 /*
