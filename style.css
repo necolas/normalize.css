@@ -141,8 +141,16 @@ p {
     background: #569107;
 }
 
-.twitter-share-button {
-    margin: 20px 0 0;
+.share-bar {
+    overflow: hidden;
+    margin: 40px 0 0;
+    *zoom: 1;
+}
+
+.share-opt {
+    float: left;
+    margin: 0 15px 0 0;
+    vertical-align: bottom;
 }
 
 .footer {

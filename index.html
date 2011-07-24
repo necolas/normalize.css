@@ -49,13 +49,24 @@
             <p>Normalize.css is a project by Nicolas Gallagher and Jonathan Neal.</p>
             <p>Detailed information on default UA styles: <a href="http://iecss.com">Internet Explorer User Agent Style Sheets</a> and <a href="http://css-class.com/test/css/defaults/UA-style-sheet-defaults.htm">CSS2.1 User Agent Style Sheet Defaults</a></p>
             
-            <a class="twitter-share-button" 
-               href="http://twitter.com/share" 
-               data-count="vertical" 
-               data-text="Checking out normalize.css"
-               data-via="necolas" 
-               data-related="jon_neal">Tweet</a>
-            <script src="http://platform.twitter.com/widgets.js"></script>
+            <div class="share-bar">
+                <div class="share-opt">
+                    <a class="twitter-share-button" 
+                       href="http://twitter.com/share" 
+                       data-count="vertical" 
+                       data-text="Checking out normalize.css"
+                       data-via="necolas" 
+                       data-related="jon_neal">Tweet</a>
+                </div>
+                
+                <div class="share-opt">
+                    <g:plusone size="tall"></g:plusone>
+                </div>
+
+                <div class="share-opt">
+                    <fb:like href="" send="false" layout="box_count" width="40" show_faces="false" font=""></fb:like>
+                </div>
+            </div>
 
             <div class="footer">
                 <p>A project by <a href="http://nicolasgallagher.com">Nicolas Gallagher</a> and <a href="http://twitter.com/jon_neal">Jonathan Neal</a>.</p>
@@ -63,13 +74,18 @@
 
         </div>
 
+        <div id="fb-root"></div>
         <script>
-            var _gaq = [['_setAccount', 'UA-7489188-1'],['_trackPageview'],['_trackPageLoadTime']];
-            (function(d, t) {
-                var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.async = 1;
-                g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                s.parentNode.insertBefore(g, s);
-            })(document, 'script');
+            (function(w,d){
+                w._gaq=[['_setAccount','UA-7489188-1'],['_trackPageview'],['_trackPageLoadTime']];
+                var u=[
+                    '//connect.facebook.net/en_US/all.js#xfbml=1', // Facebook SDK
+                    '//platform.twitter.com/widgets.js', // Twitter Widgets
+                    'https://apis.google.com/js/plusone.js', // Google +1 Button
+                   ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js' // Google Analytics
+                ],i=u.length,n='script',f=d.createDocumentFragment(),e=d.createElement(n),t;while(i--){t=e.cloneNode(false);t.async=t.src=u[i];f.appendChild(t);}(t=d.getElementsByTagName(n)[0]).parentNode.insertBefore(f,t);
+            }(this,document));
         </script>
+
     </body>
 </html>
