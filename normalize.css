@@ -1,4 +1,4 @@
-/*! normalize.css 2011-07-20T19:34 UTC · http://github.com/necolas/normalize.css */
+/*! normalize.css 2011-07-31T11:33 UTC · http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -34,21 +34,13 @@ video {
 }
 
 /*
+ * Addresses styling for 'hidden' attribute not present in IE6/7/8/9, FF3, S4
  * Prevents modern browsers from displaying 'audio' without controls
  */
 
+[hidden],
 audio:not([controls]) {
     display: none;
-}
-
-/*
- * Addresses styling not present IE6/7/8/9, FF3, S4
- * Ensures content is hidden from all presentations, including screenreaders
- */
-
-[hidden] {
-    display: none;
-    visibility: hidden;
 }
 
 
@@ -254,6 +246,7 @@ dd {
 nav ul,
 nav ol {
     list-style: none;
+    list-style-image: none;
 }
 
 
