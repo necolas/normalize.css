@@ -1,4 +1,4 @@
-/*! normalize.css 2011-07-20T19:34 UTC · http://github.com/necolas/normalize.css */
+/*! normalize.css 2011-08-03T09:41 UTC · http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -42,13 +42,11 @@ audio:not([controls]) {
 }
 
 /*
- * Addresses styling not present IE6/7/8/9, FF3, S4
- * Ensures content is hidden from all presentations, including screenreaders
+ * Addresses styling for 'hidden' attribute not present in IE6/7/8/9, FF3, S4
  */
 
 [hidden] {
     display: none;
-    visibility: hidden;
 }
 
 
@@ -60,18 +58,15 @@ audio:not([controls]) {
  * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
  *    http://clagnut.com/blog/348/#c790
  * 2. Keeps page centred in all browsers regardless of content height
- * 3. Removes Android and iOS tap highlight color to prevent entire container being highlighted
- *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
- * 4. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 
 html {
     font-size: 100%; /* 1 */
     overflow-y: scroll; /* 2 */
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* 3 */
-    -webkit-text-size-adjust: 100%; /* 4 */
-    -ms-text-size-adjust: 100%; /* 4 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+    -ms-text-size-adjust: 100%; /* 3 */
 }
 
 /*
@@ -254,6 +249,7 @@ dd {
 nav ul,
 nav ol {
     list-style: none;
+    list-style-image: none;
 }
 
 
