@@ -21,6 +21,8 @@ It is suggested that you read through the `normalize.css` file and customise it 
 
 If you prefer to use a different CSS formatting style, consider using a tool like [Procssor](http://procssor.com/).
 
+If you would like to minify the file, you can use a tool like this [online CSS compressor using YUI Compressor](http://www.refresh-sf.com/yui/) or perform the minification as part of your build process.
+
 Browser support
 -----------
 
