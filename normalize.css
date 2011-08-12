@@ -1,4 +1,4 @@
-/*! normalize.css 2011-08-11T09:26 UTC · http://github.com/necolas/normalize.css */
+/*! normalize.css 2011-08-12T17:28 UTC · http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -373,12 +373,14 @@ input[type="submit"] {
 }
 
 /*
- * Addresses box sizing set to content-box in IE8/9
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Addresses excess padding in IE8/9
  */
 
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box;
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
 }
 
 /*
