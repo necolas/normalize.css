@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Normalize CSS</title>
-        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="normalize.css" />
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <style>
             #boxsize button,
             #boxsize input,
             #boxsize select,
             #boxsize textarea {
-                width:200px;
-                padding:5px;
-                border:1px solid #333;
+                width: 200px;
+                padding: 5px;
+                border: 1px solid #333;
             }
         </style>
     </head>
@@ -31,7 +31,7 @@
                 </ul>
             </nav>
         </header>
-        
+
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
@@ -40,9 +40,9 @@
         <h6>Heading 6</h6>
 
         <p hidden>This should be hidden in all browsers, apart from IE6</p>
-        
+
         <section>
-            <h1>Section Heading 1</h1>            
+            <h1>Section Heading 1</h1>
             <article>
                 <h4>Article Heading 2</h4>
                 <address>Address: somewhere, world</address>
@@ -50,7 +50,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
             </article>
         </section>
-        
+
         <h1>Text-level semantics</h1>
 
         <p>
@@ -79,9 +79,9 @@
         The <var>var element</var> example<br>
         The <u>u element</u> example
         </p>
-        
+
         <h1>Embedded content</h1>
-        
+
         <h3>audio</h3>
 
         <audio controls></audio>
@@ -89,12 +89,12 @@
 
         <h3>img</h3>
 
-        <img src="http://placekitten.com/100/100" alt="">
+        <img src="http://placekitten.com/100/100" alt="" />
         <a href="#"><img src="http://placekitten.com/100/100" alt=""></a>
 
         <h3>svg</h3>
-        
-        <svg style="width:100px; height:100px;"><circle cx="100" cy="100" r="100" fill="#ff0000"></svg>        
+
+        <svg style="width:100px; height:100px;"><circle cx="100" cy="100" r="100" fill="#ff0000" /></svg>
 
         <h3>video</h3>
 
@@ -102,11 +102,11 @@
         <video></video>
 
         <h1>Grouping content</h1>
-        
+
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
-        
+
         <h3>pre</h3>
-        
+
         <pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.</pre>
 
         <pre><code>&lt;html>
@@ -116,17 +116,17 @@
         &lt;div class="main"> &lt;div>
     &lt;/body>
 &lt;/html></code></pre>
-        
+
         <h3>blockquote</h3>
-        
+
         <blockquote>
             <p>Some sort of famous witty quote marked up with a &lt;blockquote> and a child &lt;p> element.</p>
         </blockquote>
-        
+
         <blockquote>Even better philosophical quote marked up with just a &lt;blockquote> element.</blockquote>
-        
+
         <h3>ordered list</h3>
-        
+
         <ol>
             <li>list item 1</li>
             <li>list item 1
@@ -145,9 +145,9 @@
             <li>list item 1</li>
             <li>list item 1</li>
         </ol>
-        
+
         <h3>unordered list</h3>
-        
+
         <ul>
             <li>list item 1</li>
             <li>list item 1
@@ -166,29 +166,32 @@
             <li>list item 1</li>
             <li>list item 1</li>
         </ul>
-        
+
         <h3>description list</h3>
-        
+
         <dl>
             <dt>Description name</dt>
             <dd>Description value</dd>
+
             <dt>Description name</dt>
             <dd>Description value</dd>
+
             <dd>Description value</dd>
             <dt>Description name</dt>
+
             <dt>Description name</dt>
             <dd>Description value</dd>
         </dl>
-        
+
         <h3>figure</h3>
 
         <figure>
-            <img src="http://placekitten.com/400/200" alt="">
+            <img src="http://placekitten.com/400/200" alt="" />
             <figcaption>Figcaption content</figcaption>
         </figure>
 
         <h1>Tabular data</h1>
-        
+
         <table summary="Jimi Hendrix albums">
             <caption>Jimi Hendrix - albums</caption>
             <thead>
@@ -228,89 +231,128 @@
                 </tr>
             </tbody>
         </table>
-        
+
         <h1>Forms</h1>
-        
+
         <form>
             <fieldset>
                 <legend>Inputs as descendents of labels (form legend)</legend>
-                <p><label>Text input <input type="text" value="default value"></label></p>
-                <p><label>Email input <input type="email"></label></p>
-                <p><label>Search input <input type="search"></label></p>
-                <p><label>Tel input <input type="tel"></label></p>
-                <p><label>URL input <input type="url" placeholder="http://"></label></p>
-                <p><label>Password input <input type="password" value="password"></label></p>
-                <p><label>File input <input type="file"></label></p>
-                
-                <p><label>Radio input <input type="radio" name="rad"></label></p>
-                <p><label>Checkbox input <input type="checkbox"></label></p>
-                <p><label><input type="radio" name="rad"> Radio input</label></p>
-                <p><label><input type="checkbox"> Checkbox input</label></p>
-                
+
+                <p><label>Text input <input type="text" value="default value" /></label></p>
+                <p><label>Email input <input type="email" /></label></p>
+                <p><label>Search input <input type="search" /></label></p>
+                <p><label>Tel input <input type="tel" /></label></p>
+                <p><label>URL input <input type="url" placeholder="http://" /></label></p>
+                <p><label>Password input <input type="password" value="password" /></label></p>
+                <p><label>File input <input type="file" /></label></p>
+                <p><label>Radio input <input type="radio" name="rad" /></label></p>
+                <p><label>Checkbox input <input type="checkbox" /></label></p>
+                <p><label><input type="radio" name="rad" /> Radio input</label></p>
+                <p><label><input type="checkbox" /> Checkbox input</label></p>
                 <p><label>Select field <select><option>Option 01</option><option>Option 02</option></select></label></p>
                 <p><label>Textarea <textarea cols="30" rows="5" >Textarea text</textarea></label></p>
             </fieldset>
-            
+
             <fieldset>
                 <legend>Inputs as siblings of labels</legend>
-                <p><label for="ic">Color input</label> <input type="color" id="ic" value="color"></p>
-                <p><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></p>
-                <p><label for="ir">Range input</label> <input type="range" id="ir" value="range"></p>
-                <p><label for="idd">Date input</label> <input type="date" id="idd" value="date"></p>
-                <p><label for="idm">Month input</label> <input type="month" id="idm" value="month"></p>
-                <p><label for="idw">Week input</label> <input type="week" id="idw" value="week"></p>
-                <p><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="datetime"></p>
-                <p><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="datetime-local"></p>
 
-                <p><label for="irb">Radio input</label> <input type="radio" id="irb" name="rad"></p>
-                <p><label for="icb">Checkbox input</label> <input type="checkbox" id="icb"></p>
-                <p><input type="radio" id="irb2" name="rad"> <label for="irb2">Radio input</label></p>
-                <p><input type="checkbox" id="icb2"> <label for="icb2">Checkbox input</label></p>
-                
-                <p><label for="s">Select field</label> <select id="s"><option>Option 01</option><option>Option 02</option></select></p>
-                <p><label for="t">Textarea</label> <textarea id="t" cols="30" rows="5" >Textarea text</textarea></p>
+                <p>
+                    <label for="ic">Color input</label>
+                    <input type="color" id="ic" value="color" />
+                </p>
+                <p>
+                    <label for="in">Number input</label>
+                    <input type="number" id="in" min="0" max="10" value="5" />
+                </p>
+                <p>
+                    <label for="ir">Range input</label>
+                    <input type="range" id="ir" min="0" max="10" step="2" value="6" />
+                </p>
+                <p>
+                    <label for="idd">Date input</label>
+                    <input type="date" id="idd" value="2011-08-29" />
+                </p>
+                <p>
+                    <label for="idm">Month input</label>
+                    <input type="month" id="idm" value="2011-08" />
+                </p>
+                <p>
+                    <label for="idw">Week input</label>
+                    <input type="week" id="idw" value="2011-W35" />
+                </p>
+                <p>
+                    <label for="idt">Datetime input</label>
+                    <input type="datetime" id="idt" value="2011-08-29T08:11Z" />
+                </p>
+                <p>
+                    <label for="idtl">Datetime-local input</label>
+                    <input type="datetime-local" id="idtl" value="2011-08-29T10:11" />
+                </p>
+                <p>
+                    <label for="irb">Radio input</label>
+                    <input type="radio" id="irb" name="rad" />
+                </p>
+                <p>
+                    <label for="icb">Checkbox input</label>
+                    <input type="checkbox" id="icb" />
+                </p>
+                <p>
+                    <input type="radio" id="irb2" name="rad" />
+                    <label for="irb2">Radio input</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="icb2" />
+                    <label for="icb2">Checkbox input</label>
+                </p>
+                <p>
+                    <label for="s">Select field</label>
+                    <select id="s">
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="t">Textarea</label>
+                    <textarea id="t" cols="30" rows="5" >Textarea text</textarea>
+                </p>
             </fieldset>
-            
+
             <fieldset>
                 <legend>Clickable inputs and buttons</legend>
-                <p><input type="image" src="http://placekitten.com/90/24" alt="Image (input)"></p>
-                <p><input type="reset" value="Reset (input)"></p>
-                <p><input type="button" value="Button (input)"></p>
-                <p><input type="submit" value="Submit (input)"></p>
 
+                <p><input type="image" src="http://placekitten.com/90/24" alt="Image (input)" /></p>
+                <p><input type="reset" value="Reset (input)" /></p>
+                <p><input type="button" value="Button (input)" /></p>
+                <p><input type="submit" value="Submit (input)" /></p>
                 <p><button type="reset">Reset (button)</button></p>
                 <p><button type="button">Button (button)</button></p>
                 <p><button type="submit">Submit (button)</button></p>
             </fieldset>
-            
+
             <fieldset id="boxsize">
                 <legend>box-sizing tests</legend>
-                <div><input type="text" value="text"></div>
-                <div><input type="email" value="email"></div>
-                <div><input type="search" value="search"></div>
-                <div><input type="url" value="http://"></div>
-                <div><input type="password" value="password"></div>
 
-                <div><input type="color" value="color"></div>
-                <div><input type="number" value="number"></div>
-                <div><input type="range" value="range"></div>
-                <div><input type="date" value="date"></div>
-                <div><input type="month" value="month"></div>
-                <div><input type="week" value="week"></div>
-                <div><input type="datetime" value="datetime"></div>
-                <div><input type="datetime-local" value="datetime-local"></div>
-                
-                <div><input type="radio"></div>
-                <div><input type="checkbox"></div>
-                
+                <div><input type="text" value="text" /></div>
+                <div><input type="email" value="contact@example.com" /></div>
+                <div><input type="search" value="query" /></div>
+                <div><input type="url" value="http://www.example.com" /></div>
+                <div><input type="password" value="secret" /></div>
+                <div><input type="color" value="color" /></div>
+                <div><input type="number" value="1" /></div>
+                <div><input type="range" min="0" max="10" step="2" value="6" /></div>
+                <div><input type="date" value="2011-08-29" /></div>
+                <div><input type="month" value="2011-08" /></div>
+                <div><input type="week" value="2011-W35" /></div>
+                <div><input type="datetime" value="2011-08-29T08:12Z" /></div>
+                <div><input type="datetime-local" value="2011-08-29T10:12" /></div>
+                <div><input type="radio" /></div>
+                <div><input type="checkbox" /></div>
                 <div><select><option>Option 01</option><option>Option 02</option></select></div>
                 <div><textarea cols="30" rows="5" >Textarea text</textarea></div>
-                
-                <div><input type="image" src="http://placekitten.com/90/24" alt="Image (input)"></div>
-                <div><input type="reset" value="Reset (input)"></div>
-                <div><input type="button" value="Button (input)"></div>
-                <div><input type="submit" value="Submit (input)"></div>
-
+                <div><input type="image" src="http://placekitten.com/90/24" alt="Image (input)" /></div>
+                <div><input type="reset" value="Reset (input)" /></div>
+                <div><input type="button" value="Button (input)" /></div>
+                <div><input type="submit" value="Submit (input)" /></div>
                 <div><button type="reset">Reset (button)</button></div>
                 <div><button type="button">Button (button)</button></div>
                 <div><button type="submit">Submit (button)</button></div>
