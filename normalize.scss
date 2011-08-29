@@ -63,10 +63,10 @@ audio:not([controls]) {
 // ---------------------------------------------------------------------------
 
 html {
-    font-size: 100%; /* 1 */
-    overflow-y: scroll; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 3 */
-    -ms-text-size-adjust: 100%; /* 3 */
+    font-size: 100%;                // 1
+    overflow-y: scroll;             // 2
+    -webkit-text-size-adjust: 100%; // 3
+    -ms-text-size-adjust: 100%;     // 3
 }
 
 // ---------------------------------------------------------------------------
@@ -190,14 +190,12 @@ pre {
 // 2. Addresses quote property not supported in S4
 // ---------------------------------------------------------------------------
 
-/* 1 */
-
+// 1
 q {
     quotes: none;
 }
 
-/* 2 */
-
+// 2
 q:before,
 q:after {
     content: '';
@@ -260,8 +258,8 @@ nav ol {
 // ---------------------------------------------------------------------------
 
 img {
-    border: 0; /* 1 */
-    -ms-interpolation-mode: bicubic; /* 2 */
+    border: 0;                       // 1
+    -ms-interpolation-mode: bicubic; // 2
 }
 
 // ---------------------------------------------------------------------------
@@ -311,8 +309,8 @@ fieldset {
 // ---------------------------------------------------------------------------
 
 legend {
-    border: 0; /* 1 */
-    *margin-left: -7px; /* 2 */
+    border: 0;          // 1
+    *margin-left: -7px; // 2
 }
 
 // ---------------------------------------------------------------------------
@@ -325,10 +323,10 @@ button,
 input,
 select,
 textarea {
-    font-size: 100%; /* 1 */
-    margin: 0; /* 2 */
-    vertical-align: baseline; /* 3 */
-    *vertical-align: middle; /* 3 */
+    font-size: 100%;          // 1
+    margin: 0;                // 2
+    vertical-align: baseline; // 3
+    *vertical-align: middle;  // 3
 }
 
 // ---------------------------------------------------------------------------
@@ -338,8 +336,8 @@ textarea {
 
 button,
 input {
-    line-height: normal; /* 1 */
-    *overflow: visible;  /* 2 */
+    line-height: normal; // 1
+    *overflow: visible;  // 2
 }
 
 // ---------------------------------------------------------------------------
@@ -361,8 +359,8 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    cursor: pointer; /* 1 */
-    -webkit-appearance: button; /* 2 */
+    cursor: pointer;            // 1
+    -webkit-appearance: button; // 2
 }
 
 // ---------------------------------------------------------------------------
@@ -372,8 +370,8 @@ input[type="submit"] {
 
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
+    box-sizing: border-box; // 1
+    padding: 0;             // 2
 }
 
 // ---------------------------------------------------------------------------
@@ -382,9 +380,9 @@ input[type="radio"] {
 // ---------------------------------------------------------------------------
 
 input[type="search"] {
-    -webkit-appearance: textfield; /* 1 */
+    -webkit-appearance: textfield;   // 1
     -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
+    -webkit-box-sizing: content-box; // 2
     box-sizing: content-box;
 }
 
@@ -413,8 +411,8 @@ input::-moz-focus-inner {
 // ---------------------------------------------------------------------------
 
 textarea {
-    overflow: auto;         // 1
-    vertical-align: top;    // 2
+    overflow: auto;      // 1
+    vertical-align: top; // 2
 }
 
 // ===========================================================================
