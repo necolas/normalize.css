@@ -17,7 +17,9 @@ What does it do?
 How to use it
 -----------
 
-It is suggested that you read through the `normalize.css` file and customise it to meet the design requirements of a project, rather blindly including it as a "black box".
+Normalize.css is intended to be used as an alternative to CSS resets.
+
+It is suggested that you read through the `normalize.css` file and customise it to meet the design requirements of a project rather including it as a "black box".
 
 If you prefer to use a different CSS formatting style, consider using a tool like [Procssor](http://procssor.com/).
 
