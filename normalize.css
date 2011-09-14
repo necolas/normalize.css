@@ -1,4 +1,4 @@
-/*! normalize.css 2011-08-31T22:02 UTC · http://github.com/necolas/normalize.css */
+/*! normalize.css 2011-09-14T10:12 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -259,7 +259,7 @@ nav ol {
    ========================================================================== */
 
 /*
- * 1. Removes border when inside 'a' element in IE6/7/8/9, F3
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
  * 2. Improves image quality when scaled in IE7
  *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
@@ -304,10 +304,11 @@ form {
 }
 
 /*
- * Define consistent margin and padding
+ * Define consistent border, margin, and padding
  */
 
 fieldset {
+    border: 1px solid #c0c0c0;
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
 }
@@ -324,7 +325,7 @@ legend {
 
 /*
  * 1. Corrects font size not being inherited in all browsers
- * 2. Addresses margins set differently in IE6/7, F3/4, S5, Chrome
+ * 2. Addresses margins set differently in IE6/7, FF3/4, S5, Chrome
  * 3. Improves appearance and consistency in all browsers
  */
 
