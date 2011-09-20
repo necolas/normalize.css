@@ -418,11 +418,13 @@ input::-moz-focus-inner {
 /*
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
+ * 3. Force new line for long character sequences in Opera
  */
 
 textarea {
     overflow: auto; /* 1 */
     vertical-align: top; /* 2 */
+    word-wrap:break-word; /* 3 */
 }
 
 
