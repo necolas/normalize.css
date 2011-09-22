@@ -1,4 +1,4 @@
-/*! normalize.css 2011-09-14T10:27 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2011-09-22T17:42 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -340,29 +340,19 @@ textarea {
 }
 
 /*
- * 1. Addresses FF3/4 setting line-height using !important in the UA stylesheet
- * 2. Corrects inner spacing displayed oddly in IE6/7
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
 
 button,
 input {
     line-height: normal; /* 1 */
-    *overflow: visible;  /* 2 */
-}
-
-/*
- * Corrects overlap and whitespace issue for buttons and inputs in IE6/7
- * Known issue: reintroduces inner spacing
- */
-
-table button,
-table input {
-    *overflow: auto;
 }
 
 /*
  * 1. Improves usability and consistency of cursor style between image-type 'input' and others
  * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Corrects inner spacing displayed oddly in IE7 without effecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
  */
 
 button,
@@ -371,6 +361,7 @@ input[type="reset"],
 input[type="submit"] {
     cursor: pointer; /* 1 */
     -webkit-appearance: button; /* 2 */
+    *overflow: visible;  /* 3 */
 }
 
 /*
