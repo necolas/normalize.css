@@ -1,4 +1,4 @@
-/*! normalize.css 2011-09-22T17:42 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2011-10-24T11:29 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -94,14 +94,6 @@ textarea {
 /* =============================================================================
    Links
    ========================================================================== */
-
-a {
-    color: #00e;
-}
-
-a:visited {
-    color: #551a8b;
-}
 
 /*
  * Addresses outline displayed oddly in Chrome
