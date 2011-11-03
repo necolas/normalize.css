@@ -356,10 +356,12 @@ input[type="submit"] {
 }
 
 /*
- * Corrects inner spacing of buttons displayed oddly in IE6
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others in IE6
+ * 2. Corrects inner spacing of buttons displayed oddly in IE6
  */
 * html button {
-    overflow: visible;
+    cursor: pointer; /* 1 */
+    overflow: visible; /* 2 */
 }
 
 /*
