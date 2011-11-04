@@ -1,4 +1,4 @@
-/*! normalize.css 2011-11-04T15:36 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -239,7 +239,7 @@ sub {
 
 ul,
 ol {
-    margin: 1em 0;
+    margin-left: 0;
     padding: 0 0 0 40px;
 }
 
