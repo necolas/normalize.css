@@ -1,4 +1,4 @@
-/*! normalize.css 2011-10-24T11:29 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2011-11-04T15:27 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -117,6 +117,14 @@ a:active {
 /* =============================================================================
    Typography
    ========================================================================== */
+
+/*
+ * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ */
+
+h1 {
+    font-size: 2em;
+}
 
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
