@@ -1,4 +1,4 @@
-/*! normalize.css 2011-09-22T17:42 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -95,14 +95,6 @@ textarea {
    Links
    ========================================================================== */
 
-a {
-    color: #00e;
-}
-
-a:visited {
-    color: #551a8b;
-}
-
 /*
  * Addresses outline displayed oddly in Chrome
  */
@@ -127,6 +119,14 @@ a:active {
    ========================================================================== */
 
 /*
+ * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+/*
  * Addresses styling not present in IE7/8/9, S5, Chrome
  */
 
@@ -135,7 +135,7 @@ abbr[title] {
 }
 
 /*
- * Addresses style set to 'bolder' in FF3/4, S4/5, Chrome
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
 
 b, 
@@ -239,7 +239,7 @@ sub {
 
 ul,
 ol {
-    margin: 1em 0;
+    margin-left: 0;
     padding: 0 0 0 40px;
 }
 
@@ -325,7 +325,7 @@ legend {
 
 /*
  * 1. Corrects font size not being inherited in all browsers
- * 2. Addresses margins set differently in IE6/7, FF3/4, S5, Chrome
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
  * 3. Improves appearance and consistency in all browsers
  */
 
@@ -351,7 +351,7 @@ input {
 /*
  * 1. Improves usability and consistency of cursor style between image-type 'input' and others
  * 2. Corrects inability to style clickable 'input' types in iOS
- * 3. Corrects inner spacing displayed oddly in IE7 without effecting normal text inputs
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
  *    Known issue: inner spacing remains in IE6
  */
 
@@ -366,7 +366,7 @@ input[type="submit"] {
 
 /*
  * 1. Addresses box sizing set to content-box in IE8/9
- * 2. Addresses excess padding in IE8/9
+ * 2. Removes excess padding in IE8/9
  */
 
 input[type="checkbox"],
@@ -377,7 +377,7 @@ input[type="radio"] {
 
 /*
  * 1. Addresses appearance set to searchfield in S5, Chrome
- * 2. Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
 
 input[type="search"] {
@@ -388,7 +388,7 @@ input[type="search"] {
 }
 
 /*
- * Corrects inner padding displayed oddly in S5, Chrome on OSX
+ * Removes inner padding that is displayed in S5, Chrome on OS X
  */
 
 input[type="search"]::-webkit-search-decoration {
@@ -396,7 +396,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 /*
- * Corrects inner padding and border displayed oddly in FF3/4
+ * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
 
