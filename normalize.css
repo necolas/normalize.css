@@ -235,6 +235,11 @@ ol {
     padding: 0 0 0 40px;
 }
 
+li ul,
+li ol {
+   margin: 0;
+}
+
 dd {
     margin: 0 0 0 40px;
 }
