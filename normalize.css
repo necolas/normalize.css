@@ -127,6 +127,22 @@ h1 {
 }
 
 /*
+ * Remove unnecessary top margins on first-child content elements
+ */
+
+p:first-child,
+ul:first-child,
+ol:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+   margin-top: 0;
+}
+
+/*
  * Addresses styling not present in IE7/8/9, S5, Chrome
  */
 
@@ -136,7 +152,7 @@ abbr[title] {
 
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
-*/
+ */
 
 b, 
 strong { 
