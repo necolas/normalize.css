@@ -126,6 +126,10 @@ h1 {
     font-size: 2em;
 }
 
+/*
+ * Remove uneccesary top margins on first-child content elements
+ */
+
 p:first-child,
 ul:first-child,
 ol:first-child,
