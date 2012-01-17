@@ -1,4 +1,4 @@
-/*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-01-17T16:33 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -315,12 +315,15 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects alignment displayed oddly in IE6/7
+ * 2. Corrects text not wrapping in FF3 
+ * 3. Corrects alignment displayed oddly in IE6/7
  */
 
 legend {
     border: 0; /* 1 */
-    *margin-left: -7px; /* 2 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
 }
 
 /*
@@ -367,12 +370,16 @@ input[type="submit"] {
 /*
  * 1. Addresses box sizing set to content-box in IE8/9
  * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
  */
 
 input[type="checkbox"],
 input[type="radio"] {
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
 }
 
 /*
@@ -392,6 +399,14 @@ input[type="search"] {
  */
 
 input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes search cancel button in S5, Chrome on OS X
+ */
+
+input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
 }
 
