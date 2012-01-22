@@ -1,4 +1,4 @@
-/*! normalize.css 2012-01-17T16:33 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-01-22T22:44 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -58,16 +58,14 @@ audio:not([controls]) {
 /*
  * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
  *    http://clagnut.com/blog/348/#c790
- * 2. Keeps page centred in all browsers regardless of content height
- * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 
 html {
     font-size: 100%; /* 1 */
-    overflow-y: scroll; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 3 */
-    -ms-text-size-adjust: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
 }
 
 /*
