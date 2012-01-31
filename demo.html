@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
         <title>Normalize CSS</title>
         <link rel="stylesheet" href="normalize.css">
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -291,10 +291,13 @@
                 <p><input type="reset" value="Reset (input)"></p>
                 <p><input type="button" value="Button (input)"></p>
                 <p><input type="submit" value="Submit (input)"></p>
+                <p><input type="submit" value="Disabled (input)" disabled></p>
+
 
                 <p><button type="reset">Reset (button)</button></p>
                 <p><button type="button">Button (button)</button></p>
                 <p><button type="submit">Submit (button)</button></p>
+                <p><button type="submit" disabled>Disabled (button)</button></p>
             </fieldset>
 
             <fieldset id="boxsize">
@@ -318,7 +321,7 @@
                 <div><input type="checkbox"></div>
 
                 <div><select><option>Option 01</option><option>Option 02</option></select></div>
-                <div><textarea cols="30" rows="5" >Textarea text</textarea></div>
+                <div><textarea cols="30" rows="5">Textarea text</textarea></div>
 
                 <div><input type="image" src="http://placekitten.com/90/24" alt="Image (input)"></div>
                 <div><input type="reset" value="Reset (input)"></div>
