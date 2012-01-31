@@ -1,4 +1,4 @@
-/*! normalize.css 2012-01-22T23:00 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-01-31T16:06 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -118,10 +118,37 @@ a:active {
 
 /*
  * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ * Fix IE6/7 heading font-size not being relative to the root font-size
  */
 
 h1 {
     font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.75em;
+    margin: 2.33em 0;
 }
 
 /*
@@ -366,6 +393,15 @@ input[type="submit"] {
 }
 
 /*
+ * Re-set default cursor for disabled elements
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
  * 1. Addresses box sizing set to content-box in IE8/9
  * 2. Removes excess padding in IE8/9
  * 3. Removes excess padding in IE7
@@ -393,17 +429,10 @@ input[type="search"] {
 }
 
 /*
- * Removes inner padding that is displayed in S5, Chrome on OS X
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
 
-input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
-
-/*
- * Removes search cancel button in S5, Chrome on OS X
- */
-
+input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
 }
