@@ -1,4 +1,4 @@
-/*! normalize.css 2012-02-07T10:31 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -17,7 +17,8 @@ footer,
 header,
 hgroup,
 nav,
-section {
+section,
+summary {
     display: block;
 }
 
