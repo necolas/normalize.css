@@ -6,9 +6,9 @@ html {
 
 body {
     max-width: 480px;
-    padding: 0 10px;
+    padding: 0 10px 30px;
     margin: 0 auto;
-    font: 1em/1.4 Calibri, sans-serif;
+    font: 1em/1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #222;
     background: #fff;
     _width: 480px;
@@ -72,6 +72,11 @@ li {
     margin: 0.35em 0;
 }
 
+h1,
+h2 {
+    line-height: 1.2;
+}
+
 h1 {
     margin: 0.25em 0 0.5em;
     font-size: 3.5em;
@@ -94,54 +99,86 @@ p {
     right: 0;
 }
 
-.demo {
+.hgroup h1 {
+    margin-bottom: 0;
+}
+
+.hgroup h2 {
+    margin: 0 0 2em;
+    font-size: 1em;
+    color: #555;
+}
+
+.cta {
     margin:1em 0 4em;
 }
 
-.demo p {
+.cta p {
     margin: 0.5em 0 0;
     font-style: italic;
 }
 
 .button {
+    position: relative;
     display: inline-block;
-    padding: 6px 15px;
+    padding: 0.4em 1em;
     border: 1px solid #487310;
-    margin: 20px 0 0;
+    margin: 20px 5px 0 0;
     font-size: 1.375em;
     line-height: 1.273;
-    color: #fff;
-    background: #6ead1a;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
-    -moz-border-radius: 5px;
-         border-radius: 5px;
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4),
-                        inset 0 1px rgba(255,255,255,0.5),
-                        inset 0 12px rgba(255,255,255,0.2),
-                        inset 0 10px 20px rgba(255,255,255,0.25),
-                        inset 0 -12px 25px rgba(0,0,0,0.3);
-       -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4),
-                        inset 0 1px rgba(255,255,255,0.5),
-                        inset 0 12px rgba(255,255,255,0.2),
-                        inset 0 10px 20px rgba(255,255,255,0.25),
-                        inset 0 -12px 25px rgba(0,0,0,0.3);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.4),
-                        inset 0 1px rgba(255,255,255,0.5),
-                        inset 0 12px rgba(255,255,255,0.2),
-                        inset 0 10px 10px rgba(255,255,255,0.25),
-                        inset 0 -12px 25px rgba(0,0,0,0.3);
-    -webkit-transition: all 0.15s;
-       -moz-transition: all 0.15s;
-         -o-transition: all 0.15s;
-            transition: all 0.15s;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    color: #555;
+    background: #f5f5f5;
+    background-image: -webkit-linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.1));
+    background-image: -moz-linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.1));
+    background-image: -ms-linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.1));
+    background-image: -o-linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.1));
+    /* IE6/7 inline-block hack */
+    *display: inline;
+    *zoom: 1;
 }
 
 .button:hover,
 .button:focus,
 .button:active {
     text-decoration: none;
+    border-color: #c6c6c6;
+    color: #333;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+}
+
+.button:focus {
+    border-color: #105cb6;
+    outline: 0;
+}
+
+.button:active {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: #eee;
+}
+
+.button-main {
+    border-color: #5e9612;
     color: #fff;
-    background: #569107;
+    background-color: #69a619;
+}
+
+.button-main:hover,
+.button-main:focus,
+.button-main:active {
+    border-color: #558713;
+    color: #fff;
+    background-color: #6ead1a;
+}
+
+.button-main:active {
+    background-color: #5D9117;
 }
 
 .share-bar {
@@ -156,13 +193,6 @@ p {
     float: left;
     margin: 0 15px 0 0;
     vertical-align: bottom;
-}
-
-.footer {
-    padding: 10px 0;
-    border-top: 1px solid #ccc;
-    margin: 3em 0 0;
-    font-size: 0.8125em;
 }
 
 @media screen and (max-width:480px) {
