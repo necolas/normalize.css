@@ -262,9 +262,19 @@ sub {
    Lists
    ========================================================================== */
 
-ul,
-ol {
-    margin-left: 0;
+dl,
+menu,
+ol,
+p,
+pre,
+ul {
+    margin: 1em 0;
+}
+
+details,
+menu,
+ol,
+ul {
     padding: 0 0 0 40px;
 }
 
