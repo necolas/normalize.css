@@ -1,4 +1,4 @@
-/*! normalize.css 2012-02-07T05:02 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-02-07T10:31 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -68,7 +68,7 @@ html {
     -ms-text-size-adjust: 100%; /* 2 */
 }
 
-/* 
+/*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
 
@@ -133,11 +133,6 @@ h2 {
 
 h3 {
     font-size: 1.17em;
-}
-
-h3,
-p,
-pre {
     margin: 1em 0;
 }
 
@@ -168,21 +163,13 @@ abbr[title] {
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
 
-b, 
-strong { 
-    font-weight: bold; 
+b,
+strong {
+    font-weight: bold;
 }
 
 blockquote {
     margin: 1em 40px;
-}
-
-/*
- * Addresses styling not present in IE6/7
- */
-
-hr {
-    margin: 0.5em auto;
 }
 
 /*
@@ -200,6 +187,15 @@ dfn {
 mark {
     background: #ff0;
     color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE6/7
+ */
+
+p,
+pre {
+    margin: 1em 0;
 }
 
 /*
@@ -327,7 +323,7 @@ img {
 }
 
 /*
- * Corrects overflow displayed oddly in IE9 
+ * Corrects overflow displayed oddly in IE9
  */
 
 svg:not(:root) {
@@ -416,8 +412,8 @@ input {
  */
 
 button,
-input[type="button"], 
-input[type="reset"], 
+input[type="button"],
+input[type="reset"],
 input[type="submit"] {
     cursor: pointer; /* 1 */
     -webkit-appearance: button; /* 2 */
@@ -495,7 +491,7 @@ textarea {
    Tables
    ========================================================================== */
 
-/* 
+/*
  * Remove most spacing between table cells
  */
 
