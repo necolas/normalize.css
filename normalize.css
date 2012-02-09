@@ -89,6 +89,22 @@ body {
     margin: 0;
 }
 
+/*
+ * iOS & Android Tap Highlight Color - @thejameskyle
+ */
+ 
+html { -webkit-tap-highlight-color: rgba(0,0,0,0) }
+
+/* Add any elements that you want the highlight to appear */
+a:link,
+button,
+input,
+textarea,
+select,
+img {
+   -webkit-tap-highlight-color: rgba(0,0,0,0.4)
+} 
+
 
 /* =============================================================================
    Links
