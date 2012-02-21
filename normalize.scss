@@ -439,7 +439,7 @@ input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box; // 1
+    @include box-sizing(border-box); // 1
     padding: 0; // 2
     *height: 13px; // 3
     *width: 13px; // 3
@@ -452,9 +452,7 @@ input[type="radio"] {
 
 input[type="search"] {
     -webkit-appearance: textfield; // 1
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; // 2
-    box-sizing: content-box;
+    @include box-sizing(content-box); // 2
 }
 
 //
