@@ -487,6 +487,15 @@ textarea {
     vertical-align: top; /* 2 */
 }
 
+/*
+ * Calls out interactive capability of label elements with a "for" attribute
+ * Known issue: although IE7 supports attr selectors, [for] is broken 
+ */
+
+label[for] {
+    cursor: pointer;
+}
+
 
 /* =============================================================================
    Tables
