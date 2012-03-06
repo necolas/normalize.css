@@ -1,4 +1,4 @@
-/*! normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-03-06T10:21 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
    HTML5 display definitions
@@ -36,10 +36,12 @@ video {
 
 /*
  * Prevents modern browsers from displaying 'audio' without controls
+ * Remove excess height in iOS5 devices
  */
 
 audio:not([controls]) {
     display: none;
+    height: 0;
 }
 
 /*
@@ -369,7 +371,7 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3 
+ * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 
