@@ -469,6 +469,20 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /*
+ * Improves consistency of placeholder style between Chrome, Safari, and Firefox browsers
+ */
+
+::-webkit-input-placeholder
+{
+    color: #AAA;
+}
+
+:-moz-placeholder
+{
+    color: #AAA;
+}
+
+/*
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
