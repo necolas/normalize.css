@@ -477,6 +477,14 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /*
+ * Addresses placeholder text remaining visible on focus in Chrome
+ */
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/*
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
