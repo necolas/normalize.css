@@ -477,6 +477,16 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /*
+* The placeholder attribute in Chrome does not work to spec.  This makes the text transparent
+* on focus to work like Firefox, Safari, IE and the spec.
+* Spec gist: User agents should present this hint to the user...when the element's...control is not focused.
+* You can see the discussion here: http://code.google.com/p/chromium/issues/detail?id=106714
+*/
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/*
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
