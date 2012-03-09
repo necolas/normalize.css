@@ -482,7 +482,7 @@ input[type="search"]::-webkit-search-cancel-button {
 * Spec gist: User agents should present this hint to the user...when the element's...control is not focused.
 * You can see the discussion here: http://code.google.com/p/chromium/issues/detail?id=106714
 */
-input:focus::-webkit-input-placeholder {
+:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
