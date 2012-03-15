@@ -141,33 +141,42 @@ a:active {
 //
 
 h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+    // Sets the font-size and line-height while keeping a proper vertical rhythm.
+    @include adjust-font-size-to( 2 * $base-font-size );
+    // Sets 1 unit of vertical rhythm on the top margin.
+    @include leader(1);
+    // Sets 1 unit of vertical rhythm on the bottom margin.
+    @include trailer(1);
 }
 
 h2 {
-    font-size: 1.5em;
-    margin: 0.83em 0;
+    @include adjust-font-size-to( 1.5 * $base-font-size );
+    @include leader(1);
+    @include trailer(1);
 }
 
 h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
+    @include adjust-font-size-to( 1.17 * $base-font-size );
+    @include leader(1);
+    @include trailer(1);
 }
 
 h4 {
-    font-size: 1em;
-    margin: 1.33em 0;
+    @include adjust-font-size-to( 1 * $base-font-size );
+    @include leader(1);
+    @include trailer(1);
 }
 
 h5 {
-    font-size: 0.83em;
-    margin: 1.67em 0;
+    @include adjust-font-size-to( 0.83 * $base-font-size );
+    @include leader(1);
+    @include trailer(1);
 }
 
 h6 {
-    font-size: 0.75em;
-    margin: 2.33em 0;
+    @include adjust-font-size-to( 0.75 * $base-font-size );
+    @include leader(1);
+    @include trailer(1);
 }
 
 //
@@ -228,7 +237,7 @@ kbd,
 samp {
     font-family: monospace, serif;
     _font-family: 'courier new', monospace;
-    font-size: 1em;
+    @include adjust-font-size-to( 1 * $base-font-size );
 }
 
 //
