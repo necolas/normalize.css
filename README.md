@@ -37,10 +37,11 @@ There are actually other Compass ports as well. Including:
 
 Some of the above projects make normalize into a Sass partial. That makes them impossible to use in the recommended way: copy the file into your website and customize for your needs.
 
-This project also aims to use the best partials from Compass to make normalize even easier to integrate with your website. It currently provides:
+This project also aims to use the best partials from Compass to make normalize even easier to integrate with your website. It currently utilizes:
 
-* Box Sizing support
-* Vertical Rhythm support
+* Legacy IE support variables
+* CSS3 Box Sizing mixin
+* Vertical Rhythm mixins
 
 License
 -----------
