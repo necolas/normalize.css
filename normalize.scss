@@ -1,5 +1,9 @@
 // normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css
 
+// Import the Compass partials we require.
+@import "compass/css3/box-sizing";
+
+
 // =============================================================================
 // HTML5 display definitions
 // =============================================================================
