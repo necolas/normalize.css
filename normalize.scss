@@ -9,7 +9,14 @@ $base-line-height: 24px !default;
 // The default font family. You should set $base-font-family in your _base partial.
 $base-font-family: sans-serif !default;
 
+// Setting this to false will result in smaller output, but no support for ie6 hacks.
+$legacy-support-for-ie6: true !default;
+
+// Setting this to false will result in smaller output, but no support for ie7 hacks.
+$legacy-support-for-ie7: true !default;
+
 // After the default variables are set, import the required Compass partials.
+@import "compass/support";
 @import "compass/css3/box-sizing";
 @import "compass/typography/vertical_rhythm";
 
@@ -44,8 +51,10 @@ audio,
 canvas,
 video {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+        *display: inline;
+        *zoom: 1;
+    }
 }
 
 //
@@ -238,7 +247,9 @@ code,
 kbd,
 samp {
     font-family: monospace, serif;
-    _font-family: 'courier new', monospace;
+    @if $legacy-support-for-ie6 {
+        _font-family: 'courier new', monospace;
+    }
     @include adjust-font-size-to( 1 * $base-font-size );
 }
 
@@ -411,7 +422,9 @@ legend {
     border: 0; // 1
     padding: 0;
     white-space: normal; // 2
-    *margin-left: -7px; // 3
+    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+        *margin-left: -7px; // 3
+    }
 }
 
 //
@@ -427,7 +440,9 @@ textarea {
     font-size: 100%; // 1
     margin: 0; // 2
     vertical-align: baseline; // 3
-    *vertical-align: middle; // 3
+    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+        *vertical-align: middle; // 3
+    }
 }
 
 //
@@ -452,7 +467,9 @@ input[type="reset"],
 input[type="submit"] {
     cursor: pointer; // 1
     -webkit-appearance: button; // 2
-    *overflow: visible;  // 3
+    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+        *overflow: visible;  // 3
+    }
 }
 
 //
@@ -475,8 +492,10 @@ input[type="checkbox"],
 input[type="radio"] {
     @include box-sizing(border-box); // 1
     padding: 0; // 2
-    *height: 13px; // 3
-    *width: 13px; // 3
+    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+        *height: 13px; // 3
+        *width: 13px; // 3
+    }
 }
 
 //
