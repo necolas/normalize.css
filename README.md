@@ -26,7 +26,11 @@ For more information about how to use it, see the [About normalize.css article](
 The Compass port of normalize.css
 -----------
 
-This project is actually the Sass/Compass port of normalize.css.
+This project is the Sass/Compass port of normalize.css. It aims to use the best partials from Compass to make normalize even easier to integrate with your website. It currently utilizes:
+
+* Legacy IE support variables
+* CSS3 Box Sizing mixin
+* Vertical Rhythm mixins
 
 There are actually other Compass ports as well. Including:
 
@@ -36,12 +40,6 @@ There are actually other Compass ports as well. Including:
 * https://github.com/kristerkari/normalize.scss
 
 Some of the above projects make normalize into a Sass partial. That makes them impossible to use in the recommended way: copy the file into your website and customize for your needs.
-
-This project also aims to use the best partials from Compass to make normalize even easier to integrate with your website. It currently utilizes:
-
-* Legacy IE support variables
-* CSS3 Box Sizing mixin
-* Vertical Rhythm mixins
 
 License
 -----------
