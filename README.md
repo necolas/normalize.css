@@ -21,18 +21,26 @@ Normalize.css is intended to be used as an alternative to CSS resets.
 
 It is suggested that you read through the `normalize.css` file and customise it to meet the design requirements of a project rather including it as a "black box".
 
-If you prefer to use a different CSS formatting style, consider using a tool like [Procssor](http://procssor.com/).
+For more information about how to use it, see the [About normalize.css article](http://nicolasgallagher.com/about-normalize-css/).
 
-If you would like to minify the file, you can use a tool like this [online CSS compressor using YUI Compressor](http://www.refresh-sf.com/yui/) or perform the minification as part of your build process.
-
-Browser support
+The Compass port of normalize.css
 -----------
 
-* Google Chrome
-* Mozilla Firefox 3+
-* Apple Safari 4+
-* Opera 10+
-* Internet Explorer 6+
+This project is actually the Sass/Compass port of normalize.css.
+
+There are actually other Compass ports as well. Including:
+
+* https://github.com/waynegraham/compass-normalize-plugin
+* https://github.com/ksmandersen/compass-normalize
+* https://github.com/hail2u/normalize.scss
+* https://github.com/kristerkari/normalize.scss
+
+Some of the above projects make normalize into a Sass partial. That makes them impossible to use in the recommended way: copy the file into your website and customize for your needs.
+
+This project also aims to use the best partials from Compass to make normalize even easier to integrate with your website. It currently provides:
+
+* Box Sizing support
+* Vertical Rhythm support
 
 License
 -----------
@@ -43,3 +51,5 @@ Acknowledgements
 ------------
 
 Normalize.css is a project by [Nicolas Gallagher](http://github.com/necolas) and [Jonathan Neal](http://github.com/jonathantneal).
+
+This Compass port is a project by [John Albin Wilkins](http://john.albin.net).
