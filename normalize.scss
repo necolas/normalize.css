@@ -1,10 +1,17 @@
 // normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css
 
+// The base font size.
+$base-font-size: 16px !default;
+
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height: 24px !default;
+
 // The default font family. You should set $base-font-family in your _base partial.
 $base-font-family: sans-serif !default;
 
-// Import the Compass partials we require.
+// After the default variables are set, import the required Compass partials.
 @import "compass/css3/box-sizing";
+@import "compass/typography/vertical_rhythm";
 
 
 // =============================================================================
@@ -73,9 +80,11 @@ audio:not([controls]) {
 //
 
 html {
-    font-size: 100%; // 1
+    font-size: 100% * ($base-font-size / 16px); // 1
     -webkit-text-size-adjust: 100%; // 2
     -ms-text-size-adjust: 100%; // 2
+    // Establishes a vertical rhythm unit using $base-line-height.
+    @include adjust-leading-to(1);
 }
 
 //
