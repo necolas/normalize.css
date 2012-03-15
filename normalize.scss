@@ -197,7 +197,8 @@ strong {
 }
 
 blockquote {
-    margin: 1em 40px;
+    // Sets 1 unit of vertical rhythm on the top and bottom margin.
+    margin: rhythm(1) 40px;
 }
 
 //
@@ -223,7 +224,8 @@ mark {
 
 p,
 pre {
-    margin: 1em 0;
+    // Sets 1 unit of vertical rhythm on the top and bottom margin.
+    margin: rhythm(1) 0;
 }
 
 //
@@ -307,7 +309,8 @@ dl,
 menu,
 ol,
 ul {
-    margin: 1em 0;
+    // Sets 1 unit of vertical rhythm on the top and bottom margin.
+    margin: rhythm(1) 0;
 }
 
 dd {
