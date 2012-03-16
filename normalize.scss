@@ -1,5 +1,17 @@
 // normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css
 
+// Import your project's base partial. Remove this line if you don't follow
+// Compass best practices. @see http://compass-style.org/help/tutorials/best_practices/
+@import "base";
+
+
+// =============================================================================
+// Variables and Imports
+//
+// If you have a base partial (and you should), you should probably move these
+// lines to your base partial.
+// =============================================================================
+
 // The base font size.
 $base-font-size: 16px !default;
 
