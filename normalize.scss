@@ -35,6 +35,9 @@ $h6-font-size: 0.75 * $base-font-size !default;
 // The default font family. You should set $base-font-family in your _base partial.
 $base-font-family: sans-serif !default;
 
+// The amount lists and blockquotes are indented.
+$indent-amount: 40px !default;
+
 // After the default variables are set, import the required Compass partials.
 @import "compass/support";
 @import "compass/css3/box-sizing";
@@ -227,7 +230,7 @@ strong {
 
 blockquote {
     /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-    margin: rhythm(1) 40px;
+    margin: rhythm(1) $indent-amount;
 }
 
 /*
@@ -345,7 +348,7 @@ ul {
 }
 
 dd {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 $indent-amount;
 }
 
 /*
@@ -355,7 +358,7 @@ dd {
 menu,
 ol,
 ul {
-    padding: 0 0 0 40px;
+    padding: 0 0 0 $indent-amount;
 }
 
 /*
