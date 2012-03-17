@@ -161,43 +161,36 @@ a:active {
 // Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
 //
 
-h1 {
-    // Sets the font-size and line-height while keeping a proper vertical rhythm.
-    @include adjust-font-size-to( 2 * $base-font-size );
+h1, h2, h3, h4, h5, h6 {
     // Sets 1 unit of vertical rhythm on the top margin.
     @include leader(1);
     // Sets 1 unit of vertical rhythm on the bottom margin.
     @include trailer(1);
 }
 
+h1 {
+    // Sets the font-size and line-height while keeping a proper vertical rhythm.
+    @include adjust-font-size-to( 2 * $base-font-size );
+}
+
 h2 {
     @include adjust-font-size-to( 1.5 * $base-font-size );
-    @include leader(1);
-    @include trailer(1);
 }
 
 h3 {
     @include adjust-font-size-to( 1.17 * $base-font-size );
-    @include leader(1);
-    @include trailer(1);
 }
 
 h4 {
     @include adjust-font-size-to( 1 * $base-font-size );
-    @include leader(1);
-    @include trailer(1);
 }
 
 h5 {
     @include adjust-font-size-to( 0.83 * $base-font-size );
-    @include leader(1);
-    @include trailer(1);
 }
 
 h6 {
     @include adjust-font-size-to( 0.75 * $base-font-size );
-    @include leader(1);
-    @include trailer(1);
 }
 
 //
