@@ -13,19 +13,19 @@
 // =============================================================================
 
 // The base font size.
-$base-font-size: 16px !default;
+// $base-font-size: 16px; // Overrides default set in Vertical Rhythm partial.
 
 // The base line height determines the basic unit of vertical rhythm.
-$base-line-height: 24px !default;
+// $base-line-height: 24px; // Overrides default set in Vertical Rhythm partial.
+
+// Setting this to false will result in smaller output, but no support for ie6 hacks.
+// $legacy-support-for-ie6: true; // Overrides default set in Support partial.
+
+// Setting this to false will result in smaller output, but no support for ie7 hacks.
+// $legacy-support-for-ie7: true; // Overrides default set in Support partial.
 
 // The default font family. You should set $base-font-family in your _base partial.
 $base-font-family: sans-serif !default;
-
-// Setting this to false will result in smaller output, but no support for ie6 hacks.
-$legacy-support-for-ie6: true !default;
-
-// Setting this to false will result in smaller output, but no support for ie7 hacks.
-$legacy-support-for-ie7: true !default;
 
 // After the default variables are set, import the required Compass partials.
 @import "compass/support";
