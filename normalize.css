@@ -285,6 +285,13 @@ ul {
     margin: 1em 0;
 }
 
+ol ol,
+ol ul,
+ul ul,
+ul ol {
+   margin: 0;
+}
+
 dd {
     margin: 0 0 0 40px;
 }
