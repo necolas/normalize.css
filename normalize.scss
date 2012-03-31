@@ -13,10 +13,18 @@
 // =============================================================================
 
 // The base font size.
-// $base-font-size: 16px; // Overrides default set in Vertical Rhythm partial.
+$base-font-size: 16px !default; // Overrides default set in Vertical Rhythm partial.
 
 // The base line height determines the basic unit of vertical rhythm.
 // $base-line-height: 24px; // Overrides default set in Vertical Rhythm partial.
+
+// The font sizes for h1-h6. You should set these variables in your _base partial.
+$h1-font-size: 2    * $base-font-size !default;
+$h2-font-size: 1.5  * $base-font-size !default;
+$h3-font-size: 1.17 * $base-font-size !default;
+$h4-font-size: 1    * $base-font-size !default;
+$h5-font-size: 0.83 * $base-font-size !default;
+$h6-font-size: 0.75 * $base-font-size !default;
 
 // Setting this to false will result in smaller output, but no support for ie6 hacks.
 // $legacy-support-for-ie6: true; // Overrides default set in Support partial.
@@ -161,36 +169,43 @@ a:active {
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
 
-h1, h2, h3, h4, h5, h6 {
-    /* Sets 1 unit of vertical rhythm on the top margin. */
-    @include leader(1);
-    /* Sets 1 unit of vertical rhythm on the bottom margin. */
-    @include trailer(1);
-}
-
 h1 {
     /* Sets the font-size and line-height while keeping a proper vertical rhythm. */
-    @include adjust-font-size-to( 2 * $base-font-size );
+    @include adjust-font-size-to( $h1-font-size );
+
+    /* Sets 1 unit of vertical rhythm on the top and bottom margins. */
+    @include leader(1, $h1-font-size);
+    @include trailer(1, $h1-font-size);
 }
 
 h2 {
-    @include adjust-font-size-to( 1.5 * $base-font-size );
+    @include adjust-font-size-to( $h2-font-size );
+    @include leader(1, $h2-font-size);
+    @include trailer(1, $h2-font-size);
 }
 
 h3 {
-    @include adjust-font-size-to( 1.17 * $base-font-size );
+    @include adjust-font-size-to( $h3-font-size );
+    @include leader(1, $h3-font-size);
+    @include trailer(1, $h3-font-size);
 }
 
 h4 {
-    @include adjust-font-size-to( 1 * $base-font-size );
+    @include adjust-font-size-to( $h4-font-size );
+    @include leader(1, $h4-font-size);
+    @include trailer(1, $h4-font-size);
 }
 
 h5 {
-    @include adjust-font-size-to( 0.83 * $base-font-size );
+    @include adjust-font-size-to( $h5-font-size );
+    @include leader(1, $h5-font-size);
+    @include trailer(1, $h5-font-size);
 }
 
 h6 {
-    @include adjust-font-size-to( 0.75 * $base-font-size );
+    @include adjust-font-size-to( $h6-font-size );
+    @include leader(1, $h6-font-size);
+    @include trailer(1, $h6-font-size);
 }
 
 /*
