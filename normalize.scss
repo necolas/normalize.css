@@ -1,4 +1,4 @@
-// normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css
+/* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
 
 // Import your project's base partial. Remove this line if you don't follow
 // Compass best practices. @see http://compass-style.org/help/tutorials/best_practices/
@@ -33,13 +33,13 @@ $base-font-family: sans-serif !default;
 @import "compass/typography/vertical_rhythm";
 
 
-// =============================================================================
-// HTML5 display definitions
-// =============================================================================
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
 
-//
-// Corrects block display not defined in IE6/7/8/9 & FF3
-//
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
 
 article,
 aside,
@@ -55,9 +55,9 @@ summary {
     display: block;
 }
 
-//
-// Corrects inline-block display not defined in IE6/7/8/9 & FF3
-//
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
 
 audio,
 canvas,
@@ -69,48 +69,48 @@ video {
     }
 }
 
-//
-// Prevents modern browsers from displaying 'audio' without controls
-// Remove excess height in iOS5 devices
-//
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ * Remove excess height in iOS5 devices
+ */
 
 audio:not([controls]) {
     display: none;
     height: 0;
 }
 
-//
-// Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
-// Known issue: no IE6 support
-//
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
 
 [hidden] {
     display: none;
 }
 
 
-// =============================================================================
-// Base
-// =============================================================================
+/* =============================================================================
+   Base
+   ========================================================================== */
 
-//
-// 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
-//    http://clagnut.com/blog/348/#c790
-// 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
-//    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
-//
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
 
 html {
-    font-size: 100% * ($base-font-size / 16px); // 1
-    -webkit-text-size-adjust: 100%; // 2
-    -ms-text-size-adjust: 100%; // 2
-    // Establishes a vertical rhythm unit using $base-line-height.
+    font-size: 100% * ($base-font-size / 16px); /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    /* Establishes a vertical rhythm unit using $base-line-height. */
     @include adjust-leading-to(1);
 }
 
-//
-// Addresses font-family inconsistency between 'textarea' and other form elements.
-//
+/*
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
 
 html,
 button,
@@ -120,31 +120,31 @@ textarea {
     font-family: $base-font-family;
 }
 
-//
-// Addresses margins handled incorrectly in IE6/7
-//
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
 
 body {
     margin: 0;
 }
 
 
-// =============================================================================
-// Links
-// =============================================================================
+/* =============================================================================
+   Links
+   ========================================================================== */
 
-//
-// Addresses outline displayed oddly in Chrome
-//
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
 
 a:focus {
     outline: thin dotted;
 }
 
-//
-// Improves readability when focused and also mouse hovered in all browsers
-// people.opera.com/patrickl/experiments/keyboard/test
-//
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
 
 a:hover,
 a:active {
@@ -152,24 +152,24 @@ a:active {
 }
 
 
-// =============================================================================
-// Typography
-// =============================================================================
+/* =============================================================================
+   Typography
+   ========================================================================== */
 
-//
-// Addresses font sizes and margins set differently in IE6/7
-// Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
-//
+/*
+ * Addresses font sizes and margins set differently in IE6/7
+ * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
+ */
 
 h1, h2, h3, h4, h5, h6 {
-    // Sets 1 unit of vertical rhythm on the top margin.
+    /* Sets 1 unit of vertical rhythm on the top margin. */
     @include leader(1);
-    // Sets 1 unit of vertical rhythm on the bottom margin.
+    /* Sets 1 unit of vertical rhythm on the bottom margin. */
     @include trailer(1);
 }
 
 h1 {
-    // Sets the font-size and line-height while keeping a proper vertical rhythm.
+    /* Sets the font-size and line-height while keeping a proper vertical rhythm. */
     @include adjust-font-size-to( 2 * $base-font-size );
 }
 
@@ -193,17 +193,17 @@ h6 {
     @include adjust-font-size-to( 0.75 * $base-font-size );
 }
 
-//
-// Addresses styling not present in IE7/8/9, S5, Chrome
-//
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
 
 abbr[title] {
     border-bottom: 1px dotted;
 }
 
-//
-// Addresses style set to 'bolder' in FF3+, S4/5, Chrome
-//
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
 
 b,
 strong {
@@ -211,41 +211,41 @@ strong {
 }
 
 blockquote {
-    // Sets 1 unit of vertical rhythm on the top and bottom margin.
+    /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
     margin: rhythm(1) 40px;
 }
 
-//
-// Addresses styling not present in S5, Chrome
-//
+/*
+ * Addresses styling not present in S5, Chrome
+ */
 
 dfn {
     font-style: italic;
 }
 
-//
-// Addresses styling not present in IE6/7/8/9
-//
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
 
 mark {
     background: #ff0;
     color: #000;
 }
 
-//
-// Addresses margins set differently in IE6/7
-//
+/*
+ * Addresses margins set differently in IE6/7
+ */
 
 p,
 pre {
-    // Sets 1 unit of vertical rhythm on the top and bottom margin.
+    /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
     margin: rhythm(1) 0;
 }
 
-//
-// Corrects font family set oddly in IE6, S4/5, Chrome
-// en.wikipedia.org/wiki/User:Davidgothberg/Test59
-//
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
 
 pre,
 code,
@@ -258,9 +258,9 @@ samp {
     @include adjust-font-size-to( 1 * $base-font-size );
 }
 
-//
-// Improves readability of pre-formatted text in all browsers
-//
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
 
 pre {
     white-space: pre;
@@ -268,18 +268,18 @@ pre {
     word-wrap: break-word;
 }
 
-//
-// 1. Addresses CSS quotes not supported in IE6/7
-// 2. Addresses quote property not supported in S4
-//
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
 
-// 1
+/* 1 */
 
 q {
     quotes: none;
 }
 
-// 2
+/* 2 */
 
 q:before,
 q:after {
@@ -291,10 +291,10 @@ small {
     font-size: 75%;
 }
 
-//
-// Prevents sub and sup affecting line-height in all browsers
-// gist.github.com/413930
-//
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
 
 sub,
 sup {
@@ -313,19 +313,19 @@ sub {
 }
 
 
-// =============================================================================
-// Lists
-// =============================================================================
+/* =============================================================================
+   Lists
+   ========================================================================== */
 
-//
-// Addresses margins set differently in IE6/7
-//
+/*
+ * Addresses margins set differently in IE6/7
+ */
 
 dl,
 menu,
 ol,
 ul {
-    // Sets 1 unit of vertical rhythm on the top and bottom margin.
+    /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
     margin: rhythm(1) 0;
 }
 
@@ -333,9 +333,9 @@ dd {
     margin: 0 0 0 40px;
 }
 
-//
-// Addresses paddings set differently in IE6/7
-//
+/*
+ * Addresses paddings set differently in IE6/7
+ */
 
 menu,
 ol,
@@ -343,9 +343,9 @@ ul {
     padding: 0 0 0 40px;
 }
 
-//
-// Corrects list images handled incorrectly in IE7
-//
+/*
+ * Corrects list images handled incorrectly in IE7
+ */
 
 nav ul,
 nav ol {
@@ -354,178 +354,178 @@ nav ol {
 }
 
 
-// =============================================================================
-// Embedded content
-// =============================================================================
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
 
-//
-// 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
-// 2. Improves image quality when scaled in IE7
-//    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
-//
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
 
 img {
-    border: 0; // 1
-    -ms-interpolation-mode: bicubic; // 2
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
 }
 
-//
-// Corrects overflow displayed oddly in IE9
-//
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
 
 svg:not(:root) {
     overflow: hidden;
 }
 
 
-// =============================================================================
-// Figures
-// =============================================================================
+/* =============================================================================
+   Figures
+   ========================================================================== */
 
-//
-// Addresses margin not present in IE6/7/8/9, S5, O11
-//
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
 
 figure {
     margin: 0;
 }
 
 
-// =============================================================================
-// Forms
-// =============================================================================
+/* =============================================================================
+   Forms
+   ========================================================================== */
 
-//
-// Corrects margin displayed oddly in IE6/7
-//
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
 
 form {
     margin: 0;
 }
 
-//
-// Define consistent border, margin, and padding
-//
+/*
+ * Define consistent border, margin, and padding
+ */
 
 fieldset {
     border-color: #c0c0c0;
     margin: 0 2px;
-    // Apply borders and padding that keep the vertical rhythm.
+    /* Apply borders and padding that keep the vertical rhythm. */
     @include apply-side-rhythm-border(top,    $width: 1px, $lines: 0.35);
     @include apply-side-rhythm-border(bottom, $width: 1px, $lines: 0.65);
     @include apply-side-rhythm-border(left,  $width: 1px, $lines: 0.625);
     @include apply-side-rhythm-border(right, $width: 1px, $lines: 0.625);
 }
 
-//
-// 1. Corrects color not being inherited in IE6/7/8/9
-// 2. Corrects text not wrapping in FF3
-// 3. Corrects alignment displayed oddly in IE6/7
-//
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3
+ * 3. Corrects alignment displayed oddly in IE6/7
+ */
 
 legend {
-    border: 0; // 1
+    border: 0; /* 1 */
     padding: 0;
-    white-space: normal; // 2
+    white-space: normal; /* 2 */
     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-        *margin-left: -7px; // 3
+        *margin-left: -7px; /* 3 */
     }
 }
 
-//
-// 1. Corrects font size not being inherited in all browsers
-// 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
-// 3. Improves appearance and consistency in all browsers
-//
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
 
 button,
 input,
 select,
 textarea {
-    font-size: 100%; // 1
-    margin: 0; // 2
-    vertical-align: baseline; // 3
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-        *vertical-align: middle; // 3
+        *vertical-align: middle; /* 3 */
     }
 }
 
-//
-// Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
-//
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
 
 button,
 input {
-    line-height: normal; // 1
+    line-height: normal; /* 1 */
 }
 
-//
-// 1. Improves usability and consistency of cursor style between image-type 'input' and others
-// 2. Corrects inability to style clickable 'input' types in iOS
-// 3. Removes inner spacing in IE7 without affecting normal text inputs
-//    Known issue: inner spacing remains in IE6
-//
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
 
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    cursor: pointer; // 1
-    -webkit-appearance: button; // 2
+    cursor: pointer; /* 1 */
+    -webkit-appearance: button; /* 2 */
     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-        *overflow: visible;  // 3
+        *overflow: visible;  /* 3 */
     }
 }
 
-//
-// Re-set default cursor for disabled elements
-//
+/*
+ * Re-set default cursor for disabled elements
+ */
 
 button[disabled],
 input[disabled] {
     cursor: default;
 }
 
-//
-// 1. Addresses box sizing set to content-box in IE8/9
-// 2. Removes excess padding in IE8/9
-// 3. Removes excess padding in IE7
-//    Known issue: excess padding remains in IE6
-//
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
+ */
 
 input[type="checkbox"],
 input[type="radio"] {
-    @include box-sizing(border-box); // 1
-    padding: 0; // 2
+    @include box-sizing(border-box); /* 1 */
+    padding: 0; /* 2 */
     @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-        *height: 13px; // 3
-        *width: 13px; // 3
+        *height: 13px; /* 3 */
+        *width: 13px; /* 3 */
     }
 }
 
-//
-// 1. Addresses appearance set to searchfield in S5, Chrome
-// 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
-//
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
 
 input[type="search"] {
-    -webkit-appearance: textfield; // 1
-    @include box-sizing(content-box); // 2
+    -webkit-appearance: textfield; /* 1 */
+    @include box-sizing(content-box); /* 2 */
 }
 
-//
-// Removes inner padding and search cancel button in S5, Chrome on OS X
-//
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
 
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
 }
 
-//
-// Removes inner padding and border in FF3+
-// www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
-//
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -533,24 +533,24 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-//
-// 1. Removes default vertical scrollbar in IE6/7/8/9
-// 2. Improves readability and alignment in all browsers
-//
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
 
 textarea {
-    overflow: auto; // 1
-    vertical-align: top; // 2
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
 }
 
 
-// =============================================================================
-// Tables
-// =============================================================================
+/* =============================================================================
+   Tables
+   ========================================================================== */
 
-//
-// Remove most spacing between table cells
-//
+/*
+ * Remove most spacing between table cells
+ */
 
 table {
     border-collapse: collapse;
