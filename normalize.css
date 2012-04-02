@@ -95,6 +95,12 @@ body {
 /* =============================================================================
    Links
    ========================================================================== */
+   
+/* 
+ * Retains pointer hand on links without href attribute (e.g. for jQuery events)
+ */
+
+a {cursor:pointer;}
 
 /*
  * Addresses outline displayed oddly in Chrome
