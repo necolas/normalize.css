@@ -460,6 +460,15 @@ input[type="search"] {
 }
 
 /*
+ * Removes spin buttons to move the value up or down on input[type=number]
+ */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/*
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
 
