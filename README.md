@@ -34,6 +34,11 @@ Browser support
 * Opera 10+
 * Internet Explorer 6+
 
+Contribute
+-----------
+
+Please read the Wiki entry on [contributing to Normalize.css](https://github.com/necolas/normalize.css/wiki/contribute)
+
 License
 -----------
 
