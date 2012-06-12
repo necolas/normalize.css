@@ -333,6 +333,15 @@ svg:not(:root) {
     overflow: hidden;
 }
 
+/*
+ * Normalizes object SVG sizing across all browsers
+ */
+
+object[type="image/svg+xml"], object[data$=".svg"], object[data$=".svgz"] {
+    width: inherit;
+    height: inherit;
+}
+
 
 /* =============================================================================
    Figures
