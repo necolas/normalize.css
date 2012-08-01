@@ -362,6 +362,7 @@ table input {
 /*
  * 1. Improves usability and consistency of cursor style between image-type 'input' and others
  * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Remove extra width on inputs from IE6 and 7
  */
 
 button,
@@ -370,6 +371,7 @@ input[type="reset"],
 input[type="submit"] {
     cursor: pointer; /* 1 */
     -webkit-appearance: button; /* 2 */
+    overflow:visible
 }
 
 /*
