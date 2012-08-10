@@ -84,11 +84,13 @@ textarea {
 }
 
 /*
- * Addresses margins handled incorrectly in IE6/7.
+ * 1. Addresses margins handled incorrectly in IE6/7.
+ * 2. Addresses fuzzy text displaying in S
  */
 
 body {
-    margin: 0;
+    margin: 0; /* 1 */
+    -webkit-font-smoothing: antialiased; /* 2 */
 }
 
 /* ==========================================================================
