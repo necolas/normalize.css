@@ -486,6 +486,15 @@ textarea {
     vertical-align: top; /* 2 */
 }
 
+/*
+ * Removes Webkit outline on input and textarea on focus
+ */
+input, textarea {
+    outline: none;
+}
+
+
+
 /* ==========================================================================
    Tables
    ========================================================================== */
