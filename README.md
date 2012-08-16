@@ -26,10 +26,10 @@ override the defaults later in your CSS.
 ## Browser support
 
 * Google Chrome
-* Mozilla Firefox 3+
-* Apple Safari 4+
-* Opera 10+
-* Internet Explorer 6+
+* Mozilla Firefox 4+
+* Apple Safari 5+
+* Opera 12+
+* Internet Explorer 8+
 
 ## Contribute
 
