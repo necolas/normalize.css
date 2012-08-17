@@ -80,6 +80,7 @@ html,
 button,
 input,
 select,
+optgroup,
 textarea {
     font-family: sans-serif;
 }
