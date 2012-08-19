@@ -1,4 +1,4 @@
-== HEAD
+== 2.0.0 (August 19, 2012)
 
 * Remove legacy browser form normalizations.
 * Remove all list normalizations.
