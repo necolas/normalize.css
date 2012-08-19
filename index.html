@@ -4,83 +4,81 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Normalize.css: Make browsers render all elements more consistently.</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+        <link rel="stylesheet" href="1.0.1/normalize.css">
+        <link rel="stylesheet" href="main.css">
     </head>
-
     <body>
-        <div id="container">
-
-            <div class="hgroup">
-                <h1><a href="https://github.com/necolas/normalize.css">normalize.css</a></h1>
-                <h2>A modern, HTML5-ready alternative to CSS resets</h2>
-            </div>
-
-            <p>Normalize.css is a customisable CSS file that makes browsers render all elements more consistently and in line with modern standards. We researched the differences between default browser styles in order to precisely target only the styles that need normalizing.</p>
-
-            <h2>What does it do?</h2>
-            <ul>
-                <li><strong>Preserves useful defaults</strong>, unlike many CSS resets.</li>
-                <li><strong>Normalizes styles</strong> for a wide range of HTML elements.</li>
-                <li><strong>Corrects bugs</strong> and common browser inconsistencies.</li>
-                <li><strong>Improves usability</strong> with subtle improvements.</li>
-                <li><strong>Explains what code does</strong> using detailed comments.</li>
-            </ul>
-
-            <div class="cta">
-                <a class="button button-main" href="http://necolas.github.com/normalize.css/1.0.0/normalize.css">Download v1.0.0</a>
-                <a class="button" href="https://github.com/necolas/normalize.css">View on GitHub</a>
-            </div>
-
-            <div class="share-bar">
-                <div class="share-opt">
-                    <a class="twitter-share-button"
-                       href="http://twitter.com/share"
-                       data-count="vertical"
-                       data-text="Normalize.css: a modern HTML5-ready alternative to CSS resets"
-                       data-via="necolas"
-                       data-related="jon_neal">Tweet</a>
+        <div class="container">
+            <div class="site-box">
+                <div class="hgroup">
+                    <h1 class="logo">Normalize.css</h1>
+                    <h2 class="tagline">A modern, HTML5-ready alternative to CSS resets</h2>
                 </div>
 
-                <div class="share-opt">
-                    <div class="g-plusone" data-size="tall"></div>
+                <p class="description">Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.</p>
+
+                <div class="cta-option">
+                    <a class="btn-download"
+                       href="http://necolas.github.com/normalize.css/2.0.0/normalize.css">
+                        <strong>Download</strong>
+                        <span class="version">v2.0.0</span>
+                    </a>
+                    <p class="txt-small txt-mute">IE 8+, Firefox 4+, Safari 5+, Opera, Chrome</p>
                 </div>
 
-                <div class="share-opt">
-                    <div class="fb-like" data-send="false" data-width="40" data-layout="box_count" data-show-faces="false"></div>
+                <div class="cta-option">
+                    <a class="btn-download btn-download-alt"
+                       href="http://necolas.github.com/normalize.css/1.0.1/normalize.css">
+                        Download
+                        <span class="version">v1.0.1</span>
+                    </a>
+                    <p class="txt-small txt-mute">Includes legacy browser support</p>
+                </div>
+
+                <div class="share-bar">
+                    <a class="read-more" href="http://nicolasgallagher.com/about-normalize-css">Read more about normalize.css &raquo;</a>
+
+                    <div class="share-opt">
+                        <a class="twitter-share-button"
+                           href="http://twitter.com/share"
+                           data-count="none"
+                           data-size="large"
+                           data-text="Normalize.css: a modern HTML5-ready alternative to CSS resets"
+                           data-via="necolas"
+                           data-related="jon_neal">Tweet</a>
+                    </div>
+
+                    <div class="share-opt">
+                        <a class="twitter-follow-button"
+                           href="http://twitter.com/necolas"
+                           data-show-count="false"
+                           data-size="large">@necolas</a>
+                    </div>
+
+                    <div class="share-opt">
+                        <div class="g-plusone" data-annotation="none"></div>
+                    </div>
                 </div>
             </div>
 
-            <h2>How do I use it?</h2>
-            <p>Normalize.css is intended to be used as an alternative to CSS resets. It's suggested that you read the <code>normalize.css</code> file and consider customising it to meet your needs. Alternatively, include the file in your project and override the defaults later in your CSS.</p>
+            <div class="site-footer">
+                <p class="txt-large">&hellip;as used by
+                    <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>,
+                    <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>,
+                    <a href="http://data.nasa.gov/">NASA</a>,
+                    <a href="https://www.rdio.com/">Rdio</a>,
+                    <a href="http://digg.com/">Digg</a>,
+                    <a href="https://www.gov.uk/">GOV.UK</a>,
+                    <a href="http://informationarchitects.net/">iA</a>,
+                    <a href="http://css-tricks.com/">CSS Tricks</a>,
+                    and many others.
+                </p>
 
-            <h2>Who uses it?</h2>
-            <p>
-                <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>,
-                <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>,
-                <a href="http://data.nasa.gov/">NASA</a>,
-                <a href="https://www.rdio.com/">Rdio</a>,
-                <a href="http://digg.com/">Digg</a>,
-                <a href="https://www.gov.uk/">GOV.UK</a>,
-                <a href="http://informationarchitects.net/">iA</a>,
-                <a href="http://css-tricks.com/">CSS Tricks</a>,
-                and many others.
-            </p>
-
-            <h2>Browser support</h2>
-            <h3>v1.0.0</h3>
-            <p>Chrome, Firefox 3+, Safari 4+, Opera 10+, Internet Explorer 6+</p>
-
-            <h2>Source code</h2>
-            <p>Available on GitHub: <a href="https://github.com/necolas/normalize.css">necolas/normalize.css</a></p>
-            <pre>$ git clone https://github.com/necolas/normalize.css.git</pre>
-
-            <h2>Acknowledgements</h2>
-            <p>Normalize.css is a project by <a href="http://nicolasgallagher.com">Nicolas Gallagher</a> (<a href="http://twitter.com/necolas">@necolas</a>) and <a href="http://music.thewikies.com/jonneal/">Jonathan Neal</a> (<a href="http://twitter.com/jon_neal">@jon_neal</a>).</p>
-            <p>Detailed information on default UA styles: <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#the-css-user-agent-style-sheet-and-presentational-hints">WHATWG suggestions for rendering HTML documents</a>, <a href="http://iecss.com">Internet Explorer User Agent Style Sheets</a> and <a href="http://css-class.com/test/css/defaults/UA-style-sheet-defaults.htm">CSS2.1 User Agent Style Sheet Defaults</a></p>
-
+                <p>Source code available on GitHub: <a href="https://github.com/necolas/normalize.css">necolas/normalize.css</a>.<br>Normalize.css is a project by <a href="http://nicolasgallagher.com">Nicolas Gallagher</a> and <a href="http://music.thewikies.com/jonneal/">Jonathan Neal</a>.</p>
+            </div>
         </div>
 
-        <div id="fb-root"></div>
         <script>
             window._gaq=[['_setAccount','UA-7489188-1'],['_trackPageview']];
             (function(doc, script) {
@@ -97,12 +95,10 @@
 
                 // Google Analytics
                 add(('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js');
-                // Facebook SDK
-                add('//connect.facebook.net/en_US/all.js#xfbml=1', 'facebook-jssdk');
                 // Google+ button
-                add('https://apis.google.com/js/plusone.js');
+                add('http://apis.google.com/js/plusone.js');
                 // Twitter SDK
-                add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+                add('http://platform.twitter.com/widgets.js', 'twitter-wjs');
 
                 fjs.parentNode.insertBefore(frag, fjs);
             }(document, 'script'));
