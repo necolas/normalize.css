@@ -1,4 +1,4 @@
-== HEAD
+== 1.0.1 (August 19, 2012)
 
 * Adjust `small` font size normalization.
 
