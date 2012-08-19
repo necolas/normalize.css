@@ -285,6 +285,16 @@ input {
 }
 
 /*
+ * Addresses default values only being set for `button` in Webkit, and only
+ * being set by IE and WebKit for `select`.
+ */
+
+ button,
+ select {
+    text-transform: none;
+ }
+
+/*
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
  *    and `video` controls.
  * 2. Corrects inability to style clickable `input` types in iOS.
