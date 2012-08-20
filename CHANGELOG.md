@@ -1,3 +1,7 @@
+== HEAD
+
+* Remove stray IE 6/7 `inline-block` hack from HTML5 display settings.
+
 == 2.0.0 (August 19, 2012)
 
 * Remove legacy browser form normalizations.
