@@ -1,4 +1,4 @@
-== HEAD
+== 2.0.1 (August 20, 2012)
 
 * Remove stray IE 6/7 `inline-block` hack from HTML5 display settings.
 
