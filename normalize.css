@@ -366,8 +366,8 @@ textarea {
  * 2. Removes default for IE 10.
  */
 :invalid {
-    box-shadow: none;
-    outline: none;
+    box-shadow: none; /* 1 */
+    outline: none; /* 2 */
 }
 
 /* ==========================================================================
