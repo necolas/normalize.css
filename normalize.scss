@@ -32,7 +32,7 @@ summary {
 }
 
 /*
- * Corrects `inline-block` display not defined in IE 8/9.
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
 
 audio,
@@ -71,6 +71,8 @@ audio:not([controls]) {
  * 1. Sets default font family to sans-serif.
  * 2. Prevents iOS text size adjust after orientation change, without disabling
  *    user zoom.
+ * 3.Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
  */
 
 html {
@@ -117,6 +119,7 @@ a {
    ========================================================================== */
 
 /*
+ * Addresses font sizes and margins set differently in IE 6/7.
  * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
  * Safari 5, and Chrome.
  */
@@ -164,7 +167,7 @@ abbr[title] {
 }
 
 /*
- * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
 
 b,
@@ -195,9 +198,8 @@ mark {
     color: #000;
 }
 
-
 /*
- * Corrects font family set oddly in Safari 5 and Chrome.
+ * Addresses margins set differently in IE 6/7.
  */
 
 @if $legacy_browser_support {
@@ -206,6 +208,10 @@ mark {
         margin: 1em 0;
     }
 }
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
 
 code,
 kbd,
@@ -332,7 +338,8 @@ sub {
    ========================================================================== */
 
 /*
- * Removes border when inside `a` element in IE 8/9.
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
  */
 
 img {
@@ -377,8 +384,10 @@ fieldset {
 }
 
 /*
- * 1. Corrects color not being inherited in IE 8/9.
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Corrects text not wrapping in Firefox 3.
+ * 4. Corrects alignment displayed oddly in IE 6/7.
  */
 
 legend {
@@ -393,7 +402,8 @@ legend {
 /*
  * 1. Corrects font family not being inherited in all browsers.
  * 2. Corrects font size not being inherited in all browsers.
- * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ * 3. Addresses margins set differently IE 6/7, Firefox 3+, Safari 5, and Chrome
+ * 4. Improves appearance and consistency in all browsers.
  */
 
 button,
@@ -425,6 +435,8 @@ input {
  * 2. Corrects inability to style clickable `input` types in iOS.
  * 3. Improves usability and consistency of cursor style between image-type
  *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
  */
 
 button,
@@ -450,6 +462,8 @@ input[disabled] {
 /*
  * 1. Addresses box sizing set to `content-box` in IE 8/9.
  * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
  */
 
 input[type="checkbox"],
