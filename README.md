@@ -15,6 +15,26 @@ the styles that need normalizing.
 * Improves usability with subtle improvements.
 * Explains what code does using detailed comments.
 
+## How is it different from "reset" stylesheets?
+
+1. **It preserves useful defaults.**
+Resets impose a homogenous visual style by flattening the default styles for almost all elements.
+In contrast, normalize.css retains and harmonizes many useful default browser styles,
+so they don’t have to be redefined to work well typographically,
+allowing your stylesheet to contain only the changes needed to implement a specific design.
+
+2. **It corrects common bugs.**
+Normalize.css fixes common desktop and mobile browser bugs that are out of scope for resets.
+This includes display settings for HTML5 elements, correcting font-size for preformatted text,
+SVG overflow in IE9, and many form-related bugs across browsers and operating systems.
+ 
+3. **It is modular and doesn’t clutter debugging tools.**
+Normalize.css is broken down into relatively independent sections,
+making it easy to remove sections (e.g., the form normalizations) if they won't be needed by a specific project.
+This modular philosophy also motivates the use of targeted selectors,
+as opposed to multiple selectors, whenever possible and appropriate.
+This avoids the long inheritance chains that are displayed in browser CSS debugging tools when resets are used.
+
 ## How to use it
 
 Normalize.css is intended to be used as an alternative to CSS resets.
