@@ -1,11 +1,11 @@
-# normalize.css v1.0.1
+# normalize.css v2.0.1
 
 Normalize.css is a customisable CSS file that makes browsers render all
 elements more consistently and in line with modern standards. We researched the
 differences between default browser styles in order to precisely target only
 the styles that need normalizing.
 
-[Check out the demo](http://necolas.github.com/normalize.css/1.0.1/test.html)
+[Check out the demo](http://necolas.github.com/normalize.css/2.0.1/test.html)
 
 ## What does it do?
 
@@ -28,10 +28,10 @@ For more information about how to use it, see the [About normalize.css article](
 ## Browser support
 
 * Google Chrome
-* Mozilla Firefox 3+
-* Apple Safari 4+
-* Opera 10+
-* Internet Explorer 6+
+* Mozilla Firefox 4+
+* Apple Safari 5+
+* Opera 12+
+* Internet Explorer 8+
 
 ## The Compass port of normalize.css
 
