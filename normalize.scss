@@ -332,16 +332,15 @@ menu,
 ol,
 ul {
     margin: rhythm(1) 0;
+    padding: 0 0 0 $indent-amount;
+}
+
+dl {
+    padding: 0;
 }
 
 dd {
     margin: 0 0 0 $indent-amount;
-}
-
-menu,
-ol,
-ul {
-    padding: 0 0 0 $indent-amount;
 }
 
 @if $legacy-support-for-ie7 {
