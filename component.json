@@ -1,0 +1,14 @@
+{
+    "name": "normalize-css",
+    "version": "1.0.1",
+    "author": "Nicolas Gallagher",
+    "homepage": "http://necolas.github.com/normalize.css",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/necolas/normalize.css.git"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://opensource.org/licenses/MIT"
+    }]
+}
