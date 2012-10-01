@@ -167,6 +167,20 @@ a:hover {
    ========================================================================== */
 
 /*
+ * Sets 1 unit of vertical rhythm on the top and bottom margin.
+ */
+
+p,
+pre {
+    margin: rhythm(1) 0;
+}
+
+blockquote {
+    /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
+    margin: rhythm(1) $indent-amount;
+}
+
+/*
  * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
  * Safari 5, and Chrome.
  */
@@ -227,11 +241,6 @@ strong {
     font-weight: bold;
 }
 
-blockquote {
-    /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-    margin: rhythm(1) $indent-amount;
-}
-
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
@@ -247,15 +256,6 @@ dfn {
 mark {
     background: #ff0;
     color: #000;
-}
-
-/*
- * Sets 1 unit of vertical rhythm on the top and bottom margin.
- */
-
-p,
-pre {
-    margin: rhythm(1) 0;
 }
 
 /*
