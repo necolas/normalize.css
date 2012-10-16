@@ -1,15 +1,15 @@
 /* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* normalize.scss v2.0.1 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
 
-// Import your project's base partial. Remove this line if you don't follow
-// Compass best practices. @see http://compass-style.org/help/tutorials/best_practices/
+// Import your project's _base.scss partial. See Compass best practices for more
+// info. http://compass-style.org/help/tutorials/best_practices/
 @import "base";
 
 
 // =============================================================================
 // Variables and Imports
 //
-// If you have a base partial (and you should), you should probably move these
-// lines to your base partial.
+// If you have a base partial, you should move these lines to your base partial.
 // =============================================================================
 
 // The base font size.
@@ -18,7 +18,7 @@ $base-font-size: 16px !default; // Overrides default set in Vertical Rhythm part
 // The base line height determines the basic unit of vertical rhythm.
 // $base-line-height: 24px; // Overrides default set in Vertical Rhythm partial.
 
-// The font sizes for h1-h6. You should set these variables in your _base partial.
+// The font sizes for h1-h6. You should set these variables in your base partial.
 $h1-font-size: 2    * $base-font-size !default;
 $h2-font-size: 1.5  * $base-font-size !default;
 $h3-font-size: 1.17 * $base-font-size !default;
@@ -32,7 +32,7 @@ $h6-font-size: 0.75 * $base-font-size !default;
 // Setting this to false will result in smaller output, but no support for ie7 hacks.
 // $legacy-support-for-ie7: true; // Overrides default set in Support partial.
 
-// The default font family. You should set $base-font-family in your _base partial.
+// The default font family. You should set $base-font-family in your base partial.
 $base-font-family: sans-serif !default;
 
 // The amount lists and blockquotes are indented.
