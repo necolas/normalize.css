@@ -43,14 +43,24 @@ website. It currently utilizes:
 * CSS3 Box Sizing mixin
 * Vertical Rhythm mixins
 
-There are actually other Compass ports as well. Including:
+In addition, Normalize.css has 2 major versions: version 2 (without legacy
+browser support) and version 1 (with support for IE 6/7, etc.) This Compass port
+combines the two versions into one file so that you can easily toggle between
+the two versions using Compass' $legacy-support-for-ie7 variable.
+
+Did a client wait until the last minute to mention their CEO uses IE 7? Simply
+set $legacy-support-for-ie7 to true and recompile your Sass files.
+
+For the record, there are actually other Compass ports as well. Including:
 
 * https://github.com/waynegraham/compass-normalize-plugin
 * https://github.com/ksmandersen/compass-normalize
 * https://github.com/hail2u/normalize.scss
 * https://github.com/kristerkari/normalize.scss
 
-Some of the above projects make normalize into a Sass partial. That makes them impossible to use in the recommended way: copy the file into your website and customize for your needs.
+Some of the above projects make normalize into a Sass partial. That makes them
+impossible to use in the recommended way (by copying the file into your website
+and customizing for your needs.)
 
 ## Contribute
 
