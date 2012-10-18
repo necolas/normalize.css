@@ -480,7 +480,7 @@ input[type="submit"] {
     -webkit-appearance: button; /* 2 */
     cursor: pointer; /* 3 */
     @if $legacy-support-for-ie7 {
-        *overflow: visible;  /* 4 */
+        *overflow: visible; /* 4 */
     }
 }
 
