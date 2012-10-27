@@ -5,6 +5,18 @@
    ========================================================================== */
 
 /*
+ * 1. Improves font rendering in Webkit browsers and stops text flash when
+ *    transitioning/transforming
+ * 2. Initializes hardware acceleration on iOS and several other mobile browsers
+ */
+body {
+    opacity: .999999; /* 1 */
+    -webkit-transform: translate3d(0, 0, 0); /* 2 */
+    -moz-transform: translate3d(0, 0, 0); /* 2 */
+    transform: translate3d(0, 0, 0); /* 2 */
+}
+
+/*
  * Corrects `block` display not defined in IE 8/9.
  */
 
