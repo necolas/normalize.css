@@ -1,3 +1,7 @@
+== 1.0.2 (17 November, 2012)
+
+* Correct `h6` font size normalization.
+
 == 1.0.1 (August 19, 2012)
 
 * Adjust `small` font size normalization.
