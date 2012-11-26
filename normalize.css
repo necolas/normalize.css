@@ -142,7 +142,6 @@ mark {
     color: #000;
 }
 
-
 /*
  * Corrects font family set oddly in Safari 5 and Chrome.
  */
@@ -260,7 +259,7 @@ legend {
 /*
  * 1. Corrects font family not being inherited in all browsers.
  * 2. Corrects font size not being inherited in all browsers.
- * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
 
 button,
