@@ -360,6 +360,15 @@ textarea {
     vertical-align: top; /* 2 */
 }
 
+/*
+ * 1. Removes default for Firefox.
+ * 2. Removes default for IE 10.
+ */
+:invalid {
+    box-shadow: none; /* 1 */
+    outline: none; /* 2 */
+}
+
 /* ==========================================================================
    Tables
    ========================================================================== */
