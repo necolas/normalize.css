@@ -302,7 +302,7 @@ input[type="submit"] {
  */
 
 button[disabled],
-input[disabled] {
+html input[disabled] {
     cursor: default;
 }
 
