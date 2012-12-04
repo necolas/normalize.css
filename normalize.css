@@ -249,11 +249,15 @@ fieldset {
 /**
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Set the width equal to containing element
+ * 4. Force line break on text that flows outside the legend
  */
 
 legend {
     border: 0; /* 1 */
     padding: 0; /* 2 */
+	width:100%; /* 3 */
+	word-wrap:break-word;/* 4 */
 }
 
 /**
@@ -301,8 +305,8 @@ input[type="submit"] {
  * Re-set default cursor for disabled elements.
  */
 
-button[disabled],
-input[disabled] {
+html button[disabled],
+html input[disabled] {
     cursor: default;
 }
 
