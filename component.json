@@ -1,15 +1,19 @@
 {
-    "name": "normalize-css",
-    "version": "2.0.1",
-    "author": "Nicolas Gallagher",
-    "homepage": "http://necolas.github.com/normalize.css/",
-    "styles": ["normalize.css"],
+    "name": "normalize-scss",
+    "version": "2.0.1+build.2",
+    "author": ["Nicolas Gallagher", "Jonathan Neal", "John Albin Wilkins"],
+    "homepage": "https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/",
+    "styles": ["_normalize.scss"],
     "repository": {
         "type": "git",
-        "url": "https://github.com/necolas/normalize.css.git"
+        "url": "https://github.com/JohnAlbin/normalize.css-with-sass-or-compass.git"
     },
     "licenses": [{
         "type": "MIT",
         "url": "http://opensource.org/licenses/MIT"
+    },
+    {
+        "type": "GPLv2",
+        "url": "http://www.gnu.org/licenses/gpl-2.0.html"
     }]
 }
