@@ -45,6 +45,14 @@ audio:not([controls]) {
 }
 
 /**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari.
+ */
+
+datalist {
+   display: none;
+}
+
+/**
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
