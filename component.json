@@ -4,6 +4,7 @@
     "author": ["Nicolas Gallagher", "Jonathan Neal", "John Albin Wilkins"],
     "homepage": "https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/",
     "styles": ["_normalize.scss"],
+    "main": ["_normalize.scss"],
     "repository": {
         "type": "git",
         "url": "https://github.com/JohnAlbin/normalize.css-with-sass-or-compass.git"
