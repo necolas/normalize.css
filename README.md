@@ -19,17 +19,6 @@ the two versions using Compass' `$legacy-support-for-ie7` variable.
 Did a client wait until the last minute to mention their CEO uses IE 7? Simply
 set `$legacy-support-for-ie7` to `true` and recompile your Sass files.
 
-For the record, there are actually other Compass ports as well. Including:
-
-* https://github.com/waynegraham/compass-normalize-plugin
-* https://github.com/ksmandersen/compass-normalize
-* https://github.com/hail2u/normalize.scss
-* https://github.com/kristerkari/normalize.scss
-
-Some of the above projects convert normalize into Sass mixins. That makes them
-impossible to use in the recommended way (by copying the file into your website
-and customizing/overriding for your needs.)
-
 # normalize.css v2.0.1
 
 Normalize.css is a customisable CSS file that makes browsers render all
@@ -79,9 +68,27 @@ the defaults later in your Sass if necessary.
 Please read Necolas' [issue
 guidelines](https://github.com/necolas/issue-guidelines).
 
+Updates to most CSS rules should be reported to Necolas' upstream [Normalize.css
+project](http://necolas.github.com/normalize.css/). Updates to the Sass should
+be [reported here instead](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/issues).
+
 ## Acknowledgements
 
 Normalize.css is a project by [Nicolas Gallagher](http://github.com/necolas)
 and [Jonathan Neal](http://github.com/jonathantneal).
 
-This Compass port is a project by [John Albin Wilkins](http://john.albin.net).
+This Sass/Compass port is a project by [John Albin Wilkins](http://john.albin.net).
+
+## Other ports of Normalize.css
+
+For the record, there are several other Sass or Compass ports as well.
+Including:
+
+* https://github.com/waynegraham/compass-normalize-plugin
+* https://github.com/ksmandersen/compass-normalize
+* https://github.com/hail2u/normalize.scss
+* https://github.com/kristerkari/normalize.scss
+
+Some of the above projects convert normalize into Sass mixins. That makes them
+impossible to use in the recommended way (by copying the file into your website
+and customizing/overriding for your needs.)
