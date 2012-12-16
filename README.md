@@ -26,9 +26,9 @@ For the record, there are actually other Compass ports as well. Including:
 * https://github.com/hail2u/normalize.scss
 * https://github.com/kristerkari/normalize.scss
 
-Some of the above projects make normalize into a Sass partial. That makes them
+Some of the above projects convert normalize into Sass mixins. That makes them
 impossible to use in the recommended way (by copying the file into your website
-and customizing for your needs.)
+and customizing/overriding for your needs.)
 
 # normalize.css v2.0.1
 
@@ -57,6 +57,14 @@ override the defaults later in your CSS.
 
 For more information about how to use it, see the [About normalize.css article](http://nicolasgallagher.com/about-normalize-css/).
 
+To use the Compass port of Normalize, simpy copy the _normalize.scss file to
+your sass directory and following the article's suggestions:
+
+* Approach 1: use _normalize.scss as a starting point for your own project's
+base Sass, customising the values to match the design's requirements.
+* Approach 2: include _normalize.scss untouched and build upon it, overriding
+the defaults later in your Sass if necessary. (IMO, this approach is best.)
+
 ## Browser support
 
 * Google Chrome
@@ -67,7 +75,7 @@ For more information about how to use it, see the [About normalize.css article](
 
 ## Contribute
 
-Please read my [issue
+Please read Necolas' [issue
 guidelines](https://github.com/necolas/issue-guidelines).
 
 ## Acknowledgements
