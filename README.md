@@ -1,6 +1,6 @@
 ## The Compass port of normalize.css
 
-This project is the Sass/Compass port of normalize.css. It aims to use the best
+__This project is the Sass/Compass port of normalize.css.__ It aims to use the best
 partials from Compass to make normalize even easier to integrate with your
 website. To learn about why Normalize.css is so amazing, skip to the
 "normalize.css" section below.
@@ -57,13 +57,14 @@ override the defaults later in your CSS.
 
 For more information about how to use it, see the [About normalize.css article](http://nicolasgallagher.com/about-normalize-css/).
 
-To use the Compass port of Normalize, simpy copy the _normalize.scss file to
-your sass directory and following the article's suggestions:
+To use the Compass port of Normalize, simply copy the _normalize.scss file to
+your sass directory and follow the article's suggestions:
 
-* Approach 1: use _normalize.scss as a starting point for your own project's
-base Sass, customising the values to match the design's requirements.
-* Approach 2: include _normalize.scss untouched and build upon it, overriding
-the defaults later in your Sass if necessary. (IMO, this approach is best.)
+* __Approach 1:__ use _normalize.scss as a starting point for your own project's
+base Sass, customising the values to match the design's requirements. (The best
+approach, _IMO_.)
+* __Approach 2:__ include _normalize.scss untouched and build upon it, overriding
+the defaults later in your Sass if necessary.
 
 ## Browser support
 
