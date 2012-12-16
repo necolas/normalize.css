@@ -62,6 +62,8 @@ the defaults later in your Sass if necessary.
 * Apple Safari 5+
 * Opera 12+
 * Internet Explorer 8+
+* Internet Explorer 6-7 (when `$legacy-support-for-ie7` or
+`$legacy-support-for-ie6` is set to `true`)
 
 ## Contribute
 
