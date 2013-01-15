@@ -1,3 +1,8 @@
+== HEAD
+
+* Add `main` element to HTML5 display definitions.
+* Fix cursor style for disabled button `input`.
+
 == 1.0.2 (17 November, 2012)
 
 * Correct `h6` font size normalization.
