@@ -199,6 +199,14 @@ sub {
     bottom: -0.25em;
 }
 
+/*
+ * Addresses box-sizing set differently in Firefox.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+}
+
 /* ==========================================================================
    Embedded content
    ========================================================================== */
