@@ -1,5 +1,6 @@
 == HEAD
 
+* Remove unnecessary `pre` styles.
 * Add `main` element to HTML5 display definitions.
 * Fix cursor style for disabled button `input`.
 
