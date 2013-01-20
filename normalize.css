@@ -183,6 +183,17 @@ dfn {
 }
 
 /**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
  * Address styling not present in IE 6/7/8/9.
  */
 
