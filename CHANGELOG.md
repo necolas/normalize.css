@@ -1,5 +1,6 @@
 == HEAD
 
+* Normalize `h1` margin when within HTML5 sectioning elements.
 * Normalize `hr` element.
 * Remove unnecessary `pre` styles.
 * Add `main` element to HTML5 display definitions.
