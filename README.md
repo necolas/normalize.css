@@ -38,5 +38,5 @@ guidelines](https://github.com/necolas/issue-guidelines).
 
 ## Acknowledgements
 
-Normalize.css is a project by [Nicolas Gallagher](http://github.com/necolas)
-and [Jonathan Neal](http://github.com/jonathantneal).
+Normalize.css is a project by [Nicolas Gallagher](https://github.com/necolas),
+co-created with [Jonathan Neal](https://github.com/jonathantneal).
