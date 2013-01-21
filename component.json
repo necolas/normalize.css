@@ -1,6 +1,6 @@
 {
     "name": "normalize-css",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "author": "Nicolas Gallagher",
     "homepage": "http://necolas.github.com/normalize.css/",
     "styles": ["normalize.css"],
