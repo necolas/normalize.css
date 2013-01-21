@@ -124,7 +124,6 @@ p {
     box-shadow: none;
     color: #666;
     font-size: 1.25em;
-
 }
 
 .btn-download-alt:hover,
@@ -178,14 +177,12 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-
     .read-more {
         float: none;
         display: block;
         margin: 0 0 1em;
         line-height: 1.2;
     }
-
 }
 
 @media screen and (max-width: 540px) {
