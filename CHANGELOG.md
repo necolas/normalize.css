@@ -1,5 +1,6 @@
 == HEAD
 
+* Normalize `text-transform` for `button` and `select`.
 * Normalize `hr` element (excluding IE 6/7).
 * Add `main` element to HTML5 display definitions.
 * Fix cursor style for disabled button `input`.
