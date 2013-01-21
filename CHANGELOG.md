@@ -1,5 +1,6 @@
 == HEAD
 
+* Normalize `text-transform` for `button` and `select`.
 * Normalize `h1` margin when within HTML5 sectioning elements.
 * Normalize `hr` element.
 * Remove unnecessary `pre` styles.
