@@ -1,5 +1,7 @@
 == HEAD
 
+== 2.1.0 (January 21, 2013)
+
 * Normalize `text-transform` for `button` and `select`.
 * Normalize `h1` margin when within HTML5 sectioning elements.
 * Normalize `hr` element.
