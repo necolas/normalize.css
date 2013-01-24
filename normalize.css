@@ -394,3 +394,28 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+/* ==========================================================================
+   Positioning
+   ========================================================================== */
+
+/**
+ * Position all elements relative by default.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+div {
+    position: relative;
+}
