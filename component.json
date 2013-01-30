@@ -1,6 +1,6 @@
 {
     "name": "normalize-scss",
-    "version": "2.0.1+build.2",
+    "version": "2.1.0",
     "author": ["Nicolas Gallagher", "Jonathan Neal", "John Albin Wilkins"],
     "homepage": "https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/",
     "styles": ["_normalize.scss"],

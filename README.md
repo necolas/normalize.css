@@ -1,7 +1,7 @@
 ## Latest downloadable version
 
 The latest release of _normalize.scss is: [2.0.1+build.2](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/archive/2.0.1+build.2.zip).
-It combines normalize.css v2.0.1 and normalize v1.0.2.
+It combines normalize.css v2.1.0 and normalize v1.0.2.
 
 ## The Compass port of normalize.css
 
@@ -31,7 +31,7 @@ elements more consistently and in line with modern standards. We researched the
 differences between default browser styles in order to precisely target only
 the styles that need normalizing.
 
-[Check out the demo](http://necolas.github.com/normalize.css/2.0.1/test.html)
+[Check out the demo](http://necolas.github.com/normalize.css/2.1.0/test.html)
 
 ## What does it do?
 
@@ -81,8 +81,8 @@ be [reported here instead](https://github.com/JohnAlbin/normalize.css-with-sass-
 
 ## Acknowledgements
 
-Normalize.css is a project by [Nicolas Gallagher](http://github.com/necolas)
-and [Jonathan Neal](http://github.com/jonathantneal).
+Normalize.css is a project by [Nicolas Gallagher](https://github.com/necolas),
+co-created with [Jonathan Neal](https://github.com/jonathantneal).
 
 This Sass/Compass port is a project by [John Albin Wilkins](http://john.albin.net).
 
