@@ -24,7 +24,7 @@ the two versions using Compass' `$legacy-support-for-ie7` variable.
 Did a client wait until the last minute to mention their CEO uses IE 7? Simply
 set `$legacy-support-for-ie7` to `true` and recompile your Sass files.
 
-# normalize.css v2.0.1
+# normalize.css v2.1.0
 
 Normalize.css is a customisable CSS file that makes browsers render all
 elements more consistently and in line with modern standards. We researched the
@@ -77,7 +77,7 @@ guidelines](https://github.com/necolas/issue-guidelines).
 
 Updates to most CSS rules should be reported to Necolas' upstream [Normalize.css
 project](http://necolas.github.com/normalize.css/). Updates to the Sass should
-be [reported here instead](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/issues).
+be reported in the [Normalize.css with Sass and Compass project](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/issues).
 
 ## Acknowledgements
 
@@ -96,6 +96,6 @@ Including:
 * https://github.com/hail2u/normalize.scss
 * https://github.com/kristerkari/normalize.scss
 
-Some of the above projects convert normalize into Sass mixins. That makes them
-impossible to use in the recommended way (by copying the file into your website
+Some of the above projects convert normalize into Sass mixins. That makes it
+impossible to add Normalize using __Approach 1__ (by copying the file into your website
 and customizing/overriding for your needs.)
