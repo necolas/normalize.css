@@ -254,8 +254,7 @@ dfn {
  */
 
 hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
+    @include box-sizing(border-box);
     height: 0;
 }
 
