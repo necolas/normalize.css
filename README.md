@@ -77,7 +77,7 @@ guidelines](https://github.com/necolas/issue-guidelines).
 
 Updates to most CSS rules should be reported to Necolas' upstream [Normalize.css
 project](http://necolas.github.com/normalize.css/). Updates to the Sass should
-be reported in the [Normalize.css with Sass and Compass project](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/issues).
+be reported in the [Normalize.css with Sass and Compass project](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/).
 
 ## Acknowledgements
 
