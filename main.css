@@ -1,6 +1,6 @@
 body {
     max-width: 720px;
-    padding: 40px;
+    padding: 20px 40px;
     margin: 0 auto;
     background: #f7f7f7;
     color: #333;
@@ -24,13 +24,13 @@ h2 {
 }
 
 p {
-    margin: 0 0 1em;
+    margin: 1em 0;
 }
 
 /* structure */
 
 .site-box {
-    padding: 60px 60px 0;
+    padding: 40px 60px 0;
     border: 1px solid #ccc;
     margin: 0 0 3em;
     background: #fff;
@@ -43,7 +43,7 @@ p {
 }
 
 .logo {
-    margin: 0 0 1.25em;
+    margin: 0 0 1em;
     font-size: 2.375em;
     color: #69a619;
     text-transform: lowercase;
@@ -53,12 +53,7 @@ p {
 
 .tagline {
     margin: 0 0 0.75em;
-    font-size: 2.5em;
-}
-
-.description {
-    color: #555;
-    font-size: 1.25em;
+    font-size: 2.25em;
 }
 
 /**
@@ -72,7 +67,7 @@ p {
     *display: inline;
     *zoom: 1;
 
-    margin: 1.5em 0.75em 0;
+    margin: 1.5em 0.75em 0.5em;
     vertical-align: bottom;
 }
 
@@ -87,7 +82,7 @@ p {
     *display: inline;
     *zoom: 1;
 
-    padding: 0.6em 1.25em;
+    padding: 0.4em 1em;
     border: 1px solid #5e9612;
     margin: 0 0 10px;
     color: #fff;
