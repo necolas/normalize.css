@@ -7,6 +7,14 @@ the styles that need normalizing.
 
 [Check out the demo](http://necolas.github.com/normalize.css/2.1.0/test.html)
 
+[Legacy browser support is available in v1](https://github.com/necolas/normalize.css/tree/v1)
+
+## Install
+
+Download from the [project page](http://necolas.github.com/normalize.css/).
+
+Install with [Bower](http://twitter.github.com/bower/): `bower install --save normalize-css`
+
 ## What does it do?
 
 * Preserves useful defaults, unlike many CSS resets.
