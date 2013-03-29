@@ -41,8 +41,7 @@ override the defaults later in your CSS.
 
 ## Contribute
 
-Please read my [issue
-guidelines](https://github.com/necolas/issue-guidelines/).
+Please read the CONTRIBUTING.md
 
 ## Acknowledgements
 
