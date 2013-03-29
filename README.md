@@ -12,6 +12,8 @@ the styles that need normalizing.
 ## Install
 
 Download from the [project page](http://necolas.github.com/normalize.css/).
+The normalize.min.css is meant for production (minified for smaller filesize),
+while normalize.css is a documented source version for study & changes.
 
 Install with [Bower](http://twitter.github.com/bower/): `bower install --save normalize-css`
 
