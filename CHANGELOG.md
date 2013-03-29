@@ -1,5 +1,10 @@
 == HEAD
 
+== 2.1.1 (alpha 2013)
+
+* Ensure background is (web-dev assumed) white. #170
+* Fix known WebKit legend margin bug. #168
+
 == 2.1.0 (January 21, 2013)
 
 * Normalize `text-transform` for `button` and `select`.

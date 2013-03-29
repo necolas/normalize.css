@@ -59,12 +59,14 @@ audio:not([controls]) {
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
+ * 3. Ensure background is (web-dev assumed) white.
  */
 
 html {
     font-family: sans-serif; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
+    background: #FFF; /* 3 */
 }
 
 /**
@@ -259,11 +261,15 @@ fieldset {
 /**
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Fix known WebKit bug.
  */
 
 legend {
     border: 0; /* 1 */
     padding: 0; /* 2 */
+}
+legend + * {
+    -webkit-margin-top-collapse: separate; /* 3 */
 }
 
 /**
