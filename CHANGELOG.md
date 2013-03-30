@@ -3,7 +3,6 @@
 == 2.1.1 (alpha 2013)
 
 * Ensure background is (web-dev assumed) white. #170
-* Fix known WebKit legend margin bug. #168
 * Removes IE10's background color to active links. #172
   (needs testing: active + hover?)
 * Deleted table{border-spacing: 0} #165
