@@ -58,7 +58,7 @@ audio:not([controls]) {
 /**
  * 1. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
- * 2. Ensure background is (web-dev assumed) white.
+ * 2. Ensure background is white & text is black, so OS schemes don't override browsers' web-dev assumptions.
  * 3. Set default font family to sans-serif.
  */
 
@@ -66,6 +66,7 @@ html {
     -ms-text-size-adjust: 100%; /* 1 */
     -webkit-text-size-adjust: 100%; /* 1 */
     background: #FFF; /* 2 */
+    color: #000; /* 2 */
     font-family: sans-serif; /* 3 */
 }
 
