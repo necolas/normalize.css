@@ -1,5 +1,16 @@
 == HEAD
 
+== 2.1.1 (alpha 2013)
+
+* Ensure background is (web-dev assumed) white, text is black. #170
+* Removes IE10's background color to active links. #172
+  (needs testing: active + hover?)
+* Deleted table{border-spacing: 0} #165
+  (needs testing: mobile)
+* Added .min file using [YUI Compressor 2.4.7](http://refresh-sf.com/yui/#output).
+* Correct font color not being inherited in all browsers. #157
+  Known bug: On Chromium 24, input placeholder does not inherit color.
+
 == 2.1.0 (January 21, 2013)
 
 * Normalize `text-transform` for `button` and `select`.
