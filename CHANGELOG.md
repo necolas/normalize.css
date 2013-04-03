@@ -1,6 +1,6 @@
 == HEAD
 
-* Normalize root `color` and `background` to counter the affects of system
+* Normalize root `color` and `background` to counter the effects of system
   color schemes.
 
 == 2.1.0 (January 21, 2013)
