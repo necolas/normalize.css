@@ -5,7 +5,7 @@ elements more consistently and in line with modern standards. We researched the
 differences between default browser styles in order to precisely target only
 the styles that need normalizing.
 
-[Check out the demo](http://necolas.github.com/normalize.css/1.1.0/test.html)
+[Check out the demo](http://necolas.github.io/normalize.css/1.1.0/test.html)
 
 ## What does it do?
 
@@ -34,7 +34,7 @@ override the defaults later in your CSS.
 ## Contribute
 
 Please read my [issue
-guidelines](https://github.com/necolas/issue-guidelines).
+guidelines](https://github.com/necolas/issue-guidelines/).
 
 ## Acknowledgements
 
