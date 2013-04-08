@@ -87,7 +87,7 @@ might not want to merge into the project.
 Please adhere to the coding conventions used throughout a project (whitespace,
 accurate comments, etc.) and any other requirements (such as test coverage).
 
-Follow this process if you'd like your work considered for inclusion in the
+Follow this process if you'd like your work considered for inclusion in the project:
 
 1. [Fork](http://help.github.com/fork-a-repo/) the project, clone your fork,
    and configure the remotes:
