@@ -1,5 +1,7 @@
 == HEAD
 
+== 2.1.1 (April 7, 2013)
+
 * Normalize root `color` and `background` to counter the effects of system
   color schemes.
 
