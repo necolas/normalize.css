@@ -1,0 +1,28 @@
+{
+    "name": "necolas/normalize.css",
+    "description": "A modern, HTML5-ready alternative to CSS resets.",
+    "type": "component",
+    "homepage": "http://necolas.github.com/normalize.css",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Gallagher",
+            "homepage": "http://nicolasgallagher.com"
+        }
+    ],
+    "support": {
+        "wiki": "https://github.com/necolas/normalize.css/wiki",
+        "issues": "https://github.com/necolas/normalize.css/issues",
+        "source": "https://github.com/necolas/normalize.css"
+    },
+    "require": {
+        "robloach/component-installer": "*"
+    },
+    "extra": {
+        "component": {
+            "styles": [
+                "normalize.css"
+            ]
+        }
+    }
+}
