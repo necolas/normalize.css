@@ -13,7 +13,7 @@ the styles that need normalizing.
 
 Download from the [project page](http://necolas.github.io/normalize.css/).
 
-Install with [Bower](http://twitter.github.io/bower/): `bower install --save normalize-css`
+Install with [Bower](http://bower.io/): `bower install --save normalize-css`
 
 ## What does it do?
 
