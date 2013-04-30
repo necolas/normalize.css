@@ -221,6 +221,15 @@ sub {
    ========================================================================== */
 
 /**
+ * Remove border of seamless iframes.
+ */
+
+iframe[seamless] {
+  display: block;
+  border: 0;
+}
+
+/**
  * Remove border when inside `a` element in IE 8/9.
  */
 
@@ -392,9 +401,6 @@ textarea {
    Tables
    ========================================================================== */
 
-/**
- * Remove most spacing between table cells.
- */
 
 table {
     border-collapse: collapse;
