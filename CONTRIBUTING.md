@@ -169,8 +169,8 @@ cutting new releases.
 
 1. Include all new functional changes in the CHANGELOG.
 2. Use a dedicated commit to increment the version. The version needs to be
-   added to the CHANGELOG (inc. date), and edited in the README,
-   `component.json`, and `normalize.css` files.
+   added to the CHANGELOG (inc. date), and the `bower.json`, `component.json`,
+   and `normalize.css` files.
 3. The commit message must be of `v0.0.0` format.
 4. Create an annotated tag for the version: `git tag -m "v0.0.0" v0.0.0`.
 5. Push the changes and tags to GitHub: `git push --tags origin master`
