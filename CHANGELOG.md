@@ -1,5 +1,7 @@
 == HEAD
 
+== 1.1.2 (May 11, 2013)
+
 * Revert root `color` and `background` normalizations.
 
 == 1.1.1 (April 8, 2013)
