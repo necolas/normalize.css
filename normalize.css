@@ -363,6 +363,15 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 /**
+ * Remove cancel button in IE10.
+ */
+
+input[type="text"]::-ms-clear,
+input[type="search"]::-ms-clear {
+   display: none;
+}
+
+/**
  * Remove inner padding and border in Firefox 4+.
  */
 
