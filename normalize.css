@@ -270,6 +270,7 @@ legend {
  * 1. Correct font family not being inherited in all browsers.
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ * A. Improve vertical spacing consistency in all browsers.
  */
 
 button,
@@ -279,6 +280,11 @@ textarea {
     font-family: inherit; /* 1 */
     font-size: 100%; /* 2 */
     margin: 0; /* 3 */
+    height: 30px; /* A */
+    padding: 3px 4px; /* A */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; /* A */
 }
 
 /**
@@ -301,6 +307,15 @@ input {
 button,
 select {
     text-transform: none;
+}
+
+/**
+ * Address inconsistent total height in Safari to make it display equal
+ * to `A:height`.
+ */
+
+select {
+    line-height: 26px;
 }
 
 /**
@@ -331,25 +346,22 @@ html input[disabled] {
 /**
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
+ * 3. Combat `A:height`
  */
 
 input[type="checkbox"],
 input[type="radio"] {
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
+    height: auto; /* 3 */
 }
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
  */
 
 input[type="search"] {
     -webkit-appearance: textfield; /* 1 */
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
-    box-sizing: content-box;
 }
 
 /**
@@ -375,11 +387,21 @@ input::-moz-focus-inner {
 /**
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
+ * 3. Combat `A:height`
  */
 
 textarea {
     overflow: auto; /* 1 */
     vertical-align: top; /* 2 */
+    height: auto; /* 3 */
+}
+
+/**
+ * Combat `A:padding`
+ */
+
+input[type="color"] {
+    padding: 0 1px;
 }
 
 /* ==========================================================================
