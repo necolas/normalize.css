@@ -394,3 +394,14 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+
+/**
+ * Remove margin|padding from ul 
+*/
+
+ul {
+   margin: 0;
+   padding: 0;
+}
