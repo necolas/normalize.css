@@ -12,6 +12,9 @@
 // Set this to true to force CSS output to exactly match normalize.css.
 $strict-normalize: true !default;
 
+// The default font family.
+$base-font-family: sans-serif !default;
+
 // The base font size.
 $base-font-size: 16px !default; // Override default set in Compass' Vertical Rhythm partial.
 
@@ -26,17 +29,14 @@ $h4-font-size: 1    * $base-font-size !default;
 $h5-font-size: 0.83 * $base-font-size !default;
 $h6-font-size: 0.67 * $base-font-size !default;
 
+// The amount lists and blockquotes are indented.
+$indent-amount: 40px !default;
+
 // Set this to true to add support for IE 6.
 // $legacy-support-for-ie6: true; // Override default set in Compass' Support partial.
 
 // Set this to true to add support for IE 7.
 // $legacy-support-for-ie7: true; // Override default set in Compass' Support partial.
-
-// The default font family.
-$base-font-family: sans-serif !default;
-
-// The amount lists and blockquotes are indented.
-$indent-amount: 40px !default;
 
 // After the default variables are set, import the required Compass partials.
 @import "compass/support";
