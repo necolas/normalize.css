@@ -89,8 +89,7 @@ audio:not([controls]) {
 }
 
 /**
- * Address styling not present in IE 7/8/9.
- * Known issue: no IE 6 support.
+ * Address styling not present in IE 8/9.
  */
 
 [hidden] {
@@ -250,7 +249,6 @@ dfn {
 
 /**
  * Address differences between Firefox and other browsers.
- * Known issue: no IE 6/7 normalization.
  */
 
 hr {
