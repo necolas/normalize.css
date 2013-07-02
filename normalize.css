@@ -404,3 +404,15 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* ==========================================================================
+   Templates
+   ========================================================================== */
+
+/**
+ * Always hide the template elements.
+ */
+
+template {
+    display: none;
+}
