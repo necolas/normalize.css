@@ -359,6 +359,16 @@ sub {
         margin: rhythm(1) 0;
     }
 
+    @if not $strict-normalize {
+        ol,
+        ul {
+            ol,
+            ul {
+                margin: 0;
+            }
+        }
+    }
+
     dd {
         margin: 0 0 0 $indent-amount;
     }
