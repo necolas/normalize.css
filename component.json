@@ -1,6 +1,9 @@
 {
     "name": "normalize-scss",
+    "repo": "JohnAlbin/normalize.css-with-sass-or-compass",
+    "description": "A Sass/Compass version of Normalize.css. This port tracks the parent project very closely.",
     "version": "2.1.2",
     "styles": ["_normalize.scss"],
-    "author": ["Nicolas Gallagher", "John Albin Wilkins"]
+    "author": ["Nicolas Gallagher", "John Albin Wilkins"],
+    "license": "GPLv2"
 }
