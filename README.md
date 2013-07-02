@@ -24,7 +24,7 @@ the two versions using Compass' `$legacy-support-for-ie7` variable.
 Did a client wait until the last minute to mention their CEO uses IE 7? Simply
 set `$legacy-support-for-ie7` to `true` and recompile your Sass files.
 
-# normalize.css v2.1.0
+# normalize.css v2
 
 Normalize.css is a customisable CSS file that makes browsers render all
 elements more consistently and in line with modern standards. We researched the
@@ -81,7 +81,7 @@ the defaults later in your Sass if necessary.
 ## Contribute
 
 Please read Necolas' [contributing
-guidelines](https://github.com/necolas/normalize.css/blob/master/CONTRIBUTING.md).
+guidelines](CONTRIBUTING.md).
 
 Updates to most CSS rules should be reported to Necolas' upstream [Normalize.css
 project](http://necolas.github.com/normalize.css/). Updates to the Sass should
