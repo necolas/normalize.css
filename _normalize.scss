@@ -19,7 +19,7 @@ $base-font-family: sans-serif !default;
 $base-font-size: 16px !default; // Override default set in Compass' Vertical Rhythm partial.
 
 // The base line height determines the basic unit of vertical rhythm.
-// $base-line-height: 24px; // Override default set in Compass' Vertical Rhythm partial.
+$base-line-height: 24px !default; // Override default set in Compass' Vertical Rhythm partial.
 
 // The font sizes for h1-h6.
 $h1-font-size: 2    * $base-font-size !default;
@@ -33,10 +33,10 @@ $h6-font-size: 0.67 * $base-font-size !default;
 $indent-amount: 40px !default;
 
 // Set this to true to add support for IE 6.
-// $legacy-support-for-ie6: true; // Override default set in Compass' Support partial.
+$legacy-support-for-ie6: false !default; // Override default set in Compass' Support partial.
 
 // Set this to true to add support for IE 7.
-// $legacy-support-for-ie7: true; // Override default set in Compass' Support partial.
+$legacy-support-for-ie7: false !default; // Override default set in Compass' Support partial.
 
 // After the default variables are set, import the required Compass partials.
 @import "compass/support";
