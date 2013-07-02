@@ -9,6 +9,8 @@
         "LICENSE.md",
         "README.md",
         "component.json",
+        "normalize-scss.gemspec",
+        "lib/normalize-scss.rb",
         "test.html"
     ],
     "licenses": [{
