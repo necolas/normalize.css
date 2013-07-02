@@ -195,7 +195,12 @@ a:hover {
 
 h1 {
     /* Set the font-size and line-height while keeping a proper vertical rhythm. */
-    @include adjust-font-size-to( $h1-font-size );
+    @if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+        @include adjust-font-size-to( $h1-font-size );
+    }
+    @else {
+        font-size: 1em * ($h1-font-size / $base-font-size);
+    }
 
     /* Set 1 unit of vertical rhythm on the top and bottom margins. */
     @include leader(1, $h1-font-size);
@@ -289,7 +294,12 @@ samp {
     @if $legacy-support-for-ie6 {
         _font-family: 'courier new', monospace;
     }
-    @include adjust-font-size-to( 1 * $base-font-size );
+    @if $strict-normalize {
+        font-size: 1em;
+    }
+    @else {
+        @include adjust-font-size-to( $base-font-size );
+    }
 }
 
 /**
