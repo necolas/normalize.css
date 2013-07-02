@@ -9,6 +9,9 @@
 // that file. @see http://compass-style.org/help/tutorials/best_practices/
 // =============================================================================
 
+// Set this to true to force CSS output to exactly match normalize.css.
+$strict-normalize: false !default;
+
 // The base font size.
 $base-font-size: 16px !default; // Override default set in Compass' Vertical Rhythm partial.
 
@@ -110,11 +113,16 @@ audio:not([controls]) {
 
 html {
     font-family: $base-font-family; /* 1 */
-    font-size: 100% * ($base-font-size / 16px); /* 3 */
+    @if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+        font-size: 100% * ($base-font-size / 16px); /* 3 */
+    }
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    /* Establish a vertical rhythm unit using $base-line-height. */
-    @include adjust-leading-to(1);
+
+    @if not $strict-normalize {
+        /* Establish a vertical rhythm unit using $base-line-height. */
+        @include adjust-leading-to(1);
+    }
 }
 
 @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
@@ -164,18 +172,20 @@ a:hover {
    Typography
    ========================================================================== */
 
-/**
- * Set 1 unit of vertical rhythm on the top and bottom margin.
- */
+@if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    /**
+     * Set 1 unit of vertical rhythm on the top and bottom margin.
+     */
 
-p,
-pre {
-    margin: rhythm(1) 0;
-}
+    p,
+    pre {
+        margin: rhythm(1) 0;
+    }
 
-blockquote {
-    /* Set 1 unit of vertical rhythm on the top and bottom margin. */
-    margin: rhythm(1) $indent-amount;
+    blockquote {
+        /* Set 1 unit of vertical rhythm on the top and bottom margin. */
+        margin: rhythm(1) $indent-amount;
+    }
 }
 
 /**
@@ -192,34 +202,36 @@ h1 {
     @include trailer(1, $h1-font-size);
 }
 
-h2 {
-    @include adjust-font-size-to( $h2-font-size );
-    @include leader(1, $h2-font-size);
-    @include trailer(1, $h2-font-size);
-}
+@if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    h2 {
+        @include adjust-font-size-to( $h2-font-size );
+        @include leader(1, $h2-font-size);
+        @include trailer(1, $h2-font-size);
+    }
 
-h3 {
-    @include adjust-font-size-to( $h3-font-size );
-    @include leader(1, $h3-font-size);
-    @include trailer(1, $h3-font-size);
-}
+    h3 {
+        @include adjust-font-size-to( $h3-font-size );
+        @include leader(1, $h3-font-size);
+        @include trailer(1, $h3-font-size);
+    }
 
-h4 {
-    @include adjust-font-size-to( $h4-font-size );
-    @include leader(1, $h4-font-size);
-    @include trailer(1, $h4-font-size);
-}
+    h4 {
+        @include adjust-font-size-to( $h4-font-size );
+        @include leader(1, $h4-font-size);
+        @include trailer(1, $h4-font-size);
+    }
 
-h5 {
-    @include adjust-font-size-to( $h5-font-size );
-    @include leader(1, $h5-font-size);
-    @include trailer(1, $h5-font-size);
-}
+    h5 {
+        @include adjust-font-size-to( $h5-font-size );
+        @include leader(1, $h5-font-size);
+        @include trailer(1, $h5-font-size);
+    }
 
-h6 {
-    @include adjust-font-size-to( $h6-font-size );
-    @include leader(1, $h6-font-size);
-    @include trailer(1, $h6-font-size);
+    h6 {
+        @include adjust-font-size-to( $h6-font-size );
+        @include leader(1, $h6-font-size);
+        @include trailer(1, $h6-font-size);
+    }
 }
 
 /**
@@ -335,29 +347,31 @@ sub {
    Lists
    ========================================================================== */
 
-/**
- * Address margins set differently in IE 6/7.
- */
+@if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    /**
+     * Address margins set differently in IE 6/7.
+     */
 
-dl,
-menu,
-ol,
-ul {
-    margin: rhythm(1) 0;
-}
+    dl,
+    menu,
+    ol,
+    ul {
+        margin: rhythm(1) 0;
+    }
 
-dd {
-    margin: 0 0 0 $indent-amount;
-}
+    dd {
+        margin: 0 0 0 $indent-amount;
+    }
 
-/**
- * Address paddings set differently in IE 6/7.
- */
+    /**
+     * Address paddings set differently in IE 6/7.
+     */
 
-menu,
-ol,
-ul {
-    padding: 0 0 0 $indent-amount;
+    menu,
+    ol,
+    ul {
+        padding: 0 0 0 $indent-amount;
+    }
 }
 
 @if $legacy-support-for-ie7 {
