@@ -1,5 +1,14 @@
 == HEAD
 
+== 2.1.2 (May 11, 2013)
+
+* Revert root `color` and `background` normalizations.
+
+== 2.1.1 (April 8, 2013)
+
+* Normalize root `color` and `background` to counter the effects of system
+  color schemes.
+
 == 2.1.0 (January 21, 2013)
 
 * Normalize `text-transform` for `button` and `select`.

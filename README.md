@@ -1,7 +1,7 @@
 ## Latest downloadable version
 
 The latest release of _normalize.scss is: [2.1.0](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/archive/2.1.0.zip).
-It combines normalize.css v2.1.0 and normalize v1.1.0.
+It combines normalize.css v2.1.2 and normalize v1.1.0.
 
 ## The Compass port of normalize.css
 
@@ -31,7 +31,15 @@ elements more consistently and in line with modern standards. We researched the
 differences between default browser styles in order to precisely target only
 the styles that need normalizing.
 
-[Check out the demo](http://necolas.github.com/normalize.css/2.1.0/test.html)
+[Check out the demo](http://necolas.github.io/normalize.css/latest/test.html)
+
+[Legacy browser support is available in v1](https://github.com/necolas/normalize.css/tree/v1)
+
+## Install
+
+Download from the [project page](http://necolas.github.io/normalize.css/).
+
+Install with [Bower](http://bower.io/): `bower install --save normalize-css`
 
 ## What does it do?
 
@@ -72,8 +80,8 @@ the defaults later in your Sass if necessary.
 
 ## Contribute
 
-Please read Necolas' [issue
-guidelines](https://github.com/necolas/issue-guidelines).
+Please read Necolas' [contributing
+guidelines](https://github.com/necolas/normalize.css/blob/master/CONTRIBUTING.md).
 
 Updates to most CSS rules should be reported to Necolas' upstream [Normalize.css
 project](http://necolas.github.com/normalize.css/). Updates to the Sass should

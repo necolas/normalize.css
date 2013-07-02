@@ -1,14 +1,14 @@
 {
     "name": "normalize-scss",
-    "version": "2.1.0",
-    "author": ["Nicolas Gallagher", "Jonathan Neal", "John Albin Wilkins"],
-    "homepage": "https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/",
-    "styles": ["_normalize.scss"],
+    "version": "2.1.2",
     "main": ["_normalize.scss"],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/JohnAlbin/normalize.css-with-sass-or-compass.git"
-    },
+    "author": ["Nicolas Gallagher", "John Albin Wilkins"],
+    "ignore": [
+        "CHANGELOG.md",
+        "CONTRIBUTING.md",
+        "component.json",
+        "test.html"
+    ],
     "licenses": [{
         "type": "MIT",
         "url": "http://opensource.org/licenses/MIT"

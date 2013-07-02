@@ -1,0 +1,6 @@
+{
+    "name": "normalize-scss",
+    "version": "2.1.2",
+    "styles": ["_normalize.scss"],
+    "author": ["Nicolas Gallagher", "John Albin Wilkins"]
+}
