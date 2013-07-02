@@ -10,7 +10,7 @@
 // =============================================================================
 
 // Set this to true to force CSS output to exactly match normalize.css.
-$strict-normalize: false !default;
+$strict-normalize: true !default;
 
 // The base font size.
 $base-font-size: 16px !default; // Override default set in Compass' Vertical Rhythm partial.
