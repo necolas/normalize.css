@@ -121,7 +121,7 @@ html {
 @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     /**
      * Address `font-family` inconsistency between `textarea` and other form
-     * elements in IE 6/7.
+     * elements.
      */
 
     button,
@@ -287,7 +287,14 @@ samp {
  */
 
 pre {
-    white-space: pre-wrap;
+    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+        white-space: pre;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+    @else {
+        white-space: pre-wrap;
+    }
 }
 
 /**
@@ -331,7 +338,7 @@ sub {
    ========================================================================== */
 
 /**
- * Set 1 unit of vertical rhythm and a consistent indentation.
+ * Address margins set differently in IE 6/7.
  */
 
 dl,
@@ -339,15 +346,20 @@ menu,
 ol,
 ul {
     margin: rhythm(1) 0;
-    padding: 0 0 0 $indent-amount;
-}
-
-dl {
-    padding: 0;
 }
 
 dd {
     margin: 0 0 0 $indent-amount;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 $indent-amount;
 }
 
 @if $legacy-support-for-ie7 {
