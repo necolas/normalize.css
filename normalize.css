@@ -110,6 +110,15 @@ h1 {
     margin: 0.67em 0;
 }
 
+/*
+  Use 'em' as a SEO-Helper, but doesnt need to be styled
+*/
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+}
+
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
