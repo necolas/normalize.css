@@ -15,6 +15,8 @@ Download from the [project page](http://necolas.github.io/normalize.css/).
 
 Install with [Bower](http://bower.io/): `bower install --save normalize-css`
 
+Install with [Component(1)](http://component.io/): `component install necolas/normalize.css`
+
 ## What does it do?
 
 * Preserves useful defaults, unlike many CSS resets.
