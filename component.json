@@ -1,7 +1,7 @@
 {
     "name": "normalize-css",
     "repo": "necolas/normalize.css",
-    "version": "2.1.2",
+    "version": "2.1.3",
     "styles": ["normalize.css"],
     "author": "Nicolas Gallagher",
     "license": "MIT"

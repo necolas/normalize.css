@@ -1,6 +1,6 @@
 {
     "name": "normalize-css",
-    "version": "2.1.2",
+    "version": "2.1.3",
     "main": "normalize.css",
     "author": "Nicolas Gallagher",
     "ignore": [
