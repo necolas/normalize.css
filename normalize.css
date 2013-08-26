@@ -29,6 +29,7 @@ summary {
 
 audio,
 canvas,
+output,
 video {
     display: inline-block;
 }
