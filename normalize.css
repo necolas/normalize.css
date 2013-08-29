@@ -46,11 +46,12 @@ audio:not([controls]) {
 }
 
 /**
- * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
- * Known issue: no IE 6 support.
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
 
-[hidden] {
+[hidden],
+template {
     display: none;
 }
 
