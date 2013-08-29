@@ -1,5 +1,7 @@
 == HEAD
 
+* Hide the `template` element in IE, Safari, and Firefox < 22.
+
 == 1.1.2 (May 11, 2013)
 
 * Revert root `color` and `background` normalizations.
