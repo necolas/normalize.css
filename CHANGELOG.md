@@ -1,5 +1,7 @@
 == HEAD
 
+* Update component.json to fit new specification
+
 == 1.1.2 (May 11, 2013)
 
 * Revert root `color` and `background` normalizations.
