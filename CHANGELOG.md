@@ -1,5 +1,7 @@
 == HEAD
 
+* Remove the gray background color from active links in IE 10.
+
 == 1.1.2 (May 11, 2013)
 
 * Revert root `color` and `background` normalizations.
