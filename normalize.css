@@ -392,6 +392,15 @@ textarea {
     vertical-align: top; /* 2 */
 }
 
+/**
+ * Remove rounded corners in Safari and Chrome on iOS 5.
+ */
+
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
 /* ==========================================================================
    Tables
    ========================================================================== */
