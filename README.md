@@ -27,19 +27,21 @@ set `$legacy-support-for-ie7` to `true` and recompile your Sass files.
 # normalize.css v2
 
 Normalize.css is a customisable CSS file that makes browsers render all
-elements more consistently and in line with modern standards. We researched the
-differences between default browser styles in order to precisely target only
-the styles that need normalizing.
+elements more consistently and in line with modern standards.
+
+The project relies on researching the differences between default browser
+styles in order to precisely target only the styles that need or benefit from
+normalizing.
 
 [Check out the demo](http://necolas.github.io/normalize.css/latest/test.html)
-
-[Legacy browser support is available in v1](https://github.com/necolas/normalize.css/tree/v1)
 
 ## Install
 
 Download from the [project page](http://necolas.github.io/normalize.css/).
 
 Install with [Bower](http://bower.io/): `bower install --save normalize-css`
+
+Install with [Component(1)](http://component.io/): `component install necolas/normalize.css`
 
 ## What does it do?
 
@@ -51,11 +53,10 @@ Install with [Bower](http://bower.io/): `bower install --save normalize-css`
 
 ## How to use it
 
-Normalize.css is intended to be used as an alternative to CSS resets.
+No other styles should come before Normalize.css.
 
-It's suggested that you read the `normalize.css` file and consider customising
-it to meet your needs. Alternatively, include the file in your project and
-override the defaults later in your CSS.
+It is recommended that you include the `normalize.css` file as untouched
+library code.
 
 For more information about how to use it, see the [About normalize.css article](http://nicolasgallagher.com/about-normalize-css/).
 
@@ -78,7 +79,11 @@ the defaults later in your Sass if necessary.
 * Internet Explorer 6-7 (when `$legacy-support-for-ie7` or
 `$legacy-support-for-ie6` is set to `true`)
 
-## Contribute
+[Normalize.css v1 provides legacy browser
+support](https://github.com/necolas/normalize.css/tree/v1) (IE 6+, Safari 4+),
+but is no longer actively developed.
+
+## Contributing
 
 Please read Necolas' [contributing
 guidelines](CONTRIBUTING.md).
