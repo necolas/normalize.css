@@ -1,13 +1,11 @@
 {
     "name": "normalize-scss",
     "version": "2.1.3",
-    "main": ["_normalize.scss"],
+    "main": "_normalize.scss",
     "author": ["Nicolas Gallagher", "John Albin Wilkins"],
     "ignore": [
         "CHANGELOG.md",
         "CONTRIBUTING.md",
-        "LICENSE.md",
-        "README.md",
         "component.json",
         "normalize-scss.gemspec",
         "lib/normalize-scss.rb",
