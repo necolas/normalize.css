@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/JohnAlbin/normalize.css-with-sass-or-compass'
   s.rubyforge_project =
 
-  s.version     = '2.1.2'
-  s.date        = '2013-07-03'
+  s.version     = '2.1.3'
+  s.date        = '2013-11-03'
   s.licenses    = ['GPL-2']
 
   s.authors     = ['John Albin Wilkins']
