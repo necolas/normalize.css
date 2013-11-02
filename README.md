@@ -1,7 +1,7 @@
 ## Latest downloadable version
 
 The latest release of _normalize.scss is: [2.1.2](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/archive/2.1.2.zip).
-It combines normalize.css v2.1.2 and normalize v1.1.2.
+It combines normalize.css v2.1.2 and normalize v1.1.3.
 
 ## The Compass port of normalize.css
 
