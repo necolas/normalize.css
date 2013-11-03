@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
 
   s.version     = '2.1.2'
   s.date        = '2013-07-03'
+  s.licenses    = ['GPL-2']
 
   s.authors     = ['John Albin Wilkins']
   s.email       = 'virtually.johnalbin@gmail.com'
