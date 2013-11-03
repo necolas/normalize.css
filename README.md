@@ -37,11 +37,13 @@ normalizing.
 
 ## Install
 
-Download from the [project page](http://necolas.github.io/normalize.css/).
+Install using one of the following methods:
 
-Install with [Bower](http://bower.io/): `bower install --save normalize-css`
+Download from the [project page](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/).
 
-Install with [Component(1)](http://component.io/): `component install necolas/normalize.css`
+Install with [Bower](http://bower.io/): `bower install --save normalize.scss`
+
+Install with [Component(1)](http://component.io/): `component install JohnAlbin/normalize.css-with-sass-or-compass`
 
 ## What does it do?
 
@@ -54,9 +56,6 @@ Install with [Component(1)](http://component.io/): `component install necolas/no
 ## How to use it
 
 No other styles should come before Normalize.css.
-
-It is recommended that you include the `normalize.css` file as untouched
-library code.
 
 For more information about how to use it, see the [About normalize.css article](http://nicolasgallagher.com/about-normalize-css/).
 
