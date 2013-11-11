@@ -392,6 +392,14 @@ textarea {
     vertical-align: top; /* 2 */
 }
 
+/**
+ * Remove default gradient in android firefox
+ */
+input,
+textarea{
+    background-image:none;
+}
+
 /* ==========================================================================
    Tables
    ========================================================================== */
