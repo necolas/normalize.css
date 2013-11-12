@@ -15,6 +15,30 @@
                 padding: 5px;
                 border: 1px solid #333;
             }
+
+            button#btnstatic,
+            button#btnabs {
+                width: 200px;
+                height: 30px;
+            }
+
+            button#btnabs {
+                position: relative;
+            }
+
+            button#btnstatic div,
+            button#btnabs div {
+                height: 40px;
+                background: red;
+            }
+
+            button#btnabs div {
+                position: absolute;
+                left: 50%;
+                top: 100%;
+                width: 50px;
+                margin: -20px 0 0 -25px;
+            }
         </style>
     </head>
     <body>
@@ -353,6 +377,12 @@
                 <div><button type="reset">Reset (button)</button></div>
                 <div><button type="button">Button (button)</button></div>
                 <div><button type="submit">Submit (button)</button></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>button overflow tests</legend>
+                <p>static sibling<br><button type="button" id="btnstatic"><div></div></button></p>
+                <p>absolute sibling<br><button type="button" id="btnabs"><div></div></button></p>
             </fieldset>
         </form>
 
