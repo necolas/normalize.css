@@ -57,10 +57,11 @@ audio:not([controls]) {
 }
 
 /**
- * Address styling not present in IE 8/9.
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
 
-[hidden] {
+[hidden], template {
     display: none;
 }
 
@@ -95,6 +96,15 @@ body {
 /* ==========================================================================
    Links
    ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
 
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
@@ -481,9 +491,8 @@ html input[disabled] {
 }
 
 /**
- * 1. Address box sizing set to `content-box` in IE 8/9.
- * 2. Remove excess padding in IE 8/9.
- * 3. Removes excess padding in IE 7.
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 7/8/9/10.
  *    Known issue: excess padding remains in IE 6.
  */
 
