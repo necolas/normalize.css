@@ -1,5 +1,5 @@
 {
-    "name": "normalize.scss",
+    "name": "normalize-scss",
     "version": "2.1.2",
     "author": ["Nicolas Gallagher", "Bo-Yi Wu"],
     "styles": ["_normalize.scss"]
