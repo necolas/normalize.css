@@ -9,6 +9,10 @@ normalizing.
 
 [Check out the demo](http://necolas.github.io/normalize.css/latest/test.html)
 
+## Install with Bower
+
+Install with [Bower](http://bower.io/): `bower install --save normalize-scss`
+
 ## Install
 
 Download from the [project page](http://necolas.github.io/normalize.css/).
