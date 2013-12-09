@@ -339,6 +339,14 @@ html input[disabled] {
 }
 
 /**
+* 1. Opacity set to `1` in Mozilla Firefox 19+
+*/
+
+input::-moz-placeholder{
+    opacity: 1;
+}
+
+/**
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
