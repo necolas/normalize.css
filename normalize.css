@@ -383,6 +383,14 @@ input::-moz-focus-inner {
 }
 
 /**
+ * Remove the clear button of a text input control in IE10.
+ */
+
+::-ms-clear {
+  display: none;
+}
+
+/**
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
