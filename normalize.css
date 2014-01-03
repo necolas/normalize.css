@@ -411,8 +411,10 @@ table {
 
 /**
  * Remove outline when focused in Webkit-based and Blink-based browsers.
+ * 1. Allow empty attribute syntax.
  */
 
-[contenteditable=""]:focus, [contenteditable="true"]:focus {
+[contenteditable=""]:focus, /* 1 */
+[contenteditable="true"]:focus {
     outline: 0;
 }
