@@ -404,3 +404,15 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* ==========================================================================
+   Editable Contents
+   ========================================================================== */
+
+/**
+ * Remove outline when focused in Webkit-based and Blink-based browsers.
+ */
+
+[contenteditable=""]:focus, [contenteditable="true"]:focus {
+    outline: 0;
+}
