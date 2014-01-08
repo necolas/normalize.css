@@ -264,6 +264,7 @@ fieldset {
     border: 1px solid #c0c0c0;
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
+    min-width: 0;
 }
 
 /**
