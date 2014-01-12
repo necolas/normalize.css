@@ -257,13 +257,15 @@ figure {
    ========================================================================== */
 
 /**
- * Define consistent border, margin, and padding.
+ * 1. Define consistent border, margin, and padding.
+ * 2. Address width being affected by wide descendants in Chrome and Firefox.
  */
 
 fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+    border: 1px solid #c0c0c0; /* 1 */
+    margin: 0 2px; /* 1 */
+    min-width: 0; /* 2 */
+    padding: 0.35em 0.625em 0.75em; /* 1 */
 }
 
 /**
