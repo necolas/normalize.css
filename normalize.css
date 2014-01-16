@@ -288,6 +288,7 @@ legend {
 
 button,
 input,
+optgroup,
 select,
 textarea {
     color: inherit; /* 1 */
