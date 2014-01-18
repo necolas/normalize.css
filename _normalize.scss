@@ -18,13 +18,18 @@
     // The base line height determines the basic unit of vertical rhythm.
     $base-line-height: 24px !default;
 
-// These 2 variables are copies of ones used in Compass' support module.
+// This variable is a copy of the one used in Compass' support module.
 
-    // Set this to true to add support for IE 6.
-    $legacy-support-for-ie6: false !default;
-
-    // Set this to true to add support for IE 7.
-    $legacy-support-for-ie7: false !default;
+    // Optional map of minimum browser versions to support. For example, to
+    // remove support for IE 7 and earlier, set $browser-minimum-versions['ie']
+    // to '8'.
+    $browser-minimum-versions: (
+        'chrome':  null,
+        'firefox': null,
+        'ie':      null,
+        'safari':  null,
+        'opera':   null
+    ) !default;
 
 
 // Set this to true to force CSS output to exactly match normalize.css.
@@ -81,7 +86,7 @@ audio,
 canvas,
 video {
     display: inline-block;
-    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    @if support-legacy-browser(ie, "7") {
         *display: inline;
         *zoom: 1;
     }
@@ -121,7 +126,7 @@ template {
 
 html {
     font-family: $base-font-family; /* 1 */
-    @if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    @if not $strict-normalize or support-legacy-browser(ie, "7") {
         font-size: 100% * ($base-font-size / 16px); /* 3 */
     }
     -ms-text-size-adjust: 100%; /* 2 */
@@ -133,7 +138,7 @@ html {
     }
 }
 
-@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+@if support-legacy-browser(ie, "7") {
     /**
      * Address `font-family` inconsistency between `textarea` and other form
      * elements.
@@ -188,7 +193,7 @@ a:hover {
    Typography
    ========================================================================== */
 
-@if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+@if not $strict-normalize or support-legacy-browser(ie, "7") {
     /**
      * Set 1 unit of vertical rhythm on the top and bottom margin.
      */
@@ -211,7 +216,7 @@ a:hover {
 
 h1 {
     /* Set the font-size and line-height while keeping a proper vertical rhythm. */
-    @if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    @if not $strict-normalize or support-legacy-browser(ie, "7") {
         @include adjust-font-size-to( $h1-font-size );
     }
     @else {
@@ -223,7 +228,7 @@ h1 {
     @include trailer(1, $h1-font-size);
 }
 
-@if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+@if not $strict-normalize or support-legacy-browser(ie, "7") {
     h2 {
         @include adjust-font-size-to( $h2-font-size );
         @include leader(1, $h2-font-size);
@@ -307,7 +312,7 @@ kbd,
 pre,
 samp {
     font-family: monospace, serif;
-    @if $legacy-support-for-ie6 {
+    @if support-legacy-browser(ie, "6") {
         _font-family: 'courier new', monospace;
     }
     font-size: 1em;
@@ -318,7 +323,7 @@ samp {
  */
 
 pre {
-    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    @if support-legacy-browser(ie, "7") {
         white-space: pre;
         white-space: pre-wrap;
         word-wrap: break-word;
@@ -368,7 +373,7 @@ sub {
    Lists
    ========================================================================== */
 
-@if not $strict-normalize or $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+@if not $strict-normalize or support-legacy-browser(ie, "7") {
     /**
      * Address margins set differently in IE 6/7.
      */
@@ -405,7 +410,7 @@ sub {
     }
 }
 
-@if $legacy-support-for-ie7 {
+@if support-legacy-browser(ie, "7") {
     /**
      * Correct list images handled incorrectly in IE 7.
      */
@@ -427,7 +432,7 @@ sub {
 
 img {
     border: 0;
-    @if $legacy-support-for-ie7 {
+    @if support-legacy-browser(ie, "7") {
         /* Improve image quality when scaled in IE 7. */
         -ms-interpolation-mode: bicubic;
     }
@@ -457,7 +462,7 @@ figure {
    Forms
    ========================================================================== */
 
-@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+@if support-legacy-browser(ie, "7") {
     /**
      * Correct margin displayed oddly in IE 6/7.
      */
@@ -490,7 +495,7 @@ fieldset {
 legend {
     border: 0; /* 1 */
     padding: 0; /* 2 */
-    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    @if support-legacy-browser(ie, "7") {
         *margin-left: -7px; /* 3 */
     }
 }
@@ -509,7 +514,7 @@ textarea {
     font-family: inherit; /* 1 */
     font-size: 100%; /* 2 */
     margin: 0; /* 3 */
-    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    @if support-legacy-browser(ie, "7") {
         vertical-align: baseline; /* 4 */
         *vertical-align: middle; /* 4 */
     }
@@ -553,7 +558,7 @@ input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: button; /* 2 */
     cursor: pointer; /* 3 */
-    @if $legacy-support-for-ie7 {
+    @if support-legacy-browser(ie, "7") {
         *overflow: visible; /* 4 */
     }
 }
@@ -578,7 +583,7 @@ input[type="checkbox"],
 input[type="radio"] {
     @include box-sizing(border-box); /* 1 */
     padding: 0; /* 2 */
-    @if $legacy-support-for-ie7 {
+    @if support-legacy-browser(ie, "7") {
         *height: 13px; /* 3 */
         *width: 13px; /* 3 */
     }
