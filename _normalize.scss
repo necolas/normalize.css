@@ -140,6 +140,8 @@ html {
     font-family: $base-font-family; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    // Show a background image that can be used to debug your alignments.
+    // @include debug-vertical-alignment();
 }
 
 @if support-legacy-browser(ie, "7") {
