@@ -1,0 +1,17 @@
+$base-font-family: Arial, sans-serif;
+
+$base-font-size: 24px;
+
+$base-line-height: 36px;
+
+$h1-font-size: 3    * $base-font-size;
+$h2-font-size: 2    * $base-font-size;
+$h3-font-size: 1.5  * $base-font-size;
+$h4-font-size: 0.9  * $base-font-size;
+$h5-font-size: 0.75 * $base-font-size;
+$h6-font-size: 0.5  * $base-font-size;
+
+// Some font sizes are shown in the non-strict version of Normalize.scss.
+$strict-normalize: false;
+
+@import "normalize";

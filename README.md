@@ -111,3 +111,5 @@ Including:
 Some of the above projects convert normalize into Sass mixins. That makes it
 impossible to add Normalize using __Approach 1__ (by copying the file into your website
 and customizing/overriding for your needs.)
+
+[![Build Status](https://travis-ci.org/JohnAlbin/normalize.css-with-sass-or-compass.png?branch=master)](https://travis-ci.org/JohnAlbin/normalize.css-with-sass-or-compass)
