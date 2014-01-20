@@ -10,13 +10,17 @@
 // @see http://compass-style.org/help/tutorials/best_practices/
 // =============================================================================
 
-// These 2 variables are copies of ones used in Compass' Vertical Rhythm module.
+// These 3 variables are copies of ones used in Compass' Vertical Rhythm module.
 
     // The base font size.
     $base-font-size: 16px !default;
 
     // The base line height determines the basic unit of vertical rhythm.
     $base-line-height: 24px !default;
+
+    // The length unit in which to output vertical rhythm values.
+    // Supported values: px, em, rem.
+    $rhythm-unit: 'em' !default;
 
 // This variable is a copy of the one used in Compass' support module.
 
@@ -220,7 +224,7 @@ h1 {
         @include adjust-font-size-to( $h1-font-size );
     }
     @else {
-        font-size: 1em * ($h1-font-size / $base-font-size);
+        font-size: if($rhythm-unit == "px", $h1-font-size, ($h1-font-size / $base-font-size)#{$rhythm-unit});
     }
 
     /* Set 1 unit of vertical rhythm on the top and bottom margins. */
