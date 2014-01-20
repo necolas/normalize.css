@@ -1,5 +1,9 @@
 === HEAD
 
+=== Unreleased development version
+
+* Font size of "code, kbd, pre, samp" should always be 1em relative to parent.
+
 === 2.1.3 (August 26, 2013)
 
 * Fix component.json.
