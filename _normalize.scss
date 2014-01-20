@@ -310,12 +310,7 @@ samp {
     @if $legacy-support-for-ie6 {
         _font-family: 'courier new', monospace;
     }
-    @if $strict-normalize {
-        font-size: 1em;
-    }
-    @else {
-        @include adjust-font-size-to( $base-font-size );
-    }
+    font-size: 1em;
 }
 
 /**
