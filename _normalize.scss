@@ -59,6 +59,23 @@ $indent-amount: 40px !default;
 @import "compass/typography/vertical_rhythm";
 
 
+// Fix a bug in Compass 1.0.0-alpha.17 by overriding its
+// support-legacy-browser() function.
+// @see https://github.com/chriseppstein/compass/pull/1524
+@function support-legacy-browser($browser, $min-version, $max-version: null, $threshold: $critical-usage-threshold) {
+  @if not index($supported-browsers, $browser) {
+    @return false;
+  }
+  // Check agaist usage stats and declared minimums
+  $min-required-version: map-get($browser-minimum-versions, $browser);
+  $usage: if($max-version,
+             omitted-usage($browser, $min-version, $max-version),
+             omitted-usage($browser, $min-version));
+  @return (not $min-required-version and $usage > $threshold) or
+          ($min-required-version and
+           compare-browser-versions($browser, $max-version or $min-version, $min-required-version) >= 0);
+}
+
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
