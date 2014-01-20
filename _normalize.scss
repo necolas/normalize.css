@@ -116,26 +116,26 @@ template {
    Base
    ========================================================================== */
 
+@if not $strict-normalize or support-legacy-browser(ie, "7") {
+    /**
+     * Establish a vertical rhythm unit using $base-font-size, $base-line-height,
+     * and $rhythm-unit variables. Also, correct text resizing oddly in IE 6/7 when
+     * body `font-size` is set using `em` units.
+     */
+
+    @include establish-baseline();
+}
+
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
- * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
- *    `em` units.
  */
 
 html {
     font-family: $base-font-family; /* 1 */
-    @if not $strict-normalize or support-legacy-browser(ie, "7") {
-        font-size: 100% * ($base-font-size / 16px); /* 3 */
-    }
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
-
-    @if not $strict-normalize {
-        /* Establish a vertical rhythm unit using $base-line-height. */
-        @include adjust-leading-to(1);
-    }
 }
 
 @if support-legacy-browser(ie, "7") {
