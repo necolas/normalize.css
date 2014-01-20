@@ -1,6 +1,6 @@
-$indent-amount: 3em;
+$indent-amount: 3em !global;
 
-// $indent-amount is only used in legacy code.
-$legacy-support-for-ie7: true;
+// $indent-amount is only used in the non-strict version of Normalize.scss.
+$strict-normalize: false !global;
 
 @import "normalize";

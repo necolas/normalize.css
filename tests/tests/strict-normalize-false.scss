@@ -1,3 +1,3 @@
-$strict-normalize: false;
+$strict-normalize: false !global;
 
 @import "normalize";
