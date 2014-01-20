@@ -1,7 +1,12 @@
 === HEAD
 
-=== Unreleased development version
+=== 3.0.0-alpha.1+normalize.2.1.3 (January 20, 2014)
 
+* Upgrade to Compass 1.0's support module.
+* Use Compass 1.0.0's improved establish-baseline() mixin.
+* Use vertical rhythm's $rhythm-unit variable.
+* Add docs showing proper debug-vertical-alignment() usage.
+* Fix a bug in Compass 1.0.0-alpha.17 by overriding its support-legacy-browser() function.
 * Font size of "code, kbd, pre, samp" should always be 1em relative to parent.
 
 === 2.1.3 (August 26, 2013)

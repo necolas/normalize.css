@@ -2,7 +2,7 @@
     "name": "normalize-scss",
     "repo": "JohnAlbin/normalize.css-with-sass-or-compass",
     "description": "A Sass/Compass version of Normalize.css.",
-    "version": "2.1.3",
+    "version": "3.0.0-alpha.1+normalize.2.1.3",
     "styles": ["_normalize.scss"],
     "author": ["Nicolas Gallagher", "John Albin Wilkins"],
     "license": "GPLv2"
