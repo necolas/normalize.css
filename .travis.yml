@@ -9,3 +9,4 @@ gemfile:
 branches:
   only:
     - master
+script: cd tests; bundle exec rake
