@@ -8,4 +8,5 @@ gemfile:
 branches:
   only:
     - master
+    - 2.x
 script: cd tests; bundle exec rake
