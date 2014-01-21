@@ -1,7 +1,7 @@
 language: ruby
 bundler_args: --without development
 rvm:
-  - 1.8.7
+  - 1.9.3
   - 2.0.0
 gemfile:
   - Gemfile
