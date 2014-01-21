@@ -5,7 +5,7 @@ sass_dir              = 'tests'
 css_dir               = 'output'
 
 # If developing an extension, add your extension's stylesheets folder as an import path.
-add_import_path       '../'
+extensions_dir        = '../'
 
 # Set to true for easier debugging
 line_comments         = false
