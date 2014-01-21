@@ -5,7 +5,6 @@ rvm:
   - 2.0.0
 gemfile:
   - tests/Gemfile.Sass.3.2
-  - tests/Gemfile.Sass.3.3
 branches:
   only:
     - master
