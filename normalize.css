@@ -298,11 +298,18 @@ optgroup {
 }
 
 /**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+
+button {
+    overflow: visible;
+}
+
+/**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
 
-button,
 input {
     line-height: normal;
 }
