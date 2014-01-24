@@ -172,6 +172,6 @@ cutting new releases.
    added to the CHANGELOG (inc. date), and the `bower.json`, `component.json`,
    and `normalize.css` files.
 3. The commit message must be of `v0.0.0` format.
-4. Create an annotated tag for the version: `git tag -m "v0.0.0" v0.0.0`.
+4. Create an annotated tag for the version: `git tag -m "v0.0.0" 0.0.0`.
 5. Push the changes and tags to GitHub: `git push --tags origin master`
 6. Checkout the `gh-pages` branch and follow the instructions in the README.
