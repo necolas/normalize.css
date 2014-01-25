@@ -180,14 +180,6 @@ pre {
 }
 
 /**
- * Set consistent quote types.
- */
-
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-/**
  * Address inconsistent and variable font size in all browsers.
  */
 
