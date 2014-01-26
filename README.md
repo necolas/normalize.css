@@ -7,7 +7,7 @@ The project relies on researching the differences between default browser
 styles in order to precisely target only the styles that need or benefit from
 normalizing.
 
-[Check out the demo](http://necolas.github.io/normalize.css/latest/test.html)
+[View the test file](http://necolas.github.io/normalize.css/latest/test.html)
 
 ## Install
 
@@ -34,10 +34,11 @@ library code.
 
 ## Browser support
 
-* Google Chrome
-* Mozilla Firefox 4+
-* Apple Safari 5+
-* Opera 12+
+* Google Chrome (latest)
+* Mozilla Firefox (latest)
+* Mozilla Firefox 4
+* Opera (latest)
+* Apple Safari 6+
 * Internet Explorer 8+
 
 [Normalize.css v1 provides legacy browser
