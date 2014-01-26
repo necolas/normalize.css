@@ -7,7 +7,7 @@
  * Set to false if you want to drop support for IE6 and IE7
  */
 
-$legacy_browser_support: false;
+$legacy_browser_support: false !default;
 
 /* ==========================================================================
    HTML5 display definitions
