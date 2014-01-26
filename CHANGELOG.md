@@ -1,5 +1,19 @@
 === HEAD
 
+* Explicit tests for each normalization.
+* Fix i18n for `q` element.
+* Fix `pre` text formatting and overflow.
+* Fix vertical alignment of `progress`.
+* Address `button` overflow in IE 8/9/10.
+* Revert `textarea` alignment modification.
+* Fix number input button cursor in Chrome on OS X.
+* Remove `a:focus` outline normalization.
+* Fix `figure` margin normalization.
+* Normalize `optgroup`.
+* Remove default table cell padding.
+* Set correct display for `progress` in IE 8/9.
+* Fix `font` and `color` inheritance for forms.
+
 === 2.1.3 (August 26, 2013)
 
 * Fix component.json.
