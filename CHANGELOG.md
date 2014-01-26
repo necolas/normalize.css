@@ -1,5 +1,7 @@
 === HEAD
 
+=== 3.0.0-rc.1 (January 26, 2014)
+
 * Explicit tests for each normalization.
 * Fix i18n for `q` element.
 * Fix `pre` text formatting and overflow.
