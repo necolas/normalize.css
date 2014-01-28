@@ -1,4 +1,4 @@
-# normalize.css v2
+# normalize.css v3
 
 Normalize.css is a customisable CSS file that makes browsers render all
 elements more consistently and in line with modern standards.
