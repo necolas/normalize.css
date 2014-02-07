@@ -266,7 +266,7 @@ button {
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
  * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
 
