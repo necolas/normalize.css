@@ -87,7 +87,7 @@ a {
 }
 
 /**
- * Improve readability when focused and also mouse hovered in all browsers.
+ * Improve readability when active or mouse hovered in all browsers.
  */
 
 a:active,
