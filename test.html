@@ -99,23 +99,32 @@
 
   <h2 class="Test-describe"><code>article</code>, <code>aside</code>, <code>details</code>, <code>figure</code>, <code>figcaption</code>, <code>footer</code>, <code>header</code>, <code>hgroup</code>, <code>main</code>, <code>nav</code>, <code>section</code>, <code>summary</code></h2>
   <h3 class="Test-it">should render as block</h3>
-  <div class="Test-run Test-run--highlightEl">
-    <article>article</article>
-    <aside>aside</aside>
+  <div class="Test-run Test-run--highlightEl" id="html5-block">
+    <style>
+      #html5-block span {
+        content: "";
+        background: #ADD8E6;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+      }
+    </style>
+    <article>article</article> <span></span>
+    <aside>aside</aside> <span></span>
     <details>
       <summary>summary</summary>
       details
-    </details>
+    </details> <span></span>
     <figure>
       figure
-      <figcaption>figcaption</figcaption>
-    </figure>
-    <footer>footer</footer>
-    <header>header</header>
-    <hgroup>hgroup</hgroup>
-    <main>main</main>
-    <nav>nav</nav>
-    <section>section</section>
+      <figcaption>figcaption</figcaption> <span></span>
+    </figure> <span></span>
+    <footer>footer</footer> <span></span>
+    <header>header</header> <span></span>
+    <hgroup>hgroup</hgroup> <span></span>
+    <main>main</main> <span></span>
+    <nav>nav</nav> <span></span>
+    <section>section</section> <span></span>
   </div>
 
   <h2 class="Test-describe"><code>audio</code>, <code>canvas</code>, <code>progress</code>, <code>video</code></h2>
