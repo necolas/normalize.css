@@ -1,0 +1,24 @@
+{
+  "name": "normalizecss",
+  "version": "3.0.0",
+  "description": "Normalize.css as a node packaged module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/necolas/normalize.css.git"
+  },
+  "keywords": [
+    "normalize",
+    "css",
+    "atomify"
+  ],
+  "style": "normalize.css",
+  "author": "Nicolas Gallagher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/necolas/normalize.css/issues"
+  },
+  "homepage": "http://necolas.github.io/normalize.css"
+}
