@@ -13,9 +13,11 @@ normalizing.
 
 Download from the [project page](http://necolas.github.io/normalize.css/).
 
-Install with [Bower](http://bower.io/): `bower install --save normalize-css`
+Install with [Component(1)](https://github.com/component/component/): `component install necolas/normalize.css`
 
-Install with [Component(1)](http://component.io/): `component install necolas/normalize.css`
+Install with [npm](http://npmjs.org/): `npm install --save normalize.css`
+
+Install with [Bower](http://bower.io/): `bower install --save normalize.css`
 
 ## What does it do?
 
