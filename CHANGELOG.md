@@ -1,5 +1,7 @@
 === HEAD
 
+* Add package.json for npm support.
+
 === 3.0.0 (January 28, 2014)
 
 === 3.0.0-rc.1 (January 26, 2014)
