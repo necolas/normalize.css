@@ -1,0 +1,7 @@
+{
+    "name": "necolas/normalize.css",
+	"description": "A collection of HTML element and attribute style-normalizations",
+	"homepage": "http://necolas.github.io/normalize.css/",
+	"author": "Nicolas Gallagher",
+	"license": "MIT"
+}

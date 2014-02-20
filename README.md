@@ -19,6 +19,8 @@ Install with [npm](http://npmjs.org/): `npm install --save normalize.css`
 
 Install with [Bower](http://bower.io/): `bower install --save normalize.css`
 
+Install with [Composer](http://getcomposer.org/): `php composer.phar require necolas/normalize.css:dev-master`
+
 ## What does it do?
 
 * Preserves useful defaults, unlike many CSS resets.
