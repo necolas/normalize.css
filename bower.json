@@ -1,8 +1,8 @@
 {
-  "name": "normalize-css",
+  "name": "normalize-scss",
   "version": "3.0.0",
-  "main": "normalize.css",
-  "author": "Nicolas Gallagher",
+  "main": "_normalize.scss",
+  "author": ["Nicolas Gallagher", "Bo-Yi Wu"],
   "ignore": [
     "CHANGELOG.md",
     "CONTRIBUTING.md",

@@ -1,8 +1,8 @@
 {
-  "name": "normalize.css",
-  "repo": "necolas/normalize.css",
+  "name": "normalize-scss",
+  "repo": "appleboy/normalize.scss",
   "version": "3.0.0",
-  "styles": ["normalize.css"],
-  "author": "Nicolas Gallagher",
+  "styles": ["_normalize.scss"],
+  "author": ["Nicolas Gallagher", "Bo-Yi Wu"],
   "license": "MIT"
 }
