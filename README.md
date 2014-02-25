@@ -1,4 +1,4 @@
-# normalize.css v2
+# normalize.css v3
 
 Normalize.css is a customisable CSS file that makes browsers render all
 elements more consistently and in line with modern standards.
@@ -7,7 +7,7 @@ The project relies on researching the differences between default browser
 styles in order to precisely target only the styles that need or benefit from
 normalizing.
 
-[Check out the demo](http://necolas.github.io/normalize.css/latest/test.html)
+[View the test file](http://necolas.github.io/normalize.css/latest/test.html)
 
 ## Install with Bower
 
@@ -17,9 +17,11 @@ Install with [Bower](http://bower.io/): `bower install --save normalize-scss`
 
 Download from the [project page](http://necolas.github.io/normalize.css/).
 
-Install with [Bower](http://bower.io/): `bower install --save normalize-css`
+Install with [Component(1)](https://github.com/component/component/): `component install necolas/normalize.css`
 
-Install with [Component(1)](http://component.io/): `component install necolas/normalize.css`
+Install with [npm](http://npmjs.org/): `npm install --save normalize.css`
+
+Install with [Bower](http://bower.io/): `bower install --save normalize.css`
 
 ## What does it do?
 
@@ -38,10 +40,11 @@ library code.
 
 ## Browser support
 
-* Google Chrome
-* Mozilla Firefox 4+
-* Apple Safari 5+
-* Opera 12+
+* Google Chrome (latest)
+* Mozilla Firefox (latest)
+* Mozilla Firefox 4
+* Opera (latest)
+* Apple Safari 6+
 * Internet Explorer 8+
 
 [Normalize.css v1 provides legacy browser
