@@ -1,15 +1,8 @@
 {
-    "name": "normalize-css",
-    "version": "2.1.0",
-    "author": "Nicolas Gallagher",
-    "homepage": "http://necolas.github.com/normalize.css/",
-    "styles": ["normalize.css"],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/necolas/normalize.css.git"
-    },
-    "licenses": [{
-        "type": "MIT",
-        "url": "http://opensource.org/licenses/MIT"
-    }]
+  "name": "normalize.css",
+  "repo": "necolas/normalize.css",
+  "version": "3.0.0",
+  "styles": ["normalize.css"],
+  "author": "Nicolas Gallagher",
+  "license": "MIT"
 }
