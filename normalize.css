@@ -423,3 +423,14 @@ td,
 th {
   padding: 0;
 }
+
+/* Lists
+   ========================================================================== */
+
+/**
+ * Remove unwanted margin from ul in Firefox
+ */
+ 
+ul{
+  margin: 0;
+}
