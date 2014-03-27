@@ -1,62 +1,62 @@
 html {
-    background: #f7f7f7;
-    color: #333;
-    font: 16px/1.4 Open Sans, Helvetica, Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  font: 16px/1.4 Open Sans, Helvetica, Arial, sans-serif;
 }
 
 body {
-    max-width: 720px;
-    padding: 20px 40px;
-    margin: 0 auto;
+  max-width: 720px;
+  padding: 20px 40px;
+  margin: 0 auto;
 }
 
 a {
-    color: #069;
-    text-decoration: none;
+  color: #069;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 h1,
 h2 {
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 p {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 /* structure */
 
 .site-box {
-    padding: 40px 60px 0;
-    border: 1px solid #ccc;
-    margin: 0 0 3em;
-    background: #fff;
-    text-align: center;
+  padding: 40px 60px 0;
+  border: 1px solid #ccc;
+  margin: 0 0 3em;
+  background: #fff;
+  text-align: center;
 }
 
 .site-footer {
-    width: 85%;
-    margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .logo {
-    margin: 0 0 1em;
-    font-size: 2.375em;
-    color: #69a619;
-    text-transform: lowercase;
-    text-shadow: 1px 1px 0 #304d08;
-    text-decoration: none;
+  margin: 0 0 1em;
+  font-size: 2.375em;
+  color: #69a619;
+  text-transform: lowercase;
+  text-shadow: 1px 1px 0 #304d08;
+  text-decoration: none;
 }
 
 .tagline {
-    margin: 0 0 0.75em;
-    font-size: 2.25em;
+  margin: 0 0 0.75em;
+  font-size: 2.25em;
 }
 
 /**
@@ -64,14 +64,14 @@ p {
  */
 
 .cta-option {
-    position: relative;
-    display: inline-block;
-    /* IE6/7 inline-block hack */
-    *display: inline;
-    *zoom: 1;
+  position: relative;
+  display: inline-block;
+  /* IE6/7 inline-block hack */
+  *display: inline;
+  *zoom: 1;
 
-    margin: 1.5em 0.75em 0.5em;
-    vertical-align: bottom;
+  margin: 1.5em 0.75em 0.5em;
+  vertical-align: bottom;
 }
 
 /**
@@ -79,35 +79,35 @@ p {
  */
 
 .btn-download {
-    position: relative;
-    display: inline-block;
-    /* IE6/7 inline-block hack */
-    *display: inline;
-    *zoom: 1;
+  position: relative;
+  display: inline-block;
+  /* IE6/7 inline-block hack */
+  *display: inline;
+  *zoom: 1;
 
-    padding: 0.4em 1em;
-    border: 1px solid #5e9612;
-    margin: 0 0 10px;
-    color: #fff;
-    background: #69a619;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px -2px #111, inset 0 2px 5px 0 rgba(255, 255, 255, 0.3);
-    font-size: 1.5em;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
+  padding: 0.4em 1em;
+  border: 1px solid #5e9612;
+  margin: 0 0 10px;
+  color: #fff;
+  background: #69a619;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px -2px #111, inset 0 2px 5px 0 rgba(255, 255, 255, 0.3);
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .btn-download:hover,
 .btn-download:focus,
 .btn-download:active {
-    background: #6ead1a;
-    text-decoration: none;
+  background: #6ead1a;
+  text-decoration: none;
 }
 
 .btn-download:active {
-    box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.2);
-    background: #5d9117;
+  box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  background: #5d9117;
 }
 
 /**
@@ -117,21 +117,21 @@ p {
  */
 
 .btn-download-alt {
-    border-color: #ccc;
-    background: #eee;
-    box-shadow: none;
-    color: #666;
-    font-size: 1.25em;
+  border-color: #ccc;
+  background: #eee;
+  box-shadow: none;
+  color: #666;
+  font-size: 1.25em;
 }
 
 .btn-download-alt:hover,
 .btn-download-alt:focus,
 .btn-download-alt:active {
-    background: #f5f5f5;
+  background: #f5f5f5;
 }
 
 .btn-download-alt:active {
-    background: #ddd;
+  background: #ddd;
 }
 
 /**
@@ -139,23 +139,23 @@ p {
  */
 
 .share-bar {
-    overflow: hidden;
-    padding: 15px 30px;
-    border-top: 1px solid #ddd;
-    margin: 50px -60px 0;
-    background: #eee;
-    line-height: 28px;
-    *zoom: 1;
+  overflow: hidden;
+  padding: 15px 30px;
+  border-top: 1px solid #ddd;
+  margin: 50px -60px 0;
+  background: #eee;
+  line-height: 28px;
+  *zoom: 1;
 }
 
 .share-opt {
-    float: left;
-    height: 28px;
-    margin: 0 15px 0 0;
+  float: left;
+  height: 28px;
+  margin: 0 15px 0 0;
 }
 
 .read-more {
-    float: right;
+  float: right;
 }
 
 /**
@@ -163,50 +163,50 @@ p {
  */
 
 .txt-small {
-    font-size: 0.75em;
+  font-size: 0.75em;
 }
 
 .txt-large {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 .txt-mute {
-    color: #999;
+  color: #999;
 }
 
 @media screen and (max-width: 700px) {
-    .read-more {
-        float: none;
-        display: block;
-        margin: 0 0 1em;
-        line-height: 1.2;
-    }
+  .read-more {
+    float: none;
+    display: block;
+    margin: 0 0 1em;
+    line-height: 1.2;
+  }
 }
 
 @media screen and (max-width: 540px) {
-    body {
-        padding: 20px;
-        font-size: 0.875em;
-    }
+  body {
+    padding: 20px;
+    font-size: 0.875em;
+  }
 
-    .site-box {
-        padding: 30px 30px 0;
-    }
+  .site-box {
+    padding: 30px 30px 0;
+  }
 
-    .cta-option {
-        margin-left: 0;
-        margin-right: 0;
-    }
+  .cta-option {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    .share-bar {
-        margin-left: -30px;
-        margin-right: -30px;
-        text-align: center;
-    }
+  .share-bar {
+    margin-left: -30px;
+    margin-right: -30px;
+    text-align: center;
+  }
 
-    .share-opt {
-        float: none;
-        display: inline-block;
-        margin: 0 1em 0.5em;
-    }
+  .share-opt {
+    float: none;
+    display: inline-block;
+    margin: 0 1em 0.5em;
+  }
 }
