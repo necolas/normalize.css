@@ -15,18 +15,18 @@ $legacy_browser_support: false !default;
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ *  user zoom.
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
- *    `em` units.
+ *  `em` units.
  */
 
 html {
-    font-family: sans-serif; /* 1 */
-    -ms-text-size-adjust: 100%; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-    @if $legacy_browser_support {
-        *font-size: 100%; /* 3 */
-    }
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  @if $legacy_browser_support {
+    *font-size: 100%; /* 3 */
+  }
 }
 
 /**
@@ -34,7 +34,7 @@ html {
  */
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /* HTML5 display definitions
@@ -58,7 +58,7 @@ main,
 nav,
 section,
 summary {
-    display: block;
+  display: block;
 }
 
 /**
@@ -70,12 +70,12 @@ audio,
 canvas,
 progress,
 video {
-    display: inline-block; /* 1 */
-    vertical-align: baseline; /* 2 */
-    @if $legacy_browser_support {
-        *display: inline;
-        *zoom: 1;
-    }
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+  @if $legacy_browser_support {
+    *display: inline;
+    *zoom: 1;
+  }
 }
 
 /**
@@ -84,8 +84,8 @@ video {
  */
 
 audio:not([controls]) {
-    display: none;
-    height: 0;
+  display: none;
+  height: 0;
 }
 
 /**
@@ -95,7 +95,7 @@ audio:not([controls]) {
 
 [hidden],
 template {
-    display: none;
+  display: none;
 }
 
 /* Links
@@ -106,7 +106,7 @@ template {
  */
 
 a {
-    background: transparent;
+  background: transparent;
 }
 
 /**
@@ -114,80 +114,80 @@ a {
  */
 
 a {
-    &:active, &:hover {
-        outline: 0;
-    };
+  &:active, &:hover {
+    outline: 0;
+  };
 }
 
 /* Text-level semantics
    ========================================================================== */
 
 /**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 
 abbr[title] {
-    border-bottom: 1px dotted;
+  border-bottom: 1px dotted;
 }
 
 /**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
 
 b,
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 @if $legacy_browser_support {
-    blockquote {
-        margin: 1em 40px;
-    }
+  blockquote {
+    margin: 1em 40px;
+  }
 }
 
 /**
- * Address styling not present in Safari 5 and Chrome.
+ * Address styling not present in Safari and Chrome.
  */
 
 dfn {
-    font-style: italic;
+  font-style: italic;
 }
 
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
+ * contexts in Firefox 4+, Safari, and Chrome.
  */
 
 h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 @if $legacy_browser_support {
-    h2 {
-        font-size: 1.5em;
-        margin: 0.83em 0;
-    }
+  h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+  }
 
-    h3 {
-        font-size: 1.17em;
-        margin: 1em 0;
-    }
+  h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+  }
 
-    h4 {
-        font-size: 1em;
-        margin: 1.33em 0;
-    }
+  h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+  }
 
-    h5 {
-        font-size: 0.83em;
-        margin: 1.67em 0;
-    }
+  h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+  }
 
-    h6 {
-        font-size: 0.67em;
-        margin: 2.33em 0;
-    }
+  h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+  }
 }
 
 /**
@@ -195,38 +195,38 @@ h1 {
  */
 
 mark {
-    background: #ff0;
-    color: #000;
+  background: #ff0;
+  color: #000;
 }
 
 @if $legacy_browser_support {
 
-    /**
-     * Addresses margins set differently in IE 6/7.
-     */
+  /**
+   * Addresses margins set differently in IE 6/7.
+   */
 
-    p,
-    pre {
-        *margin: 1em 0;
-    }
+  p,
+  pre {
+    *margin: 1em 0;
+  }
 
-    /*
-     * Addresses CSS quotes not supported in IE 6/7.
-     */
+  /*
+   * Addresses CSS quotes not supported in IE 6/7.
+   */
 
-    q {
-        *quotes: none;
-    }
+  q {
+    *quotes: none;
+  }
 
-    /*
-     * Addresses `quotes` property not supported in Safari 4.
-     */
+  /*
+   * Addresses `quotes` property not supported in Safari 4.
+   */
 
-    q:before,
-    q:after {
-        content: '';
-        content: none;
-    }
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
 }
 
 /**
@@ -234,7 +234,7 @@ mark {
  */
 
 small {
-    font-size: 80%;
+  font-size: 80%;
 }
 
 /**
@@ -243,60 +243,60 @@ small {
 
 sub,
 sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 sup {
-    top: -0.5em;
+  top: -0.5em;
 }
 
 sub {
-    bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 @if $legacy_browser_support {
 
-    /* ==========================================================================
-       Lists
-       ========================================================================== */
+  /* ==========================================================================
+     Lists
+     ========================================================================== */
 
-    /*
-     * Addresses margins set differently in IE 6/7.
-     */
+  /*
+   * Addresses margins set differently in IE 6/7.
+   */
 
-    dl,
-    menu,
-    ol,
-    ul {
-        *margin: 1em 0;
-    }
+  dl,
+  menu,
+  ol,
+  ul {
+    *margin: 1em 0;
+  }
 
-    dd {
-        *margin: 0 0 0 40px;
-    }
+  dd {
+    *margin: 0 0 0 40px;
+  }
 
-    /*
-     * Addresses paddings set differently in IE 6/7.
-     */
+  /*
+   * Addresses paddings set differently in IE 6/7.
+   */
 
-    menu,
-    ol,
-    ul {
-        *padding: 0 0 0 40px;
-    }
+  menu,
+  ol,
+  ul {
+    *padding: 0 0 0 40px;
+  }
 
-    /*
-     * Corrects list images handled incorrectly in IE 7.
-     */
+  /*
+   * Corrects list images handled incorrectly in IE 7.
+   */
 
-    nav ul,
-    nav ol {
-        *list-style: none;
-        *list-style-image: none;
-    }
+  nav ul,
+  nav ol {
+    *list-style: none;
+    *list-style-image: none;
+  }
 
 }
 
@@ -309,29 +309,29 @@ sub {
  */
 
 img {
-    border: 0;
-    @if $legacy_browser_support {
-        *-ms-interpolation-mode: bicubic; /* 2 */
-    }
+  border: 0;
+  @if $legacy_browser_support {
+    *-ms-interpolation-mode: bicubic; /* 2 */
+  }
 }
 
 /**
- * Correct overflow displayed oddly in IE 9.
+ * Correct overflow not hidden in IE 9/10/11.
  */
 
 svg:not(:root) {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* Grouping content
    ========================================================================== */
 
 /**
- * Address margin not present in IE 8/9 and Safari 5.
+ * Address margin not present in IE 8/9 and Safari.
  */
 
 figure {
-    margin: 1em 40px;
+  margin: 1em 40px;
 }
 
 /**
@@ -339,9 +339,9 @@ figure {
  */
 
 hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
 }
 
 /**
@@ -349,7 +349,7 @@ hr {
  */
 
 pre {
-    overflow: auto;
+  overflow: auto;
 }
 
 /**
@@ -361,11 +361,11 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, monospace;
-    @if $legacy_browser_support {
-        _font-family: 'courier new', monospace;
-    }
-    font-size: 1em;
+  font-family: monospace, monospace;
+  @if $legacy_browser_support {
+    _font-family: 'courier new', monospace;
+  }
+  font-size: 1em;
 }
 
 /* Forms
@@ -378,7 +378,7 @@ samp {
 
 /**
  * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
+ *  Known issue: affects color of disabled elements.
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  * 4. Improves appearance and consistency in all browsers.
@@ -389,13 +389,13 @@ input,
 optgroup,
 select,
 textarea {
-    color: inherit; /* 1 */
-    font: inherit; /* 2 */
-    margin: 0; /* 3 */
-    @if $legacy_browser_support {
-        vertical-align: baseline; /* 3 */
-        *vertical-align: middle; /* 3 */
-    }
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+  @if $legacy_browser_support {
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+  }
 }
 
 /**
@@ -415,28 +415,28 @@ button {
 
 button,
 select {
-    text-transform: none;
+  text-transform: none;
 }
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
+ *  and `video` controls.
  * 2. Correct inability to style clickable `input` types in iOS.
  * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
+ *  `input` and others.
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
- *    Known issue: inner spacing remains in IE 6.
+ *  Known issue: inner spacing remains in IE 6.
  */
 
 button,
 html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button; /* 2 */
-    cursor: pointer; /* 3 */
-    @if $legacy_browser_support {
-        *overflow: visible;  /* 4 */
-    }
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+  @if $legacy_browser_support {
+    *overflow: visible;  /* 4 */
+  }
 }
 
 /**
@@ -445,7 +445,7 @@ input[type="submit"] {
 
 button[disabled],
 html input[disabled] {
-    cursor: default;
+  cursor: default;
 }
 
 /**
@@ -470,17 +470,17 @@ input {
 /**
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
- *    Known issue: excess padding remains in IE 6.
+ *  Known issue: excess padding remains in IE 6.
  */
 
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
-    @if $legacy_browser_support {
-        *height: 13px; /* 3 */
-        *width: 13px; /* 3 */
-    }
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  @if $legacy_browser_support {
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+  }
 }
 
 /**
@@ -497,14 +497,14 @@ input[type="number"]::-webkit-outer-spin-button {
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
- *    (include `-moz` to future-proof).
+ *  (include `-moz` to future-proof).
  */
 
 input[type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
-    box-sizing: content-box;
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
 }
 
 /**
@@ -523,9 +523,9 @@ input[type="search"]::-webkit-search-decoration {
  */
 
 fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 /**
@@ -536,12 +536,12 @@ fieldset {
  */
 
 legend {
-    border: 0; /* 1 */
-    padding: 0; /* 2 */
-    @if $legacy_browser_support {
-        white-space: normal; /* 3 */
-        *margin-left: -7px; /* 4 */
-    }
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+  @if $legacy_browser_support {
+    white-space: normal; /* 3 */
+    *margin-left: -7px; /* 4 */
+  }
 }
 
 /**
@@ -549,7 +549,7 @@ legend {
  */
 
 textarea {
-    overflow: auto;
+  overflow: auto;
 }
 
 /**
@@ -558,7 +558,7 @@ textarea {
  */
 
 optgroup {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Tables
@@ -569,11 +569,11 @@ optgroup {
  */
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 td,
 th {
-    padding: 0;
+  padding: 0;
 }
