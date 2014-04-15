@@ -407,15 +407,6 @@ optgroup {
   font-weight: bold;
 }
 
-/**
- * Inconsistent color for HTML5 placeholder text among browsers.
- * 1. Firefox 19+: There is a opacity value in the UA stylesheet.
- */
-
-::-webkit-input-placeholder { color: inherit; }
-::-moz-placeholder { color: inherit; opacity: 1; } /* 1 */
-:-ms-input-placeholder { color: inherit; }
-
 /* Tables
    ========================================================================== */
 
