@@ -1,7 +1,15 @@
 {
-    "name": "necolas/normalize.css",
+	"name": "necolas/normalize.css",
 	"description": "A collection of HTML element and attribute style-normalizations",
-	"homepage": "http://necolas.github.io/normalize.css/",
+	"keywords": [
+		"css",
+		"normalize",
+		"web"
+	],
 	"author": "Nicolas Gallagher",
-	"license": "MIT"
+	"license": "MIT",
+	"homepage": "http://necolas.github.io/normalize.css/",
+	"support": {
+		"issues": "https://github.com/necolas/normalize.css/issues"
+	}
 }
