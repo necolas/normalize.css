@@ -8,8 +8,8 @@
 
 html {
   font-family: sans-serif; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
 }
 
 /**
@@ -131,8 +131,8 @@ dfn {
  */
 
 h1 {
-  font-size: 2em;
   margin: 0.67em 0;
+  font-size: 2em;
 }
 
 /**
@@ -140,8 +140,8 @@ h1 {
  */
 
 mark {
-  background: #ff0;
   color: #000;
+  background: #ff0;
 }
 
 /**
@@ -158,9 +158,9 @@ small {
 
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 
@@ -207,9 +207,9 @@ figure {
  */
 
 hr {
+  height: 0;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0;
 }
 
 /**
@@ -241,10 +241,10 @@ samp {
  */
 
 /**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
+ * 1. Address margins set differently in Firefox 4+, Safari, and Chrome.
  * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 3. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
  */
 
 button,
@@ -252,9 +252,9 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit; /* 1 */
+  margin: 0; /* 1 */
   font: inherit; /* 2 */
-  margin: 0; /* 3 */
+  color: inherit; /* 3 */
 }
 
 /**
@@ -280,17 +280,17 @@ select {
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
  *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
+ * 2. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
+ * 3. Correct inability to style clickable `input` types in iOS.
  */
 
 button,
 html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-  cursor: pointer; /* 3 */
+  cursor: pointer; /* 2 */
+  -webkit-appearance: button; /* 3 */
 }
 
 /**
@@ -308,8 +308,8 @@ html input[disabled] {
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-  border: 0;
   padding: 0;
+  border: 0;
 }
 
 /**
@@ -325,14 +325,15 @@ input {
  * It's recommended that you don't attempt to style these elements.
  * Firefox's implementation doesn't respect box-sizing, padding, or width.
  *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
+ * 1. Remove excess padding in IE 8/9/10.
+ * 2. Address box sizing set to `content-box` in IE 8/9/10.
  */
 
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  padding: 0; /* 1 */
+  box-sizing: border-box; /* 2 */
+
 }
 
 /**
@@ -347,16 +348,16 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /**
- * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ * 1. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
+ * 2. Address `appearance` set to `searchfield` in Safari and Chrome.
  */
 
 input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
+  -webkit-box-sizing: content-box; /* 1 */
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; /* 2 */
   box-sizing: content-box;
+  -webkit-appearance: textfield; /* 2 */
 }
 
 /**
@@ -375,19 +376,20 @@ input[type="search"]::-webkit-search-decoration {
  */
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
+  margin: 0 2px;
+  border: 1px solid #c0c0c0;
 }
 
 /**
- * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 1. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 2. Correct `color` not being inherited in IE 8/9/10/11.
+ *
  */
 
 legend {
-  border: 0; /* 1 */
-  padding: 0; /* 2 */
+  padding: 0; /* 1 */
+  border: 0; /* 2 */
 }
 
 /**
