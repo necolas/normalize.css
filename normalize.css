@@ -191,6 +191,16 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+/**
+ * Add default stylings of seamless iframes
+ */
+
+iframe[seamless], iframe[seamless="*"]:not([seamless="false"]):not([seamless="no"]) {
+	border:none;
+	background-color: transparent;
+}
+
+
 /* Grouping content
    ========================================================================== */
 
