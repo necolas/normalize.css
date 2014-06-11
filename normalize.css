@@ -110,11 +110,18 @@ abbr[title] {
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ * 1. Take font-weigh value from parent element
+ * 2. Set font-weight bolder that parent 
  */
 
 b,
 strong {
-  font-weight: bold;
+  font-weight: inherit; /* 1 */
+}
+
+b,
+strong {
+  font-weight: bolder; /* 2 */
 }
 
 /**
