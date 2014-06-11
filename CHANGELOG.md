@@ -1,5 +1,7 @@
 === HEAD
 
+* Address inconsistent styling of b and strong.
+
 === 3.0.3 (March 30, 2015)
 
 * Remove unnecessary vendor prefixes.
