@@ -86,6 +86,7 @@ template {
 
 a {
   background: transparent;
+  cursor:pointer;
 }
 
 /**
