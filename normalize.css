@@ -423,3 +423,7 @@ td,
 th {
   padding: 0;
 }
+
+li {
+  line-height: 14px;
+}
