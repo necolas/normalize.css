@@ -4,8 +4,7 @@
   "description": "Normalize.css as a node packaged module",
   "style": "normalize.css",
   "files": [
-    "normalize.css",
-    "component.json"
+    "normalize.css"
   ],
   "homepage": "http://necolas.github.io/normalize.css",
   "repository": {
