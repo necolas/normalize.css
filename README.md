@@ -13,7 +13,7 @@ normalizing.
 
 * [npm](http://npmjs.org/): `npm install --save normalize.css`
 * [Component(1)](https://github.com/component/component/): `component install necolas/normalize.css`
-* [Bower](http://bower.io/): `bower install --save normalize.css`
+* [Bower](http://bower.io/): `bower install --save normalize-css`
 * [Download](http://necolas.github.io/normalize.css/latest/normalize.css).
 
 No other styles should come before Normalize.css.
