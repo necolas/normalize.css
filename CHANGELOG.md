@@ -1,5 +1,7 @@
 === HEAD
 
+* Add `menu` element to HTML5 display definitions.
+
 === 3.0.1 (March 27, 2014)
 
 * Add package.json for npm support.
