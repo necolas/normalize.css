@@ -315,6 +315,14 @@ input::-moz-focus-inner {
 }
 
 /**
+ * Address inconsistency between `button`s and `button`-like widgets.
+ * Also address iOS Safari element clickability issue.
+ */
+[role="button"] {
+  cursor: pointer;
+}
+
+/**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
