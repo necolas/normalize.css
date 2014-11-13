@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git://github.com/necolas/normalize.css.git"
   },
+  "main": "normalize.css",
   "author": "Nicolas Gallagher",
   "license": "MIT"
 }
