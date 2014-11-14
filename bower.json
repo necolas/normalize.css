@@ -1,6 +1,6 @@
 {
   "name": "normalize-scss",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "main": "_normalize.scss",
   "author": ["Nicolas Gallagher", "Bo-Yi Wu"],
   "ignore": [

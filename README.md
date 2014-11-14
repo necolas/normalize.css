@@ -9,19 +9,15 @@ normalizing.
 
 [View the test file](http://necolas.github.io/normalize.css/latest/test.html)
 
-## Install with Bower
-
-Install with [Bower](http://bower.io/): `bower install --save normalize-scss`
-
 ## Install
 
-Download from the [project page](http://necolas.github.io/normalize.css/).
+Download from the [project page](https://github.com/appleboy/normalize.scss).
 
-Install with [Component(1)](https://github.com/component/component/): `component install necolas/normalize.css`
+Install with [Component(1)](https://github.com/component/component/): `component install appleboy/normalize.scss`
 
-Install with [npm](http://npmjs.org/): `npm install --save normalize.css`
+Install with [npm](http://npmjs.org/): `npm install --save normalize-scss`
 
-Install with [Bower](http://bower.io/): `bower install --save normalize.css`
+Install with [Bower](http://bower.io/): `bower install --save normalize-scss`
 
 ## What does it do?
 
