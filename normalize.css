@@ -5,6 +5,11 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+ 
+/* Make sure that all "box-sizing" is the same. */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 html {
   font-family: sans-serif; /* 1 */
