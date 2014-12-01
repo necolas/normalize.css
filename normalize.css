@@ -205,13 +205,15 @@ figure {
 }
 
 /**
- * Address differences between Firefox and other browsers.
+ * 1. Address differences between Firefox and other browsers.
+ * 2. Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
 
 hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
+  -moz-box-sizing: content-box; /* 1 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
