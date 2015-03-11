@@ -6,6 +6,7 @@
   "files": [
     "normalize.css"
   ],
+  "main": "normalize.css",
   "homepage": "http://necolas.github.io/normalize.css",
   "repository": {
     "type": "git",
