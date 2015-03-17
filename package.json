@@ -2,6 +2,7 @@
   "name": "normalize.css",
   "version": "3.0.2",
   "description": "Normalize.css as a node packaged module",
+  "main": "normalize.css",
   "style": "normalize.css",
   "files": [
     "normalize.css"
