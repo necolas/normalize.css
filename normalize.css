@@ -112,12 +112,16 @@ abbr[title] {
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 
 b,
-strong {
+strong,
+optgroup {
   font-weight: bold;
 }
+
 
 /**
  * Address styling not present in Safari and Chrome.
@@ -216,9 +220,11 @@ hr {
 
 /**
  * Contain overflow in all browsers.
+ * Remove default vertical scrollbar in IE 8/9/10/11.
  */
 
-pre {
+pre,
+textarea {
   overflow: auto;
 }
 
@@ -390,23 +396,6 @@ fieldset {
 legend {
   border: 0; /* 1 */
   padding: 0; /* 2 */
-}
-
-/**
- * Remove default vertical scrollbar in IE 8/9/10/11.
- */
-
-textarea {
-  overflow: auto;
-}
-
-/**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
- */
-
-optgroup {
-  font-weight: bold;
 }
 
 /* Tables
