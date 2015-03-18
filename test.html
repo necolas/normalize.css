@@ -512,4 +512,14 @@
     </table>
   </div>
 
+  <h2 class="Test-describe"><code>div[role="button"]</code></h2>
+  <h3 class="Test-it">should have <code>pointer</code> cursor style</h3>
+  <div class="Test-run">
+    <div role="button" style="border:1px solid #ADD8E6; width:200px;">div[role="button"]</div>
+  </div>
+  <h3 class="Test-it">should be clickable</h3>
+  <div class="Test-run" onclick="document.getElementById('role-button-clickable').style.backgroundColor = 'green'">
+    <div id="role-button-clickable" role="button" style="border:1px solid #ADD8E6; width:200px;">div[role="button"]</div>
+  </div>
+
 </div>
