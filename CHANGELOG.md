@@ -1,5 +1,10 @@
 === HEAD
 
+=== 3.0.3 (March 30, 2015)
+
+* Remove unnecessary vendor prefixes.
+* Add `main` property.
+
 === 3.0.2 (October 4, 2014)
 
 * Only alter `background-color` of links in IE 10.
