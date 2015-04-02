@@ -82,7 +82,7 @@ inherited by `legend`.
 
 ## Contributing
 
-Please read the CONTRIBUTING.md
+Please read the [contribution guidelines](CONTRIBUTING.md).
 
 ## Acknowledgements
 
