@@ -4,7 +4,7 @@
   "description": "Normalize.css as a node packaged module",
   "style": "normalize.css",
   "files": [
-    "LICENSE.md",
+    "LICENSE.txt",
     "normalize.css"
   ],
   "homepage": "http://necolas.github.io/normalize.css",
