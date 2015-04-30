@@ -182,7 +182,7 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 
-img {
+a img {
   border: 0;
 }
 
