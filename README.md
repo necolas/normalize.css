@@ -34,7 +34,7 @@ library code.
 
 * Google Chrome (latest)
 * Mozilla Firefox (latest)
-* Mozilla Firefox 4
+* Mozilla Firefox ESR
 * Opera (latest)
 * Apple Safari 6+
 * Internet Explorer 8+
