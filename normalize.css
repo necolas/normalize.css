@@ -183,7 +183,7 @@ sub {
  */
 
 img {
-  border: 0;
+  border-width: 0;
 }
 
 /**
