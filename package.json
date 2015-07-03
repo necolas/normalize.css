@@ -1,18 +1,21 @@
 {
-  "name": "normalize.css",
+  "name": "@fizzion/normalize",
   "version": "3.0.3",
   "description": "Normalize.css as a node packaged module",
-  "style": "normalize.css",
+  "style": "_normalize.scss",
   "files": [
     "LICENSE.md",
-    "normalize.css"
+    "_normalize.scss"
   ],
   "homepage": "http://necolas.github.io/normalize.css",
   "repository": {
     "type": "git",
     "url": "git://github.com/necolas/normalize.css.git"
   },
-  "main": "normalize.css",
-  "author": "Nicolas Gallagher",
+  "main": "_normalize.scss",
+  "author": [
+    "Nicolas Gallagher",
+    "Alex Lemanski"
+  ],
   "license": "MIT"
 }
