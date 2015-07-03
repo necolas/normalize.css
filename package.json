@@ -5,7 +5,15 @@
   "style": "_normalize.scss",
   "files": [
     "LICENSE.md",
-    "_normalize.scss"
+    "_normalize.scss",
+    "normailze/_root.scss",
+    "normailze/_html5-dispaly.scss",
+    "normailze/_anchors.scss",
+    "normailze/_typography.scss",
+    "normailze/_embedded-content.scss",
+    "normailze/_grouping-content.scss",
+    "normailze/_forms.scss",
+    "normailze/_tables.scss"
   ],
   "homepage": "http://necolas.github.io/normalize.css",
   "repository": {
