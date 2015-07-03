@@ -3,27 +3,7 @@
 
 @import 'normailze/_root.scss';
 @import 'normailze/_html5-dispaly.scss';
-
-/* Links
-   ========================================================================== */
-
-/**
- * Remove the gray background color from active links in IE 10.
- */
-
-a {
-  background-color: transparent;
-}
-
-/**
- * Improve readability of focused elements when they are also in an
- * active/hover state.
- */
-
-a:active,
-a:hover {
-  outline: 0;
-}
+@import 'normailze/_anchors.scss';
 
 /* Text-level semantics
    ========================================================================== */
