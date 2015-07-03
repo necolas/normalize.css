@@ -8,21 +8,4 @@
 @import 'normailze/_embedded-content.scss';
 @import 'normailze/_grouping-content.scss';
 @import 'normailze/_forms.scss';
-
-/* Tables
-   ========================================================================== */
-
-/**
- * Remove most spacing between table cells.
- */
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
-}
-
+@import 'normailze/_tables.scss';
