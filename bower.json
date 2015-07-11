@@ -3,6 +3,7 @@
   "version": "3.0.3",
   "main": "normalize.css",
   "author": "Nicolas Gallagher",
+  "license": "MIT",
   "ignore": [
     "CHANGELOG.md",
     "CONTRIBUTING.md",
