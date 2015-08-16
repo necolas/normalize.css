@@ -111,6 +111,13 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 
+@supports (text-decoration: underline dotted) {
+  abbr[title] {
+    border-bottom: inherit;
+    text-decoration: underline dotted;
+  }
+}
+
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
