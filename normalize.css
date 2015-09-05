@@ -2,14 +2,16 @@
 
 /**
  * 1. Set default font family to sans-serif.
- * 2. Prevent iOS and IE text size adjust after device orientation change,
+ * 2. Auto hide persistent scrollbar in Edge, IE 10/11.
+ * 3. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
 
 html {
   font-family: sans-serif; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
 }
 
 /**
