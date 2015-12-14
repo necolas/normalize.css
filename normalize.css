@@ -415,10 +415,13 @@ optgroup {
 
 table {
   border-collapse: collapse;
+}
+
+table:not[cellspacing] {
   border-spacing: 0;
 }
 
-td,
-th {
+table:not[cellpadding] td,
+table:not[cellpadding] th {
   padding: 0;
 }
