@@ -1,6 +1,5 @@
 {
   "name": "normalize-css",
-  "version": "3.0.3",
   "main": "normalize.css",
   "author": "Nicolas Gallagher",
   "ignore": [
