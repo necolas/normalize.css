@@ -2,6 +2,7 @@
   "name": "normalize-css",
   "version": "3.0.3",
   "main": "normalize.css",
+  "license": "MIT",
   "author": "Nicolas Gallagher",
   "ignore": [
     "CHANGELOG.md",
