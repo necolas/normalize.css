@@ -78,6 +78,14 @@ template {
   display: none;
 }
 
+/**
+ * Address `[hidden=false]` styling not visible in IE 8.
+ */
+ 
+[hidden=false] {
+  display: inherit;
+}
+
 /* Links
    ========================================================================== */
 
