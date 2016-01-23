@@ -37,7 +37,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 main,
 menu,
 nav,
@@ -104,20 +103,31 @@ a:hover {
    ========================================================================== */
 
 /**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ * Address inconsistent styling of `abbr[title]`.
+ * 1. Correct styling in Firefox 39 and Opera 12.
+ * 2. Correct missing styling in Chrome, Edge, IE, Opera, and Safari.
  */
 
 abbr[title] {
-  border-bottom: 1px dotted;
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ * Address inconsistent styling of b and strong.
+ * 1. Correct duplicate application of `bolder` in Safari 6.0.2.
+ * 2. Correct style set to `bold` in Edge 12+, Safari 6.2+, and Chrome 18+.
  */
 
 b,
 strong {
-  font-weight: bold;
+  font-weight: inherit; /* 1 */
+}
+
+b,
+strong {
+  font-weight: bolder; /* 2 */
 }
 
 /**
@@ -143,7 +153,7 @@ h1 {
  */
 
 mark {
-  background: #ff0;
+  background-color: #ff0;
   color: #000;
 }
 
@@ -206,12 +216,15 @@ figure {
 }
 
 /**
- * Address differences between Firefox and other browsers.
+ * Address inconsistent styling of `hr`.
+ * 1. Correct `box-sizing` set to `border-box` in Firefox.
+ * 2. Correct `overflow` set to `hidden` in IE 8/9/10/11 and Edge 12.
  */
 
 hr {
-  box-sizing: content-box;
-  height: 0;
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -223,15 +236,16 @@ pre {
 }
 
 /**
- * Address odd `em`-unit font size rendering in all browsers.
+ * 1. Correct inheritance and scaling of font-size for preformatted text.
+ * 2. Address odd `em`-unit font size rendering in all browsers.
  */
 
 code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Forms
@@ -243,10 +257,8 @@ samp {
  */
 
 /**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 1. Correct font properties not being inherited.
+ * 2. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
 
 button,
@@ -254,9 +266,8 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit; /* 1 */
-  font: inherit; /* 2 */
-  margin: 0; /* 3 */
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -349,13 +360,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /**
- * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ * Address `appearance` set to `searchfield` in Safari and Chrome.
  */
 
 input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  box-sizing: content-box; /* 2 */
+  -webkit-appearance: textfield;
 }
 
 /**

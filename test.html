@@ -258,18 +258,6 @@
   </div>
 
   <h2 class="Test-describe"><code>button</code>, <code>input</code>, <code>optgroup</code>, <code>select</code>, <code>textarea</code></h2>
-  <h3 class="Test-it">should inherit <code>color</code> from ancestor</h3>
-  <div class="Test-run" style="color:#ADD8E6;">
-    <button>button</button><br>
-    <input value="input"><br>
-    <select style="border:1px solid #999;">
-      <optgroup label="optgroup">
-        <option>option</option>
-      </optgroup>
-      <option>option</option>
-    </select><br>
-    <textarea>textarea</textarea>
-  </div>
   <h3 class="Test-it">should inherit <code>font</code> from ancestor</h3>
   <div class="Test-run" style="font:bold italic 20px/1 serif;">
     <button>button</button><br>
@@ -428,12 +416,6 @@
   <h3 class="Test-it">should be styleable</h3>
   <div class="Test-run">
     <input type="search" style="border:1px solid #ADD8E6; padding:10px; width:200px;">
-  </div>
-  <h3 class="Test-it">should have a <code>content-box</code> box model</h3>
-  <div class="Test-run">
-    <div style="background:red; display:inline-block; height:62px; width:242px;">
-      <input type="search" style="border:1px solid #ADD8E6; height:20px; padding:20px; width:200px;">
-    </div>
   </div>
   <h3 class="Test-it">should not have a cancel button in Safari or Chrome</h3>
   <div class="Test-run">
