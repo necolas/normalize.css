@@ -252,10 +252,8 @@ samp {
  */
 
 /**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 1. Correct font properties not being inherited.
+ * 2. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
 
 button,
@@ -263,9 +261,8 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit; /* 1 */
-  font: inherit; /* 2 */
-  margin: 0; /* 3 */
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
