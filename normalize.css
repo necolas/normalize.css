@@ -414,3 +414,11 @@ textarea {
 optgroup {
   font-weight: bold;
 }
+
+/**
+ * Removes the separate borders on tables
+ */
+
+table {
+  border-collapse: collapse;
+}
