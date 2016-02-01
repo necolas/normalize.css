@@ -326,6 +326,15 @@ input::-moz-focus-inner {
 }
 
 /**
+ * Replace focus style removed in the border reset above
+ */
+
+button:-moz-focusring,
+input:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
