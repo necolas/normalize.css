@@ -7,6 +7,7 @@
 * Address inconsistent styling of abbr[title].
 * Correct inheritance and scaling of font-size for preformatted text.
 * Replace focus style removed in the border reset in Firefox 4+.
+* Remove opinionated table resets.
 
 === 3.0.3 (March 30, 2015)
 
