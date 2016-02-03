@@ -326,7 +326,7 @@ input::-moz-focus-inner {
 }
 
 /**
- * Replace focus style removed in the border reset above
+ * Restore focus style in Firefox 4+ (unset by a rule above)
  */
 
 button:-moz-focusring,
@@ -416,7 +416,7 @@ textarea {
 }
 
 /**
- * Don't inherit the `font-weight` (applied by a rule above).
+ * Restore font weight (unset by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 
