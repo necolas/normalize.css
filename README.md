@@ -30,12 +30,13 @@ library code.
 
 ## Browser support
 
-* Google Chrome (latest)
-* Mozilla Firefox (latest)
-* Mozilla Firefox ESR
-* Opera (latest)
-* Apple Safari 6+
+* Chrome (latest)
+* Edge (latest)
+* Firefox (latest)
+* Firefox ESR
 * Internet Explorer 8+
+* Opera (latest)
+* Safari 6+
 
 [Normalize.css v1 provides legacy browser
 support](https://github.com/necolas/normalize.css/tree/v1) (IE 6+, Safari 4+),
