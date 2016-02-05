@@ -14,5 +14,11 @@
   },
   "main": "normalize.css",
   "author": "Nicolas Gallagher",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "stylelint": "^4.2.0"
+  },
+  "scripts": {
+    "test": "stylelint normalize.css"
+  }
 }
