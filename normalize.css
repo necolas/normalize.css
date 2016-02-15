@@ -59,8 +59,7 @@ video {
 }
 
 /**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
+ * Prevent displaying `audio` without controls in Mobile Safari 4/5/6/7.
  */
 
 audio:not([controls]) {
