@@ -1,5 +1,5 @@
 html {
-  background: #f7f7f7;
+  background: #fff;
   color: #333;
   font: 16px/1.4 Open Sans, Helvetica, Arial, sans-serif;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  color: #069;
+  color: #e3695f;
   text-decoration: none;
 }
 
@@ -24,6 +24,7 @@ a:active {
 h1,
 h2 {
   line-height: 1.2;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 p {
@@ -34,10 +35,10 @@ p {
 
 .site-box {
   padding: 40px 60px 0;
-  border: 1px solid #ccc;
   margin: 0 0 3em;
   background: #fff;
   text-align: center;
+  box-shadow: 2px 4px 6px 1px rgba(50, 50, 50, 0.14);
 }
 
 .site-footer {
@@ -46,12 +47,12 @@ p {
 }
 
 .logo {
-  margin: 0 0 1em;
-  font-size: 2.375em;
-  color: #69a619;
-  text-transform: lowercase;
-  text-shadow: 1px 1px 0 #304d08;
-  text-decoration: none;
+  width: 10rem;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 2.6em;
 }
 
 .tagline {
@@ -86,12 +87,11 @@ p {
   *zoom: 1;
 
   padding: 0.4em 1em;
-  border: 1px solid #5e9612;
+  border: 1px solid #e3695f;
   margin: 0 0 10px;
   color: #fff;
-  background: #69a619;
+  background: #e3695f;
   border-radius: 4px;
-  box-shadow: 0 2px 5px -2px #111, inset 0 2px 5px 0 rgba(255, 255, 255, 0.3);
   font-size: 1.5em;
   text-align: center;
   text-decoration: none;
@@ -101,13 +101,7 @@ p {
 .btn-download:hover,
 .btn-download:focus,
 .btn-download:active {
-  background: #6ead1a;
   text-decoration: none;
-}
-
-.btn-download:active {
-  box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.2);
-  background: #5d9117;
 }
 
 /**
@@ -143,7 +137,7 @@ p {
   padding: 15px 30px;
   border-top: 1px solid #ddd;
   margin: 50px -60px 0;
-  background: #eee;
+  background: #fff;
   line-height: 28px;
   *zoom: 1;
 }
