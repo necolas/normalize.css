@@ -12,6 +12,8 @@ normalizing.
 ## Install
 
 * [npm](http://npmjs.org/): `npm install --save normalize.css`
+* [Bower](http://bower.io/): `bower install --save
+  https://github.com/necolas/normalize.css.git`
 * [cdnjs](https://cdnjs.com/libraries/normalize)
 * [Download](http://necolas.github.io/normalize.css/latest/normalize.css).
 
@@ -50,7 +52,7 @@ Additional detail and explanation of the esoteric parts of normalize.css.
 
 The `font-family: monospace, monospace` hack fixes the inheritance and scaling
 of font-size for preformatted text. The duplication of `monospace` is
-intentional.  [Source](http://en.wikipedia.org/wiki/User:Davidgothberg/Test59).
+intentional. [Source](http://en.wikipedia.org/wiki/User:Davidgothberg/Test59).
 
 #### `sub, sup`
 
