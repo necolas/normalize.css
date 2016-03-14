@@ -50,7 +50,7 @@ Additional detail and explanation of the esoteric parts of normalize.css.
 
 The `font-family: monospace, monospace` hack fixes the inheritance and scaling
 of font-size for preformatted text. The duplication of `monospace` is
-intentional.  [Source](http://en.wikipedia.org/wiki/User:Davidgothberg/Test59).
+intentional. [Source](http://en.wikipedia.org/wiki/User:Davidgothberg/Test59).
 
 #### `sub, sup`
 
