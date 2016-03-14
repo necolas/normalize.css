@@ -12,6 +12,8 @@ normalizing.
 ## Install
 
 * [npm](http://npmjs.org/): `npm install --save normalize.css`
+* [Bower](http://bower.io/): `bower install --save
+  https://github.com/necolas/normalize.css.git`
 * [cdnjs](https://cdnjs.com/libraries/normalize)
 * [Download](http://necolas.github.io/normalize.css/latest/normalize.css).
 
