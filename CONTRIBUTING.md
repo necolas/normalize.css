@@ -21,7 +21,6 @@ requests](#pull-requests), but please respect the following restrictions:
   respect the opinions of others.
 
 
-<a name="bugs"></a>
 ## Bug reports
 
 A bug is a _demonstrable problem_ that is caused by the code in the repository.
@@ -64,7 +63,6 @@ Example:
 > merits).
 
 
-<a name="features"></a>
 ## Feature requests
 
 Feature requests are welcome. But take a moment to find out whether your idea
@@ -73,7 +71,6 @@ case to convince the project's developers of the merits of this feature. Please
 provide as much detail and context as possible.
 
 
-<a name="pull-requests"></a>
 ## Pull requests
 
 Good pull requests - patches, improvements, new features - are a fantastic
@@ -147,7 +144,6 @@ project:
 license your work under the same license as that used by the project.
 
 
-<a name="maintainers"></a>
 ## Maintainers
 
 If you have commit access, please follow this process for merging patches and
@@ -175,3 +171,14 @@ cutting new releases.
 4. Create an annotated tag for the version: `git tag -m "v0.0.0" 0.0.0`.
 5. Push the changes and tags to GitHub: `git push --tags origin master`
 6. Checkout the `gh-pages` branch and follow the instructions in the README.
+
+### Semver strategy
+
+[Semver](http://semver.org/) is a widely accepted method for deciding how 
+version numbers are incremented in a project. Versions are written as 
+MAJOR.MINOR.PATCH.
+
+Changes limited to fallback declarations for browsers which do not support 
+newer features produce a PATCH release.
+
+Changes limited to normalizations for older browsers produce a MINOR release.
