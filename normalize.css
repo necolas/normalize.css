@@ -90,12 +90,12 @@ a {
 
 /**
  * Improve readability of focused elements when they are also in an
- * active/hover state.
+ * active/hover state (opinionated).
  */
 
 a:active,
 a:hover {
-  outline: 0;
+  outline-width: 0;
 }
 
 /* Text-level semantics
