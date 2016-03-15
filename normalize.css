@@ -1,7 +1,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 /**
- * 1. Set default font family to sans-serif.
+ * 1. Set default font family to sans-serif (opinionated).
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
@@ -13,7 +13,7 @@ html {
 }
 
 /**
- * Remove default margin.
+ * Remove default margin (opinionated).
  */
 
 body {
