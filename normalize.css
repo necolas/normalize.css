@@ -130,7 +130,7 @@ strong {
 }
 
 /**
- * Address styling not present in Safari and Chrome.
+ * Address styling not present in Android < 4.4.
  */
 
 dfn {
