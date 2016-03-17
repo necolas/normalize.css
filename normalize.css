@@ -188,11 +188,11 @@ sub {
    ========================================================================== */
 
 /**
- * Remove border when inside `a` element in IE 8/9/10.
+ * Correct border-style given when inside `a` element in IE 8/9/10.
  */
 
 img {
-  border: 0;
+  border-style: none;
 }
 
 /**
