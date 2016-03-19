@@ -174,11 +174,11 @@ cutting new releases.
 
 ### Semver strategy
 
-[Semver](http://semver.org/) is a widely accepted method for deciding how 
-version numbers are incremented in a project. Versions are written as 
+[Semver](http://semver.org/) is a widely accepted method for deciding how
+version numbers are incremented in a project. Versions are written as
 MAJOR.MINOR.PATCH.
 
-Changes limited to fallback declarations for browsers which do not support 
+Changes limited to fallback declarations for browsers which do not support
 newer features produce a PATCH release.
 
 Changes limited to normalizations for older browsers produce a MINOR release.

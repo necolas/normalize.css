@@ -2,11 +2,11 @@
 
 ### 4.0.0 (March 15, 2016)
 
-* Correct inconsistent `font-weight` for `b` and `strong` in Chrome, Edge, and 
+* Correct inconsistent `font-weight` for `b` and `strong` in Chrome, Edge, and
   Safari.
 * Correct inconsistent `overflow` for `hr` in Edge and IE.
 * Correct inconsistent `box-sizing` for `hr` in Firefox.
-* Correct inconsistent `text-decoration` and `border-bottom` for `abbr[title]` 
+* Correct inconsistent `text-decoration` and `border-bottom` for `abbr[title]`
   in Chrome, Edge, Firefox IE, Opera, and Safari.
 * Correct inheritance and scaling of `font-size` for preformatted text.
 * Remove unnecessary normalization of `line-height` for `input`.
@@ -17,7 +17,7 @@
 * Update normalization of `border-style` for `img`.
 * Update normalization of `color` inheritance for `legend`.
 * Update normalization of `background-color` for `mark`.
-* Update normalization of `outline` for `:-moz-focusring` removed by a previous 
+* Update normalization of `outline` for `:-moz-focusring` removed by a previous
   normalization in Firefox.
 * Update opinionated style of `outline-width` for `a:active` and `a:hover`.
 * Update comments to identify opinionated styles.

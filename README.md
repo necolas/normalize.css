@@ -1,13 +1,13 @@
 # normalize.css
 
 <a href="https://github.com/necolas/normalize.css"><img
- src="https://necolas.github.io/normalize.css/logo.svg" alt="Normalize Logo"
- width="80" height="80" align="right"></a>
+  src="https://necolas.github.io/normalize.css/logo.svg" alt="Normalize Logo"
+  width="80" height="80" align="right"></a>
 
 > A collection of HTML element and attribute style-normalizations.
 
-[![npm][npm-image]][npm-url] [![license][license-image]][license-url] 
-[![changelog][changelog-image]][changelog-url] 
+[![npm][npm-image]][npm-url] [![license][license-image]][license-url]
+[![changelog][changelog-image]][changelog-url]
 [![gitter][gitter-image]][gitter-url]
 
 
@@ -51,9 +51,9 @@ See http://necolas.github.io/normalize.css/latest/normalize.css
 * Opera (latest)
 * Safari 6+
 
-[Normalize.css v1 provides legacy browser 
-support](https://github.com/necolas/normalize.css/tree/v1) (IE 6+, Safari 4+), 
-but is no longer actively developed.
+*[Normalize.css v1 provides legacy browser support]
+(https://github.com/necolas/normalize.css/tree/v1) (IE 6+, Safari 4+),
+but is no longer actively developed.*
 
 
 ## Extended details
@@ -75,8 +75,8 @@ browsers. [Source](http://gist.github.com/413930).
 
 Adding `overflow: hidden` fixes IE9's SVG rendering. Earlier versions of IE
 don't support SVG, so we can safely use the `:not()` and `:root` selectors that
-modern browsers use in the default UA stylesheets to apply this style. 
-[Source](http://lists.w3.org/Archives/Public/public-svg-wg/2008JulSep/0339.html)
+modern browsers use in the default UA stylesheets to apply this style. [Source]
+(http://lists.w3.org/Archives/Public/public-svg-wg/2008JulSep/0339.html).
 
 #### `[type="search"]`
 
@@ -91,7 +91,7 @@ showing past searches).
 
 ## Contributing
 
-Please read the [contribution guidelines](CONTRIBUTING.md) in order to make the 
+Please read the [contribution guidelines](CONTRIBUTING.md) in order to make the
 contribution process easy and effective for everyone involved.
 
 
