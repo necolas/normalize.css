@@ -2,3 +2,4 @@
 *.orig
 *.swo
 *.swp
+node_modules
