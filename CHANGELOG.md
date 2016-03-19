@@ -1,6 +1,6 @@
 # Changes to normalize.css
 
-### HEAD
+### 4.0.0 (March 19, 2016)
 
 * Add the correct font weight for `b` and `strong` in Chrome, Edge, and Safari.
 * Correct inconsistent `overflow` for `hr` in Edge and IE.
