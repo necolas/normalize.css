@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Normalize CSS: UI tests</title>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <link rel="stylesheet" href="normalize.css">
 <style>
   /*! suit-test v0.1.0 | MIT License | github.com/suitcss */
@@ -100,7 +100,7 @@
   <h2 class="Test-describe">
     <code>article</code>, <code>aside</code>, <code>details</code>,
     <code>figure</code>, <code>figcaption</code>, <code>footer</code>,
-    <code>header</code>, <code>hgroup</code>, <code>main</code>,
+    <code>header</code>, <code>main</code>,
     <code>menu</code>, <code>nav</code>, <code>section</code>,
     <code>summary</code>
   </h2>
@@ -118,7 +118,6 @@
     </figure>
     <footer>footer</footer>
     <header>header</header>
-    <hgroup>hgroup</hgroup>
     <main>main</main>
     <menu><li>menu</li></menu>
     <nav>nav</nav>
@@ -156,13 +155,13 @@
   </div>
 
   <h2 class="Test-describe"><code>abbr[title]</code></h2>
-  <h3 class="Test-it">should have a dotted bottom border</h3>
+  <h3 class="Test-it">should have a dotted underline with a solid underline as a fallback</h3>
   <div class="Test-run">
     <abbr title="abbreviation">abbr</abbr>
   </div>
 
   <h2 class="Test-describe"><code>b</code>, <code>strong</code></h2>
-  <h3 class="Test-it">should have bold font-weight</h3>
+  <h3 class="Test-it">should have bolder font-weight</h3>
   <div class="Test-run">
     <b>b</b>
     <strong>strong</strong>
@@ -242,7 +241,7 @@
   </div>
 
   <h2 class="Test-describe"><code>code</code>, <code>kbd</code>, <code>pre</code>, <code>samp</code></h2>
-  <h3 class="Test-it">should render <code>em</code>-unit preformatted text at the same absolute size as normal text</h3>
+  <h3 class="Test-it">should render text at the same absolute size as normal text</h3>
   <div class="Test-run">
     <span>span: abcdefghijklmnopqrstuvwxyz.</span><br>
     <code>code: abcdefghijklmnopqrstuvwxyz.</code><br>
@@ -442,50 +441,6 @@
   <h3 class="Test-it">should not have a scrollbar unless overflowing</h3>
   <div class="Test-run">
     <textarea>textarea</textarea>
-  </div>
-
-  <h2 class="Test-describe"><code>table</code></h2>
-  <h3 class="Test-it">should not have spaces between cells</h3>
-  <div class="Test-run">
-    <table>
-      <caption>Jimi Hendrix - albums</caption>
-      <thead>
-        <tr>
-          <th>Album</th>
-          <th>Year</th>
-          <th>Price</th>
-        </tr>
-      </thead>
-      <tfoot>
-        <tr>
-          <th>Album</th>
-          <th>Year</th>
-          <th>Price</th>
-        </tr>
-      </tfoot>
-      <tbody>
-        <tr>
-          <td>Are You Experienced</td>
-          <td>1967</td>
-          <td>$10.00</td>
-        </tr>
-        <tr>
-          <td>Axis: Bold as Love</td>
-          <td>1967</td>
-          <td>$12.00</td>
-        </tr>
-        <tr>
-          <td>Electric Ladyland</td>
-          <td>1968</td>
-          <td>$10.00</td>
-        </tr>
-        <tr>
-          <td>Band of Gypsys</td>
-          <td>1970</td>
-          <td>$12.00</td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 
 </div>
