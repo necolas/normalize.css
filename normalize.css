@@ -291,8 +291,8 @@ textarea { /* 1 */
 }
 
 /**
- * Remove the inheritence of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritence of text transform in Firefox.
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
  */
 
 button,
