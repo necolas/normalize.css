@@ -87,8 +87,8 @@ accurate comments, etc.) and any other requirements (such as test coverage).
 Follow this process if you'd like your work considered for inclusion in the
 project:
 
-1. [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your fork,
-   and configure the remotes:
+1. [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your
+   fork, and configure the remotes:
 
    ```bash
    # Clone your fork of the repo into the current directory
@@ -128,10 +128,6 @@ project:
    Be sure to add a test to the `test.html` file if appropriate, and test
    your change in all supported browsers.
 
-   ```bash
-   git pull --rebase upstream master
-   ```
-
 5. Locally rebase the upstream development branch into your topic branch:
 
    ```bash
@@ -146,9 +142,6 @@ project:
 
 10. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
     with a clear title and description.
-
-    Please submit a separate pull request for any appropriate changes required
-    in the `v1` branch for legacy browsers.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owner to
 license your work under the same license as that used by the project.
@@ -185,8 +178,6 @@ cutting new releases.
 4. Do not use GitHub's merge button. Apply the patch to `master` locally
    (either via `git am` or by checking the whole branch out). Amend minor
    problems with the author's original commit if necessary. Then push to GitHub.
-5. If a patch should be included in `v1`, cherry-pick the commits or manually
-   apply if all else fails.
 
 ### Releasing a new version
 
