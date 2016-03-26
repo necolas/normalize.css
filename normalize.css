@@ -248,14 +248,16 @@ hr {
    ========================================================================== */
 
 /**
- * Change font properties to `inherit` in all browsers (opinionated).
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
  */
 
 button,
 input,
 select,
 textarea {
-  font: inherit;
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -276,18 +278,6 @@ button,
 input, /* 1 */
 select { /* 2 */
   overflow: visible;
-}
-
-/**
- * Remove the margin in Safari.
- * 1. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-select,
-textarea { /* 1 */
-  margin: 0;
 }
 
 /**
