@@ -291,25 +291,6 @@ select { /* 1 */
 }
 
 /**
- * Change the cursor in all browsers (opinionated).
- */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  cursor: pointer;
-}
-
-/**
- * Restore the default cursor to disabled elements unset by the previous rule.
- */
-
-[disabled] {
-  cursor: default;
-}
-
-/**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS.
