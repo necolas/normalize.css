@@ -2,6 +2,7 @@
   "name": "normalize.css",
   "version": "4.0.0",
   "description": "A modern alternative to CSS resets",
+  "main": "normalize.css",
   "style": "normalize.css",
   "files": [
     "LICENSE.md",
