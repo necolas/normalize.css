@@ -271,12 +271,10 @@ optgroup {
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
- * 2. Show the overflow in Edge, Firefox, and IE.
  */
 
 button,
-input, /* 1 */
-select { /* 2 */
+input { /* 1 */
   overflow: visible;
 }
 
