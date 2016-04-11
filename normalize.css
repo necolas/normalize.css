@@ -381,11 +381,13 @@ textarea {
 }
 
 /**
- * Correct the odd appearance of search inputs in Chrome and Safari.
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
  */
 
 [type="search"] {
-  -webkit-appearance: textfield;
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
