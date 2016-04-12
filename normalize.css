@@ -391,8 +391,7 @@ textarea {
 }
 
 /**
- * Remove the inner padding and cancel buttons in Chrome on OS X and
- * Safari on OS X.
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
 
 [type="search"]::-webkit-search-cancel-button,
@@ -411,7 +410,7 @@ textarea {
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Chrome and Safari.
+ * 2. Change font properties to `inherit` in Safari.
  */
 
 ::-webkit-file-upload-button {

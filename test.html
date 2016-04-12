@@ -149,6 +149,10 @@
   <div class="Test-run">
     <a href="#non">dummy anchor</a>
   </div>
+  <h3 class="Test-it">should not skip underlines</h3>
+  <div class="Test-run">
+    <a href="#non">quip and jig</a>
+  </div>
   <h3 class="Test-it">should not have a focus outline when both focused and hovered (opinionated)</h3>
   <div class="Test-run">
     <a href="#non">dummy anchor</a>
@@ -226,6 +230,16 @@
     </svg>
   </div>
 
+  <h2 class="Test-describe"><code>code</code>, <code>kbd</code>, <code>pre</code>, <code>samp</code></h2>
+  <h3 class="Test-it">should render text at the same absolute size as normal text</h3>
+  <div class="Test-run">
+    <span>span: abcdefghijklmnopqrstuvwxyz.</span><br>
+    <code>code: abcdefghijklmnopqrstuvwxyz.</code><br>
+    <kbd>kbd: abcdefghijklmnopqrstuvwxyz.</kbd><br>
+    <samp>samp: abcdefghijklmnopqrstuvwxyz.</samp>
+    <pre>pre: abcdefghijklmnopqrstuvwxyz.</pre>
+  </div>
+
   <h2 class="Test-describe"><code>figure</code></h2>
   <h3 class="Test-it">should have margins</h3>
   <div class="Test-run" style="outline:1px solid #ADD8E6; overflow:hidden;">
@@ -238,16 +252,6 @@
   <h3 class="Test-it">should have a <code>content-box</code> box model</h3>
   <div class="Test-run" style="">
     <hr style="height:2px; border:solid #ADD8E6; border-width:2px 0;">
-  </div>
-
-  <h2 class="Test-describe"><code>code</code>, <code>kbd</code>, <code>pre</code>, <code>samp</code></h2>
-  <h3 class="Test-it">should render text at the same absolute size as normal text</h3>
-  <div class="Test-run">
-    <span>span: abcdefghijklmnopqrstuvwxyz.</span><br>
-    <code>code: abcdefghijklmnopqrstuvwxyz.</code><br>
-    <kbd>kbd: abcdefghijklmnopqrstuvwxyz.</kbd><br>
-    <samp>samp: abcdefghijklmnopqrstuvwxyz.</samp>
-    <pre>pre: abcdefghijklmnopqrstuvwxyz.</pre>
   </div>
 
   <h2 class="Test-describe"><code>button</code>, <code>input</code>, <code>optgroup</code>, <code>select</code>, <code>textarea</code></h2>
@@ -314,14 +318,6 @@
   </div>
 
   <h2 class="Test-describe"><code>button</code> and button-style <code>input</code></h2>
-  <h3 class="Test-it">should have <code>pointer</code> cursor style</h3>
-  <div class="Test-run">
-    <p><button>button</button></p>
-    <p><input type="image" src="http://lorempixel.com/90/24" alt="input (image)"></p>
-    <p><input type="button" value="input (button)"></p>
-    <p><input type="reset" value="input (reset)"></p>
-    <p><input type="submit" value="input (submit)"></p>
-  </div>
   <h3 class="Test-it">should be styleable</h3>
   <div class="Test-run" id="button-like-style">
     <style>
@@ -334,8 +330,9 @@
       }
     </style>
     <p><button>button</button></p>
-    <p><input type="image" src="http://lorempixel.com/90/24" alt="input (image)"></p>
+    <p><input type="image" src="//placehold.it/90x24" alt="input (image)"></p>
     <p><input type="button" value="input (button)"></p>
+    <p><input type="file" value="input (file)"></p>
     <p><input type="reset" value="input (reset)"></p>
     <p><input type="submit" value="input (submit)"></p>
   </div>
@@ -344,7 +341,6 @@
   <h3 class="Test-it">should have <code>default</code> cursor style</h3>
   <div class="Test-run">
     <p><button disabled>button</button></p>
-    <p><input disabled type="image" src="http://lorempixel.com/90/24" alt="input (image)"></p>
     <p><input disabled type="button" value="input (button)"></p>
     <p><input disabled type="reset" value="input (reset)"></p>
     <p><input disabled type="submit" value="input (submit)"></p>
@@ -362,51 +358,9 @@
       }
     </style>
     <p><button>button</button></p>
-    <p><input value="input (text)"></p>
     <p><input type="button" value="input (button)"></p>
     <p><input type="reset" value="input (reset)"></p>
     <p><input type="submit" value="input (submit)"></p>
-  </div>
-
-  <h2 class="Test-describe"><code>input[type="checkbox"]</code>, <code>input[type="radio"]</code></h2>
-  <h3 class="Test-it">should have a <code>border-box</code> box model</h3>
-  <div class="Test-run Test-run--highlightEl" id="radio-box-model">
-    <style>
-      #radio-box-model {
-        width: 200px;
-        border: 1px solid red;
-      }
-
-      #radio-box-model input {
-        width: 100%;
-        border: 5px solid #ADD8E6;
-        display: block;
-        position: relative;
-      }
-    </style>
-    <input type="checkbox">
-    <input type="radio" name="rad">
-  </div>
-  <h3 class="Test-it">should not have padding</h3>
-  <div class="Test-run Test-run--highlightEl">
-    <input type="checkbox">
-    <input type="radio" name="rad">
-  </div>
-
-  <h2 class="Test-describe"><code>input[type="number"]</code></h2>
-  <h3 class="Test-it">should display a default cursor for the decrement button's click target in Chrome</h3>
-  <div class="Test-run">
-    <input style="height:50px; font-size:15px;" type="number" id="in" min="0" max="10" value="5">
-  </div>
-
-  <h2 class="Test-describe"><code>input[type="search"]</code></h2>
-  <h3 class="Test-it">should be styleable</h3>
-  <div class="Test-run">
-    <input type="search" style="border:1px solid #ADD8E6; padding:10px; width:200px;">
-  </div>
-  <h3 class="Test-it">should not have a cancel button in Safari or Chrome</h3>
-  <div class="Test-run">
-    <input type="search" value="search">
   </div>
 
   <h2 class="Test-describe"><code>fieldset</code></h2>
@@ -441,6 +395,51 @@
   <h3 class="Test-it">should not have a scrollbar unless overflowing</h3>
   <div class="Test-run">
     <textarea>textarea</textarea>
+  </div>
+
+  <h2 class="Test-describe"><code>[type="checkbox"]</code>, <code>[type="radio"]</code></h2>
+  <h3 class="Test-it">should have a <code>border-box</code> box model</h3>
+  <div class="Test-run Test-run--highlightEl" id="radio-box-model">
+    <style>
+      #radio-box-model {
+        width: 200px;
+        border: 1px solid red;
+      }
+
+      #radio-box-model input {
+        width: 100%;
+        border: 5px solid #ADD8E6;
+        display: block;
+        position: relative;
+      }
+    </style>
+    <input type="checkbox">
+    <input type="radio" name="rad">
+  </div>
+  <h3 class="Test-it">should not have padding</h3>
+  <div class="Test-run Test-run--highlightEl">
+    <input type="checkbox">
+    <input type="radio" name="rad">
+  </div>
+
+  <h2 class="Test-describe"><code>[type="number"]</code></h2>
+  <h3 class="Test-it">should display a default cursor for the decrement button's click target in Chrome</h3>
+  <div class="Test-run">
+    <input style="height:50px; font-size:15px;" type="number" id="in" min="0" max="10" value="5">
+  </div>
+
+  <h2 class="Test-describe"><code>[type="search"]</code></h2>
+  <h3 class="Test-it">should be styleable</h3>
+  <div class="Test-run">
+    <input type="search" style="border:1px solid #ADD8E6; padding:10px; width:200px;">
+  </div>
+  <h3 class="Test-it">should not have a cancel button in Safari or Chrome</h3>
+  <div class="Test-run">
+    <input type="search" value="search">
+  </div>
+  <h3 class="Test-it">should reference inherited color</h3>
+  <div class="Test-run">
+    <input type="text" placeholder="Text goes here" style="background-color: black; color: orange;">
   </div>
 
 </div>

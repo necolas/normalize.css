@@ -1,5 +1,18 @@
 # Changes to normalize.css
 
+### 4.1.0 (April 11, 2016)
+
+* Normalize placeholders in Chrome, Edge, and Safari.
+* Normalize `text-decoration-skip` property in Safari.
+* Normalize file select buttons.
+* Normalize search input outlines in Safari.
+* Limit Firefox focus normalizations to buttons.
+* Restore `main` to package.json.
+* Restore proper overflow to certain `select` elements.
+* Remove opinionated cursor styles on buttons.
+* Update stylelint configuration
+* Update tests
+
 ### 4.0.0 (March 19, 2016)
 
 * Add the correct font weight for `b` and `strong` in Chrome, Edge, and Safari.
