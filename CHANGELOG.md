@@ -1,5 +1,9 @@
 # Changes to normalize.css
 
+### 4.1.1 (April 12, 2016)
+
+* Update normalize.css heading.
+
 ### 4.1.0 (April 11, 2016)
 
 * Normalize placeholders in Chrome, Edge, and Safari.
