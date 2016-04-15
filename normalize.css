@@ -417,3 +417,11 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+
+/**
+ * Allow elements with role=button to be pressed in Mobile Safari
+ * See: https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+ */
+[role="button"] {
+  cursor: pointer;
+}
