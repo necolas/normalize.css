@@ -155,6 +155,20 @@ h1 {
 }
 
 /**
+ * Correct the line-height for all headings in Chrome mobile, Firefox,
+ * iOS Safari, Microsoft Edge and IE.
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.15;
+}
+
+/**
  * Add the correct background and color in IE 9-.
  */
 
