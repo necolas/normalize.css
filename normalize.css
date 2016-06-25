@@ -1,6 +1,18 @@
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
 /**
+ * 1. Correction of borders in the full scope elements
+ */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing; border-box;
+  box-sizing: border-box;
+}
+
+/**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
