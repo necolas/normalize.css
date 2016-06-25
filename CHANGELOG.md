@@ -1,5 +1,9 @@
 # Changes to normalize.css
 
+### 4.1.2 (June 25, 2016)
+
+* Correct border with border-box
+
 ### 4.1.1 (April 12, 2016)
 
 * Update normalize.css heading.
