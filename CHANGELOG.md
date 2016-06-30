@@ -1,5 +1,11 @@
 # Changes to normalize.css
 
+### 4.2.0 (April 12, 2016)
+
+* Correct the `line-height` in all browsers.
+* Restore `optgroup` font inheritance.
+* Update normalize.css heading.
+
 ### 4.1.1 (April 12, 2016)
 
 * Update normalize.css heading.
@@ -14,8 +20,8 @@
 * Restore `main` to package.json.
 * Restore proper overflow to certain `select` elements.
 * Remove opinionated cursor styles on buttons.
-* Update stylelint configuration
-* Update tests
+* Update stylelint configuration.
+* Update tests.
 
 ### 4.0.0 (March 19, 2016)
 

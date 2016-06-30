@@ -1,6 +1,6 @@
 {
   "name": "normalize.css",
-  "version": "4.1.1",
+  "version": "4.2.0",
   "description": "A modern alternative to CSS resets",
   "main": "normalize.css",
   "style": "normalize.css",
@@ -9,8 +9,8 @@
     "normalize.css"
   ],
   "devDependencies": {
-    "stylelint": "^5.4.0",
-    "stylelint-config-standard": "^5.0.0"
+    "stylelint": "^6.7.1",
+    "stylelint-config-standard": "^9.0.0"
   },
   "scripts": {
     "test": "stylelint normalize.css"

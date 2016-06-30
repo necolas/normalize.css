@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Normalize CSS: UI tests</title>
-<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="https://rawgit.com/aFarkas/html5shiv/gh-pages/dist/html5shiv.min.js"></script>
 <link rel="stylesheet" href="normalize.css">
 <style>
   /*! suit-test v0.1.0 | MIT License | github.com/suitcss */
@@ -87,6 +87,10 @@
 
   <h2 class="Test-describe"><code>html</code></h2>
   <h3 class="Test-it">should have sans-serif font family (opinionated)</h3>
+  <div class="Test-run">
+    abcdefghijklmnopqrstuvwxyz
+  </div>
+  <h3 class="Test-it">should have a line height of 1.15</h3>
   <div class="Test-run">
     abcdefghijklmnopqrstuvwxyz
   </div>
