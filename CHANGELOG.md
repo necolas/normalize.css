@@ -1,6 +1,6 @@
 # Changes to normalize.css
 
-### 4.2.0 (April 12, 2016)
+### 4.2.0 (June 30, 2016)
 
 * Correct the `line-height` in all browsers.
 * Restore `optgroup` font inheritance.
