@@ -1,5 +1,9 @@
 # Changes to normalize.css
 
+### HEAD
+
+* Remove `::placeholder` styles due to a bug in Edge.
+
 ### 4.2.0 (June 30, 2016)
 
 * Correct the `line-height` in all browsers.

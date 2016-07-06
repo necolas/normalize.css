@@ -105,6 +105,10 @@ addresses these issues without removing the benefits of search inputs (e.g.
 showing past searches). Safari (but not Chrome) will clip the cancel button on
 when it has padding (and `textfield` appearance).
 
+#### `::placeholder`
+
+In Edge, placeholders will disappear on `relative` or `absolute` positioned
+`<input>` elements if you use `opacity` less than `1` due to a [bug](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/3901363/).
 
 ## Contributing
 
