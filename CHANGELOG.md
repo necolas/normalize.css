@@ -2,6 +2,10 @@
 
 ### HEAD
 
+* Add normalized sections not already present from
+  https://html.spec.whatwg.org/multipage/.
+* Move unsorted rules into their respective sections.
+* Update the `summary` style in all browsers.
 * Remove `::placeholder` styles due to a bug in Edge.
 
 ### 4.2.0 (June 30, 2016)
