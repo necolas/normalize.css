@@ -7,6 +7,8 @@
 * Move unsorted rules into their respective sections.
 * Update the `summary` style in all browsers.
 * Remove `::placeholder` styles due to a bug in Edge.
+* More explicitly define font resets on form controls
+* Remove the `optgroup` normalization needed by the previous font reset
 
 ### 4.2.0 (June 30, 2016)
 
