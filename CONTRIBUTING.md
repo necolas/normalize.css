@@ -196,7 +196,12 @@ cutting new releases.
 version numbers are incremented in a project. Versions are written as
 MAJOR.MINOR.PATCH.
 
-Changes limited to fallback declarations for browsers which do not support
-newer features produce a PATCH release.
+Any change to CSS rules whatsoever is considered backwards-breaking and will
+result in a new **major** release. Others changes with no impact on rendering
+are considered backwards-compatible and will result in a new **patch** release.
 
-Changes limited to normalizations for older browsers produce a MINOR release.
+No changes to CSS rules can add functionality in a backwards-compatible manner,
+therefore no changes are considered **minor**. For instance, a normalization on
+an element selector may override a user style on a universal selector, a
+change to `opacity` might cause [inputs to disappear](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/3901363/),
+or a change to `background-color` might cause [backgrounds to shrink](https://github.com/jonathantneal/sanitize.css/issues/42).
