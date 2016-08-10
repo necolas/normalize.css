@@ -236,8 +236,8 @@ img {
  * Make sure images with maps inherit text color
  */
 
-img[usemap] {
-  color: inherit;
+[usemap] {
+  color: currentColor;
 }
 
 /**
