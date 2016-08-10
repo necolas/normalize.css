@@ -233,6 +233,14 @@ img {
 }
 
 /**
+ * Make sure images with maps inherit text color
+ */
+
+img[usemap] {
+  color: inherit;
+}
+
+/**
  * Hide the overflow in IE.
  */
 
