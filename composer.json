@@ -9,12 +9,12 @@
       {
         "name" : "Jonathan Neal",
         "email" : "jonathantneal@hotmail.com",
-        "homepage: "http://jonathantneal.com"
+        "homepage" : "http://jonathantneal.com"
       },
       {
         "name" : "Nicolas Gallagher",
         "email" : "nicolas@nicolasgallagher.com",
-        "homepage: "http://nicolasgallagher.com"
+        "homepage" : "http://nicolasgallagher.com"
       }
     ],
     "styles": ["normalize.css"],
