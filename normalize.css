@@ -3,7 +3,7 @@
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
+ * 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and on iOS.
  */
 
 /* Document
