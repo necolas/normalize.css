@@ -1,6 +1,6 @@
 # Changes to normalize.css
 
-### HEAD
+### 5.0.0 (October 3, 2016)
 
 * Add normalized sections not already present from
   https://html.spec.whatwg.org/multipage/.
@@ -9,6 +9,8 @@
 * Remove `::placeholder` styles due to a bug in Edge.
 * More explicitly define font resets on form controls.
 * Remove the `optgroup` normalization needed by the previous font reset.
+* Update text-size-adjust documentation  for IE on Windows Phone
+* Update OS X reference to macOS
 * Update the semver strategy.
 
 ### 4.2.0 (June 30, 2016)
