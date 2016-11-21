@@ -4,6 +4,18 @@
    ========================================================================== */
 
 /**
+ * 1. Correction of borders in the full scope elements
+ */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing; border-box;
+  box-sizing: border-box;
+}
+
+/**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in
