@@ -253,7 +253,8 @@ button,
 input,
 optgroup,
 select,
-textarea {
+textarea,
+keygen::-webkit-keygen-select {
   font-family: sans-serif; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
