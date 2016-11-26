@@ -24,7 +24,7 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 
-body {
+body, menu {
   margin: 0;
 }
 
