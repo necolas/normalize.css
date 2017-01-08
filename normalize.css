@@ -9,6 +9,11 @@
  * 3. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 html {
   font-family: sans-serif; /* 1 */
