@@ -1,5 +1,11 @@
 # Changes to normalize.css
 
+### 6.0.0 (March 26, 2017)
+
+* Remove all opinionated rules
+* Correct document heading comment
+* Update `abbr[title]` support
+
 ### 5.0.0 (October 3, 2016)
 
 * Add normalized sections not already present from
