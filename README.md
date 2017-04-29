@@ -51,8 +51,8 @@ See https://necolas.github.io/normalize.css/latest/normalize.css
 * iOS Safari (last two)
 * Opera (last two)
 * Safari 6+
-* [Normalize.css v1 provides legacy browser support](https://github.com/necolas/normalize.css/tree/v1) (IE 6+, Safari 4+),
-but is no longer actively developed.
+* _[Normalize.css v1 provides legacy browser support](https://github.com/necolas/normalize.css/tree/v1) (IE 6+, Safari 4+), but is no longer actively developed._
+
 
 
 ## Extended details and known issues
