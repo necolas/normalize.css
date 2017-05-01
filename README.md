@@ -116,6 +116,11 @@ In Edge, placeholders will disappear on `relative` or `absolute` positioned
 Please read the [contribution guidelines](CONTRIBUTING.md) in order to make the
 contribution process easy and effective for everyone involved.
 
+## Similar Projects
+
+- [opinionate.css](https://github.com/adamgruber/opinionate.css) - Supplement to normalize, restores opinionated rules removed in v6
+- [sanitize.css](https://github.com/jonathantneal/sanitize.css) - Alternative to normalize, adheres to common developer expectations and preferences
+
 
 ## Acknowledgements
 
