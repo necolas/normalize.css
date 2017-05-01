@@ -6,6 +6,8 @@
 * Correct document heading comment
 * Update `abbr[title]` support
 
+_For anyone who still wants/needs the opinionated rules, see [opinionate.css](https://github.com/adamgruber/opinionate.css)_
+
 ### 5.0.0 (October 3, 2016)
 
 * Add normalized sections not already present from
