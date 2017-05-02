@@ -10,6 +10,9 @@
 [![changelog][changelog-image]][changelog-url]
 [![gitter][gitter-image]][gitter-url]
 
+## Getting started
+
+### Download
 
 **NPM**
 
@@ -31,6 +34,25 @@ See https://cdnjs.com/libraries/normalize
 
 See https://necolas.github.io/normalize.css/latest/normalize.css
 
+### Use
+
+Full version with comfort start for your project in one file
+
+```html
+<link rel="stylesheet" href="normalize.css">
+```
+
+or more strict version with just corrects bugs and common browser inconsistencies
+
+```html
+<link rel="stylesheet" href="normalize-basic.css">
+```
+
+also check opinionate.css with commonly used corrective over basic version
+
+```html
+<link rel="stylesheet" href="normalize-opinionate.css">
+```
 
 ## What does it do?
 
@@ -116,9 +138,7 @@ contribution process easy and effective for everyone involved.
 
 ## Similar Projects
 
-- [opinionate.css](https://github.com/adamgruber/opinionate.css) - Supplement to normalize, restores opinionated rules removed in v6
 - [sanitize.css](https://github.com/jonathantneal/sanitize.css) - Alternative to normalize, adheres to common developer expectations and preferences
-
 
 ## Acknowledgements
 
