@@ -222,11 +222,13 @@ img {
 }
 
 /**
- * Hide the overflow in IE.
+ * 1. Hide the overflow in IE.
+ * 2. Prevent JavaScrpit Bug in Firefox when pointing on SVGs.
  */
 
 svg:not(:root) {
-  overflow: hidden;
+  overflow: hidden; /* 1 */
+  pointer-events: none; /* 2 */
 }
 
 /* Forms
