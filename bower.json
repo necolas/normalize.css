@@ -2,10 +2,6 @@
   "name": "normalize-css",
   "description": "A modern alternative to CSS resets",
   "main": "normalize.css",
-  "authors": [
-    "Jonathan Neal <jonathantneal@hotmail.com> (http://jonathantneal.com/)",
-    "Nicolas Gallagher <nicolas@nicolasgallagher.com> (http://nicolasgallagher.com/)"
-  ],
   "license": "MIT",
   "ignore": [
     "CHANGELOG.md",
