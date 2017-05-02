@@ -1,6 +1,6 @@
 {
   "name": "normalize.css",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "description": "A modern alternative to CSS resets",
   "main": "normalize.css",
   "style": "normalize.css",
@@ -13,7 +13,7 @@
     "stylelint-config-standard": "^16.0.0"
   },
   "scripts": {
-    "test": "stylelint normalize.css"
+    "test": "stylelint *.css"
   },
   "repository": "necolas/normalize.css",
   "contributors": [
