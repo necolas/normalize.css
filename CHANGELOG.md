@@ -1,12 +1,14 @@
 # Changes to normalize.css
 
+### 7.0.0 (May 2, 2017)
+
+* Revert changes in `body` and form elements styles introduced by v6
+
 ### 6.0.0 (March 26, 2017)
 
 * Remove all opinionated rules
 * Correct document heading comment
 * Update `abbr[title]` support
-
-_For anyone who still wants/needs the opinionated rules, see [opinionate.css](https://github.com/adamgruber/opinionate.css)_
 
 ### 5.0.0 (October 3, 2016)
 
