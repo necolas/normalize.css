@@ -1,0 +1,25 @@
+{
+    "name": "normalize.css",
+    "version": "4.2.0",
+    "description": "A modern alternative to CSS resets",
+    "repo": "necolas/normalize.css",
+    "author": "Nicolas Gallagher",
+    "homepage": "http://necolas.github.com/normalize.css/",
+    "authors": [
+      {
+        "name" : "Jonathan Neal",
+        "email" : "jonathantneal@hotmail.com",
+        "homepage" : "http://jonathantneal.com"
+      },
+      {
+        "name" : "Nicolas Gallagher",
+        "email" : "nicolas@nicolasgallagher.com",
+        "homepage" : "http://nicolasgallagher.com"
+      }
+    ],
+    "styles": ["normalize.css"],
+    "license": "MIT",
+    "support": {
+      "issues" : "https://github.com/necolas/normalize.css/issues"
+    },
+}
