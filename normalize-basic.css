@@ -1,6 +1,4 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-
-/* BASIC RULES */
+/*! normalize-basic.css v6.1.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -434,68 +432,4 @@ template {
 
 [hidden] {
   display: none;
-}
-
-/*! OPINIONATE RULES */
-
-/* Document
-   ========================================================================== */
-
-/**
- * Change the default font family in all browsers (opinionated).
- */
-
-html {
-  font-family: sans-serif;
-}
-
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers (opinionated).
- */
-
-body {
-  margin: 0;
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
-/* Forms
-   ========================================================================== */
-
-/**
- * Change the font styles in all browsers (opinionated).
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: sans-serif;
-  font-size: 100%;
-  line-height: 1.15;
-}
-
-/**
- * Change the border, margin, and padding in all browsers (opinionated).
- */
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
 }

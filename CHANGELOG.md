@@ -1,5 +1,10 @@
 # Changes to normalize.css
 
+### 7.0.0 (concept)
+
+* return opinionated rules to normalize.css
+* introduce separated basic and opinionate rules
+
 ### 6.0.0 (March 26, 2017)
 
 * Remove all opinionated rules
