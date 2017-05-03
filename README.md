@@ -32,6 +32,8 @@ See https://cdnjs.com/libraries/normalize
 See https://necolas.github.io/normalize.css/latest/normalize.css
 
 
+Install with [Composer](http://getcomposer.org/): `php composer.phar require necolas/normalize.css:dev-master`
+
 ## What does it do?
 
 * Preserves useful defaults, unlike many CSS resets.
