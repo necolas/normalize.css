@@ -337,6 +337,14 @@ progress {
   display: inline-block; /* 1 */
   vertical-align: baseline; /* 2 */
 }
+/**
+ * Ensures that FF22/23+ input[type='file'] do not show dark text against a dark form background
+ * Does no harm for other inputs?
+*/
+
+input {
+   background-color: #FFF;
+}
 
 /**
  * Remove the default vertical scrollbar in IE.
