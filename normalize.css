@@ -222,6 +222,14 @@ img {
 }
 
 /**
+ * Make sure images with maps inherit text color
+ */
+
+[usemap] {
+  color: currentColor;
+}
+
+/**
  * Hide the overflow in IE.
  */
 
