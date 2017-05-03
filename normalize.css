@@ -8,6 +8,11 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+ 
+/* Make sure that all "box-sizing" is the same. */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 html {
   line-height: 1.15; /* 1 */
