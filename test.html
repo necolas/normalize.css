@@ -75,7 +75,7 @@
    * Highlight the bounds of direct children of a test block
    */
 
-  .Test-run--highlightEl > * {
+  .Test-run-highlightEl > * {
     outline: 1px solid #ADD8E6;
   }
 </style>
@@ -109,7 +109,7 @@
     <code>summary</code>
   </h2>
   <h3 class="Test-it">should render as block</h3>
-  <div class="Test-run Test-run--highlightEl">
+  <div class="Test-run Test-run-highlightEl">
     <article>article</article>
     <aside>aside</aside>
     <details>
@@ -130,7 +130,7 @@
 
   <h2 class="Test-describe"><code>audio</code>, <code>canvas</code>, <code>progress</code>, <code>video</code></h2>
   <h3 class="Test-it">should render as inline-block and baseline-aligned</h3>
-  <div class="Test-run Test-run--highlightEl">
+  <div class="Test-run Test-run-highlightEl">
     <audio controls>audio</audio>
     <canvas>canvas</canvas>
     <progress>progress</progress>
@@ -139,7 +139,7 @@
 
   <h2 class="Test-describe"><code>audio:not([controls])</code>, <code>template</code>, <code>[hidden]</code></h2>
   <h3 class="Test-it">should not display</h3>
-  <div class="Test-run Test-run--highlightEl">
+  <div class="Test-run Test-run-highlightEl">
     <audio>audio</audio>
     <template>
       <h1>{{title}}</h1>
@@ -211,7 +211,7 @@
 
   <h2 class="Test-describe"><code>sub</code> and <code>sup</code></h2>
   <h3 class="Test-it">should not affect a line's visual line-height</h3>
-  <div class="Test-run Test-run--highlightEl">
+  <div class="Test-run Test-run-highlightEl">
     <p>control.</p>
     <p>control. <sub>sub.</sub></p>
     <p>control. <sup>sup.</sup></p>
@@ -228,7 +228,7 @@
 
   <h2 class="Test-describe"><code>svg</code></h2>
   <h3 class="Test-it">should not overflow</h3>
-  <div class="Test-run Test-run--highlightEl">
+  <div class="Test-run Test-run-highlightEl">
     <svg width="100px" height="100px">
       <circle cx="100" cy="100" r="100" fill="#ADD8E6" />
     </svg>
@@ -403,7 +403,7 @@
 
   <h2 class="Test-describe"><code>[type="checkbox"]</code>, <code>[type="radio"]</code></h2>
   <h3 class="Test-it">should have a <code>border-box</code> box model</h3>
-  <div class="Test-run Test-run--highlightEl" id="radio-box-model">
+  <div class="Test-run Test-run-highlightEl" id="radio-box-model">
     <style>
       #radio-box-model {
         width: 200px;
@@ -421,7 +421,7 @@
     <input type="radio" name="rad">
   </div>
   <h3 class="Test-it">should not have padding</h3>
-  <div class="Test-run Test-run--highlightEl">
+  <div class="Test-run Test-run-highlightEl">
     <input type="checkbox">
     <input type="radio" name="rad">
   </div>
