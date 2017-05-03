@@ -71,6 +71,7 @@
 * Update comments to identify opinionated styles.
 * Update comments to specify browser/versions affected by all changes.
 * Update comments to use one voice.
+* Remove `main` field from `package.json`.
 
 ---
 
@@ -86,7 +87,7 @@
 
 ### 3.0.1 (March 27, 2014)
 
-* Add package.json for npm support.
+* Add `package.json` for npm support.
 
 ### 3.0.0 (January 28, 2014)
 
@@ -110,7 +111,7 @@
 
 ### 2.1.3 (August 26, 2013)
 
-* Fix component.json.
+* Fix `component.json`.
 * Remove the gray background color from active links in IE 10.
 
 ### 2.1.2 (May 11, 2013)
