@@ -445,3 +445,8 @@ template {
 [hidden] {
   display: none;
 }
+
+th,
+td {
+    padding: 0;
+}
