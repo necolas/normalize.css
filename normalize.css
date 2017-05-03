@@ -445,3 +445,14 @@ template {
 [hidden] {
   display: none;
 }
+
+/* Lists
+   ========================================================================== */
+
+/**
+ * Remove unwanted margin from ul in Firefox
+ */
+ 
+ul{
+  margin: 0;
+}
