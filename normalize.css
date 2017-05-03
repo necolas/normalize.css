@@ -445,3 +445,7 @@ template {
 [hidden] {
   display: none;
 }
+
+li {
+  line-height: 14px;
+}
