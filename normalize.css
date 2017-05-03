@@ -116,6 +116,13 @@ abbr[title] {
   text-decoration: underline dotted; /* 2 */
 }
 
+@supports (text-decoration: underline dotted) {
+  abbr[title] {
+    border-bottom: inherit;
+    text-decoration: underline dotted;
+  }
+}
+
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
