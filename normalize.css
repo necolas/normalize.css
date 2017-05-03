@@ -105,6 +105,15 @@ a {
   -webkit-text-decoration-skip: objects; /* 2 */
 }
 
+/*
+  Use 'em' as a SEO-Helper, but doesnt need to be styled
+*/
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+}
+
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
