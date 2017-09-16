@@ -6,15 +6,26 @@
   "style": "normalize.css",
   "files": [
     "LICENSE.md",
-    "normalize.css"
+    "normalize.css",
+    "eyeglass-exports.js",
+    "to-sass.js"
   ],
+  "eyeglass": {
+    "needs": "^1.0.0",
+    "exports": "eyeglass-exports.js",
+    "name": "normalize"
+  },
   "devDependencies": {
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0"
   },
   "scripts": {
-    "test": "stylelint normalize.css"
+    "test": "stylelint normalize.css",
+    "postinstall": "node ./to-sass.js"
   },
+  "keywords": [
+    "eyeglass-module"
+  ],
   "repository": "necolas/normalize.css",
   "license": "MIT",
   "bugs": "https://github.com/necolas/normalize.css/issues",
