@@ -117,21 +117,14 @@ abbr[title] {
 }
 
 /**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ * 1. Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ * 2. Add the correct font weight in Chrome, Edge, and Safari.
  */
 
 b,
 strong {
-  font-weight: inherit;
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-  font-weight: bolder;
+  font-weight: inherit; /* 1 */
+  font-weight: bolder; /* 2 */
 }
 
 /**
