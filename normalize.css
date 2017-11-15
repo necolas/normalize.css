@@ -266,6 +266,7 @@ input { /* 1 */
 button,
 select { /* 1 */
   text-transform: none;
+  border-radius: 0; /* Overwrites Chrome 62 default radius */
 }
 
 /**
