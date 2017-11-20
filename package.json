@@ -9,11 +9,14 @@
     "normalize.css"
   ],
   "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0"
   },
   "scripts": {
-    "test": "stylelint normalize.css"
+    "test": "stylelint normalize.css",
+    "build": "grunt cssmin"
   },
   "repository": "necolas/normalize.css",
   "license": "MIT",
@@ -25,7 +28,9 @@
       "font-family-no-duplicate-names": [
         true,
         {
-          "ignoreFontFamilyNames": ["monospace"]
+          "ignoreFontFamilyNames": [
+            "monospace"
+          ]
         }
       ]
     }
