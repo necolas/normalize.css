@@ -17,12 +17,6 @@
 npm install --save normalize.css
 ```
 
-**Bower**
-
-```sh
-bower install --save normalize-css
-```
-
 **CDN**
 
 See https://yarnpkg.com/en/package/normalize.css
