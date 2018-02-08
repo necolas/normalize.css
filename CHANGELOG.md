@@ -1,5 +1,10 @@
 # Changes to normalize.css
 
+* Remove support for older browsers Android 4, lte IE, lte Safari 7.
+* Don't remove search input cancel button in Chrome/Safari.
+* Form inputs inherit `font-family`.
+* Fix text decoration in Safari 8+.
+
 ### 7.0.0 (May 2, 2017)
 
 * Revert changes in `body` and form elements styles introduced by v6
