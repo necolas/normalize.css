@@ -25,7 +25,9 @@
       "font-family-no-duplicate-names": [
         true,
         {
-          "ignoreFontFamilyNames": ["monospace"]
+          "ignoreFontFamilyNames": [
+            "monospace"
+          ]
         }
       ]
     }
