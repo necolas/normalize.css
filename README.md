@@ -43,16 +43,12 @@ See https://necolas.github.io/normalize.css/latest/normalize.css
 
 ## Browser support
 
-* Chrome (last two)
-* Edge (last two)
-* Firefox (last two)
-* Firefox ESR
-* Internet Explorer 8+
-* iOS Safari (last two)
-* Opera (last two)
-* Safari 6+
-* _[Normalize.css v1 provides legacy browser support](https://github.com/necolas/normalize.css/tree/v1) (IE 6+, Safari 4+), but is no longer actively developed._
-
+* Chrome
+* Edge
+* Firefox ESR+
+* Internet Explorer 10+
+* Safari 8+
+* Opera
 
 
 ## Extended details and known issues
@@ -69,13 +65,6 @@ intentional. [Source](https://en.wikipedia.org/wiki/User:Davidgothberg/Test59).
 
 Normally, using `sub` or `sup` affects the line-box height of text in all
 browsers. [Source](https://gist.github.com/413930).
-
-#### `svg:not(:root)`
-
-Adding `overflow: hidden` fixes IE9's SVG rendering. Earlier versions of IE
-don't support SVG, so we can safely use the `:not()` and `:root` selectors that
-modern browsers use in the default UA stylesheets to apply this style.
-[Source](https://lists.w3.org/Archives/Public/public-svg-wg/2008JulSep/0339.html).
 
 #### `select`
 
