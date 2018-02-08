@@ -25,7 +25,7 @@ bower install --save normalize-css
 
 **CDN**
 
-See https://cdnjs.com/libraries/normalize
+See https://cdnjs.com/libraries/normalize or https://www.jsdelivr.com/package/npm/normalize.css
 
 **Download**
 
