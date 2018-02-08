@@ -84,8 +84,7 @@ Chrome and Safari on Windows you can't control `border` properly. It will apply
 `border-width` but will only show a border color (which cannot be controlled)
 for the outer 1px of that border. Applying `-webkit-appearance: textfield`
 addresses these issues without removing the benefits of search inputs (e.g.
-showing past searches). Safari (but not Chrome) will clip the cancel button on
-when it has padding (and `textfield` appearance).
+showing past searches).
 
 ## Contributing
 
