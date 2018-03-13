@@ -1,7 +1,7 @@
 /* ==========================================================================
-   Typography
+   Text-level Semantics
 
-   Normalize typographic related styling.
+   Normalize styling of Text-level Semantics for legacy browsers.
    ========================================================================== */
 
 /**
@@ -10,15 +10,6 @@
 
 abbr[title] {
   border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
-
-b,
-strong {
-  font-weight: bold;
 }
 
 /**
@@ -46,32 +37,4 @@ h1 {
 mark {
   background: #ff0;
   color: #000;
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
 }
