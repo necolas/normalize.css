@@ -1,7 +1,7 @@
 /* ==========================================================================
    HTML5 display definitions
 
-   Normalize the display of the new html5 elements.
+   Normalize the display of the new html5 elements for legacy browsers.
    ========================================================================== */
 
 /**
@@ -48,14 +48,4 @@ video {
 audio:not([controls]) {
   display: none;
   height: 0;
-}
-
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
- */
-
-[hidden],
-template {
-  display: none;
 }
