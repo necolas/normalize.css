@@ -1,24 +1,36 @@
 {
-  "name": "normalize.css",
+  "name": "@fizzion/normalize",
   "version": "8.0.0",
-  "description": "A modern alternative to CSS resets",
-  "main": "normalize.css",
-  "style": "normalize.css",
+  "description": "Normalize.css as a node packaged module using scss",
+  "main": "_normalize.scss",
+  "style": "_normalize.scss",
   "files": [
     "LICENSE.md",
-    "normalize.css"
+    "_normalize.scss",
+    "normailze/_root.scss",
+    "normailze/_html5-dispaly.scss",
+    "normailze/_anchors.scss",
+    "normailze/_typography.scss",
+    "normailze/_embedded-content.scss",
+    "normailze/_grouping-content.scss",
+    "normailze/_forms.scss",
+    "normailze/_tables.scss"
   ],
   "devDependencies": {
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0"
   },
+  "author": [
+    "Nicolas Gallagher",
+    "Alex Lemanski"
+  ],
+  "license": "MIT",
   "scripts": {
     "test": "stylelint normalize.css"
   },
-  "repository": "necolas/normalize.css",
-  "license": "MIT",
-  "bugs": "https://github.com/necolas/normalize.css/issues",
-  "homepage": "https://necolas.github.io/normalize.css",
+  "repository": "fizzion/fizzion-normalize.scss",
+  "bugs": "https://github.com/fizzion/fizzion-normalize.scss/issues",
+  "homepage": "https://github.com/fizzion/fizzion-normalize.scss",
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
