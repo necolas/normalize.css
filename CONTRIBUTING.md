@@ -21,7 +21,6 @@ requests](#pull-requests), but please respect the following restrictions:
   respect the opinions of others.
 
 
-<a name="bugs"></a>
 ## Bug reports
 
 A bug is a _demonstrable problem_ that is caused by the code in the repository.
@@ -64,7 +63,6 @@ Example:
 > merits).
 
 
-<a name="features"></a>
 ## Feature requests
 
 Feature requests are welcome. But take a moment to find out whether your idea
@@ -73,7 +71,6 @@ case to convince the project's developers of the merits of this feature. Please
 provide as much detail and context as possible.
 
 
-<a name="pull-requests"></a>
 ## Pull requests
 
 Good pull requests - patches, improvements, new features - are a fantastic
@@ -90,8 +87,8 @@ accurate comments, etc.) and any other requirements (such as test coverage).
 Follow this process if you'd like your work considered for inclusion in the
 project:
 
-1. [Fork](http://help.github.com/fork-a-repo/) the project, clone your fork,
-   and configure the remotes:
+1. [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your
+   fork, and configure the remotes:
 
    ```bash
    # Clone your fork of the repo into the current directory
@@ -122,7 +119,13 @@ project:
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.
 
-   Make sure to add a test to the `test.html` file if appropriate, and test
+   Be sure to test the `normalize.css` file for style conformance.
+
+   ```bash
+   npm test
+   ```
+
+   Be sure to add a test to the `test.html` file if appropriate, and test
    your change in all supported browsers.
 
 5. Locally rebase the upstream development branch into your topic branch:
@@ -140,14 +143,27 @@ project:
 10. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
     with a clear title and description.
 
-    Please submit a separate pull request for any appropriate changes required
-    in the `v1` branch for legacy browsers.
-
 **IMPORTANT**: By submitting a patch, you agree to allow the project owner to
 license your work under the same license as that used by the project.
 
+### CSS Conventions
 
-<a name="maintainers"></a>
+Keep the CSS file as readable as possible by following these guidelines:
+
+- Comments are short and to the point.
+- Comments without a number reference the entire rule.
+- Comments describe the selector when the selector does not make the
+  normalization obvious.
+- Comments begin with “Correct the...” when they deal with less obvious side
+  effects.
+- Rules are sorted by cascade, specificity, and then alphabetic order.
+- Selectors are sorted by specificity and then alphabetic order.
+- `in browser` applies to all versions.
+- `in browser v-` applies to all versions up to and including the version.
+- `in browser v+` applies to all versions after and including the version.
+- `in browser v-v` applies to all versions including and between the versions.
+
+
 ## Maintainers
 
 If you have commit access, please follow this process for merging patches and
@@ -162,16 +178,26 @@ cutting new releases.
 4. Do not use GitHub's merge button. Apply the patch to `master` locally
    (either via `git am` or by checking the whole branch out). Amend minor
    problems with the author's original commit if necessary. Then push to GitHub.
-5. If a patch should be included in `v1`, cherry-pick the commits or manually
-   apply if all else fails.
 
 ### Releasing a new version
 
 1. Include all new functional changes in the CHANGELOG.
 2. Use a dedicated commit to increment the version. The version needs to be
-   added to the CHANGELOG (inc. date), and the `bower.json`, `component.json`,
-   and `normalize.css` files.
+   added to the CHANGELOG (inc. date), the `package.json`, and `normalize.css`
+   files.
 3. The commit message must be of `v0.0.0` format.
 4. Create an annotated tag for the version: `git tag -m "v0.0.0" 0.0.0`.
 5. Push the changes and tags to GitHub: `git push --tags origin master`
 6. Checkout the `gh-pages` branch and follow the instructions in the README.
+
+### Semver strategy
+
+[Semver](http://semver.org/) is a widely accepted method for deciding how
+version numbers are incremented in a project. Versions are written as
+MAJOR.MINOR.PATCH.
+
+Any change to CSS rules whatsoever is considered backwards-breaking and will
+result in a new **major** release. No changes to CSS rules can add
+functionality in a backwards-compatible manner, therefore no changes are
+considered **minor**. Others changes with no impact on rendering are considered
+backwards-compatible and will result in a new **patch** release.

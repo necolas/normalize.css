@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Normalize CSS: UI tests</title>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="https://rawgit.com/aFarkas/html5shiv/gh-pages/dist/html5shiv.min.js"></script>
 <link rel="stylesheet" href="normalize.css">
 <style>
   /*! suit-test v0.1.0 | MIT License | github.com/suitcss */
@@ -86,7 +86,7 @@
   <h1 class="Test-title"><a href="https://github.com/necolas/normalize.css">Normalize.css</a>: UI tests</h1>
 
   <h2 class="Test-describe"><code>html</code></h2>
-  <h3 class="Test-it">should have sans-serif font family (opinionated)</h3>
+  <h3 class="Test-it">should have a line height of 1.15</h3>
   <div class="Test-run">
     abcdefghijklmnopqrstuvwxyz
   </div>
@@ -100,7 +100,7 @@
   <h2 class="Test-describe">
     <code>article</code>, <code>aside</code>, <code>details</code>,
     <code>figure</code>, <code>figcaption</code>, <code>footer</code>,
-    <code>header</code>, <code>hgroup</code>, <code>main</code>,
+    <code>header</code>, <code>main</code>,
     <code>menu</code>, <code>nav</code>, <code>section</code>,
     <code>summary</code>
   </h2>
@@ -118,7 +118,6 @@
     </figure>
     <footer>footer</footer>
     <header>header</header>
-    <hgroup>hgroup</hgroup>
     <main>main</main>
     <menu><li>menu</li></menu>
     <nav>nav</nav>
@@ -150,19 +149,23 @@
   <div class="Test-run">
     <a href="#non">dummy anchor</a>
   </div>
+  <h3 class="Test-it">should not skip underlines</h3>
+  <div class="Test-run">
+    <a href="#non">quip and jig</a>
+  </div>
   <h3 class="Test-it">should not have a focus outline when both focused and hovered (opinionated)</h3>
   <div class="Test-run">
     <a href="#non">dummy anchor</a>
   </div>
 
   <h2 class="Test-describe"><code>abbr[title]</code></h2>
-  <h3 class="Test-it">should have a dotted bottom border</h3>
+  <h3 class="Test-it">should have a dotted underline with a solid underline as a fallback</h3>
   <div class="Test-run">
     <abbr title="abbreviation">abbr</abbr>
   </div>
 
   <h2 class="Test-describe"><code>b</code>, <code>strong</code></h2>
-  <h3 class="Test-it">should have bold font-weight</h3>
+  <h3 class="Test-it">should have bolder font-weight</h3>
   <div class="Test-run">
     <b>b</b>
     <strong>strong</strong>
@@ -227,6 +230,16 @@
     </svg>
   </div>
 
+  <h2 class="Test-describe"><code>code</code>, <code>kbd</code>, <code>pre</code>, <code>samp</code></h2>
+  <h3 class="Test-it">should render text at the same absolute size as normal text</h3>
+  <div class="Test-run">
+    <span>span: abcdefghijklmnopqrstuvwxyz.</span><br>
+    <code>code: abcdefghijklmnopqrstuvwxyz.</code><br>
+    <kbd>kbd: abcdefghijklmnopqrstuvwxyz.</kbd><br>
+    <samp>samp: abcdefghijklmnopqrstuvwxyz.</samp>
+    <pre>pre: abcdefghijklmnopqrstuvwxyz.</pre>
+  </div>
+
   <h2 class="Test-describe"><code>figure</code></h2>
   <h3 class="Test-it">should have margins</h3>
   <div class="Test-run" style="outline:1px solid #ADD8E6; overflow:hidden;">
@@ -241,37 +254,9 @@
     <hr style="height:2px; border:solid #ADD8E6; border-width:2px 0;">
   </div>
 
-  <h2 class="Test-describe"><code>pre</code></h2>
-  <h3 class="Test-it">should trigger a scrollbar when too wide for its container</h3>
-  <div class="Test-run" style="max-width:300px; outline:1px solid #ADD8E6;">
-    <pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.</pre>
-  </div>
-
-  <h2 class="Test-describe"><code>code</code>, <code>kbd</code>, <code>pre</code>, <code>samp</code></h2>
-  <h3 class="Test-it">should render <code>em</code>-unit preformatted text at the same absolute size as normal text</h3>
-  <div class="Test-run">
-    <span>span: abcdefghijklmnopqrstuvwxyz.</span><br>
-    <code>code: abcdefghijklmnopqrstuvwxyz.</code><br>
-    <kbd>kbd: abcdefghijklmnopqrstuvwxyz.</kbd><br>
-    <samp>samp: abcdefghijklmnopqrstuvwxyz.</samp>
-    <pre>pre: abcdefghijklmnopqrstuvwxyz.</pre>
-  </div>
-
   <h2 class="Test-describe"><code>button</code>, <code>input</code>, <code>optgroup</code>, <code>select</code>, <code>textarea</code></h2>
-  <h3 class="Test-it">should inherit <code>color</code> from ancestor</h3>
-  <div class="Test-run" style="color:#ADD8E6;">
-    <button>button</button><br>
-    <input value="input"><br>
-    <select style="border:1px solid #999;">
-      <optgroup label="optgroup">
-        <option>option</option>
-      </optgroup>
-      <option>option</option>
-    </select><br>
-    <textarea>textarea</textarea>
-  </div>
-  <h3 class="Test-it">should inherit <code>font</code> from ancestor</h3>
-  <div class="Test-run" style="font:bold italic 20px/1 serif;">
+  <h3 class="Test-it">should inherit <code>font-size</code> from ancestor</h3>
+  <div class="Test-run" style="font-size: 20px;">
     <button>button</button><br>
     <input value="input"><br>
     <select style="border:1px solid #999;">
@@ -333,14 +318,6 @@
   </div>
 
   <h2 class="Test-describe"><code>button</code> and button-style <code>input</code></h2>
-  <h3 class="Test-it">should have <code>pointer</code> cursor style</h3>
-  <div class="Test-run">
-    <p><button>button</button></p>
-    <p><input type="image" src="http://lorempixel.com/90/24" alt="input (image)"></p>
-    <p><input type="button" value="input (button)"></p>
-    <p><input type="reset" value="input (reset)"></p>
-    <p><input type="submit" value="input (submit)"></p>
-  </div>
   <h3 class="Test-it">should be styleable</h3>
   <div class="Test-run" id="button-like-style">
     <style>
@@ -353,8 +330,9 @@
       }
     </style>
     <p><button>button</button></p>
-    <p><input type="image" src="http://lorempixel.com/90/24" alt="input (image)"></p>
+    <p><input type="image" src="//placehold.it/90x24" alt="input (image)"></p>
     <p><input type="button" value="input (button)"></p>
+    <p><input type="file" value="input (file)"></p>
     <p><input type="reset" value="input (reset)"></p>
     <p><input type="submit" value="input (submit)"></p>
   </div>
@@ -363,7 +341,6 @@
   <h3 class="Test-it">should have <code>default</code> cursor style</h3>
   <div class="Test-run">
     <p><button disabled>button</button></p>
-    <p><input disabled type="image" src="http://lorempixel.com/90/24" alt="input (image)"></p>
     <p><input disabled type="button" value="input (button)"></p>
     <p><input disabled type="reset" value="input (reset)"></p>
     <p><input disabled type="submit" value="input (submit)"></p>
@@ -381,19 +358,46 @@
       }
     </style>
     <p><button>button</button></p>
-    <p><input value="input (text)"></p>
     <p><input type="button" value="input (button)"></p>
     <p><input type="reset" value="input (reset)"></p>
     <p><input type="submit" value="input (submit)"></p>
   </div>
 
-  <h2 class="Test-describe"><code>input</code></h2>
-  <h3 class="Test-it">should not inherit <code>line-height</code></h3>
-  <div class="Test-run" style="line-height:50px">
-    <input value="input (text)">
+  <h2 class="Test-describe"><code>fieldset</code></h2>
+  <h3 class="Test-it">should have consistent border, padding, and margin</h3>
+  <div class="Test-run">
+    <fieldset>
+      <div style="width:100%; height:100px; background:#ADD8E6;"></div>
+    </fieldset>
   </div>
 
-  <h2 class="Test-describe"><code>input[type="checkbox"]</code>, <code>input[type="radio"]</code></h2>
+  <h2 class="Test-describe"><code>legend</code></h2>
+  <h3 class="Test-it">should inherit color</h3>
+  <div class="Test-run" style="color:#ADD8E6;">
+    <fieldset>
+      <legend>legend</legend>
+    </fieldset>
+  </div>
+  <h3 class="Test-it">should not have padding</h3>
+  <div class="Test-run">
+    <fieldset>
+      <legend>legend</legend>
+    </fieldset>
+  </div>
+  <h3 class="Test-it">should wrap text</h3>
+  <div class="Test-run">
+    <fieldset>
+      <legend>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.</legend>
+    </fieldset>
+  </div>
+
+  <h2 class="Test-describe"><code>textarea</code></h2>
+  <h3 class="Test-it">should not have a scrollbar unless overflowing</h3>
+  <div class="Test-run">
+    <textarea>textarea</textarea>
+  </div>
+
+  <h2 class="Test-describe"><code>[type="checkbox"]</code>, <code>[type="radio"]</code></h2>
   <h3 class="Test-it">should have a <code>border-box</code> box model</h3>
   <div class="Test-run Test-run--highlightEl" id="radio-box-model">
     <style>
@@ -418,98 +422,20 @@
     <input type="radio" name="rad">
   </div>
 
-  <h2 class="Test-describe"><code>input[type="number"]</code></h2>
+  <h2 class="Test-describe"><code>[type="number"]</code></h2>
   <h3 class="Test-it">should display a default cursor for the decrement button's click target in Chrome</h3>
   <div class="Test-run">
     <input style="height:50px; font-size:15px;" type="number" id="in" min="0" max="10" value="5">
   </div>
 
-  <h2 class="Test-describe"><code>input[type="search"]</code></h2>
+  <h2 class="Test-describe"><code>[type="search"]</code></h2>
   <h3 class="Test-it">should be styleable</h3>
   <div class="Test-run">
     <input type="search" style="border:1px solid #ADD8E6; padding:10px; width:200px;">
   </div>
-  <h3 class="Test-it">should have a <code>content-box</code> box model</h3>
+  <h3 class="Test-it">should reference inherited color</h3>
   <div class="Test-run">
-    <div style="background:red; display:inline-block; height:62px; width:242px;">
-      <input type="search" style="border:1px solid #ADD8E6; height:20px; padding:20px; width:200px;">
-    </div>
-  </div>
-  <h3 class="Test-it">should not have a cancel button in Safari or Chrome</h3>
-  <div class="Test-run">
-    <input type="search" value="search">
-  </div>
-
-  <h2 class="Test-describe"><code>fieldset</code></h2>
-  <h3 class="Test-it">should have consistent border, padding, and margin</h3>
-  <div class="Test-run">
-    <fieldset>
-      <div style="width:100%; height:100px; background:#ADD8E6;"></div>
-    </fieldset>
-  </div>
-
-  <h2 class="Test-describe"><code>legend</code></h2>
-  <h3 class="Test-it">should inherit color</h3>
-  <div class="Test-run" style="color:#ADD8E6;">
-    <fieldset>
-      <legend>legend</legend>
-    </fieldset>
-  </div>
-  <h3 class="Test-it">should not have padding</h3>
-  <div class="Test-run">
-    <fieldset>
-      <legend>legend</legend>
-    </fieldset>
-  </div>
-
-  <h2 class="Test-describe"><code>textarea</code></h2>
-  <h3 class="Test-it">should not have a scrollbar unless overflowing</h3>
-  <div class="Test-run">
-    <textarea>textarea</textarea>
-  </div>
-
-  <h2 class="Test-describe"><code>table</code></h2>
-  <h3 class="Test-it">should not have spaces between cells</h3>
-  <div class="Test-run">
-    <table>
-      <caption>Jimi Hendrix - albums</caption>
-      <thead>
-        <tr>
-          <th>Album</th>
-          <th>Year</th>
-          <th>Price</th>
-        </tr>
-      </thead>
-      <tfoot>
-        <tr>
-          <th>Album</th>
-          <th>Year</th>
-          <th>Price</th>
-        </tr>
-      </tfoot>
-      <tbody>
-        <tr>
-          <td>Are You Experienced</td>
-          <td>1967</td>
-          <td>$10.00</td>
-        </tr>
-        <tr>
-          <td>Axis: Bold as Love</td>
-          <td>1967</td>
-          <td>$12.00</td>
-        </tr>
-        <tr>
-          <td>Electric Ladyland</td>
-          <td>1968</td>
-          <td>$10.00</td>
-        </tr>
-        <tr>
-          <td>Band of Gypsys</td>
-          <td>1970</td>
-          <td>$12.00</td>
-        </tr>
-      </tbody>
-    </table>
+    <input type="text" placeholder="Text goes here" style="background-color: black; color: orange;">
   </div>
 
 </div>

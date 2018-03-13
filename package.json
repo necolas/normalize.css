@@ -1,7 +1,8 @@
 {
   "name": "@fizzion/normalize",
-  "version": "3.0.3",
-  "description": "Normalize.css as a node packaged module",
+  "version": "8.0.0",
+  "description": "Normalize.css as a node packaged module using scss",
+  "main": "_normalize.scss",
   "style": "_normalize.scss",
   "files": [
     "LICENSE.md",
@@ -15,15 +16,32 @@
     "normailze/_forms.scss",
     "normailze/_tables.scss"
   ],
-  "homepage": "http://necolas.github.io/normalize.css",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/necolas/normalize.css.git"
+  "devDependencies": {
+    "stylelint": "^7.9.0",
+    "stylelint-config-standard": "^16.0.0"
   },
-  "main": "_normalize.scss",
   "author": [
     "Nicolas Gallagher",
     "Alex Lemanski"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "stylelint normalize.css"
+  },
+  "repository": "fizzion/fizzion-normalize.scss",
+  "bugs": "https://github.com/fizzion/fizzion-normalize.scss/issues",
+  "homepage": "https://github.com/fizzion/fizzion-normalize.scss",
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "font-family-no-duplicate-names": [
+        true,
+        {
+          "ignoreFontFamilyNames": [
+            "monospace"
+          ]
+        }
+      ]
+    }
+  }
 }
