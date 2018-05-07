@@ -181,6 +181,15 @@ select { /* 1 */
 }
 
 /**
+ * Remove the default apparence of select on all browsers
+ */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/**
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
