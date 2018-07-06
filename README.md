@@ -44,6 +44,18 @@ See https://necolas.github.io/normalize.css/latest/normalize.css
 * Safari 8+
 * Opera
 
+## JavaScript Usage
+
+You could also use `normalize.css` in your CSS-in-JS workflow.
+
+```javascript
+const normalizeCss = require('normalize.css/javascript');
+
+// example with injectGlobal from styled-components or emotion
+injectGlobal`
+  ${normalizeCss}
+`
+```
 
 ## Extended details and known issues
 

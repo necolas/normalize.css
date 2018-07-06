@@ -5,15 +5,19 @@
   "main": "normalize.css",
   "style": "normalize.css",
   "files": [
+    "dist",
     "LICENSE.md",
-    "normalize.css"
+    "normalize.css",
+    "javascript.js"
   ],
   "devDependencies": {
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0"
   },
   "scripts": {
-    "test": "stylelint normalize.css"
+    "build": "node scripts/generateJs",
+    "test": "stylelint normalize.css",
+    "prepare": "npm run build"
   },
   "repository": "necolas/normalize.css",
   "license": "MIT",
