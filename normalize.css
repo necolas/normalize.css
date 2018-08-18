@@ -339,3 +339,11 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+ * Add the correct display in IE 11 (html5 display-role reset).
+ */
+
+main {
+  display: block;
+}
