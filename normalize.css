@@ -17,11 +17,14 @@ html {
    ========================================================================== */
 
 /**
- * Remove the margin in all browsers.
+ * 1. Remove the margin in all browsers.
+ * 2. Correct the width and height on `body` element in all browsers.
  */
 
 body {
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /**
