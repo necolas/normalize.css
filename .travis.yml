@@ -1,3 +1,6 @@
+os:
+  - linux
+  - linux-ppc64le
 language: node_js
 node_js:
   - stable
