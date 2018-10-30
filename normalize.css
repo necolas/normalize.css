@@ -44,8 +44,8 @@ h1 {
 
 hr {
   -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box; /* 1 */
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -80,8 +80,8 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-     -moz-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  -moz-text-decoration: underline dotted;
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -235,8 +235,8 @@ fieldset {
 
 legend {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -268,8 +268,8 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box; /* 1 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
