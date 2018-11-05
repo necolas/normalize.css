@@ -1,5 +1,9 @@
 # Changes to normalize.css
 
+### 8.0.1 (November 4, 2018)
+
+* Fix regression in IE rendering of `main` element.
+
 ### 8.0.0 (February 2, 2018)
 
 * Remove support for older browsers Android 4, lte IE 9, lte Safari 7.
