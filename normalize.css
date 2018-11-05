@@ -274,7 +274,7 @@ textarea {
 }
 
 /**
- * Correct the cursor style of increment and decrement buttons in Chrome.
+ * Correct the cursor style of increment and decrement buttons in Safari.
  */
 
 [type="number"]::-webkit-inner-spin-button,
