@@ -119,12 +119,6 @@ project:
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.
 
-   Be sure to test the `normalize.css` file for style conformance.
-
-   ```bash
-   npm test
-   ```
-
    Be sure to add a test to the `test.html` file if appropriate, and test
    your change in all supported browsers.
 
