@@ -189,6 +189,13 @@ select { /* 1 */
 }
 
 /**
+ * Remove the inheritance of word-wrap in Safari.
+ */
+select {
+  word-wrap: normal;
+}
+
+/**
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
