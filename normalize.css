@@ -169,6 +169,14 @@ textarea {
 }
 
 /**
+ * Make placeholders have the same positioning as control text in safari.
+ */
+
+::placeholder {
+    line-height: normal;
+}
+
+/**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
