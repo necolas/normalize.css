@@ -170,11 +170,9 @@ textarea {
 
 /**
  * Show the overflow in IE.
- * 1. Show the overflow in Edge.
  */
 
-button,
-input { /* 1 */
+button {
   overflow: visible;
 }
 
