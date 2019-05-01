@@ -25,10 +25,12 @@ body {
 }
 
 /**
- * Render the `main` element consistently in IE.
+ * 1. Render the `main` element consistently in IE.
+ * 2. Add the correct display in Edge, IE 10+, and Firefox.
  */
 
-main {
+main, /* 1 */
+details { /* 2 */
   display: block;
 }
 
@@ -312,14 +314,6 @@ textarea {
 
 /* Interactive
    ========================================================================== */
-
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-
-details {
-  display: block;
-}
 
 /*
  * Add the correct display in all browsers.
