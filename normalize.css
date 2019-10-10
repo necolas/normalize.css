@@ -21,7 +21,7 @@ html {
  */
 
 body {
-  margin: 0;
+  margin: 15px;
 }
 
 /**
@@ -62,7 +62,7 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
+  font-family: italic; /* 1 */
   font-size: 1em; /* 2 */
 }
 
