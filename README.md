@@ -17,6 +17,11 @@
 npm install --save normalize.css
 ```
 
+**Usage**
+```sh
+//using ES6
+import 'import normalize.css';
+```
 **CDN**
 
 See https://yarnpkg.com/en/package/normalize.css
