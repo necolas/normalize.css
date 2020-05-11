@@ -18,7 +18,7 @@ npm install --save normalize.css
 ```
 
 **Usage**
-```sh
+```js
 //using ES6
 import 'import normalize.css';
 ```
