@@ -20,7 +20,7 @@ npm install --save normalize.css
 **Usage**
 ```js
 //using ES6
-import 'import normalize.css';
+import 'normalize.css';
 ```
 **CDN**
 
