@@ -9,6 +9,7 @@
 [![npm][npm-image]][npm-url] [![license][license-image]][license-url]
 [![changelog][changelog-image]][changelog-url]
 [![gitter][gitter-image]][gitter-url]
+[![minzip size](https://flat.badgen.net/bundlephobia/minzip/normalize.css)](https://flat.badgen.net/bundlephobia/minzip/normalize.css)
 
 
 **NPM**
