@@ -78,13 +78,10 @@ decrement button to change from `default` to `text`.
 
 #### `[type="search"]`
 
-The search input is not fully stylable by default. In Chrome and Safari on
-OSX/iOS you can't control `font`, `padding`, `border`, or `background`. In
-Chrome and Safari on Windows you can't control `border` properly. It will apply
-`border-width` but will only show a border color (which cannot be controlled)
-for the outer 1px of that border. Applying `-webkit-appearance: textfield`
-addresses these issues without removing the benefits of search inputs (e.g.
-showing past searches).
+The search input is not fully stylable by default. In Safari on
+OSX you can't control `font`, `padding`, `border`, or `background`. Applying
+`-webkit-appearance: textfield` addresses these issues without removing the
+benefits of search inputs (e.g. showing past searches).
 
 ## Contributing
 
