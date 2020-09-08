@@ -179,6 +179,14 @@ input { /* 1 */
 }
 
 /**
+ * Normalizes firefox and edge approach of input shrinking to chrome behaviour
+ */
+input {
+  min-width: 0;
+  min-height: 0;
+}
+
+/**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
