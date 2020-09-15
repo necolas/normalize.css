@@ -179,10 +179,12 @@ input { /* 1 */
 }
 
 /**
- * Remove the inheritance of text transform in Edge, IE11, and IE10.
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
  */
 
-button {
+button,
+select { /* 1 */
   text-transform: none;
 }
 
