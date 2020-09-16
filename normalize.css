@@ -223,7 +223,7 @@ button:-moz-focusring,
 }
 
 /**
- * Correct the padding in Firefox.
+ * Correct the padding in IE11 and IE10.
  */
 
 fieldset {
