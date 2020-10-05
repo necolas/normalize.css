@@ -35,7 +35,7 @@ See https://necolas.github.io/normalize.css/latest/normalize.css
 * Explains what code does using detailed comments.
 
 
-## Browser support
+##  Browsers 
 
 * Chrome
 * Edge
