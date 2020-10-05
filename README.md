@@ -35,7 +35,7 @@ See https://necolas.github.io/normalize.css/latest/normalize.css
 * Explains what code does using detailed comments.
 
 
-## Browser support
+## You can use these browsers 
 
 * Chrome
 * Edge
@@ -90,7 +90,7 @@ showing past searches).
 
 Please read the [contribution guidelines](CONTRIBUTING.md) in order to make the
 contribution process easy and effective for everyone involved.
-
+## Kindly follow contribution guidelines
 
 [changelog-image]: https://img.shields.io/badge/changelog-md-blue.svg?style=flat-square
 [changelog-url]: CHANGELOG.md
