@@ -233,11 +233,32 @@ img {
   padding: 0;
 }
 
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+// SCSS extend for `button:-moz-focusring`, `[type="button"]:-moz-focusring`, `[type="reset"]:-moz-focusring` and `[type="submit"]:-moz-focusring`.
+
+%button-type-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  @extend %button-type-focusring;
+}
+
 [type="button"] {
   @extend %button-type;
   
   &::-moz-focus-inner {
     @extend %button-type-focus;
+  }
+  
+  &:-moz-focusring {
+    @extend %button-type-focusring;
   }
 }
 
@@ -284,17 +305,6 @@ select {
 
 textarea {
   @extend %button-input-optgroup-select-textarea;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
 }
 
 /**
