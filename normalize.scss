@@ -243,11 +243,24 @@ img {
   outline: 1px dotted ButtonText;
 }
 
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  @extend %button-type-focusring;
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+// SCSS extend for `[type="number"]::-webkit-inner-spin-button` and `[type="number"]::-webkit-outer-spin-button`.
+
+%number-type-button-spin {
+  height: auto;
+}
+
+[type="number"] {
+  &::-webkit-inner-spin-button {
+    @extend %number-type-button-spin
+  }
+  
+  &::-webkit-outer-spin-button {
+    @extend %number-type-button-spin
+  }
 }
 
 [type="button"] {
@@ -268,6 +281,10 @@ button:-moz-focusring,
   &::-moz-focus-inner {
     @extend %button-type-focus;
   }
+  
+  &:-moz-focusring {
+    @extend %button-type-focusring;
+  }
 }
 
 [type="submit"] {
@@ -275,6 +292,10 @@ button:-moz-focusring,
   
   &::-moz-focus-inner {
     @extend %button-type-focus;
+  }
+  
+  &:-moz-focusring {
+    @extend %button-type-focusring;
   }
 }
 
@@ -352,19 +373,19 @@ textarea {
  * 2. Remove the padding in IE 10.
  */
 
-[type="checkbox"],
-[type="radio"] {
+// SCSS extend for `[type="checkbox"]` and `[type="radio"]`.
+
+%checkbox-radio {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
+[type="checkbox"] {
+  @extend %checkbox-radio;
+}
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
+[type="radio"] {
+  @extend %checkbox-radio;
 }
 
 /**
