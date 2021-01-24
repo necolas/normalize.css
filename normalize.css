@@ -70,11 +70,13 @@ pre {
    ========================================================================== */
 
 /**
- * Remove the gray background on active links in IE 10.
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Correct the link word wrapping within a container in Chrome.
  */
 
 a {
   background-color: transparent;
+  word-break: break-word;
 }
 
 /**
