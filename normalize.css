@@ -47,13 +47,13 @@ h1 {
 
 /**
  * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
+ * 2. Hide the overflow in Edge and IE.
  */
 
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  overflow: hidden; /* 2 */
 }
 
 /**
