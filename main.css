@@ -204,3 +204,18 @@ p {
     margin: 0 1em 0.5em;
   }
 }
+
+@media screen and (prefers-color-scheme: dark) {
+  html {
+    background: #333;
+    color: #fff;
+  }
+
+  .site-box, .share-bar {
+    background: #222;
+  }
+
+  .share-github {
+    filter: invert(1);
+  }
+}
