@@ -181,11 +181,13 @@ input { /* 1 */
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
+ * 2. Remove blue color in iOS 15+ Safari
  */
 
 button,
-select { /* 1 */
-  text-transform: none;
+select {
+  color: inherit; /* 2 */
+  text-transform: none; /* 1 */
 }
 
 /**
