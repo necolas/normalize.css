@@ -1,28 +1,31 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
+/* DEFAULTS and ROOT style ============================================*/
+/* remove padding and margin, set box-sizing to border-box for all html elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+  * 1. Set browsers default font sizing to 14px for mobile and 16px for devices > 800px.
+  * 2. Correct the line height in all browsers.
+  * 3. Prevent adjustment of font size after orientation changes in iOS.
  */
-
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+:root {
+  font-size: 14px; /* 1rem == 14px, 1.14 ~= 16px */
+  line-height: 1.14; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+@media screen and (min-width: 800px) {
+  :root {
+    font-size: 16px; /* 1rem == 16px, 1.14 ~= 18px */
+    line-height: 1.6; /* 2 */
+  }
 }
 
 /* Sections
    ========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
-
-body {
-  margin: 0;
-}
 
 /**
  * Render the `main` element consistently in IE.
@@ -38,7 +41,7 @@ main {
  */
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem; /* changed em to rem to enable font-sizing inherit from root document. */
   margin: 0.67em 0;
 }
 
@@ -46,24 +49,21 @@ h1 {
    ========================================================================== */
 
 /**
- * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
+ * 2. Correct the odd `rem` font sizing in all browsers.
  */
 
 pre {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 1rem; /* 2 */
 }
 
 /* Text-level semantics
@@ -99,14 +99,13 @@ strong {
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
  */
 
 code,
 kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 1rem;
 }
 
 /**
@@ -114,7 +113,7 @@ samp {
  */
 
 small {
-  font-size: 80%;
+  font-size: 0.86rem;
 }
 
 /**
@@ -124,7 +123,7 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
+  font-size: 0.7rem;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -143,10 +142,12 @@ sup {
 
 /**
  * Remove the border on images inside links in IE 10.
+ * 2. Set img to fix display when image dimension is adjusted.
  */
 
 img {
   border-style: none;
+  object-fit: contain; /* 2 */
 }
 
 /* Forms
@@ -163,9 +164,7 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-size: 1rem;
 }
 
 /**
@@ -174,7 +173,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -184,7 +184,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -208,7 +209,6 @@ button::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
-  padding: 0;
 }
 
 /**
@@ -238,11 +238,9 @@ fieldset {
  */
 
 legend {
-  box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
   white-space: normal; /* 1 */
 }
 
