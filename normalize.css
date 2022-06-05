@@ -347,3 +347,11 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+ * Default list style to "outside" in Chrome
+ */
+
+li {
+  list-style-position: outside;
+}
