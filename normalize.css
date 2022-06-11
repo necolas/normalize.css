@@ -345,6 +345,10 @@ template {
  * Except `hidden="until-found"`　because `content-visibility: hidden` is applied.
  */
 
-[hidden]:not([hidden="until-found"]) {
+[hidden] {
   display: none;
+}
+
+[hidden="until-found"] {
+  display: revert;
 }
