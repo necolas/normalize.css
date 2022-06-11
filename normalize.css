@@ -342,8 +342,13 @@ template {
 
 /**
  * Add the correct display in IE 10.
+ * Except `hidden="until-found"`　because `content-visibility: hidden` is applied.
  */
 
 [hidden] {
   display: none;
+}
+
+[hidden="until-found"] {
+  display: revert;
 }
