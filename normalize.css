@@ -325,7 +325,7 @@ details {
  * Add the correct display in all browsers.
  */
 
-summary {
+details > summary:first-of-type {
   display: list-item;
 }
 
