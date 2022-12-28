@@ -18,10 +18,12 @@ html {
 
 /**
  * Remove the margin in all browsers.
+ * Remove the padding in all browsers.
  */
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 /**
