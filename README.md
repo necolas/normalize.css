@@ -1,32 +1,29 @@
-# normalize.css
-
 <a href="https://github.com/necolas/normalize.css"><img
   src="https://necolas.github.io/normalize.css/logo.svg" alt="Normalize Logo"
-  width="80" height="80" align="right"></a>
-
+  width="160" height="160" align="right"></a>
+# normalize.css
 > A modern alternative to CSS resets
 
 [![npm][npm-image]][npm-url] [![license][license-image]][license-url]
 [![changelog][changelog-image]][changelog-url]
 [![gitter][gitter-image]][gitter-url]
 
+---
 
-**NPM**
+## Setting Up
+
+* CDN [here](https://yarnpkg.com/en/package/normalize.css)
+
+* Download normalize.css [here](https://necolas.github.io/normalize.css/latest/normalize.css)
+
+* Using npm
 
 ```sh
 npm install --save normalize.css
 ```
 
-**CDN**
 
-See https://yarnpkg.com/en/package/normalize.css
-
-**Download**
-
-See https://necolas.github.io/normalize.css/latest/normalize.css
-
-
-## What does it do?
+## What Does It Do?
 
 * Preserves useful defaults, unlike many CSS resets.
 * Normalizes styles for a wide range of elements.
@@ -35,7 +32,7 @@ See https://necolas.github.io/normalize.css/latest/normalize.css
 * Explains what code does using detailed comments.
 
 
-## Browser support
+## Browser Support
 
 * Chrome
 * Edge
@@ -45,7 +42,7 @@ See https://necolas.github.io/normalize.css/latest/normalize.css
 * Opera
 
 
-## Extended details and known issues
+## Extended Details and Known Issues
 
 Additional detail and explanation of the esoteric parts of normalize.css.
 
