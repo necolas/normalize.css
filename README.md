@@ -1,7 +1,8 @@
 <a href="https://github.com/necolas/normalize.css"><img
   src="https://necolas.github.io/normalize.css/logo.svg" alt="Normalize Logo"
-  width="160" height="160" align="right"></a>
+  width="160" height="160" align="left"></a>
 # normalize.css
+
 > A modern alternative to CSS resets
 
 [![npm][npm-image]][npm-url] [![license][license-image]][license-url]
@@ -12,16 +13,17 @@
 
 ## Setting Up
 
-* CDN [here](https://yarnpkg.com/en/package/normalize.css)
+* CDN available [here](https://yarnpkg.com/en/package/normalize.css)
 
 * Download normalize.css [here](https://necolas.github.io/normalize.css/latest/normalize.css)
 
-* Using npm
+* Using npm:
 
 ```sh
 npm install --save normalize.css
 ```
 
+---
 
 ## What Does It Do?
 
@@ -31,6 +33,7 @@ npm install --save normalize.css
 * Improves usability with subtle modifications.
 * Explains what code does using detailed comments.
 
+---
 
 ## Browser Support
 
@@ -41,41 +44,42 @@ npm install --save normalize.css
 * Safari 8+
 * Opera
 
+---
 
 ## Extended Details and Known Issues
 
-Additional detail and explanation of the esoteric parts of normalize.css.
+Additional detail and explanation of the esoteric parts of normalize.css:
 
-#### `pre, code, kbd, samp`
+### `pre, code, kbd, samp`
 
-The `font-family: monospace, monospace` hack fixes the inheritance and scaling
+* The `font-family: monospace, monospace` hack fixes the inheritance and scaling
 of font-size for preformatted text. The duplication of `monospace` is
-intentional. [Source](https://en.wikipedia.org/wiki/User:Davidgothberg/Test59).
+intentional [(Source)](https://en.wikipedia.org/wiki/User:Davidgothberg/Test59).
 
-#### `sub, sup`
+### `sub, sup`
 
-Normally, using `sub` or `sup` affects the line-box height of text in all
-browsers. [Source](https://gist.github.com/413930).
+* Normally, using `sub` or `sup` affects the line-box height of text in all
+browsers [(Source)](https://gist.github.com/413930).
 
-#### `select`
+### `select`
 
-By default, Chrome on OS X and Safari on OS X allow very limited styling of
+* By default, Chrome on OS X and Safari on OS X allow very limited styling of
 `select`, unless a border property is set. The default font weight on `optgroup`
 elements cannot safely be changed in Chrome on OSX and Safari on OS X.
 
-#### `[type="checkbox"]`
+### `[type="checkbox"]`
 
-It is recommended that you do not style checkbox and radio inputs as Firefox's
+* It is recommended that you do not style checkbox and radio inputs as Firefox's
 implementation does not respect box-sizing, padding, or width.
 
-#### `[type="number"]`
+### `[type="number"]`
 
-Certain font size values applied to number inputs cause the cursor style of the
+* Certain font size values applied to number inputs cause the cursor style of the
 decrement button to change from `default` to `text`.
 
-#### `[type="search"]`
+### `[type="search"]`
 
-The search input is not fully stylable by default. In Chrome and Safari on
+* The search input is not fully stylable by default. In Chrome and Safari on
 OSX/iOS you can't control `font`, `padding`, `border`, or `background`. In
 Chrome and Safari on Windows you can't control `border` properly. It will apply
 `border-width` but will only show a border color (which cannot be controlled)
