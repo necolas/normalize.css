@@ -1,7 +1,7 @@
 # normalize.css
 
-<a href="https://github.com/necolas/normalize.css"><img
-  src="https://necolas.github.io/normalize.css/logo.svg" alt="Normalize Logo"
+<a href="https://https://github.com/ayush7AM"><img
+  src="https://avatars.githubusercontent.com/u/185796602?v=4" alt="ayush7AM"
   width="80" height="80" align="right"></a>
 
 > A modern alternative to CSS resets
