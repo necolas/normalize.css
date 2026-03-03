@@ -193,5 +193,5 @@ MAJOR.MINOR.PATCH.
 Any change to CSS rules whatsoever is considered backwards-breaking and will
 result in a new **major** release. No changes to CSS rules can add
 functionality in a backwards-compatible manner, therefore no changes are
-considered **minor**. Others changes with no impact on rendering are considered
+considered **minor**. Other changes with no impact on rendering are considered
 backwards-compatible and will result in a new **patch** release.
