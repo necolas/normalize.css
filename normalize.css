@@ -347,3 +347,26 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+ * Correct the visibility of the cursor for buttons to make it pointer by default
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+/**
+ * Correct the box sizing in all browsers.
+ */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
