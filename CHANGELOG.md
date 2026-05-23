@@ -1,5 +1,10 @@
 # Changes to normalize.css
 
+### 8.0.2 (May 23, 2026)
+
+* Correct the box sizing.
+* Add button cursor pointer normalization for better UX.
+
 ### 8.0.1 (November 4, 2018)
 
 * Fix regression in IE rendering of `main` element.
